@@ -1,0 +1,166 @@
+{
+  "Root": "CAFM_Unit_A00",
+  "CAFM_Unit_A00": {
+    "Id": "CAFM_Unit_A00",
+    "Name": "CAFM Unit",
+    "Kind": "Model",
+    "FlowType": "Form",
+    "Description": "",
+    "Model::Row": [
+      "Row_u5oxy8"
+    ],
+    "Model::Field": [
+      "Unit_Number",
+      "Site",
+      "Floor",
+      "Resident"
+    ]
+  },
+  "Row_u5oxy8": {
+    "Id": "Row_u5oxy8",
+    "Kind": "Row",
+    "Model": "CAFM_Unit_A00",
+    "Row::Column": [
+      "Column_u5oxy8"
+    ]
+  },
+  "Column_u5oxy8": {
+    "Id": "Column_u5oxy8",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "Details",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_u5oxy8",
+    "Column::Row": [
+      "Row_u5npsq",
+      "Row_u5npsr"
+    ]
+  },
+  "Row_u5npsq": {
+    "Id": "Row_u5npsq",
+    "Kind": "Row",
+    "Column": "Column_u5oxy8",
+    "Row::Column": [
+      "Column_1ouz2bh",
+      "Column_u50ega"
+    ]
+  },
+  "Column_1ouz2bh": {
+    "Id": "Column_1ouz2bh",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_u5npsq",
+    "Column::Field": [
+      "Unit_Number"
+    ]
+  },
+  "Column_u50ega": {
+    "Id": "Column_u50ega",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_u5npsq",
+    "Column::Field": [
+      "Site"
+    ]
+  },
+  "Row_u5npsr": {
+    "Id": "Row_u5npsr",
+    "Kind": "Row",
+    "Column": "Column_u5oxy8",
+    "Row::Column": [
+      "Column_1yxsarb",
+      "Column_i13jkj"
+    ]
+  },
+  "Column_1yxsarb": {
+    "Id": "Column_1yxsarb",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_u5npsr",
+    "Column::Field": [
+      "Floor"
+    ]
+  },
+  "Column_i13jkj": {
+    "Id": "Column_i13jkj",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_u5npsr",
+    "Column::Field": [
+      "Resident"
+    ]
+  },
+  "Unit_Number": {
+    "Id": "Unit_Number",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Unit Number",
+    "Model": "CAFM_Unit_A00",
+    "Column": "Column_1ouz2bh",
+    "Required": true
+  },
+  "QueryDefinition_u50ega": {
+    "Id": "QueryDefinition_u50ega",
+    "Kind": "QueryDefinition",
+    "Field": "Site",
+    "LHSModel": "CAFM_Site_A00",
+    "FlowType": "Form",
+    "LookupField": [
+      {
+        "Id": "Site_Name",
+        "Name": "Site Name",
+        "Type": "Text"
+      }
+    ],
+    "HiddenField": []
+  },
+  "Site": {
+    "Id": "Site",
+    "Kind": "Field",
+    "Type": "Reference",
+    "Name": "Site",
+    "Model": "CAFM_Unit_A00",
+    "Column": "Column_u50ega",
+    "Required": true,
+    "Field::QueryDefinition": [
+      "QueryDefinition_u50ega"
+    ]
+  },
+  "Floor": {
+    "Id": "Floor",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "Floor",
+    "Model": "CAFM_Unit_A00",
+    "Column": "Column_1yxsarb"
+  },
+  "QueryDefinition_i13jkj": {
+    "Id": "QueryDefinition_i13jkj",
+    "Kind": "QueryDefinition",
+    "Field": "Resident",
+    "LHSModel": "User",
+    "FlowType": "User",
+    "LookupField": [],
+    "HiddenField": []
+  },
+  "Resident": {
+    "Id": "Resident",
+    "Kind": "Field",
+    "Type": "User",
+    "Name": "Resident",
+    "Model": "CAFM_Unit_A00",
+    "Column": "Column_i13jkj",
+    "Field::QueryDefinition": [
+      "QueryDefinition_i13jkj"
+    ]
+  }
+}

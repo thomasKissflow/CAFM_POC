@@ -1,0 +1,91 @@
+{
+  "Root": "Perm_d9j4ft",
+  "Perm_d9j4ft": {
+    "Id": "Perm_d9j4ft",
+    "Kind": "FlowPermission",
+    "Role": "Ro_11s1y8v",
+    "RoleName": "Plant Manager",
+    "Model": "CAFM_Subcontractor_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_1abulem",
+      "Permission_11p2kts",
+      "Permission_k0vwwn",
+      "Permission_1jowueh",
+      "Permission_vzw1y2",
+      "Permission_8nhpb9",
+      "Permission_11uhh55",
+      "Permission_yvl2hb",
+      "Permission_b50nev",
+      "Permission_howi97",
+      "Permission_15hg2yc"
+    ]
+  },
+  "Permission_1abulem": {
+    "Id": "Permission_1abulem",
+    "Kind": "Permission",
+    "Column": "Company_Name",
+    "Permission": "ReadOnly"
+  },
+  "Permission_11p2kts": {
+    "Id": "Permission_11p2kts",
+    "Kind": "Permission",
+    "Column": "Company_Name_AR",
+    "Permission": "ReadOnly"
+  },
+  "Permission_k0vwwn": {
+    "Id": "Permission_k0vwwn",
+    "Kind": "Permission",
+    "Column": "Trade",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1jowueh": {
+    "Id": "Permission_1jowueh",
+    "Kind": "Permission",
+    "Column": "Supervisor",
+    "Permission": "ReadOnly"
+  },
+  "Permission_vzw1y2": {
+    "Id": "Permission_vzw1y2",
+    "Kind": "Permission",
+    "Column": "Contact_Email",
+    "Permission": "ReadOnly"
+  },
+  "Permission_8nhpb9": {
+    "Id": "Permission_8nhpb9",
+    "Kind": "Permission",
+    "Column": "Trade_Licence_No",
+    "Permission": "ReadOnly"
+  },
+  "Permission_11uhh55": {
+    "Id": "Permission_11uhh55",
+    "Kind": "Permission",
+    "Column": "Trade_Licence_Expiry",
+    "Permission": "ReadOnly"
+  },
+  "Permission_yvl2hb": {
+    "Id": "Permission_yvl2hb",
+    "Kind": "Permission",
+    "Column": "Insurance_Expiry",
+    "Permission": "ReadOnly"
+  },
+  "Permission_b50nev": {
+    "Id": "Permission_b50nev",
+    "Kind": "Permission",
+    "Column": "Civil_Defence_Approved",
+    "Permission": "ReadOnly"
+  },
+  "Permission_howi97": {
+    "Id": "Permission_howi97",
+    "Kind": "Permission",
+    "Column": "Civil_Defence_Approval_Expiry",
+    "Permission": "ReadOnly"
+  },
+  "Permission_15hg2yc": {
+    "Id": "Permission_15hg2yc",
+    "Kind": "Permission",
+    "Column": "Licence_Days_Left",
+    "Permission": "ReadOnly"
+  }
+}

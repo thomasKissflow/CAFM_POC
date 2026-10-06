@@ -1,0 +1,91 @@
+{
+  "Root": "Perm_1bc5rk0",
+  "Perm_1bc5rk0": {
+    "Id": "Perm_1bc5rk0",
+    "Kind": "FlowPermission",
+    "Role": "Ro_rxtjhz",
+    "RoleName": "Executive",
+    "Model": "CAFM_Equipment_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_1is0l2u",
+      "Permission_6z95k3",
+      "Permission_zqbfm0",
+      "Permission_16mz1yz",
+      "Permission_zqkrh7",
+      "Permission_lrq77n",
+      "Permission_1dq44n8",
+      "Permission_3z2nmx",
+      "Permission_ko6vd9",
+      "Permission_gyyzx3",
+      "Permission_1yeuahx"
+    ]
+  },
+  "Permission_1is0l2u": {
+    "Id": "Permission_1is0l2u",
+    "Kind": "Permission",
+    "Column": "Fleet_No",
+    "Permission": "ReadOnly"
+  },
+  "Permission_6z95k3": {
+    "Id": "Permission_6z95k3",
+    "Kind": "Permission",
+    "Column": "Equipment_Type",
+    "Permission": "ReadOnly"
+  },
+  "Permission_zqbfm0": {
+    "Id": "Permission_zqbfm0",
+    "Kind": "Permission",
+    "Column": "Make",
+    "Permission": "ReadOnly"
+  },
+  "Permission_16mz1yz": {
+    "Id": "Permission_16mz1yz",
+    "Kind": "Permission",
+    "Column": "Model",
+    "Permission": "ReadOnly"
+  },
+  "Permission_zqkrh7": {
+    "Id": "Permission_zqkrh7",
+    "Kind": "Permission",
+    "Column": "Year",
+    "Permission": "ReadOnly"
+  },
+  "Permission_lrq77n": {
+    "Id": "Permission_lrq77n",
+    "Kind": "Permission",
+    "Column": "Current_Project",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1dq44n8": {
+    "Id": "Permission_1dq44n8",
+    "Kind": "Permission",
+    "Column": "Hour_Meter",
+    "Permission": "ReadOnly"
+  },
+  "Permission_3z2nmx": {
+    "Id": "Permission_3z2nmx",
+    "Kind": "Permission",
+    "Column": "Next_Service_Hours",
+    "Permission": "ReadOnly"
+  },
+  "Permission_ko6vd9": {
+    "Id": "Permission_ko6vd9",
+    "Kind": "Permission",
+    "Column": "Hours_To_Service",
+    "Permission": "ReadOnly"
+  },
+  "Permission_gyyzx3": {
+    "Id": "Permission_gyyzx3",
+    "Kind": "Permission",
+    "Column": "TPI_Expiry",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1yeuahx": {
+    "Id": "Permission_1yeuahx",
+    "Kind": "Permission",
+    "Column": "Equipment_Status",
+    "Permission": "ReadOnly"
+  }
+}

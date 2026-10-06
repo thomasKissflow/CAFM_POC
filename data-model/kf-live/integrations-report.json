@@ -1,0 +1,79 @@
+[
+ {
+  "name": "WO created → add 'Created' to the WO activity log",
+  "id": "WO_created_add_Created_to_the_WO_a_A00",
+  "ok": true,
+  "steps": {
+   "create": "existing",
+   "putSkeleton": 200,
+   "resolvedFields": 8,
+   "putFull": 200,
+   "publish": 200
+  }
+ },
+ {
+  "name": "WO moves to next step → add 'Step changed' to the WO activity log",
+  "id": "WO_moves_to_next_step_add_Step_cha_A00",
+  "ok": true,
+  "steps": {
+   "create": "existing",
+   "putSkeleton": 200,
+   "resolvedFields": 8,
+   "putFull": 200,
+   "publish": 200
+  }
+ },
+ {
+  "name": "WO misses its deadline → add 'SLA breach' to the WO activity log",
+  "id": "WO_misses_its_deadline_add_SLA_bre_A00",
+  "ok": true,
+  "steps": {
+   "create": "existing",
+   "putSkeleton": 200,
+   "resolvedFields": 8,
+   "putFull": 200,
+   "publish": 200
+  }
+ },
+ {
+  "name": "WO misses its deadline → email the FM manager",
+  "id": "WO_misses_its_deadline_email_the_F_A00",
+  "status": "exists"
+ },
+ {
+  "name": "WO closed (DLP) → raise a Back-charge to the installing subcontractor",
+  "id": "WO_closed_DLP_raise_a_Back_charge__A00",
+  "ok": true,
+  "steps": {
+   "create": "existing",
+   "putSkeleton": 200,
+   "resolvedFields": 12,
+   "putFull": 200,
+   "publish": 200
+  }
+ },
+ {
+  "name": "WO closed → add a row to the WO Register (history)",
+  "id": "WO_closed_add_a_row_to_the_WO_Regi_A00",
+  "ok": true,
+  "steps": {
+   "create": "existing",
+   "putSkeleton": 200,
+   "resolvedFields": 30,
+   "putFull": 200,
+   "publish": 200
+  }
+ },
+ {
+  "name": "Back-charge recovered → add 'Back-charge recovered' to the WO activity log",
+  "id": "Back_charge_recovered_add_Back_cha_A00",
+  "ok": true,
+  "steps": {
+   "create": "existing",
+   "putSkeleton": 200,
+   "resolvedFields": 8,
+   "putFull": 200,
+   "publish": 200
+  }
+ }
+]

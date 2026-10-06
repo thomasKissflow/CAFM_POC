@@ -1,0 +1,42 @@
+{
+  "Root": "Perm_19xer50",
+  "Perm_19xer50": {
+    "Id": "Perm_19xer50",
+    "Kind": "FlowPermission",
+    "Role": "Ro_174d02r",
+    "RoleName": "Resident",
+    "Model": "CAFM_SLA_Policy_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_lmzqxe",
+      "Permission_1i0nj7n",
+      "Permission_eyersk",
+      "Permission_5okdm5"
+    ]
+  },
+  "Permission_lmzqxe": {
+    "Id": "Permission_lmzqxe",
+    "Kind": "Permission",
+    "Column": "Priority",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1i0nj7n": {
+    "Id": "Permission_1i0nj7n",
+    "Kind": "Permission",
+    "Column": "Response_Minutes",
+    "Permission": "ReadOnly"
+  },
+  "Permission_eyersk": {
+    "Id": "Permission_eyersk",
+    "Kind": "Permission",
+    "Column": "Resolve_Minutes",
+    "Permission": "ReadOnly"
+  },
+  "Permission_5okdm5": {
+    "Id": "Permission_5okdm5",
+    "Kind": "Permission",
+    "Column": "At_Risk_Percent",
+    "Permission": "ReadOnly"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "CAFM_Compliance_System_A00",
+  "Name": "CAFM Compliance System",
+  "Description": "",
+  "Type": "List",
+  "Status": "Live",
+  "ListItems": [
+    "Civil Defence certificate",
+    "Fire alarm",
+    "Sprinklers",
+    "Fire pumps",
+    "Emergency lighting",
+    "Extinguishers",
+    "Hassantuk link",
+    "Lift inspection",
+    "Water tank cleaning",
+    "Lifting equipment TPI"
+  ],
+  "_application_id": "CAFM_POC_A00",
+  "Security": {
+    "AllowAllFlows": true,
+    "AllowedFlows": []
+  }
+}

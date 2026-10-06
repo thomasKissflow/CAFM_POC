@@ -1,0 +1,147 @@
+{
+  "Root": "Perm_p5r3ye",
+  "Perm_p5r3ye": {
+    "Id": "Perm_p5r3ye",
+    "Kind": "FlowPermission",
+    "Role": "Ro_mh5b4l",
+    "RoleName": "Helpdesk",
+    "Model": "CAFM_Asset_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_8ilmol",
+      "Permission_1n05y2f",
+      "Permission_1i7rnrj",
+      "Permission_1i7tb5m",
+      "Permission_d3f6d8",
+      "Permission_1407moj",
+      "Permission_q10c5h",
+      "Permission_14bwbsf",
+      "Permission_1i7mufs",
+      "Permission_d8f5hn",
+      "Permission_j86fpe",
+      "Permission_gkmfw4",
+      "Permission_d0d4zg",
+      "Permission_1ape6ha",
+      "Permission_a5pffx",
+      "Permission_z36ed",
+      "Permission_1fvlhhs",
+      "Permission_1qv23z1",
+      "Permission_14l00gz"
+    ]
+  },
+  "Permission_8ilmol": {
+    "Id": "Permission_8ilmol",
+    "Kind": "Permission",
+    "Column": "Asset_Tag",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1n05y2f": {
+    "Id": "Permission_1n05y2f",
+    "Kind": "Permission",
+    "Column": "QR_Code",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1i7rnrj": {
+    "Id": "Permission_1i7rnrj",
+    "Kind": "Permission",
+    "Column": "Site",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1i7tb5m": {
+    "Id": "Permission_1i7tb5m",
+    "Kind": "Permission",
+    "Column": "Unit",
+    "Permission": "ReadOnly"
+  },
+  "Permission_d3f6d8": {
+    "Id": "Permission_d3f6d8",
+    "Kind": "Permission",
+    "Column": "Floor",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1407moj": {
+    "Id": "Permission_1407moj",
+    "Kind": "Permission",
+    "Column": "Location",
+    "Permission": "ReadOnly"
+  },
+  "Permission_q10c5h": {
+    "Id": "Permission_q10c5h",
+    "Kind": "Permission",
+    "Column": "Location_AR",
+    "Permission": "ReadOnly"
+  },
+  "Permission_14bwbsf": {
+    "Id": "Permission_14bwbsf",
+    "Kind": "Permission",
+    "Column": "Asset_Class",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1i7mufs": {
+    "Id": "Permission_1i7mufs",
+    "Kind": "Permission",
+    "Column": "Make",
+    "Permission": "ReadOnly"
+  },
+  "Permission_d8f5hn": {
+    "Id": "Permission_d8f5hn",
+    "Kind": "Permission",
+    "Column": "Model",
+    "Permission": "ReadOnly"
+  },
+  "Permission_j86fpe": {
+    "Id": "Permission_j86fpe",
+    "Kind": "Permission",
+    "Column": "Serial_Number",
+    "Permission": "ReadOnly"
+  },
+  "Permission_gkmfw4": {
+    "Id": "Permission_gkmfw4",
+    "Kind": "Permission",
+    "Column": "Installed_By",
+    "Permission": "ReadOnly"
+  },
+  "Permission_d0d4zg": {
+    "Id": "Permission_d0d4zg",
+    "Kind": "Permission",
+    "Column": "Batch",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1ape6ha": {
+    "Id": "Permission_1ape6ha",
+    "Kind": "Permission",
+    "Column": "Handover_Date",
+    "Permission": "ReadOnly"
+  },
+  "Permission_a5pffx": {
+    "Id": "Permission_a5pffx",
+    "Kind": "Permission",
+    "Column": "DLP_End_Date",
+    "Permission": "ReadOnly"
+  },
+  "Permission_z36ed": {
+    "Id": "Permission_z36ed",
+    "Kind": "Permission",
+    "Column": "Warranty_End_Date",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1fvlhhs": {
+    "Id": "Permission_1fvlhhs",
+    "Kind": "Permission",
+    "Column": "Decennial_End_Date",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1qv23z1": {
+    "Id": "Permission_1qv23z1",
+    "Kind": "Permission",
+    "Column": "Asset_Status",
+    "Permission": "ReadOnly"
+  },
+  "Permission_14l00gz": {
+    "Id": "Permission_14l00gz",
+    "Kind": "Permission",
+    "Column": "Asset_Photo",
+    "Permission": "ReadOnly"
+  }
+}

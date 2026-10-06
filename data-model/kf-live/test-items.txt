@@ -1,0 +1,19 @@
+Work_Order | inprogress | PkEEkwPh70v2 | Subcontractor dispatch | [TEST] Water leak from ceiling, Qamar (P1 inside DLP)
+Work_Order | inprogress | PkEEkwD520nl | FM dispatch | [TEST] AC damaged by occupant (excluded root cause)
+Work_Order | inprogress | PkEEkw15LIdw | Verify and close | [TEST] Crack in podium slab (structural)
+Work_Order | inprogress | PkEEkvvquBya | FM dispatch | [TEST] Site office AC (own operations)
+Work_Order | inprogress | PkEEkvMVKKK0 | Subcontractor dispatch | [TEST] Lift stuck on floor 12 (warranty route)
+Work_Order | completed | PkEEkwImXTIB |  | [TEST] AC weak in January (no summer uplift)
+Work_Order | completed | PkEEkvq2QghZ |  | [TEST] AC not cooling, Jaddaf Point (chargeable)
+Work_Order | completed | PkEEkOVZ2cn0 |  | [TEST] AC not cooling (acceptance check, safe to delete)
+Work_Order | rejected | PkEEkxAavFnq |  | [TEST] Probe submit (minimal)
+Work_Order | rejected | PkEEkwVCUUdk |  | [TEST] Duplicate of W8 (should be rejected)
+Back_charge | completed | PkEEl2NMHIZm |  | [TEST] PkEEkOVZ2cn0 accepted
+Back_charge | rejected | PkEEl4zid2a8 |  | [TEST] PkEEkwPh70v2 disputed
+Back_charge | rejected | PkEEl2wijWmw |  | [TEST] PkEEkvMVKKK0 warranty (wrong, reject)
+Back_charge | rejected | PkEEl2kY1Jx5 |  | [TEST] PkEEkwImXTIB disputed
+Permit_To_Work | completed | PkEEkylSB8XA |  | [TEST] Roof plant room, welding bracket
+Permit_To_Work | rejected | PkEEl3ZSEfKh |  | [TEST] Basement sump pit (reject: no gas test)
+Snag | Carried into DLP | CAF-0002 | [TEST] S2 FCU drain slope, Apt 1305
+Snag | Closed | CAF-0001 | [TEST] S1 Paint touch-up, Apt 1402 corridor
+Breakdown | Back in service | CAF-0001 | 2026-09-20T06:30:00Z

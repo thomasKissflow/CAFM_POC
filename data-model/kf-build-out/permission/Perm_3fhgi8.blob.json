@@ -1,0 +1,63 @@
+{
+  "Root": "Perm_3fhgi8",
+  "Perm_3fhgi8": {
+    "Id": "Perm_3fhgi8",
+    "Kind": "FlowPermission",
+    "Role": "Ro_rxtjhz",
+    "RoleName": "Executive",
+    "Model": "CAFM_WO_Event_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_1w65kid",
+      "Permission_wn5r9p",
+      "Permission_175n4fy",
+      "Permission_ws6qi9",
+      "Permission_huotqs",
+      "Permission_1ll6e9f",
+      "Permission_zi6wpb"
+    ]
+  },
+  "Permission_1w65kid": {
+    "Id": "Permission_1w65kid",
+    "Kind": "Permission",
+    "Column": "Work_Order_No",
+    "Permission": "ReadOnly"
+  },
+  "Permission_wn5r9p": {
+    "Id": "Permission_wn5r9p",
+    "Kind": "Permission",
+    "Column": "Work_Order_Instance",
+    "Permission": "ReadOnly"
+  },
+  "Permission_175n4fy": {
+    "Id": "Permission_175n4fy",
+    "Kind": "Permission",
+    "Column": "Event_Type",
+    "Permission": "ReadOnly"
+  },
+  "Permission_ws6qi9": {
+    "Id": "Permission_ws6qi9",
+    "Kind": "Permission",
+    "Column": "Event_At",
+    "Permission": "ReadOnly"
+  },
+  "Permission_huotqs": {
+    "Id": "Permission_huotqs",
+    "Kind": "Permission",
+    "Column": "Actor",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1ll6e9f": {
+    "Id": "Permission_1ll6e9f",
+    "Kind": "Permission",
+    "Column": "Actor_Label",
+    "Permission": "ReadOnly"
+  },
+  "Permission_zi6wpb": {
+    "Id": "Permission_zi6wpb",
+    "Kind": "Permission",
+    "Column": "Event_Detail",
+    "Permission": "ReadOnly"
+  }
+}

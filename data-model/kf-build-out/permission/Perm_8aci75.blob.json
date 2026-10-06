@@ -1,0 +1,42 @@
+{
+  "Root": "Perm_8aci75",
+  "Perm_8aci75": {
+    "Id": "Perm_8aci75",
+    "Kind": "FlowPermission",
+    "Role": "Ro_1mqmbww",
+    "RoleName": "Subcontractor Supervisor",
+    "Model": "CAFM_Unit_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_xjv5vv",
+      "Permission_ufm60",
+      "Permission_rn730l",
+      "Permission_h8bo9t"
+    ]
+  },
+  "Permission_xjv5vv": {
+    "Id": "Permission_xjv5vv",
+    "Kind": "Permission",
+    "Column": "Unit_Number",
+    "Permission": "ReadOnly"
+  },
+  "Permission_ufm60": {
+    "Id": "Permission_ufm60",
+    "Kind": "Permission",
+    "Column": "Site",
+    "Permission": "ReadOnly"
+  },
+  "Permission_rn730l": {
+    "Id": "Permission_rn730l",
+    "Kind": "Permission",
+    "Column": "Floor",
+    "Permission": "ReadOnly"
+  },
+  "Permission_h8bo9t": {
+    "Id": "Permission_h8bo9t",
+    "Kind": "Permission",
+    "Column": "Resident",
+    "Permission": "ReadOnly"
+  }
+}

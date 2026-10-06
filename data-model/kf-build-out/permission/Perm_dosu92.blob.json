@@ -1,0 +1,42 @@
+{
+  "Root": "Perm_dosu92",
+  "Perm_dosu92": {
+    "Id": "Perm_dosu92",
+    "Kind": "FlowPermission",
+    "Role": "Ro_mh5b4l",
+    "RoleName": "Helpdesk",
+    "Model": "CAFM_Unit_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_qjxctc",
+      "Permission_5xjvvx",
+      "Permission_1hfvvtm",
+      "Permission_1kk3hhy"
+    ]
+  },
+  "Permission_qjxctc": {
+    "Id": "Permission_qjxctc",
+    "Kind": "Permission",
+    "Column": "Unit_Number",
+    "Permission": "ReadOnly"
+  },
+  "Permission_5xjvvx": {
+    "Id": "Permission_5xjvvx",
+    "Kind": "Permission",
+    "Column": "Site",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1hfvvtm": {
+    "Id": "Permission_1hfvvtm",
+    "Kind": "Permission",
+    "Column": "Floor",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1kk3hhy": {
+    "Id": "Permission_1kk3hhy",
+    "Kind": "Permission",
+    "Column": "Resident",
+    "Permission": "ReadOnly"
+  }
+}

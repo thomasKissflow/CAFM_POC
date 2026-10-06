@@ -1,0 +1,77 @@
+{
+  "Root": "Perm_vgrqwu",
+  "Perm_vgrqwu": {
+    "Id": "Perm_vgrqwu",
+    "Kind": "FlowPermission",
+    "Role": "Ro_1vmrgk3",
+    "RoleName": "FM Manager",
+    "Model": "CAFM_PPM_Schedule_A00",
+    "Level": "Editable",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_fc0764",
+      "Permission_1gs5uhq",
+      "Permission_vc6bdf",
+      "Permission_1px4rhv",
+      "Permission_1ffkpdc",
+      "Permission_1px7jd2",
+      "Permission_1b0odct",
+      "Permission_1138bb",
+      "Permission_kpctne"
+    ]
+  },
+  "Permission_fc0764": {
+    "Id": "Permission_fc0764",
+    "Kind": "Permission",
+    "Column": "Schedule_Title",
+    "Permission": "Editable"
+  },
+  "Permission_1gs5uhq": {
+    "Id": "Permission_1gs5uhq",
+    "Kind": "Permission",
+    "Column": "Schedule_Title_AR",
+    "Permission": "Editable"
+  },
+  "Permission_vc6bdf": {
+    "Id": "Permission_vc6bdf",
+    "Kind": "Permission",
+    "Column": "Site",
+    "Permission": "Editable"
+  },
+  "Permission_1px4rhv": {
+    "Id": "Permission_1px4rhv",
+    "Kind": "Permission",
+    "Column": "Asset_Class",
+    "Permission": "Editable"
+  },
+  "Permission_1ffkpdc": {
+    "Id": "Permission_1ffkpdc",
+    "Kind": "Permission",
+    "Column": "Frequency",
+    "Permission": "Editable"
+  },
+  "Permission_1px7jd2": {
+    "Id": "Permission_1px7jd2",
+    "Kind": "Permission",
+    "Column": "Asset_Count",
+    "Permission": "Editable"
+  },
+  "Permission_1b0odct": {
+    "Id": "Permission_1b0odct",
+    "Kind": "Permission",
+    "Column": "Contractor",
+    "Permission": "Editable"
+  },
+  "Permission_1138bb": {
+    "Id": "Permission_1138bb",
+    "Kind": "Permission",
+    "Column": "Next_Due_Date",
+    "Permission": "Editable"
+  },
+  "Permission_kpctne": {
+    "Id": "Permission_kpctne",
+    "Kind": "Permission",
+    "Column": "Active",
+    "Permission": "Editable"
+  }
+}

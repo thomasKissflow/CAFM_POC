@@ -1,0 +1,1034 @@
+{
+  "Root": "CAFM_Permit_To_Work_A00",
+  "CAFM_Permit_To_Work_A00": {
+    "Id": "CAFM_Permit_To_Work_A00",
+    "Name": "CAFM Permit To Work",
+    "Kind": "Model",
+    "FlowType": "Process",
+    "Description": "",
+    "Model::Row": [
+      "Row_1uzla7p",
+      "Row_1uzla7q",
+      "Row_1uzla7r",
+      "Row_nljlgf"
+    ],
+    "Model::Field": [
+      "Permit_Type",
+      "Site",
+      "Work_Order_No",
+      "Work_Location",
+      "Valid_From",
+      "Valid_To",
+      "Gas_Test_Reading",
+      "Isolation_Points",
+      "Approval_Note",
+      "Closed_Out_At"
+    ],
+    "Model::Model": [
+      "Permit_Controls_A00"
+    ],
+    "Model::ProcessDef": [
+      "ProcessDef_7qn24w"
+    ],
+    "RootProcessDef": "ProcessDef_7qn24w",
+    "Model::Appearance": [
+      "Appearance_7qn24w"
+    ],
+    "Button::Row": [
+      "Row_1t9mqex"
+    ]
+  },
+  "Row_1uzla7p": {
+    "Id": "Row_1uzla7p",
+    "Kind": "Row",
+    "Model": "CAFM_Permit_To_Work_A00",
+    "Row::Column": [
+      "Column_1uzla7p"
+    ]
+  },
+  "Column_1uzla7p": {
+    "Id": "Column_1uzla7p",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "Details",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_1uzla7p",
+    "Column::Row": [
+      "Row_1uzk227",
+      "Row_1uzk228",
+      "Row_1uzk229",
+      "Row_1uzk22a",
+      "Row_1uzk22b"
+    ]
+  },
+  "Row_1uzk227": {
+    "Id": "Row_1uzk227",
+    "Kind": "Row",
+    "Column": "Column_1uzla7p",
+    "Row::Column": [
+      "Column_1yrwscc",
+      "Column_1uywqpr"
+    ]
+  },
+  "Column_1yrwscc": {
+    "Id": "Column_1yrwscc",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_1uzk227",
+    "Column::Field": [
+      "Permit_Type"
+    ]
+  },
+  "Column_1uywqpr": {
+    "Id": "Column_1uywqpr",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_1uzk227",
+    "Column::Field": [
+      "Site"
+    ]
+  },
+  "Row_1uzk228": {
+    "Id": "Row_1uzk228",
+    "Kind": "Row",
+    "Column": "Column_1uzla7p",
+    "Row::Column": [
+      "Column_kibqis",
+      "Column_1769erp"
+    ]
+  },
+  "Column_kibqis": {
+    "Id": "Column_kibqis",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_1uzk228",
+    "Column::Field": [
+      "Work_Order_No"
+    ]
+  },
+  "Column_1769erp": {
+    "Id": "Column_1769erp",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_1uzk228",
+    "Column::Field": [
+      "Work_Location"
+    ]
+  },
+  "Row_1uzk229": {
+    "Id": "Row_1uzk229",
+    "Kind": "Row",
+    "Column": "Column_1uzla7p",
+    "Row::Column": [
+      "Column_20ihfx",
+      "Column_b7y0t8"
+    ]
+  },
+  "Column_20ihfx": {
+    "Id": "Column_20ihfx",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_1uzk229",
+    "Column::Field": [
+      "Valid_From"
+    ]
+  },
+  "Column_b7y0t8": {
+    "Id": "Column_b7y0t8",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_1uzk229",
+    "Column::Field": [
+      "Valid_To"
+    ]
+  },
+  "Row_1uzk22a": {
+    "Id": "Row_1uzk22a",
+    "Kind": "Row",
+    "Column": "Column_1uzla7p",
+    "Row::Column": [
+      "Column_17qcy71"
+    ]
+  },
+  "Column_17qcy71": {
+    "Id": "Column_17qcy71",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_1uzk22a",
+    "Column::Field": [
+      "Gas_Test_Reading"
+    ]
+  },
+  "Row_1uzk22b": {
+    "Id": "Row_1uzk22b",
+    "Kind": "Row",
+    "Column": "Column_1uzla7p",
+    "Row::Column": [
+      "Column_1fpwl2w"
+    ]
+  },
+  "Column_1fpwl2w": {
+    "Id": "Column_1fpwl2w",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_1uzk22b",
+    "Column::Field": [
+      "Isolation_Points"
+    ]
+  },
+  "Row_1uzla7q": {
+    "Id": "Row_1uzla7q",
+    "Kind": "Row",
+    "Model": "CAFM_Permit_To_Work_A00",
+    "Row::Column": [
+      "Column_1uzla7q"
+    ]
+  },
+  "Column_1uzla7q": {
+    "Id": "Column_1uzla7q",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "HSE",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_1uzla7q",
+    "Column::Row": [
+      "Row_1uzk2wg"
+    ]
+  },
+  "Row_1uzk2wg": {
+    "Id": "Row_1uzk2wg",
+    "Kind": "Row",
+    "Column": "Column_1uzla7q",
+    "Row::Column": [
+      "Column_1w5dgg4"
+    ]
+  },
+  "Column_1w5dgg4": {
+    "Id": "Column_1w5dgg4",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_1uzk2wg",
+    "Column::Field": [
+      "Approval_Note"
+    ]
+  },
+  "Row_1uzla7r": {
+    "Id": "Row_1uzla7r",
+    "Kind": "Row",
+    "Model": "CAFM_Permit_To_Work_A00",
+    "Row::Column": [
+      "Column_1uzla7r"
+    ]
+  },
+  "Column_1uzla7r": {
+    "Id": "Column_1uzla7r",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "Close-out",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_1uzla7r",
+    "Column::Row": [
+      "Row_1uzk3qp"
+    ]
+  },
+  "Row_1uzk3qp": {
+    "Id": "Row_1uzk3qp",
+    "Kind": "Row",
+    "Column": "Column_1uzla7r",
+    "Row::Column": [
+      "Column_kgxtm7"
+    ]
+  },
+  "Column_kgxtm7": {
+    "Id": "Column_kgxtm7",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_1uzk3qp",
+    "Column::Field": [
+      "Closed_Out_At"
+    ]
+  },
+  "Permit_Type": {
+    "Id": "Permit_Type",
+    "Kind": "Field",
+    "Type": "Select",
+    "Name": "Permit Type",
+    "Model": "CAFM_Permit_To_Work_A00",
+    "Column": "Column_1yrwscc",
+    "Required": true,
+    "ReferredList": "CAFM_Permit_Type_A00"
+  },
+  "QueryDefinition_1uywqpr": {
+    "Id": "QueryDefinition_1uywqpr",
+    "Kind": "QueryDefinition",
+    "Field": "Site",
+    "LHSModel": "CAFM_Site_A00",
+    "FlowType": "Form",
+    "LookupField": [
+      {
+        "Id": "Site_Name",
+        "Name": "Site Name",
+        "Type": "Text"
+      }
+    ],
+    "HiddenField": []
+  },
+  "Site": {
+    "Id": "Site",
+    "Kind": "Field",
+    "Type": "Reference",
+    "Name": "Site",
+    "Model": "CAFM_Permit_To_Work_A00",
+    "Column": "Column_1uywqpr",
+    "Required": true,
+    "Field::QueryDefinition": [
+      "QueryDefinition_1uywqpr"
+    ]
+  },
+  "Work_Order_No": {
+    "Id": "Work_Order_No",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Work Order No",
+    "Model": "CAFM_Permit_To_Work_A00",
+    "Column": "Column_kibqis"
+  },
+  "Work_Location": {
+    "Id": "Work_Location",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Work Location",
+    "Model": "CAFM_Permit_To_Work_A00",
+    "Column": "Column_1769erp",
+    "Required": true
+  },
+  "Valid_From": {
+    "Id": "Valid_From",
+    "Kind": "Field",
+    "Type": "DateTime",
+    "Name": "Valid From",
+    "Model": "CAFM_Permit_To_Work_A00",
+    "Column": "Column_20ihfx",
+    "Required": true
+  },
+  "Valid_To": {
+    "Id": "Valid_To",
+    "Kind": "Field",
+    "Type": "DateTime",
+    "Name": "Valid To",
+    "Model": "CAFM_Permit_To_Work_A00",
+    "Column": "Column_b7y0t8",
+    "Required": true
+  },
+  "Gas_Test_Reading": {
+    "Id": "Gas_Test_Reading",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Gas Test Reading",
+    "Model": "CAFM_Permit_To_Work_A00",
+    "Column": "Column_17qcy71"
+  },
+  "Isolation_Points": {
+    "Id": "Isolation_Points",
+    "Kind": "Field",
+    "Type": "Textarea",
+    "Name": "Isolation Points",
+    "Model": "CAFM_Permit_To_Work_A00",
+    "Column": "Column_1fpwl2w"
+  },
+  "Approval_Note": {
+    "Id": "Approval_Note",
+    "Kind": "Field",
+    "Type": "Textarea",
+    "Name": "Approval Note",
+    "Model": "CAFM_Permit_To_Work_A00",
+    "Column": "Column_1w5dgg4"
+  },
+  "Closed_Out_At": {
+    "Id": "Closed_Out_At",
+    "Kind": "Field",
+    "Type": "DateTime",
+    "Name": "Closed Out At",
+    "Model": "CAFM_Permit_To_Work_A00",
+    "Column": "Column_kgxtm7"
+  },
+  "Row_nljlgf": {
+    "Id": "Row_nljlgf",
+    "Kind": "Row",
+    "Model": "CAFM_Permit_To_Work_A00",
+    "Row::Column": [
+      "Column_nljlgf"
+    ]
+  },
+  "Column_nljlgf": {
+    "Id": "Column_nljlgf",
+    "Kind": "Column",
+    "Type": "Model",
+    "Name": "Permit Controls",
+    "Start": 0,
+    "End": 6,
+    "AllowImport": false,
+    "Row": "Row_nljlgf",
+    "Column::Model": [
+      "Permit_Controls_A00"
+    ]
+  },
+  "Permit_Controls_A00": {
+    "Id": "Permit_Controls_A00",
+    "Kind": "Model",
+    "Name": "Permit Controls",
+    "Model": "CAFM_Permit_To_Work_A00",
+    "Column": "Column_nljlgf",
+    "Model::Row": [
+      "Row_1bz0ku3"
+    ],
+    "Model::Field": [
+      "Control",
+      "Confirmed"
+    ]
+  },
+  "Row_1bz0ku3": {
+    "Id": "Row_1bz0ku3",
+    "Kind": "Row",
+    "Model": "Permit_Controls_A00",
+    "Row::Column": [
+      "Column_7fjkis",
+      "Column_1lgrx22"
+    ]
+  },
+  "Column_7fjkis": {
+    "Id": "Column_7fjkis",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 0,
+    "Row": "Row_1bz0ku3",
+    "Column::Field": [
+      "Control"
+    ]
+  },
+  "Control": {
+    "Id": "Control",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Control",
+    "Model": "Permit_Controls_A00",
+    "Column": "Column_7fjkis",
+    "Required": true
+  },
+  "Column_1lgrx22": {
+    "Id": "Column_1lgrx22",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 0,
+    "Row": "Row_1bz0ku3",
+    "Column::Field": [
+      "Confirmed"
+    ]
+  },
+  "Confirmed": {
+    "Id": "Confirmed",
+    "Kind": "Field",
+    "Type": "Boolean",
+    "Name": "Confirmed",
+    "Model": "Permit_Controls_A00",
+    "Column": "Column_1lgrx22"
+  },
+  "ProcessDef_7qn24w": {
+    "Id": "ProcessDef_7qn24w",
+    "Kind": "ProcessDef",
+    "WorkflowType": "Sequence",
+    "Model": "CAFM_Permit_To_Work_A00",
+    "ProcessDef::Activity": [
+      "Activity_mrbsst",
+      "Activity_1l5fs8f",
+      "Activity_1n5g695",
+      "Activity_xr4in9",
+      "Activity_j7xt9x"
+    ]
+  },
+  "Permission_1j3t0sf": {
+    "Id": "Permission_1j3t0sf",
+    "Kind": "Permission",
+    "Column": "Column_1yrwscc",
+    "Permission": "Editable",
+    "Activity": "Activity_mrbsst"
+  },
+  "Permission_1gnjon0": {
+    "Id": "Permission_1gnjon0",
+    "Kind": "Permission",
+    "Column": "Column_1uywqpr",
+    "Permission": "Editable",
+    "Activity": "Activity_mrbsst"
+  },
+  "Permission_jihm2e": {
+    "Id": "Permission_jihm2e",
+    "Kind": "Permission",
+    "Column": "Column_kibqis",
+    "Permission": "Editable",
+    "Activity": "Activity_mrbsst"
+  },
+  "Permission_b6akc1": {
+    "Id": "Permission_b6akc1",
+    "Kind": "Permission",
+    "Column": "Column_1769erp",
+    "Permission": "Editable",
+    "Activity": "Activity_mrbsst"
+  },
+  "Permission_1gjdzdw": {
+    "Id": "Permission_1gjdzdw",
+    "Kind": "Permission",
+    "Column": "Column_20ihfx",
+    "Permission": "Editable",
+    "Activity": "Activity_mrbsst"
+  },
+  "Permission_cpxmrl": {
+    "Id": "Permission_cpxmrl",
+    "Kind": "Permission",
+    "Column": "Column_b7y0t8",
+    "Permission": "Editable",
+    "Activity": "Activity_mrbsst"
+  },
+  "Permission_ccv0wg": {
+    "Id": "Permission_ccv0wg",
+    "Kind": "Permission",
+    "Column": "Column_17qcy71",
+    "Permission": "Editable",
+    "Activity": "Activity_mrbsst"
+  },
+  "Permission_16rond2": {
+    "Id": "Permission_16rond2",
+    "Kind": "Permission",
+    "Column": "Column_1fpwl2w",
+    "Permission": "Editable",
+    "Activity": "Activity_mrbsst"
+  },
+  "Permission_1glpyza": {
+    "Id": "Permission_1glpyza",
+    "Kind": "Permission",
+    "Column": "Column_1w5dgg4",
+    "Permission": "Editable",
+    "Activity": "Activity_mrbsst"
+  },
+  "Permission_jhjsk5": {
+    "Id": "Permission_jhjsk5",
+    "Kind": "Permission",
+    "Column": "Column_kgxtm7",
+    "Permission": "Editable",
+    "Activity": "Activity_mrbsst"
+  },
+  "Permission_lioc0g": {
+    "Id": "Permission_lioc0g",
+    "Kind": "Permission",
+    "Column": "Column_nljlgf",
+    "Permission": "Editable",
+    "Activity": "Activity_mrbsst"
+  },
+  "Activity_mrbsst": {
+    "Id": "Activity_mrbsst",
+    "Kind": "Activity",
+    "NodeType": "StartEvent",
+    "Name": "Permit requested",
+    "ProcessDef": "ProcessDef_7qn24w",
+    "Activity::Permission": [
+      "Permission_1j3t0sf",
+      "Permission_1gnjon0",
+      "Permission_jihm2e",
+      "Permission_b6akc1",
+      "Permission_1gjdzdw",
+      "Permission_cpxmrl",
+      "Permission_ccv0wg",
+      "Permission_16rond2",
+      "Permission_1glpyza",
+      "Permission_jhjsk5",
+      "Permission_lioc0g"
+    ]
+  },
+  "Permission_1fxgwty": {
+    "Id": "Permission_1fxgwty",
+    "Kind": "Permission",
+    "Column": "Column_1uzla7q",
+    "Permission": "Editable",
+    "Activity": "Activity_1l5fs8f"
+  },
+  "Permission_1id9pu5": {
+    "Id": "Permission_1id9pu5",
+    "Kind": "Permission",
+    "Column": "Column_1yrwscc",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1l5fs8f"
+  },
+  "Permission_1fx0doq": {
+    "Id": "Permission_1fx0doq",
+    "Kind": "Permission",
+    "Column": "Column_1uywqpr",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1l5fs8f"
+  },
+  "Permission_s3mz2c": {
+    "Id": "Permission_s3mz2c",
+    "Kind": "Permission",
+    "Column": "Column_kibqis",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1l5fs8f"
+  },
+  "Permission_afr9dr": {
+    "Id": "Permission_afr9dr",
+    "Kind": "Permission",
+    "Column": "Column_1769erp",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1l5fs8f"
+  },
+  "Permission_1p4jcdu": {
+    "Id": "Permission_1p4jcdu",
+    "Kind": "Permission",
+    "Column": "Column_20ihfx",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1l5fs8f"
+  },
+  "Permission_lb2zrj": {
+    "Id": "Permission_lb2zrj",
+    "Kind": "Permission",
+    "Column": "Column_b7y0t8",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1l5fs8f"
+  },
+  "Permission_bmbpy6": {
+    "Id": "Permission_bmbpy6",
+    "Kind": "Permission",
+    "Column": "Column_17qcy71",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1l5fs8f"
+  },
+  "Permission_1615ces": {
+    "Id": "Permission_1615ces",
+    "Kind": "Permission",
+    "Column": "Column_1fpwl2w",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1l5fs8f"
+  },
+  "Permission_1fv6o10": {
+    "Id": "Permission_1fv6o10",
+    "Kind": "Permission",
+    "Column": "Column_1w5dgg4",
+    "Permission": "Editable",
+    "Activity": "Activity_1l5fs8f"
+  },
+  "Permission_s2p5k3": {
+    "Id": "Permission_s2p5k3",
+    "Kind": "Permission",
+    "Column": "Column_kgxtm7",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1l5fs8f"
+  },
+  "Permission_u3tp0e": {
+    "Id": "Permission_u3tp0e",
+    "Kind": "Permission",
+    "Column": "Column_nljlgf",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1l5fs8f"
+  },
+  "Resource_1v5jchm": {
+    "Id": "Resource_1v5jchm",
+    "Kind": "Resource",
+    "ValueType": "AppRole",
+    "DisplayValue": "HSE Officer",
+    "Value": "Ro_qzo537",
+    "Activity": "Activity_1l5fs8f"
+  },
+  "Activity_1l5fs8f": {
+    "Id": "Activity_1l5fs8f",
+    "Kind": "Activity",
+    "NodeType": "UserTask",
+    "Name": "HSE approval",
+    "ProcessDef": "ProcessDef_7qn24w",
+    "Activity::Permission": [
+      "Permission_1fxgwty",
+      "Permission_1id9pu5",
+      "Permission_1fx0doq",
+      "Permission_s3mz2c",
+      "Permission_afr9dr",
+      "Permission_1p4jcdu",
+      "Permission_lb2zrj",
+      "Permission_bmbpy6",
+      "Permission_1615ces",
+      "Permission_1fv6o10",
+      "Permission_s2p5k3",
+      "Permission_u3tp0e"
+    ],
+    "Activity::Resource": [
+      "Resource_1v5jchm"
+    ]
+  },
+  "Permission_13tjszx": {
+    "Id": "Permission_13tjszx",
+    "Kind": "Permission",
+    "Column": "Column_1uzla7r",
+    "Permission": "Editable",
+    "Activity": "Activity_1n5g695"
+  },
+  "Permission_169cm03": {
+    "Id": "Permission_169cm03",
+    "Kind": "Permission",
+    "Column": "Column_1yrwscc",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1n5g695"
+  },
+  "Permission_13t39uo": {
+    "Id": "Permission_13t39uo",
+    "Kind": "Permission",
+    "Column": "Column_1uywqpr",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1n5g695"
+  },
+  "Permission_1fesryy": {
+    "Id": "Permission_1fesryy",
+    "Kind": "Permission",
+    "Column": "Column_kibqis",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1n5g695"
+  },
+  "Permission_1xcy7it": {
+    "Id": "Permission_1xcy7it",
+    "Kind": "Permission",
+    "Column": "Column_1769erp",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1n5g695"
+  },
+  "Permission_del3bc": {
+    "Id": "Permission_del3bc",
+    "Kind": "Permission",
+    "Column": "Column_20ihfx",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1n5g695"
+  },
+  "Permission_18m8so5": {
+    "Id": "Permission_18m8so5",
+    "Kind": "Permission",
+    "Column": "Column_b7y0t8",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1n5g695"
+  },
+  "Permission_1yjio38": {
+    "Id": "Permission_1yjio38",
+    "Kind": "Permission",
+    "Column": "Column_17qcy71",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1n5g695"
+  },
+  "Permission_tx88kq": {
+    "Id": "Permission_tx88kq",
+    "Kind": "Permission",
+    "Column": "Column_1fpwl2w",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1n5g695"
+  },
+  "Permission_13r9k6y": {
+    "Id": "Permission_13r9k6y",
+    "Kind": "Permission",
+    "Column": "Column_1w5dgg4",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1n5g695"
+  },
+  "Permission_1fduygp": {
+    "Id": "Permission_1fduygp",
+    "Kind": "Permission",
+    "Column": "Column_kgxtm7",
+    "Permission": "Editable",
+    "Activity": "Activity_1n5g695"
+  },
+  "Permission_1hezhx0": {
+    "Id": "Permission_1hezhx0",
+    "Kind": "Permission",
+    "Column": "Column_nljlgf",
+    "Permission": "Editable",
+    "Activity": "Activity_1n5g695"
+  },
+  "Resource_1wg4b2o": {
+    "Id": "Resource_1wg4b2o",
+    "Kind": "Resource",
+    "ValueType": "AppRole",
+    "DisplayValue": "Technician",
+    "Value": "Ro_bjgefv",
+    "Activity": "Activity_1n5g695"
+  },
+  "Activity_1n5g695": {
+    "Id": "Activity_1n5g695",
+    "Kind": "Activity",
+    "NodeType": "UserTask",
+    "Name": "Work active",
+    "ProcessDef": "ProcessDef_7qn24w",
+    "Activity::Permission": [
+      "Permission_13tjszx",
+      "Permission_169cm03",
+      "Permission_13t39uo",
+      "Permission_1fesryy",
+      "Permission_1xcy7it",
+      "Permission_del3bc",
+      "Permission_18m8so5",
+      "Permission_1yjio38",
+      "Permission_tx88kq",
+      "Permission_13r9k6y",
+      "Permission_1fduygp",
+      "Permission_1hezhx0"
+    ],
+    "Activity::Resource": [
+      "Resource_1wg4b2o"
+    ]
+  },
+  "Permission_wy9997": {
+    "Id": "Permission_wy9997",
+    "Kind": "Permission",
+    "Column": "Column_1uzla7q",
+    "Permission": "Editable",
+    "Activity": "Activity_xr4in9"
+  },
+  "Permission_ze229e": {
+    "Id": "Permission_ze229e",
+    "Kind": "Permission",
+    "Column": "Column_1yrwscc",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_xr4in9"
+  },
+  "Permission_wxsq3z": {
+    "Id": "Permission_wxsq3z",
+    "Kind": "Permission",
+    "Column": "Column_1uywqpr",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_xr4in9"
+  },
+  "Permission_1awbuix": {
+    "Id": "Permission_1awbuix",
+    "Kind": "Permission",
+    "Column": "Column_kibqis",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_xr4in9"
+  },
+  "Permission_1qhnns4": {
+    "Id": "Permission_1qhnns4",
+    "Kind": "Permission",
+    "Column": "Column_1769erp",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_xr4in9"
+  },
+  "Permission_8w45vb": {
+    "Id": "Permission_8w45vb",
+    "Kind": "Permission",
+    "Column": "Column_20ihfx",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_xr4in9"
+  },
+  "Permission_143rv84": {
+    "Id": "Permission_143rv84",
+    "Kind": "Permission",
+    "Column": "Column_b7y0t8",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_xr4in9"
+  },
+  "Permission_1ro84cj": {
+    "Id": "Permission_1ro84cj",
+    "Kind": "Permission",
+    "Column": "Column_17qcy71",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_xr4in9"
+  },
+  "Permission_n1xou1": {
+    "Id": "Permission_n1xou1",
+    "Kind": "Permission",
+    "Column": "Column_1fpwl2w",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_xr4in9"
+  },
+  "Permission_wvz0g9": {
+    "Id": "Permission_wvz0g9",
+    "Kind": "Permission",
+    "Column": "Column_1w5dgg4",
+    "Permission": "Editable",
+    "Activity": "Activity_xr4in9"
+  },
+  "Permission_1ave10o": {
+    "Id": "Permission_1ave10o",
+    "Kind": "Permission",
+    "Column": "Column_kgxtm7",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_xr4in9"
+  },
+  "Permission_1cwikgz": {
+    "Id": "Permission_1cwikgz",
+    "Kind": "Permission",
+    "Column": "Column_nljlgf",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_xr4in9"
+  },
+  "Resource_k4fxj3": {
+    "Id": "Resource_k4fxj3",
+    "Kind": "Resource",
+    "ValueType": "AppRole",
+    "DisplayValue": "HSE Officer",
+    "Value": "Ro_qzo537",
+    "Activity": "Activity_xr4in9"
+  },
+  "Activity_xr4in9": {
+    "Id": "Activity_xr4in9",
+    "Kind": "Activity",
+    "NodeType": "UserTask",
+    "Name": "HSE close-out",
+    "ProcessDef": "ProcessDef_7qn24w",
+    "Activity::Permission": [
+      "Permission_wy9997",
+      "Permission_ze229e",
+      "Permission_wxsq3z",
+      "Permission_1awbuix",
+      "Permission_1qhnns4",
+      "Permission_8w45vb",
+      "Permission_143rv84",
+      "Permission_1ro84cj",
+      "Permission_n1xou1",
+      "Permission_wvz0g9",
+      "Permission_1ave10o",
+      "Permission_1cwikgz"
+    ],
+    "Activity::Resource": [
+      "Resource_k4fxj3"
+    ]
+  },
+  "Permission_1mh29uq": {
+    "Id": "Permission_1mh29uq",
+    "Kind": "Permission",
+    "Column": "Column_1yrwscc",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_j7xt9x"
+  },
+  "Permission_1k0sxpb": {
+    "Id": "Permission_1k0sxpb",
+    "Kind": "Permission",
+    "Column": "Column_1uywqpr",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_j7xt9x"
+  },
+  "Permission_1uywlh5": {
+    "Id": "Permission_1uywlh5",
+    "Kind": "Permission",
+    "Column": "Column_kibqis",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_j7xt9x"
+  },
+  "Permission_ejjtec": {
+    "Id": "Permission_ejjtec",
+    "Kind": "Permission",
+    "Column": "Column_1769erp",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_j7xt9x"
+  },
+  "Permission_syowtj": {
+    "Id": "Permission_syowtj",
+    "Kind": "Permission",
+    "Column": "Column_20ihfx",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_j7xt9x"
+  },
+  "Permission_1o6cm6c": {
+    "Id": "Permission_1o6cm6c",
+    "Kind": "Permission",
+    "Column": "Column_b7y0t8",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_j7xt9x"
+  },
+  "Permission_fq49yr": {
+    "Id": "Permission_fq49yr",
+    "Kind": "Permission",
+    "Column": "Column_17qcy71",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_j7xt9x"
+  },
+  "Permission_1a4xwfd": {
+    "Id": "Permission_1a4xwfd",
+    "Kind": "Permission",
+    "Column": "Column_1fpwl2w",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_j7xt9x"
+  },
+  "Permission_1jyz81l": {
+    "Id": "Permission_1jyz81l",
+    "Kind": "Permission",
+    "Column": "Column_1w5dgg4",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_j7xt9x"
+  },
+  "Permission_1uxyryw": {
+    "Id": "Permission_1uxyryw",
+    "Kind": "Permission",
+    "Column": "Column_kgxtm7",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_j7xt9x"
+  },
+  "Permission_1wz3bf7": {
+    "Id": "Permission_1wz3bf7",
+    "Kind": "Permission",
+    "Column": "Column_nljlgf",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_j7xt9x"
+  },
+  "Activity_j7xt9x": {
+    "Id": "Activity_j7xt9x",
+    "Kind": "Activity",
+    "NodeType": "EndEvent",
+    "Name": "Permit closed",
+    "ProcessDef": "ProcessDef_7qn24w",
+    "Activity::Permission": [
+      "Permission_1mh29uq",
+      "Permission_1k0sxpb",
+      "Permission_1uywlh5",
+      "Permission_ejjtec",
+      "Permission_syowtj",
+      "Permission_1o6cm6c",
+      "Permission_fq49yr",
+      "Permission_1a4xwfd",
+      "Permission_1jyz81l",
+      "Permission_1uxyryw",
+      "Permission_1wz3bf7"
+    ]
+  },
+  "Appearance_7qn24w": {
+    "Id": "Appearance_7qn24w",
+    "Kind": "Appearance",
+    "Model": "CAFM_Permit_To_Work_A00",
+    "Appearance::Style": [
+      "Style_7qn24w"
+    ]
+  },
+  "Style_7qn24w": {
+    "Id": "Style_7qn24w",
+    "Kind": "Style",
+    "Appearance": "Appearance_7qn24w"
+  },
+  "Row_1t9mqex": {
+    "Id": "Row_1t9mqex",
+    "Kind": "Row",
+    "Button": "CAFM_Permit_To_Work_A00"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "Root": "Perm_o2d3k5",
+  "Perm_o2d3k5": {
+    "Id": "Perm_o2d3k5",
+    "Kind": "FlowPermission",
+    "Role": "Ro_rxtjhz",
+    "RoleName": "Executive",
+    "Model": "CAFM_Breakdown_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_1o6nj2a",
+      "Permission_fz6w6b",
+      "Permission_1xrogwx",
+      "Permission_h1ldta"
+    ]
+  },
+  "Permission_1o6nj2a": {
+    "Id": "Permission_1o6nj2a",
+    "Kind": "Permission",
+    "Column": "Equipment",
+    "Permission": "ReadOnly"
+  },
+  "Permission_fz6w6b": {
+    "Id": "Permission_fz6w6b",
+    "Kind": "Permission",
+    "Column": "Reported_At",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1xrogwx": {
+    "Id": "Permission_1xrogwx",
+    "Kind": "Permission",
+    "Column": "Downtime_Hours",
+    "Permission": "ReadOnly"
+  },
+  "Permission_h1ldta": {
+    "Id": "Permission_h1ldta",
+    "Kind": "Permission",
+    "Column": "Repair_Cost_AED",
+    "Permission": "ReadOnly"
+  }
+}

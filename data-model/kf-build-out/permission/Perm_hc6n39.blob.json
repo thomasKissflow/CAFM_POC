@@ -1,0 +1,56 @@
+{
+  "Root": "Perm_hc6n39",
+  "Perm_hc6n39": {
+    "Id": "Perm_hc6n39",
+    "Kind": "FlowPermission",
+    "Role": "Ro_b2tazi",
+    "RoleName": "Compliance Officer",
+    "Model": "CAFM_Asset_Class_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_iy11ml",
+      "Permission_iy9743",
+      "Permission_h7m5h1",
+      "Permission_1cyfvst",
+      "Permission_2zqyxp",
+      "Permission_lsnidn"
+    ]
+  },
+  "Permission_iy11ml": {
+    "Id": "Permission_iy11ml",
+    "Kind": "Permission",
+    "Column": "Class_Code",
+    "Permission": "ReadOnly"
+  },
+  "Permission_iy9743": {
+    "Id": "Permission_iy9743",
+    "Kind": "Permission",
+    "Column": "Class_Name",
+    "Permission": "ReadOnly"
+  },
+  "Permission_h7m5h1": {
+    "Id": "Permission_h7m5h1",
+    "Kind": "Permission",
+    "Column": "Class_Name_AR",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1cyfvst": {
+    "Id": "Permission_1cyfvst",
+    "Kind": "Permission",
+    "Column": "Trade",
+    "Permission": "ReadOnly"
+  },
+  "Permission_2zqyxp": {
+    "Id": "Permission_2zqyxp",
+    "Kind": "Permission",
+    "Column": "Warranty_Months",
+    "Permission": "ReadOnly"
+  },
+  "Permission_lsnidn": {
+    "Id": "Permission_lsnidn",
+    "Kind": "Permission",
+    "Column": "PPM_Frequency",
+    "Permission": "ReadOnly"
+  }
+}

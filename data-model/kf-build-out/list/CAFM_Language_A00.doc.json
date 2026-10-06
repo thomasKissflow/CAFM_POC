@@ -1,0 +1,16 @@
+{
+  "_id": "CAFM_Language_A00",
+  "Name": "CAFM Language",
+  "Description": "",
+  "Type": "List",
+  "Status": "Live",
+  "ListItems": [
+    "English",
+    "Arabic"
+  ],
+  "_application_id": "CAFM_POC_A00",
+  "Security": {
+    "AllowAllFlows": true,
+    "AllowedFlows": []
+  }
+}

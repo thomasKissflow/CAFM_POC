@@ -1,0 +1,217 @@
+{
+  "Root": "Perm_19h958v",
+  "Perm_19h958v": {
+    "Id": "Perm_19h958v",
+    "Kind": "FlowPermission",
+    "Role": "Ro_1vmrgk3",
+    "RoleName": "FM Manager",
+    "Model": "CAFM_WO_Register_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_6twn3u",
+      "Permission_7ivrw2",
+      "Permission_3k9egl",
+      "Permission_cn2bfs",
+      "Permission_1l7bku3",
+      "Permission_1a7bxcy",
+      "Permission_11g441q",
+      "Permission_1fevb2x",
+      "Permission_1wfgy2q",
+      "Permission_17misdo",
+      "Permission_9vl8w3",
+      "Permission_wdolr2",
+      "Permission_loa6ik",
+      "Permission_1pce1nh",
+      "Permission_l50bqf",
+      "Permission_xk66sg",
+      "Permission_o8jqi9",
+      "Permission_cqwpi0",
+      "Permission_1c5f7zs",
+      "Permission_chubqm",
+      "Permission_bb5dih",
+      "Permission_15w1sye",
+      "Permission_cwgn5g",
+      "Permission_1op7jmb",
+      "Permission_1rbtj8u",
+      "Permission_e2kasl",
+      "Permission_hjog46",
+      "Permission_x8vhgd",
+      "Permission_p3jf23"
+    ]
+  },
+  "Permission_6twn3u": {
+    "Id": "Permission_6twn3u",
+    "Kind": "Permission",
+    "Column": "Work_Order_No",
+    "Permission": "ReadOnly"
+  },
+  "Permission_7ivrw2": {
+    "Id": "Permission_7ivrw2",
+    "Kind": "Permission",
+    "Column": "Work_Order_Instance",
+    "Permission": "ReadOnly"
+  },
+  "Permission_3k9egl": {
+    "Id": "Permission_3k9egl",
+    "Kind": "Permission",
+    "Column": "Site",
+    "Permission": "ReadOnly"
+  },
+  "Permission_cn2bfs": {
+    "Id": "Permission_cn2bfs",
+    "Kind": "Permission",
+    "Column": "Unit_Number",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1l7bku3": {
+    "Id": "Permission_1l7bku3",
+    "Kind": "Permission",
+    "Column": "Asset_Tag",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1a7bxcy": {
+    "Id": "Permission_1a7bxcy",
+    "Kind": "Permission",
+    "Column": "Batch",
+    "Permission": "ReadOnly"
+  },
+  "Permission_11g441q": {
+    "Id": "Permission_11g441q",
+    "Kind": "Permission",
+    "Column": "Category_Name",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1fevb2x": {
+    "Id": "Permission_1fevb2x",
+    "Kind": "Permission",
+    "Column": "Channel",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1wfgy2q": {
+    "Id": "Permission_1wfgy2q",
+    "Kind": "Permission",
+    "Column": "Priority",
+    "Permission": "ReadOnly"
+  },
+  "Permission_17misdo": {
+    "Id": "Permission_17misdo",
+    "Kind": "Permission",
+    "Column": "Summer_Uplift",
+    "Permission": "ReadOnly"
+  },
+  "Permission_9vl8w3": {
+    "Id": "Permission_9vl8w3",
+    "Kind": "Permission",
+    "Column": "Liability",
+    "Permission": "ReadOnly"
+  },
+  "Permission_wdolr2": {
+    "Id": "Permission_wdolr2",
+    "Kind": "Permission",
+    "Column": "Current_Step",
+    "Permission": "ReadOnly"
+  },
+  "Permission_loa6ik": {
+    "Id": "Permission_loa6ik",
+    "Kind": "Permission",
+    "Column": "Priority_Code",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1pce1nh": {
+    "Id": "Permission_1pce1nh",
+    "Kind": "Permission",
+    "Column": "Liability_Code",
+    "Permission": "ReadOnly"
+  },
+  "Permission_l50bqf": {
+    "Id": "Permission_l50bqf",
+    "Kind": "Permission",
+    "Column": "First_Contact_At",
+    "Permission": "ReadOnly"
+  },
+  "Permission_xk66sg": {
+    "Id": "Permission_xk66sg",
+    "Kind": "Permission",
+    "Column": "Response_Due_At",
+    "Permission": "ReadOnly"
+  },
+  "Permission_o8jqi9": {
+    "Id": "Permission_o8jqi9",
+    "Kind": "Permission",
+    "Column": "Resolve_Due_At",
+    "Permission": "ReadOnly"
+  },
+  "Permission_cqwpi0": {
+    "Id": "Permission_cqwpi0",
+    "Kind": "Permission",
+    "Column": "Responded_At",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1c5f7zs": {
+    "Id": "Permission_1c5f7zs",
+    "Kind": "Permission",
+    "Column": "Resolved_At",
+    "Permission": "ReadOnly"
+  },
+  "Permission_chubqm": {
+    "Id": "Permission_chubqm",
+    "Kind": "Permission",
+    "Column": "Closed_At",
+    "Permission": "ReadOnly"
+  },
+  "Permission_bb5dih": {
+    "Id": "Permission_bb5dih",
+    "Kind": "Permission",
+    "Column": "Subcontractor",
+    "Permission": "ReadOnly"
+  },
+  "Permission_15w1sye": {
+    "Id": "Permission_15w1sye",
+    "Kind": "Permission",
+    "Column": "Technician",
+    "Permission": "ReadOnly"
+  },
+  "Permission_cwgn5g": {
+    "Id": "Permission_cwgn5g",
+    "Kind": "Permission",
+    "Column": "Root_Cause_Name",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1op7jmb": {
+    "Id": "Permission_1op7jmb",
+    "Kind": "Permission",
+    "Column": "Parts_AED",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1rbtj8u": {
+    "Id": "Permission_1rbtj8u",
+    "Kind": "Permission",
+    "Column": "Labour_AED",
+    "Permission": "ReadOnly"
+  },
+  "Permission_e2kasl": {
+    "Id": "Permission_e2kasl",
+    "Kind": "Permission",
+    "Column": "Total_Cost_AED",
+    "Permission": "ReadOnly"
+  },
+  "Permission_hjog46": {
+    "Id": "Permission_hjog46",
+    "Kind": "Permission",
+    "Column": "Back_charge_Ref",
+    "Permission": "ReadOnly"
+  },
+  "Permission_x8vhgd": {
+    "Id": "Permission_x8vhgd",
+    "Kind": "Permission",
+    "Column": "Back_charge_Status",
+    "Permission": "ReadOnly"
+  },
+  "Permission_p3jf23": {
+    "Id": "Permission_p3jf23",
+    "Kind": "Permission",
+    "Column": "Recovered_On",
+    "Permission": "ReadOnly"
+  }
+}

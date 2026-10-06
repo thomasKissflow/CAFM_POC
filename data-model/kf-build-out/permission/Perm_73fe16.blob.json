@@ -1,0 +1,56 @@
+{
+  "Root": "Perm_73fe16",
+  "Perm_73fe16": {
+    "Id": "Perm_73fe16",
+    "Kind": "FlowPermission",
+    "Role": "Ro_174d02r",
+    "RoleName": "Resident",
+    "Model": "CAFM_Asset_Class_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_eqwtby",
+      "Permission_er4ytg",
+      "Permission_xstora",
+      "Permission_g9q1b2",
+      "Permission_qq3e9q",
+      "Permission_12dv1nw"
+    ]
+  },
+  "Permission_eqwtby": {
+    "Id": "Permission_eqwtby",
+    "Kind": "Permission",
+    "Column": "Class_Code",
+    "Permission": "ReadOnly"
+  },
+  "Permission_er4ytg": {
+    "Id": "Permission_er4ytg",
+    "Kind": "Permission",
+    "Column": "Class_Name",
+    "Permission": "ReadOnly"
+  },
+  "Permission_xstora": {
+    "Id": "Permission_xstora",
+    "Kind": "Permission",
+    "Column": "Class_Name_AR",
+    "Permission": "ReadOnly"
+  },
+  "Permission_g9q1b2": {
+    "Id": "Permission_g9q1b2",
+    "Kind": "Permission",
+    "Column": "Trade",
+    "Permission": "ReadOnly"
+  },
+  "Permission_qq3e9q": {
+    "Id": "Permission_qq3e9q",
+    "Kind": "Permission",
+    "Column": "Warranty_Months",
+    "Permission": "ReadOnly"
+  },
+  "Permission_12dv1nw": {
+    "Id": "Permission_12dv1nw",
+    "Kind": "Permission",
+    "Column": "PPM_Frequency",
+    "Permission": "ReadOnly"
+  }
+}

@@ -1,0 +1,57 @@
+{
+ "CAFM_Site_A00": {
+  "existing": 1,
+  "created": 0,
+  "failed": 0
+ },
+ "CAFM_Subcontractor_A00": {
+  "existing": 5,
+  "created": 0,
+  "failed": 0
+ },
+ "CAFM_Asset_Class_A00": {
+  "existing": 13,
+  "created": 0,
+  "failed": 0
+ },
+ "CAFM_Request_Category_A00": {
+  "existing": 11,
+  "created": 0,
+  "failed": 0
+ },
+ "CAFM_Root_Cause_A00": {
+  "existing": 17,
+  "created": 0,
+  "failed": 0
+ },
+ "CAFM_SLA_Policy_A00": {
+  "existing": 4,
+  "created": 0,
+  "failed": 0
+ },
+ "CAFM_Asset_A00": {
+  "existing": 6,
+  "created": 0,
+  "failed": 0
+ },
+ "CAFM_WO_Register_A00": {
+  "existing": 0,
+  "created": 12,
+  "failed": 0
+ },
+ "CAFM_Compliance_Certificate_A00": {
+  "existing": 2,
+  "created": 0,
+  "failed": 0
+ },
+ "CAFM_PPM_Schedule_A00": {
+  "existing": 2,
+  "created": 0,
+  "failed": 0
+ },
+ "CAFM_Equipment_A00": {
+  "existing": 2,
+  "created": 0,
+  "failed": 0
+ }
+}

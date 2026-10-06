@@ -1,0 +1,84 @@
+{
+  "Root": "Perm_40mijv",
+  "Perm_40mijv": {
+    "Id": "Perm_40mijv",
+    "Kind": "FlowPermission",
+    "Role": "Ro_qzo537",
+    "RoleName": "HSE Officer",
+    "Model": "CAFM_Permit_To_Work_A00",
+    "Level": "Editable",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_m7uose",
+      "Permission_18xa7ep",
+      "Permission_1nrr3t2",
+      "Permission_bekq2v",
+      "Permission_1v9oetr",
+      "Permission_xe48ym",
+      "Permission_13849gf",
+      "Permission_1b7nwca",
+      "Permission_10dorra",
+      "Permission_1nqd6wh"
+    ]
+  },
+  "Permission_m7uose": {
+    "Id": "Permission_m7uose",
+    "Kind": "Permission",
+    "Column": "Permit_Type",
+    "Permission": "Editable"
+  },
+  "Permission_18xa7ep": {
+    "Id": "Permission_18xa7ep",
+    "Kind": "Permission",
+    "Column": "Site",
+    "Permission": "Editable"
+  },
+  "Permission_1nrr3t2": {
+    "Id": "Permission_1nrr3t2",
+    "Kind": "Permission",
+    "Column": "Work_Order_No",
+    "Permission": "Editable"
+  },
+  "Permission_bekq2v": {
+    "Id": "Permission_bekq2v",
+    "Kind": "Permission",
+    "Column": "Work_Location",
+    "Permission": "Editable"
+  },
+  "Permission_1v9oetr": {
+    "Id": "Permission_1v9oetr",
+    "Kind": "Permission",
+    "Column": "Valid_From",
+    "Permission": "Editable"
+  },
+  "Permission_xe48ym": {
+    "Id": "Permission_xe48ym",
+    "Kind": "Permission",
+    "Column": "Valid_To",
+    "Permission": "Editable"
+  },
+  "Permission_13849gf": {
+    "Id": "Permission_13849gf",
+    "Kind": "Permission",
+    "Column": "Gas_Test_Reading",
+    "Permission": "Editable"
+  },
+  "Permission_1b7nwca": {
+    "Id": "Permission_1b7nwca",
+    "Kind": "Permission",
+    "Column": "Isolation_Points",
+    "Permission": "Editable"
+  },
+  "Permission_10dorra": {
+    "Id": "Permission_10dorra",
+    "Kind": "Permission",
+    "Column": "Approval_Note",
+    "Permission": "Editable"
+  },
+  "Permission_1nqd6wh": {
+    "Id": "Permission_1nqd6wh",
+    "Kind": "Permission",
+    "Column": "Closed_Out_At",
+    "Permission": "Editable"
+  }
+}

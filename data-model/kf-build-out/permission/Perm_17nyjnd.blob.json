@@ -1,0 +1,112 @@
+{
+  "Root": "Perm_17nyjnd",
+  "Perm_17nyjnd": {
+    "Id": "Perm_17nyjnd",
+    "Kind": "FlowPermission",
+    "Role": "Ro_1vmrgk3",
+    "RoleName": "FM Manager",
+    "Model": "CAFM_Site_A00",
+    "Level": "Editable",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_1y2zze4",
+      "Permission_1y384vm",
+      "Permission_1iea4w4",
+      "Permission_f2mzlv",
+      "Permission_1y360fr",
+      "Permission_9c62jg",
+      "Permission_zikp04",
+      "Permission_1ewo7j4",
+      "Permission_1vb379x",
+      "Permission_a3r5n4",
+      "Permission_lfsohf",
+      "Permission_bzvfki",
+      "Permission_fztohx",
+      "Permission_ey101n"
+    ]
+  },
+  "Permission_1y2zze4": {
+    "Id": "Permission_1y2zze4",
+    "Kind": "Permission",
+    "Column": "Site_Code",
+    "Permission": "Editable"
+  },
+  "Permission_1y384vm": {
+    "Id": "Permission_1y384vm",
+    "Kind": "Permission",
+    "Column": "Site_Name",
+    "Permission": "Editable"
+  },
+  "Permission_1iea4w4": {
+    "Id": "Permission_1iea4w4",
+    "Kind": "Permission",
+    "Column": "Site_Name_AR",
+    "Permission": "Editable"
+  },
+  "Permission_f2mzlv": {
+    "Id": "Permission_f2mzlv",
+    "Kind": "Permission",
+    "Column": "District",
+    "Permission": "Editable"
+  },
+  "Permission_1y360fr": {
+    "Id": "Permission_1y360fr",
+    "Kind": "Permission",
+    "Column": "Site_Kind",
+    "Permission": "Editable"
+  },
+  "Permission_9c62jg": {
+    "Id": "Permission_9c62jg",
+    "Kind": "Permission",
+    "Column": "Client_Name",
+    "Permission": "Editable"
+  },
+  "Permission_zikp04": {
+    "Id": "Permission_zikp04",
+    "Kind": "Permission",
+    "Column": "Own_Operations",
+    "Permission": "Editable"
+  },
+  "Permission_1ewo7j4": {
+    "Id": "Permission_1ewo7j4",
+    "Kind": "Permission",
+    "Column": "TOC_Date",
+    "Permission": "Editable"
+  },
+  "Permission_1vb379x": {
+    "Id": "Permission_1vb379x",
+    "Kind": "Permission",
+    "Column": "DLP_Months",
+    "Permission": "Editable"
+  },
+  "Permission_a3r5n4": {
+    "Id": "Permission_a3r5n4",
+    "Kind": "Permission",
+    "Column": "DLP_End_Date",
+    "Permission": "Editable"
+  },
+  "Permission_lfsohf": {
+    "Id": "Permission_lfsohf",
+    "Kind": "Permission",
+    "Column": "Decennial_End_Date",
+    "Permission": "Editable"
+  },
+  "Permission_bzvfki": {
+    "Id": "Permission_bzvfki",
+    "Kind": "Permission",
+    "Column": "Floors",
+    "Permission": "Editable"
+  },
+  "Permission_fztohx": {
+    "Id": "Permission_fztohx",
+    "Kind": "Permission",
+    "Column": "Unit_Count",
+    "Permission": "Editable"
+  },
+  "Permission_ey101n": {
+    "Id": "Permission_ey101n",
+    "Kind": "Permission",
+    "Column": "Beds",
+    "Permission": "Editable"
+  }
+}

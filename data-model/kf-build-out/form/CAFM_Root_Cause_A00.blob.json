@@ -1,0 +1,166 @@
+{
+  "Root": "CAFM_Root_Cause_A00",
+  "CAFM_Root_Cause_A00": {
+    "Id": "CAFM_Root_Cause_A00",
+    "Name": "CAFM Root Cause",
+    "Kind": "Model",
+    "FlowType": "Form",
+    "Description": "",
+    "Model::Row": [
+      "Row_5bf5bo"
+    ],
+    "Model::Field": [
+      "Root_Cause_Code",
+      "Root_Cause_Name",
+      "Root_Cause_Name_AR",
+      "Trade",
+      "Excluded_From_DLP"
+    ]
+  },
+  "Row_5bf5bo": {
+    "Id": "Row_5bf5bo",
+    "Kind": "Row",
+    "Model": "CAFM_Root_Cause_A00",
+    "Row::Column": [
+      "Column_5bf5bo"
+    ]
+  },
+  "Column_5bf5bo": {
+    "Id": "Column_5bf5bo",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "Details",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_5bf5bo",
+    "Column::Row": [
+      "Row_5bdx66",
+      "Row_5bdx67",
+      "Row_5bdx68"
+    ]
+  },
+  "Row_5bdx66": {
+    "Id": "Row_5bdx66",
+    "Kind": "Row",
+    "Column": "Column_5bf5bo",
+    "Row::Column": [
+      "Column_ouxahj",
+      "Column_ov5fz1"
+    ]
+  },
+  "Column_ouxahj": {
+    "Id": "Column_ouxahj",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_5bdx66",
+    "Column::Field": [
+      "Root_Cause_Code"
+    ]
+  },
+  "Column_ov5fz1": {
+    "Id": "Column_ov5fz1",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_5bdx66",
+    "Column::Field": [
+      "Root_Cause_Name"
+    ]
+  },
+  "Row_5bdx67": {
+    "Id": "Row_5bdx67",
+    "Kind": "Row",
+    "Column": "Column_5bf5bo",
+    "Row::Column": [
+      "Column_fwa1n3",
+      "Column_wt1t09"
+    ]
+  },
+  "Column_fwa1n3": {
+    "Id": "Column_fwa1n3",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_5bdx67",
+    "Column::Field": [
+      "Root_Cause_Name_AR"
+    ]
+  },
+  "Column_wt1t09": {
+    "Id": "Column_wt1t09",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_5bdx67",
+    "Column::Field": [
+      "Trade"
+    ]
+  },
+  "Row_5bdx68": {
+    "Id": "Row_5bdx68",
+    "Kind": "Row",
+    "Column": "Column_5bf5bo",
+    "Row::Column": [
+      "Column_1upqqix"
+    ]
+  },
+  "Column_1upqqix": {
+    "Id": "Column_1upqqix",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_5bdx68",
+    "Column::Field": [
+      "Excluded_From_DLP"
+    ]
+  },
+  "Root_Cause_Code": {
+    "Id": "Root_Cause_Code",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Root Cause Code",
+    "Model": "CAFM_Root_Cause_A00",
+    "Column": "Column_ouxahj",
+    "Required": true
+  },
+  "Root_Cause_Name": {
+    "Id": "Root_Cause_Name",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Root Cause Name",
+    "Model": "CAFM_Root_Cause_A00",
+    "Column": "Column_ov5fz1",
+    "Required": true
+  },
+  "Root_Cause_Name_AR": {
+    "Id": "Root_Cause_Name_AR",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Root Cause Name AR",
+    "Model": "CAFM_Root_Cause_A00",
+    "Column": "Column_fwa1n3"
+  },
+  "Trade": {
+    "Id": "Trade",
+    "Kind": "Field",
+    "Type": "Select",
+    "Name": "Trade",
+    "Model": "CAFM_Root_Cause_A00",
+    "Column": "Column_wt1t09",
+    "ReferredList": "CAFM_Trade_A00"
+  },
+  "Excluded_From_DLP": {
+    "Id": "Excluded_From_DLP",
+    "Kind": "Field",
+    "Type": "Boolean",
+    "Name": "Excluded From DLP",
+    "Model": "CAFM_Root_Cause_A00",
+    "Column": "Column_1upqqix"
+  }
+}

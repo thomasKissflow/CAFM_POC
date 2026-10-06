@@ -1,0 +1,280 @@
+@import "tailwindcss";
+@import "@fontsource-variable/readex-pro";
+@import "@fontsource-variable/jetbrains-mono";
+
+@custom-variant rtl (&:where([dir="rtl"], [dir="rtl"] *));
+
+@theme {
+  --font-sans: "Readex Pro Variable", "Readex Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono Variable", "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  /* Fair-faced concrete ground, white sheets, hairline seams */
+  --color-ground: #e4e7e4;
+  --color-ground-2: #d8dcd9;
+  --color-sheet: #fbfbfa;
+  --color-sheet-2: #f2f3f1;
+  --color-ink: #16191c;
+  --color-ink-2: #3c4248;
+  --color-ink-3: #5c636a;
+  --color-seam: #cbcfcc;
+  --color-seam-strong: #a3a9a6;
+
+  /* Survey marks */
+  /* The accent is re-derived from the client's brand colour at run time (src/brand/color.ts). */
+  --color-fluoro: #ff5a1f;
+  --color-fluoro-ink: #b23b09;
+  --color-fluoro-wash: #ffe8dd;
+  --color-fluoro-hover: #ff6b36;
+  --color-fluoro-active: #f04d12;
+  --color-fluoro-edge: #e24a10;
+  --color-on-fluoro: #16191c;
+  --color-breach: #c8161d;
+  --color-breach-wash: #fde4e2;
+  --color-risk: #a26400;
+  --color-risk-fill: #f5b41c;
+  --color-risk-wash: #fdf1d2;
+  --color-ok: #1d7249;
+  --color-ok-wash: #dcefe3;
+  --color-chargeable: #2349a8;
+  --color-chargeable-wash: #e2e9f8;
+  --color-decennial: #6a3d9e;
+  --color-decennial-wash: #eee7f7;
+  /* Liability colours carry meaning and never follow the client's brand colour. */
+  --color-dlp: #ff5a1f;
+  --color-dlp-ink: #b23b09;
+  --color-dlp-wash: #ffe8dd;
+  --color-ownops: #475552;
+  --color-ownops-wash: #e3e8e6;
+
+  /* The title strip: 56px of chrome plus its hairline. The sidebar and the phone stage are measured against it. */
+  --chrome: 57px;
+
+  --radius-sm: 3px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
+
+  --shadow-lift: 0 1px 2px rgb(22 25 28 / 0.06), 0 8px 24px -12px rgb(22 25 28 / 0.18);
+  --shadow-float: 0 2px 4px rgb(22 25 28 / 0.08), 0 20px 48px -16px rgb(22 25 28 / 0.32);
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    background: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.5;
+    font-feature-settings: "tnum" 0;
+  }
+  ::selection {
+    background: var(--color-fluoro);
+    color: #fff;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-fluoro);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+  a {
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+  }
+  input,
+  textarea,
+  select {
+    caret-color: var(--color-fluoro);
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-seam-strong) transparent;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-seam-strong);
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+  }
+  [dir="rtl"] body {
+    line-height: 1.65;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Readings (IDs, chainage, clocks) are the only monospace text. */
+  .reading {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.01em;
+  }
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+  .sheet {
+    background: var(--color-sheet);
+    border: 1px solid var(--color-seam);
+    border-radius: var(--radius-md);
+  }
+  .seam-b {
+    border-bottom: 1px solid var(--color-seam);
+  }
+  .seam-t {
+    border-top: 1px solid var(--color-seam);
+  }
+  /* Hazard diagonal: blocked / breached only */
+  .hazard {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      var(--color-breach) 0 5px,
+      transparent 5px 10px
+    );
+  }
+  .hazard-on-red {
+    background-image: repeating-linear-gradient(-45deg, rgb(0 0 0 / 0.22) 0 5px, transparent 5px 10px);
+  }
+  .hazard-soft {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      rgb(200 22 29 / 0.12) 0 6px,
+      transparent 6px 12px
+    );
+  }
+  /* Survey-grid backdrop for the title strip */
+  .survey-grid {
+    background-image:
+      linear-gradient(to right, rgb(22 25 28 / 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(22 25 28 / 0.05) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  /* Setting-out crosshair corners on the focused / selected record */
+  .crosshair {
+    position: relative;
+  }
+  .crosshair::before,
+  .crosshair::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+    border-color: var(--color-fluoro);
+    border-style: solid;
+  }
+  .crosshair::before {
+    inset-block-start: -1px;
+    inset-inline-start: -1px;
+    border-width: 2px 0 0 2px;
+  }
+  .crosshair::after {
+    inset-block-end: -1px;
+    inset-inline-end: -1px;
+    border-width: 0 2px 2px 0;
+  }
+  [dir="rtl"] .crosshair::before {
+    border-width: 2px 2px 0 0;
+  }
+  [dir="rtl"] .crosshair::after {
+    border-width: 0 0 2px 2px;
+  }
+  .preview-outline {
+    border: 1px dashed var(--color-ink-3);
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes peg-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgb(255 90 31 / 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgb(255 90 31 / 0);
+  }
+}
+@keyframes scan-line {
+  0% {
+    transform: translateY(-40%);
+  }
+  100% {
+    transform: translateY(40%);
+  }
+}
+@keyframes staff {
+  0%,
+  100% {
+    transform: scaleY(0.45);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+@keyframes shimmer {
+  from {
+    background-position: -200px 0;
+  }
+  to {
+    background-position: 200px 0;
+  }
+}
+.animate-rise {
+  animation: rise 360ms var(--ease-out-expo) both;
+}
+.animate-peg {
+  animation: peg-pulse 2.4s ease-in-out infinite;
+}
+.skeleton {
+  background: linear-gradient(90deg, var(--color-sheet-2) 0, var(--color-ground) 50%, var(--color-sheet-2) 100%);
+  background-size: 400px 100%;
+  animation: shimmer 1.2s linear infinite;
+  border-radius: var(--radius-sm);
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-sheet {
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+}
+
+/* Kissflow loader: petals bloom in sequence */
+@keyframes kf-bloom {
+  0%, 100% { opacity: 0.25; transform: scale(0.86); }
+  35%, 60% { opacity: 1; transform: scale(1); }
+}
+.kf-loader path { transform-box: fill-box; transform-origin: center; animation: kf-bloom 1.2s ease-in-out infinite; }
+.kf-loader path:nth-child(2) { animation-delay: 0.15s; }
+.kf-loader path:nth-child(3) { animation-delay: 0.3s; }
+.kf-loader path:nth-child(4) { animation-delay: 0.45s; }
+@media (prefers-reduced-motion: reduce) { .kf-loader path { animation: none; opacity: 1; } }

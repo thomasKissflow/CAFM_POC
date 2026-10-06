@@ -1,0 +1,91 @@
+{
+  "Root": "Perm_gzyyzx",
+  "Perm_gzyyzx": {
+    "Id": "Perm_gzyyzx",
+    "Kind": "FlowPermission",
+    "Role": "Ro_1vmrgk3",
+    "RoleName": "FM Manager",
+    "Model": "CAFM_Subcontractor_A00",
+    "Level": "Editable",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_1hi3rri",
+      "Permission_1xhvcrk",
+      "Permission_rpkuf",
+      "Permission_7mkti1",
+      "Permission_1jmypu2",
+      "Permission_1rmajmd",
+      "Permission_12ljsp",
+      "Permission_it9utb",
+      "Permission_ozrw1j",
+      "Permission_biauvv",
+      "Permission_8kyfs4"
+    ]
+  },
+  "Permission_1hi3rri": {
+    "Id": "Permission_1hi3rri",
+    "Kind": "Permission",
+    "Column": "Company_Name",
+    "Permission": "Editable"
+  },
+  "Permission_1xhvcrk": {
+    "Id": "Permission_1xhvcrk",
+    "Kind": "Permission",
+    "Column": "Company_Name_AR",
+    "Permission": "Editable"
+  },
+  "Permission_rpkuf": {
+    "Id": "Permission_rpkuf",
+    "Kind": "Permission",
+    "Column": "Trade",
+    "Permission": "Editable"
+  },
+  "Permission_7mkti1": {
+    "Id": "Permission_7mkti1",
+    "Kind": "Permission",
+    "Column": "Supervisor",
+    "Permission": "Editable"
+  },
+  "Permission_1jmypu2": {
+    "Id": "Permission_1jmypu2",
+    "Kind": "Permission",
+    "Column": "Contact_Email",
+    "Permission": "Editable"
+  },
+  "Permission_1rmajmd": {
+    "Id": "Permission_1rmajmd",
+    "Kind": "Permission",
+    "Column": "Trade_Licence_No",
+    "Permission": "Editable"
+  },
+  "Permission_12ljsp": {
+    "Id": "Permission_12ljsp",
+    "Kind": "Permission",
+    "Column": "Trade_Licence_Expiry",
+    "Permission": "Editable"
+  },
+  "Permission_it9utb": {
+    "Id": "Permission_it9utb",
+    "Kind": "Permission",
+    "Column": "Insurance_Expiry",
+    "Permission": "Editable"
+  },
+  "Permission_ozrw1j": {
+    "Id": "Permission_ozrw1j",
+    "Kind": "Permission",
+    "Column": "Civil_Defence_Approved",
+    "Permission": "Editable"
+  },
+  "Permission_biauvv": {
+    "Id": "Permission_biauvv",
+    "Kind": "Permission",
+    "Column": "Civil_Defence_Approval_Expiry",
+    "Permission": "Editable"
+  },
+  "Permission_8kyfs4": {
+    "Id": "Permission_8kyfs4",
+    "Kind": "Permission",
+    "Column": "Licence_Days_Left",
+    "Permission": "Editable"
+  }
+}

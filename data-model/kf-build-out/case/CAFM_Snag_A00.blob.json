@@ -1,0 +1,264 @@
+{
+  "Root": "CAFM_Snag_A00",
+  "CAFM_Snag_A00": {
+    "Id": "CAFM_Snag_A00",
+    "Name": "CAFM Snag",
+    "Kind": "Model",
+    "FlowType": "Case",
+    "Description": "",
+    "Model::Row": [
+      "Row_unwrop"
+    ],
+    "Model::Field": [
+      "Site",
+      "Unit",
+      "Trade",
+      "Subcontractor",
+      "Snag_Location",
+      "Snag_Photo"
+    ],
+    "Model::Appearance": [
+      "Appearance_8vexqc"
+    ]
+  },
+  "Row_unwrop": {
+    "Id": "Row_unwrop",
+    "Kind": "Row",
+    "Model": "CAFM_Snag_A00",
+    "Row::Column": [
+      "Column_unwrop"
+    ]
+  },
+  "Column_unwrop": {
+    "Id": "Column_unwrop",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "Details",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_unwrop",
+    "Column::Row": [
+      "Row_unvjj7",
+      "Row_unvjj8",
+      "Row_unvjj9",
+      "Row_unvjja"
+    ]
+  },
+  "Row_unvjj7": {
+    "Id": "Row_unvjj7",
+    "Kind": "Row",
+    "Column": "Column_unwrop",
+    "Row::Column": [
+      "Column_un886r",
+      "Column_un9vku"
+    ]
+  },
+  "Column_un886r": {
+    "Id": "Column_un886r",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_unvjj7",
+    "Column::Field": [
+      "Site"
+    ]
+  },
+  "Column_un9vku": {
+    "Id": "Column_un9vku",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_unvjj7",
+    "Column::Field": [
+      "Unit"
+    ]
+  },
+  "Row_unvjj8": {
+    "Id": "Row_unvjj8",
+    "Kind": "Row",
+    "Column": "Column_unwrop",
+    "Row::Column": [
+      "Column_gvun8u",
+      "Column_cimnaf"
+    ]
+  },
+  "Column_gvun8u": {
+    "Id": "Column_gvun8u",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_unvjj8",
+    "Column::Field": [
+      "Trade"
+    ]
+  },
+  "Column_cimnaf": {
+    "Id": "Column_cimnaf",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_unvjj8",
+    "Column::Field": [
+      "Subcontractor"
+    ]
+  },
+  "Row_unvjj9": {
+    "Id": "Row_unvjj9",
+    "Kind": "Row",
+    "Column": "Column_unwrop",
+    "Row::Column": [
+      "Column_5srh4v"
+    ]
+  },
+  "Column_5srh4v": {
+    "Id": "Column_5srh4v",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_unvjj9",
+    "Column::Field": [
+      "Snag_Location"
+    ]
+  },
+  "Row_unvjja": {
+    "Id": "Row_unvjja",
+    "Kind": "Row",
+    "Column": "Column_unwrop",
+    "Row::Column": [
+      "Column_1cuy2z4"
+    ]
+  },
+  "Column_1cuy2z4": {
+    "Id": "Column_1cuy2z4",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_unvjja",
+    "Column::Field": [
+      "Snag_Photo"
+    ]
+  },
+  "QueryDefinition_un886r": {
+    "Id": "QueryDefinition_un886r",
+    "Kind": "QueryDefinition",
+    "Field": "Site",
+    "LHSModel": "CAFM_Site_A00",
+    "FlowType": "Form",
+    "LookupField": [
+      {
+        "Id": "Site_Name",
+        "Name": "Site Name",
+        "Type": "Text"
+      }
+    ],
+    "HiddenField": []
+  },
+  "Site": {
+    "Id": "Site",
+    "Kind": "Field",
+    "Type": "Reference",
+    "Name": "Site",
+    "Model": "CAFM_Snag_A00",
+    "Column": "Column_un886r",
+    "Required": true,
+    "Field::QueryDefinition": [
+      "QueryDefinition_un886r"
+    ]
+  },
+  "QueryDefinition_un9vku": {
+    "Id": "QueryDefinition_un9vku",
+    "Kind": "QueryDefinition",
+    "Field": "Unit",
+    "LHSModel": "CAFM_Unit_A00",
+    "FlowType": "Form",
+    "LookupField": [
+      {
+        "Id": "Unit_Number",
+        "Name": "Unit Number",
+        "Type": "Text"
+      }
+    ],
+    "HiddenField": []
+  },
+  "Unit": {
+    "Id": "Unit",
+    "Kind": "Field",
+    "Type": "Reference",
+    "Name": "Unit",
+    "Model": "CAFM_Snag_A00",
+    "Column": "Column_un9vku",
+    "Field::QueryDefinition": [
+      "QueryDefinition_un9vku"
+    ]
+  },
+  "Trade": {
+    "Id": "Trade",
+    "Kind": "Field",
+    "Type": "Select",
+    "Name": "Trade",
+    "Model": "CAFM_Snag_A00",
+    "Column": "Column_gvun8u",
+    "ReferredList": "CAFM_Trade_A00"
+  },
+  "QueryDefinition_cimnaf": {
+    "Id": "QueryDefinition_cimnaf",
+    "Kind": "QueryDefinition",
+    "Field": "Subcontractor",
+    "LHSModel": "CAFM_Subcontractor_A00",
+    "FlowType": "Form",
+    "LookupField": [
+      {
+        "Id": "Company_Name",
+        "Name": "Company Name",
+        "Type": "Text"
+      }
+    ],
+    "HiddenField": []
+  },
+  "Subcontractor": {
+    "Id": "Subcontractor",
+    "Kind": "Field",
+    "Type": "Reference",
+    "Name": "Subcontractor",
+    "Model": "CAFM_Snag_A00",
+    "Column": "Column_cimnaf",
+    "Field::QueryDefinition": [
+      "QueryDefinition_cimnaf"
+    ]
+  },
+  "Snag_Location": {
+    "Id": "Snag_Location",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Snag Location",
+    "Model": "CAFM_Snag_A00",
+    "Column": "Column_5srh4v"
+  },
+  "Snag_Photo": {
+    "Id": "Snag_Photo",
+    "Kind": "Field",
+    "Type": "Image",
+    "Name": "Snag Photo",
+    "Model": "CAFM_Snag_A00",
+    "Column": "Column_1cuy2z4"
+  },
+  "Appearance_8vexqc": {
+    "Id": "Appearance_8vexqc",
+    "Kind": "Appearance",
+    "Model": "CAFM_Snag_A00",
+    "Appearance::Style": [
+      "Style_8vexqc"
+    ]
+  },
+  "Style_8vexqc": {
+    "Id": "Style_8vexqc",
+    "Kind": "Style",
+    "Appearance": "Appearance_8vexqc"
+  }
+}

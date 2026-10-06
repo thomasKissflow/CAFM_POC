@@ -1,0 +1,45 @@
+stage C: 2 forms, 16 lists, 10 roles, 5 permissions
+13:31:09   incremental: 20 flow(s) in checkpoint — unchanged ones will be skipped (KF_FORCE_REPUBLISH=1 to force)
+13:31:09   reuse app CAFM_POC_A00
+13:31:09   role Executive → reused
+13:31:09   role FM Manager → reused
+13:31:09   role Helpdesk → reused
+13:31:09   role DLP Manager → reused
+13:31:09   role Subcontractor Supervisor → reused
+13:31:09   role Technician → reused
+13:31:09   role Resident → reused
+13:31:09   role Compliance Officer → reused
+13:31:09   role HSE Officer → reused
+13:31:09   role Plant Manager → reused
+13:31:12   roles: developer UsATUIj4RC2p added to 10/10 role(s)
+13:31:12   reuse: 46 flow ids from map (skip create for those; new/recreated artifacts in this IR still get created)
+13:31:12   shell form CAFM_AI_Setting_A00 → CAFM_AI_Setting_A00
+13:31:12   shell form CAFM_AI_Conversation_A00 → CAFM_AI_Conversation_A00
+13:31:12   list-items CAFM_Priority_A00 → 200 (4)
+13:31:12   list-items CAFM_Channel_A00 → 200 (9)
+13:31:12   list-items CAFM_Site_Kind_A00 → 200 (4)
+13:31:12   list-items CAFM_Trade_A00 → 200 (7)
+13:31:12   list-items CAFM_Asset_Status_A00 → 200 (3)
+13:31:12   list-items CAFM_Liability_A00 → 200 (6)
+13:31:13   list-items CAFM_Compliance_System_A00 → 200 (10)
+13:31:13   list-items CAFM_Photo_Kind_A00 → 200 (3)
+13:31:13   list-items CAFM_Hassantuk_Status_A00 → 200 (3)
+13:31:13   list-items CAFM_PPM_Frequency_A00 → 200 (4)
+13:31:13   list-items CAFM_Permit_Type_A00 → 200 (4)
+13:31:13   list-items CAFM_Equipment_Status_A00 → 200 (4)
+13:31:13   list-items CAFM_Subcontractor_Response_A00 → 200 (2)
+13:31:13   list-items CAFM_Equipment_Type_A00 → 200 (10)
+13:31:13   list-items CAFM_Event_Type_A00 → 200 (16)
+13:31:13   list-items CAFM_Language_A00 → 200 (2)
+13:31:14   body CAFM_AI_Setting_A00 → draft 200, publish 200
+13:31:14   body CAFM_AI_Conversation_A00 → draft 200, publish 200
+13:31:14   access Executive → CAFM AI Conversation (form) 200
+13:31:14   access DLP Manager → CAFM AI Conversation (form) 200
+13:31:16   access Helpdesk → CAFM AI Conversation (form) 423
+13:31:16   access FM Manager → CAFM AI Conversation (form) 423
+13:31:16   access Resident → CAFM AI Conversation (form) 200
+app CAFM_POC_A00 · created 2 · published 2 · skipped 0
+roles: Executive(200), FM Manager(200), Helpdesk(200), DLP Manager(200), Subcontractor Supervisor(200), Technician(200), Resident(200), Compliance Officer(200), HSE Officer(200), Plant Manager(200)
+errors:
+  ✗ member grant Helpdesk → CAFM AI Conversation (form) failed: 423
+  ✗ member grant FM Manager → CAFM AI Conversation (form) failed: 423

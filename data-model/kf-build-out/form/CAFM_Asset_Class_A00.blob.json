@@ -1,0 +1,297 @@
+{
+  "Root": "CAFM_Asset_Class_A00",
+  "CAFM_Asset_Class_A00": {
+    "Id": "CAFM_Asset_Class_A00",
+    "Name": "CAFM Asset Class",
+    "Kind": "Model",
+    "FlowType": "Form",
+    "Description": "",
+    "Model::Row": [
+      "Row_mm6d05",
+      "Row_1gpaecw"
+    ],
+    "Model::Field": [
+      "Class_Code",
+      "Class_Name",
+      "Class_Name_AR",
+      "Trade",
+      "Warranty_Months",
+      "PPM_Frequency"
+    ],
+    "Model::Model": [
+      "Checklist_Template_A00"
+    ]
+  },
+  "Row_mm6d05": {
+    "Id": "Row_mm6d05",
+    "Kind": "Row",
+    "Model": "CAFM_Asset_Class_A00",
+    "Row::Column": [
+      "Column_mm6d05"
+    ]
+  },
+  "Column_mm6d05": {
+    "Id": "Column_mm6d05",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "Details",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_mm6d05",
+    "Column::Row": [
+      "Row_mm54un",
+      "Row_mm54uo",
+      "Row_mm54up"
+    ]
+  },
+  "Row_mm54un": {
+    "Id": "Row_mm54un",
+    "Kind": "Row",
+    "Column": "Column_mm6d05",
+    "Row::Column": [
+      "Column_19vxxa2",
+      "Column_19w62rk"
+    ]
+  },
+  "Column_19vxxa2": {
+    "Id": "Column_19vxxa2",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_mm54un",
+    "Column::Field": [
+      "Class_Code"
+    ]
+  },
+  "Column_19w62rk": {
+    "Id": "Column_19w62rk",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_mm54un",
+    "Column::Field": [
+      "Class_Name"
+    ]
+  },
+  "Row_mm54uo": {
+    "Id": "Row_mm54uo",
+    "Kind": "Row",
+    "Column": "Column_mm6d05",
+    "Row::Column": [
+      "Column_avyu6q",
+      "Column_zf3emy"
+    ]
+  },
+  "Column_avyu6q": {
+    "Id": "Column_avyu6q",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_mm54uo",
+    "Column::Field": [
+      "Class_Name_AR"
+    ]
+  },
+  "Column_zf3emy": {
+    "Id": "Column_zf3emy",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_mm54uo",
+    "Column::Field": [
+      "Trade"
+    ]
+  },
+  "Row_mm54up": {
+    "Id": "Row_mm54up",
+    "Kind": "Row",
+    "Column": "Column_mm6d05",
+    "Row::Column": [
+      "Column_6nfvsq",
+      "Column_fh073c"
+    ]
+  },
+  "Column_6nfvsq": {
+    "Id": "Column_6nfvsq",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_mm54up",
+    "Column::Field": [
+      "Warranty_Months"
+    ]
+  },
+  "Column_fh073c": {
+    "Id": "Column_fh073c",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_mm54up",
+    "Column::Field": [
+      "PPM_Frequency"
+    ]
+  },
+  "Class_Code": {
+    "Id": "Class_Code",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Class Code",
+    "Model": "CAFM_Asset_Class_A00",
+    "Column": "Column_19vxxa2",
+    "Required": true
+  },
+  "Class_Name": {
+    "Id": "Class_Name",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Class Name",
+    "Model": "CAFM_Asset_Class_A00",
+    "Column": "Column_19w62rk",
+    "Required": true
+  },
+  "Class_Name_AR": {
+    "Id": "Class_Name_AR",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Class Name AR",
+    "Model": "CAFM_Asset_Class_A00",
+    "Column": "Column_avyu6q"
+  },
+  "Trade": {
+    "Id": "Trade",
+    "Kind": "Field",
+    "Type": "Select",
+    "Name": "Trade",
+    "Model": "CAFM_Asset_Class_A00",
+    "Column": "Column_zf3emy",
+    "Required": true,
+    "ReferredList": "CAFM_Trade_A00"
+  },
+  "Warranty_Months": {
+    "Id": "Warranty_Months",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "Warranty Months",
+    "Model": "CAFM_Asset_Class_A00",
+    "Column": "Column_6nfvsq"
+  },
+  "PPM_Frequency": {
+    "Id": "PPM_Frequency",
+    "Kind": "Field",
+    "Type": "Select",
+    "Name": "PPM Frequency",
+    "Model": "CAFM_Asset_Class_A00",
+    "Column": "Column_fh073c",
+    "ReferredList": "CAFM_PPM_Frequency_A00"
+  },
+  "Row_1gpaecw": {
+    "Id": "Row_1gpaecw",
+    "Kind": "Row",
+    "Model": "CAFM_Asset_Class_A00",
+    "Row::Column": [
+      "Column_1gpaecw"
+    ]
+  },
+  "Column_1gpaecw": {
+    "Id": "Column_1gpaecw",
+    "Kind": "Column",
+    "Type": "Model",
+    "Name": "Checklist Template",
+    "Start": 0,
+    "End": 6,
+    "AllowImport": false,
+    "Row": "Row_1gpaecw",
+    "Column::Model": [
+      "Checklist_Template_A00"
+    ]
+  },
+  "Checklist_Template_A00": {
+    "Id": "Checklist_Template_A00",
+    "Kind": "Model",
+    "Name": "Checklist Template",
+    "Model": "CAFM_Asset_Class_A00",
+    "Column": "Column_1gpaecw",
+    "Model::Row": [
+      "Row_mu8lkc"
+    ],
+    "Model::Field": [
+      "Check_Step",
+      "Check_Step_AR",
+      "Needs_Reading"
+    ]
+  },
+  "Row_mu8lkc": {
+    "Id": "Row_mu8lkc",
+    "Kind": "Row",
+    "Model": "Checklist_Template_A00",
+    "Row::Column": [
+      "Column_1b8pnn1",
+      "Column_qqq467",
+      "Column_ulfq3g"
+    ]
+  },
+  "Column_1b8pnn1": {
+    "Id": "Column_1b8pnn1",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 0,
+    "Row": "Row_mu8lkc",
+    "Column::Field": [
+      "Check_Step"
+    ]
+  },
+  "Check_Step": {
+    "Id": "Check_Step",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Check Step",
+    "Model": "Checklist_Template_A00",
+    "Column": "Column_1b8pnn1",
+    "Required": true
+  },
+  "Column_qqq467": {
+    "Id": "Column_qqq467",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 0,
+    "Row": "Row_mu8lkc",
+    "Column::Field": [
+      "Check_Step_AR"
+    ]
+  },
+  "Check_Step_AR": {
+    "Id": "Check_Step_AR",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Check Step AR",
+    "Model": "Checklist_Template_A00",
+    "Column": "Column_qqq467"
+  },
+  "Column_ulfq3g": {
+    "Id": "Column_ulfq3g",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 0,
+    "Row": "Row_mu8lkc",
+    "Column::Field": [
+      "Needs_Reading"
+    ]
+  },
+  "Needs_Reading": {
+    "Id": "Needs_Reading",
+    "Kind": "Field",
+    "Type": "Boolean",
+    "Name": "Needs Reading",
+    "Model": "Checklist_Template_A00",
+    "Column": "Column_ulfq3g"
+  }
+}

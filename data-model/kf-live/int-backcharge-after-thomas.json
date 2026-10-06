@@ -1,0 +1,792 @@
+{
+ "Root": "WO_closed_DLP_raise_a_Back_charge__A00",
+ "Trigger_2w6u94": {
+  "Id": "Trigger_2w6u94",
+  "Kind": "Trigger",
+  "Type": "App",
+  "Name": "When an item ItemCompleted",
+  "IsInternalAuth": false,
+  "Connection": {
+   "_id": "CnEEkrFZZdEE",
+   "Name": "Kissflow Process Connection"
+  },
+  "Integration": "WO_closed_DLP_raise_a_Back_charge__A00",
+  "Connector": {
+   "_id": "ComaBsL8ZTSMM",
+   "Name": "Kissflow Process",
+   "Version": "3.7.6",
+   "Logo": {
+    "small": {
+     "key": "Account001/Connectors/ComaBsL8ZTSMM/3.7.6/Logo/photos/24x24.png"
+    },
+    "medium": {
+     "key": "Account001/Connectors/ComaBsL8ZTSMM/3.7.6/Logo/photos/128x128.png"
+    },
+    "original": {
+     "key": "Account001/Connectors/ComaBsL8ZTSMM/3.7.6/Logo/Kissflow_Process.png"
+    }
+   },
+   "Status": "Published",
+   "WebsiteURL": "https://kissflow.com",
+   "TriggerId": "ItemCompleted",
+   "TriggerName": "ItemCompleted"
+  },
+  "Trigger::FieldMapping": [
+   "FieldMapping_3gqik"
+  ],
+  "Output": {
+   "_id": "SampleInstance001",
+   "Name": "Text data",
+   "_created_by": {
+    "_id": "UsATUIj4RC2p",
+    "Name": "Thomas",
+    "Kind": "User"
+   },
+   "_modified_by": {
+    "_id": "UsATUIj4RC2p",
+    "Name": "Thomas",
+    "Kind": "User"
+   },
+   "_created_at": "2026-09-22T09:13:04-08:00 America/Los_Angeles",
+   "_modified_at": "2026-09-22T09:13:04-08:00 America/Los_Angeles",
+   "_is_deleted": true,
+   "_deleted_at": "2026-09-22T09:13:04-08:00 America/Los_Angeles",
+   "_deleted_by": {
+    "_id": "UsATUIj4RC2p",
+    "Name": "Thomas",
+    "Kind": "User"
+   },
+   "_flow_name": "Text data",
+   "_application_id": "Text data",
+   "_flow_type": "Text data",
+   "_doc_version": "Text data",
+   "_current_step": "Text data",
+   "_current_assigned_to": [
+    {
+     "_id": "UsATUIj4RC2p",
+     "Name": "Thomas",
+     "Kind": "User"
+    },
+    {
+     "_id": "everyone",
+     "Name": "Everyone",
+     "Kind": "Group"
+    }
+   ],
+   "_completed_at": "2026-09-22T09:13:04-08:00 America/Los_Angeles",
+   "_status": "Text data",
+   "_stage": 2046,
+   "_restart_info": {
+    "Key": "Text Data"
+   },
+   "_reopen_info": "Text data",
+   "_root_process_instance": "Text data",
+   "_submitted_at": "2026-09-22T09:13:04-08:00 America/Los_Angeles",
+   "_request_number": 9798,
+   "_is_public_form": true,
+   "_counter": 5039,
+   "_last_completed_step": "Text data",
+   "_progress": 3375,
+   "_note": {
+    "Key": "Text Data"
+   },
+   "_expire_at": "2026-09-22T09:13:04-08:00 America/Los_Angeles",
+   "_source_instance": "Text data",
+   "_triggered_integrations": {
+    "Key": "Text Data"
+   },
+   "_subflow": {
+    "Key": "Text Data"
+   },
+   "_watchers": "Text data",
+   "Site": {
+    "_id": "Text data",
+    "Name": "Text data",
+    "Own_Operations": false,
+    "Site_Name": "Text data"
+   },
+   "Unit": {
+    "_id": "Text data",
+    "Name": "Text data",
+    "Unit_Number": "Text data"
+   },
+   "Category": {
+    "_id": "Text data",
+    "Summer_Uplift": false,
+    "Name": "Text data",
+    "Structural": false,
+    "Base_Priority": "P2",
+    "Category_Name": "Text data"
+   },
+   "Request_Title": "Text data",
+   "Description": "Text value",
+   "Description_Language": "Arabic",
+   "Channel": "Phone call",
+   "Reporter_Name": "Text data",
+   "First_Contact_At": "2026-09-22T09:13:04-08:00 America/Los_Angeles",
+   "Conversation_Transcript": "Text value",
+   "Vulnerable_Occupant": false,
+   "Access_Window": "Text data",
+   "Asset": {
+    "_id": "Text data",
+    "Batch": "Text data",
+    "Name": "Text data",
+    "Warranty_End_Date": "2026-09-22",
+    "DLP_End_Date": "2026-09-22",
+    "Asset_Tag": "Text data",
+    "Decennial_End_Date": "2026-09-22"
+   },
+   "Own_Operations": false,
+   "Base_Priority": "Text data",
+   "Summer_Uplift": false,
+   "Structural": false,
+   "Asset_Tag": "Text data",
+   "DLP_End_Date": "2026-09-22",
+   "Warranty_End_Date": "2026-09-22",
+   "Decennial_End_Date": "2026-09-22",
+   "Batch": "Text data",
+   "Installed_By": {
+    "_id": "Text data",
+    "Supervisor": {
+     "_id": "UsATUIj4RC2p",
+     "Name": "Thomas",
+     "Kind": "User"
+    },
+    "Name": "Text data",
+    "Company_Name": "Text data"
+   },
+   "Report_Month": 2886,
+   "Summer_Flag": 1694,
+   "Priority_Code": 1000,
+   "Response_Minutes": 1479,
+   "Resolve_Minutes": 3120,
+   "Root_Cause": {
+    "_id": "Text data",
+    "Excluded_From_DLP": false,
+    "Root_Cause_Name": "Text data",
+    "Name": "Text data"
+   },
+   "Excluded_From_DLP": false,
+   "DLP_Covered": 7896,
+   "Warranty_Covered": 3546,
+   "Liability_Code": 1614,
+   "Dispatch_Code": 3816,
+   "AI_Suggested_Category": "Text data",
+   "AI_Confidence": 2371,
+   "Assigned_Technician": {
+    "_id": "UsATUIj4RC2p",
+    "Name": "Thomas",
+    "Kind": "User"
+   },
+   "Accepted_At": "2026-09-22T09:13:04-08:00 America/Los_Angeles",
+   "Arrived_At": "2026-09-22T09:13:04-08:00 America/Los_Angeles",
+   "On_Hold_Reason": "Text data",
+   "Supply_Air_Reading": 7260,
+   "Diagnosis_Challenge_Shown": false,
+   "Challenge_Acknowledged": false,
+   "Closeout_Note": "Text value",
+   "Labour_AED": 9332,
+   "Occupant_Signature": {
+    "photos": [
+     {
+      "fileExtension": "jpg",
+      "height": 744,
+      "key": "Sample_Process/Instance001/Step001/Attachment001/Sample_Image.jpg",
+      "name": "Sample_Image.jpg",
+      "size": 3048912,
+      "width": 1366
+     },
+     {
+      "fileExtension": "jpeg",
+      "height": 654,
+      "key": "Sample_Process/Instance001/Step001/Attachment001/photos/1200x800.jpeg",
+      "name": "1200x800.jpeg",
+      "size": 22693,
+      "width": 1200
+     },
+     {
+      "fileExtension": "jpeg",
+      "height": 164,
+      "key": "Sample_Process/Instance001/Step001/Attachment001/photos/300x300.jpeg",
+      "name": "300x300.jpeg",
+      "size": 3417,
+      "width": 300
+     }
+    ],
+    "fileExtension": "jpeg",
+    "id": "Attachment001",
+    "key": "Sample_Process/Instance001/Step001/Attachment001/Sample_Image.jpg",
+    "name": "Sample_Image.jpg",
+    "size": 38052
+   },
+   "Resolved_At": "2026-09-22T09:13:04-08:00 America/Los_Angeles",
+   "Verified_At": "2026-09-22T09:13:04-08:00 America/Los_Angeles",
+   "Back_charge_Ref": "Text data",
+   "Parts_AED": 7390,
+   "Table::WO_Checklist_A00": [
+    {
+     "_id": "Text data",
+     "Name": "Text data",
+     "_created_by": {
+      "_id": "UsATUIj4RC2p",
+      "Name": "Thomas",
+      "Kind": "User"
+     },
+     "_modified_by": {
+      "_id": "UsATUIj4RC2p",
+      "Name": "Thomas",
+      "Kind": "User"
+     },
+     "_created_at": "2026-09-22T09:13:04-08:00 America/Los_Angeles",
+     "_modified_at": "2026-09-22T09:13:04-08:00 America/Los_Angeles",
+     "_is_deleted": false,
+     "_deleted_at": "2026-09-22T09:13:04-08:00 America/Los_Angeles",
+     "_deleted_by": {
+      "_id": "UsATUIj4RC2p",
+      "Name": "Thomas",
+      "Kind": "User"
+     },
+     "_flow_name": "Text data",
+     "_application_id": "Text data",
+     "_flow_type": "Text data",
+     "_doc_version": "Text data",
+     "Check_Step": "Text data",
+     "Done": false,
+     "Reading": "Text data"
+    }
+   ],
+   "Table::WO_Photos_A00": [
+    {
+     "_id": "Text data",
+     "Name": "Text data",
+     "_created_by": {
+      "_id": "UsATUIj4RC2p",
+      "Name": "Thomas",
+      "Kind": "User"
+     },
+     "_modified_by": {
+      "_id": "UsATUIj4RC2p",
+      "Name": "Thomas",
+      "Kind": "User"
+     },
+     "_created_at": "2026-09-22T09:13:04-08:00 America/Los_Angeles",
+     "_modified_at": "2026-09-22T09:13:04-08:00 America/Los_Angeles",
+     "_is_deleted": false,
+     "_deleted_at": "2026-09-22T09:13:04-08:00 America/Los_Angeles",
+     "_deleted_by": {
+      "_id": "UsATUIj4RC2p",
+      "Name": "Thomas",
+      "Kind": "User"
+     },
+     "_flow_name": "Text data",
+     "_application_id": "Text data",
+     "_flow_type": "Text data",
+     "_doc_version": "Text data",
+     "Photo": {
+      "photos": [
+       {
+        "fileExtension": "jpg",
+        "height": 744,
+        "key": "Sample_Process/Instance001/Step001/Attachment001/Sample_Image.jpg",
+        "name": "Sample_Image.jpg",
+        "size": 3048912,
+        "width": 1366
+       },
+       {
+        "fileExtension": "jpeg",
+        "height": 654,
+        "key": "Sample_Process/Instance001/Step001/Attachment001/photos/1200x800.jpeg",
+        "name": "1200x800.jpeg",
+        "size": 22693,
+        "width": 1200
+       },
+       {
+        "fileExtension": "jpeg",
+        "height": 164,
+        "key": "Sample_Process/Instance001/Step001/Attachment001/photos/300x300.jpeg",
+        "name": "300x300.jpeg",
+        "size": 3417,
+        "width": 300
+       }
+      ],
+      "fileExtension": "jpeg",
+      "id": "Attachment001",
+      "key": "Sample_Process/Instance001/Step001/Attachment001/Sample_Image.jpg",
+      "name": "Sample_Image.jpg",
+      "size": 38052
+     },
+     "Photo_Kind": "After",
+     "Caption": "Text data"
+    }
+   ],
+   "Table::WO_Parts_A00": [
+    {
+     "_id": "Text data",
+     "Name": "Text data",
+     "_created_by": {
+      "_id": "UsATUIj4RC2p",
+      "Name": "Thomas",
+      "Kind": "User"
+     },
+     "_modified_by": {
+      "_id": "UsATUIj4RC2p",
+      "Name": "Thomas",
+      "Kind": "User"
+     },
+     "_created_at": "2026-09-22T09:13:04-08:00 America/Los_Angeles",
+     "_modified_at": "2026-09-22T09:13:04-08:00 America/Los_Angeles",
+     "_is_deleted": false,
+     "_deleted_at": "2026-09-22T09:13:04-08:00 America/Los_Angeles",
+     "_deleted_by": {
+      "_id": "UsATUIj4RC2p",
+      "Name": "Thomas",
+      "Kind": "User"
+     },
+     "_flow_name": "Text data",
+     "_application_id": "Text data",
+     "_flow_type": "Text data",
+     "_doc_version": "Text data",
+     "Part": "Text data",
+     "Qty": 3609,
+     "Unit_Cost_AED": 7915,
+     "Line_Total_AED": 7444
+    }
+   ],
+   "_flow_id": "CAFM_Work_Order_A00",
+   "_current_context": [
+    {
+     "_id": "Text Data",
+     "_activity_id": "Text Data",
+     "Name": "Text Data",
+     "AssignedTo": [
+      {
+       "_id": "Text Data",
+       "Name": "Text Data",
+       "Kind": "User"
+      }
+     ]
+    }
+   ],
+   "_previous_context": [
+    {
+     "_id": "Text Data",
+     "_activity_id": "Text Data",
+     "Name": "Text Data",
+     "AssignedTo": [
+      {
+       "_id": "Text Data",
+       "Name": "Text Data",
+       "Kind": "User"
+      }
+     ]
+    }
+   ],
+   "_last_action_performed_by": {
+    "_id": "UsATUIj4RC2p",
+    "Name": "Thomas",
+    "Kind": "User"
+   },
+   "_last_action_performed_at": "2026-09-22T09:13:04-08:00 America/Los_Angeles"
+  },
+  "IsTested": true
+ },
+ "WO_closed_DLP_raise_a_Back_charge__A00": {
+  "Id": "WO_closed_DLP_raise_a_Back_charge__A00",
+  "Kind": "Integration",
+  "FlowType": "Integration",
+  "Name": "WO closed (DLP) → raise a Back-charge to the installing subcontractor",
+  "Description": "",
+  "Integration::Trigger": [
+   "Trigger_2w6u94"
+  ],
+  "Integration::Action": [
+   "Action_2vuzV8PT2s"
+  ],
+  "_application_id": "CAFM_POC_A00"
+ },
+ "Property_3ha2r1": {
+  "Id": "Property_3ha2r1",
+  "Kind": "Property",
+  "FieldMapping": "FieldMapping_3gqik",
+  "Type": "Value",
+  "Value": [
+   "CAFM_Work_Order_A00"
+  ],
+  "Name": "process_id"
+ },
+ "FieldMapping_3gqik": {
+  "Id": "FieldMapping_3gqik",
+  "Kind": "FieldMapping",
+  "Type": "String",
+  "FieldId": "Field008",
+  "Label": "Choose a process",
+  "Name": "process_id",
+  "IsRequired": true,
+  "Trigger": "Trigger_2w6u94",
+  "IsDropdown": true,
+  "AutoRefresh": true,
+  "SelectedDropdown": [
+   {
+    "FieldId": "CAFM_Work_Order_A00",
+    "FieldName": "CAFM Work Order"
+   }
+  ],
+  "FieldMapping::Property": [
+   "Property_3ha2r1"
+  ]
+ },
+ "PublishedAt": "2026-09-22T09:15:02Z",
+ "PublishedBy": {
+  "_id": "UsATUIj4RC2p",
+  "Name": "Thomas",
+  "Kind": "User"
+ },
+ "_meta_version": "1790068502570900",
+ "Action_2vuzV8PT2s": {
+  "Id": "Action_2vuzV8PT2s",
+  "Kind": "Action",
+  "Type": "ConditionalFirstPathAction",
+  "Name": "Execute first matching path",
+  "IsBuiltIn": true,
+  "IsInternalAuth": true,
+  "Connector": {
+   "_id": "Control",
+   "Name": "Control",
+   "ActionId": "ConditionalFirstPathAction",
+   "ActionName": "Execute first matching path",
+   "Version": "2.0.0",
+   "Status": "Published",
+   "WebsiteURL": "https://kissflow.com"
+  },
+  "Connection": {},
+  "Integration": "WO_closed_DLP_raise_a_Back_charge__A00",
+  "Action::Path": [
+   "Path_Oz4Y6xfttV"
+  ]
+ },
+ "Path_Oz4Y6xfttV": {
+  "Id": "Path_Oz4Y6xfttV",
+  "Kind": "Path",
+  "Type": "Path",
+  "Name": "Path",
+  "Action": "Action_2vuzV8PT2s",
+  "Path::Criteria": [
+   "Criteria_jxuHIjqlFv"
+  ],
+  "Path::Action": [
+   "Action_OXHEcXiExc"
+  ]
+ },
+ "Criteria_jxuHIjqlFv": {
+  "Id": "Criteria_jxuHIjqlFv",
+  "Kind": "Criteria",
+  "IsOR": false,
+  "Path": "Path_Oz4Y6xfttV",
+  "Criteria::Condition": [
+   "Condition_2qnBV68pJh"
+  ]
+ },
+ "Condition_2qnBV68pJh": {
+  "Id": "Condition_2qnBV68pJh",
+  "Kind": "Condition",
+  "Criteria": "Criteria_jxuHIjqlFv",
+  "Condition::FieldMapping": [
+   "FieldMapping_AIWW0a_znu",
+   "FieldMapping_hiAYIkqQ98"
+  ],
+  "LHSType": "number",
+  "Operator": "EQUAL_TO"
+ },
+ "FieldMapping_AIWW0a_znu": {
+  "Id": "FieldMapping_AIWW0a_znu",
+  "Kind": "FieldMapping",
+  "Type": "String",
+  "Name": "LHSField",
+  "Condition": "Condition_2qnBV68pJh",
+  "FieldMapping::Property": [
+   "Property_zQATCr-Sn-"
+  ]
+ },
+ "FieldMapping_hiAYIkqQ98": {
+  "Id": "FieldMapping_hiAYIkqQ98",
+  "Kind": "FieldMapping",
+  "Type": "String",
+  "Name": "RHSField",
+  "Condition": "Condition_2qnBV68pJh",
+  "FieldMapping::Property": [
+   "Property_ddTylrM-zN"
+  ]
+ },
+ "Property_zQATCr-Sn-": {
+  "Id": "Property_zQATCr-Sn-",
+  "Kind": "Property",
+  "FieldMapping": "FieldMapping_AIWW0a_znu",
+  "Type": "Field",
+  "Field": "context.Trigger_2w6u94.Liability_Code",
+  "Name": "LHSField"
+ },
+ "Property_ddTylrM-zN": {
+  "Id": "Property_ddTylrM-zN",
+  "Kind": "Property",
+  "FieldMapping": "FieldMapping_hiAYIkqQ98",
+  "Type": "Value",
+  "Value": [
+   1
+  ],
+  "Name": "RHSField"
+ },
+ "Action_OXHEcXiExc": {
+  "Id": "Action_OXHEcXiExc",
+  "Kind": "Action",
+  "Type": "Create",
+  "Connection": {
+   "_id": "CnEEkrFZZdEE",
+   "Name": "Kissflow Process Connection"
+  },
+  "Connector": {
+   "_id": "ComaBsL8ZTSMM",
+   "Name": "Kissflow Process",
+   "Version": "3.7.6",
+   "Logo": {
+    "small": {
+     "key": "Account001/Connectors/ComaBsL8ZTSMM/3.7.6/Logo/photos/24x24.png"
+    },
+    "medium": {
+     "key": "Account001/Connectors/ComaBsL8ZTSMM/3.7.6/Logo/photos/128x128.png"
+    },
+    "original": {
+     "key": "Account001/Connectors/ComaBsL8ZTSMM/3.7.6/Logo/Kissflow_Process.png"
+    }
+   },
+   "Status": "Published",
+   "WebsiteURL": "https://kissflow.com",
+   "ActionId": "CreateAndSubmitItem",
+   "ActionName": "CreateAndSubmitItem"
+  },
+  "IsInternalAuth": false,
+  "Name": "CreateAndSubmitItem",
+  "Path": "Path_Oz4Y6xfttV",
+  "Action::FieldMapping": [
+   "FieldMapping_8nLnbbttpW",
+   "FieldMapping_kA9ULCJazA",
+   "FieldMapping_mvbytqyLtr",
+   "FieldMapping_gdavsD5B0i",
+   "FieldMapping_ve29OT0m-o",
+   "FieldMapping_u5AB7vck7J",
+   "FieldMapping_zvuUhpyjqM",
+   "FieldMapping_eB2mfmiMBC",
+   "FieldMapping_aRcHebW1q3",
+   "FieldMapping_o0NOxai2Dd",
+   "FieldMapping_RwmsF1jScm",
+   "FieldMapping_rrQtP4ynM2"
+  ]
+ },
+ "FieldMapping_8nLnbbttpW": {
+  "Id": "FieldMapping_8nLnbbttpW",
+  "Kind": "FieldMapping",
+  "Type": "String",
+  "FieldId": "ActionField001",
+  "Label": "Choose a process",
+  "Name": "process_id",
+  "IsRequired": true,
+  "IsMultiValue": false,
+  "IsDropdown": true,
+  "IsPaginated": true,
+  "AutoRefresh": true,
+  "AllowMultiples": false,
+  "Action": "Action_OXHEcXiExc",
+  "FieldMapping::Property": [
+   "Property_WWkz04Sdmx"
+  ],
+  "SelectedDropdown": [
+   {
+    "FieldId": "CAFM_Back_charge_A00",
+    "FieldName": "DLP Cost Recovery - CAFM - POC"
+   }
+  ]
+ },
+ "Property_WWkz04Sdmx": {
+  "Id": "Property_WWkz04Sdmx",
+  "Kind": "Property",
+  "FieldMapping": "FieldMapping_8nLnbbttpW",
+  "Type": "Value",
+  "Value": [
+   "CAFM_Back_charge_A00"
+  ],
+  "Name": "process_id"
+ },
+ "FieldMapping_kA9ULCJazA": {
+  "Id": "FieldMapping_kA9ULCJazA",
+  "Kind": "FieldMapping",
+  "Type": "String",
+  "FieldId": "Work_Order_No",
+  "Label": "Work Order No",
+  "Name": "Work_Order_No",
+  "IsRequired": true,
+  "Action": "Action_OXHEcXiExc",
+  "FieldMapping::Property": [
+   "Property_JJR_bV-oeO"
+  ]
+ },
+ "FieldMapping_mvbytqyLtr": {
+  "Id": "FieldMapping_mvbytqyLtr",
+  "Kind": "FieldMapping",
+  "Type": "String",
+  "FieldId": "Work_Order_Instance",
+  "Label": "Work Order Instance",
+  "Name": "Work_Order_Instance",
+  "IsRequired": false,
+  "Action": "Action_OXHEcXiExc",
+  "FieldMapping::Property": [
+   "Property_OPfQQnbPHb"
+  ]
+ },
+ "FieldMapping_gdavsD5B0i": {
+  "Id": "FieldMapping_gdavsD5B0i",
+  "Kind": "FieldMapping",
+  "Type": "Object",
+  "FieldId": "Subcontractor",
+  "Label": "Subcontractor",
+  "Name": "Subcontractor",
+  "IsRequired": true,
+  "Action": "Action_OXHEcXiExc",
+  "FieldMapping::FieldMapping": [
+   "FieldMapping_sf9kI1w8Wn"
+  ]
+ },
+ "FieldMapping_sf9kI1w8Wn": {
+  "Id": "FieldMapping_sf9kI1w8Wn",
+  "Kind": "FieldMapping",
+  "Type": "String",
+  "FieldId": "_id",
+  "Label": "Id",
+  "Name": "_id",
+  "IsRequired": true,
+  "IsVisible": false,
+  "FieldMapping": "FieldMapping_gdavsD5B0i"
+ },
+ "FieldMapping_ve29OT0m-o": {
+  "Id": "FieldMapping_ve29OT0m-o",
+  "Kind": "FieldMapping",
+  "Type": "Object",
+  "FieldId": "Site",
+  "Label": "Site",
+  "Name": "Site",
+  "IsRequired": false,
+  "Action": "Action_OXHEcXiExc",
+  "FieldMapping::FieldMapping": [
+   "FieldMapping_U3efwFHrWY"
+  ]
+ },
+ "FieldMapping_U3efwFHrWY": {
+  "Id": "FieldMapping_U3efwFHrWY",
+  "Kind": "FieldMapping",
+  "Type": "String",
+  "FieldId": "_id",
+  "Label": "Id",
+  "Name": "_id",
+  "IsRequired": true,
+  "IsVisible": false,
+  "FieldMapping": "FieldMapping_ve29OT0m-o"
+ },
+ "FieldMapping_u5AB7vck7J": {
+  "Id": "FieldMapping_u5AB7vck7J",
+  "Kind": "FieldMapping",
+  "Type": "Object",
+  "FieldId": "Root_Cause",
+  "Label": "Root Cause",
+  "Name": "Root_Cause",
+  "IsRequired": false,
+  "Action": "Action_OXHEcXiExc",
+  "FieldMapping::FieldMapping": [
+   "FieldMapping__jcZy17tKT"
+  ]
+ },
+ "FieldMapping__jcZy17tKT": {
+  "Id": "FieldMapping__jcZy17tKT",
+  "Kind": "FieldMapping",
+  "Type": "String",
+  "FieldId": "_id",
+  "Label": "Id",
+  "Name": "_id",
+  "IsRequired": true,
+  "IsVisible": false,
+  "FieldMapping": "FieldMapping_u5AB7vck7J"
+ },
+ "FieldMapping_zvuUhpyjqM": {
+  "Id": "FieldMapping_zvuUhpyjqM",
+  "Kind": "FieldMapping",
+  "Type": "Number",
+  "FieldId": "Parts_AED",
+  "Label": "Parts AED",
+  "Name": "Parts_AED",
+  "IsRequired": false,
+  "Action": "Action_OXHEcXiExc"
+ },
+ "FieldMapping_eB2mfmiMBC": {
+  "Id": "FieldMapping_eB2mfmiMBC",
+  "Kind": "FieldMapping",
+  "Type": "Number",
+  "FieldId": "Labour_AED",
+  "Label": "Labour AED",
+  "Name": "Labour_AED",
+  "IsRequired": false,
+  "Action": "Action_OXHEcXiExc"
+ },
+ "FieldMapping_aRcHebW1q3": {
+  "Id": "FieldMapping_aRcHebW1q3",
+  "Kind": "FieldMapping",
+  "Type": "String",
+  "FieldId": "Subcontractor_Response",
+  "Label": "Subcontractor Response",
+  "Name": "Subcontractor_Response",
+  "IsRequired": false,
+  "Action": "Action_OXHEcXiExc"
+ },
+ "FieldMapping_o0NOxai2Dd": {
+  "Id": "FieldMapping_o0NOxai2Dd",
+  "Kind": "FieldMapping",
+  "Type": "String",
+  "FieldId": "Dispute_Reason",
+  "Label": "Dispute Reason",
+  "Name": "Dispute_Reason",
+  "IsRequired": false,
+  "Action": "Action_OXHEcXiExc"
+ },
+ "FieldMapping_RwmsF1jScm": {
+  "Id": "FieldMapping_RwmsF1jScm",
+  "Kind": "FieldMapping",
+  "Type": "Number",
+  "FieldId": "Agreed_AED",
+  "Label": "Agreed AED",
+  "Name": "Agreed_AED",
+  "IsRequired": false,
+  "Action": "Action_OXHEcXiExc"
+ },
+ "FieldMapping_rrQtP4ynM2": {
+  "Id": "FieldMapping_rrQtP4ynM2",
+  "Kind": "FieldMapping",
+  "Type": "Date",
+  "FieldId": "Recovered_On",
+  "Label": "Recovered On",
+  "Name": "Recovered_On",
+  "IsRequired": false,
+  "Action": "Action_OXHEcXiExc"
+ },
+ "Property_JJR_bV-oeO": {
+  "Id": "Property_JJR_bV-oeO",
+  "Kind": "Property",
+  "FieldMapping": "FieldMapping_kA9ULCJazA",
+  "Type": "Field",
+  "Field": "context.Trigger_2w6u94._id",
+  "Name": "Work_Order_No"
+ },
+ "Property_OPfQQnbPHb": {
+  "Id": "Property_OPfQQnbPHb",
+  "Kind": "Property",
+  "FieldMapping": "FieldMapping_mvbytqyLtr",
+  "Type": "Field",
+  "Field": "context.Trigger_2w6u94._id",
+  "Name": "Work_Order_Instance"
+ }
+}

@@ -1,0 +1,84 @@
+{
+  "Root": "Perm_1en7u4b",
+  "Perm_1en7u4b": {
+    "Id": "Perm_1en7u4b",
+    "Kind": "FlowPermission",
+    "Role": "Ro_1vmrgk3",
+    "RoleName": "FM Manager",
+    "Model": "CAFM_Permit_To_Work_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_qjr6a2",
+      "Permission_1nd1dzh",
+      "Permission_gqwivm",
+      "Permission_13eu74j",
+      "Permission_m75d0b",
+      "Permission_60rfje",
+      "Permission_tz082z",
+      "Permission_11yjuyu",
+      "Permission_1sdy8sy",
+      "Permission_gpilz1"
+    ]
+  },
+  "Permission_qjr6a2": {
+    "Id": "Permission_qjr6a2",
+    "Kind": "Permission",
+    "Column": "Permit_Type",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1nd1dzh": {
+    "Id": "Permission_1nd1dzh",
+    "Kind": "Permission",
+    "Column": "Site",
+    "Permission": "ReadOnly"
+  },
+  "Permission_gqwivm": {
+    "Id": "Permission_gqwivm",
+    "Kind": "Permission",
+    "Column": "Work_Order_No",
+    "Permission": "ReadOnly"
+  },
+  "Permission_13eu74j": {
+    "Id": "Permission_13eu74j",
+    "Kind": "Permission",
+    "Column": "Work_Location",
+    "Permission": "ReadOnly"
+  },
+  "Permission_m75d0b": {
+    "Id": "Permission_m75d0b",
+    "Kind": "Permission",
+    "Column": "Valid_From",
+    "Permission": "ReadOnly"
+  },
+  "Permission_60rfje": {
+    "Id": "Permission_60rfje",
+    "Kind": "Permission",
+    "Column": "Valid_To",
+    "Permission": "ReadOnly"
+  },
+  "Permission_tz082z": {
+    "Id": "Permission_tz082z",
+    "Kind": "Permission",
+    "Column": "Gas_Test_Reading",
+    "Permission": "ReadOnly"
+  },
+  "Permission_11yjuyu": {
+    "Id": "Permission_11yjuyu",
+    "Kind": "Permission",
+    "Column": "Isolation_Points",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1sdy8sy": {
+    "Id": "Permission_1sdy8sy",
+    "Kind": "Permission",
+    "Column": "Approval_Note",
+    "Permission": "ReadOnly"
+  },
+  "Permission_gpilz1": {
+    "Id": "Permission_gpilz1",
+    "Kind": "Permission",
+    "Column": "Closed_Out_At",
+    "Permission": "ReadOnly"
+  }
+}

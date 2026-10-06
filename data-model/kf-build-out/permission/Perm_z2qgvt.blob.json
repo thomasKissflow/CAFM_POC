@@ -1,0 +1,98 @@
+{
+  "Root": "Perm_z2qgvt",
+  "Perm_z2qgvt": {
+    "Id": "Perm_z2qgvt",
+    "Kind": "FlowPermission",
+    "Role": "Ro_12sl9a8",
+    "RoleName": "DLP Manager",
+    "Model": "CAFM_Back_charge_A00",
+    "Level": "Editable",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_1t1i7x6",
+      "Permission_1bjdcpe",
+      "Permission_1xiqybt",
+      "Permission_1dcdhcl",
+      "Permission_1vr25lg",
+      "Permission_1pd7kc3",
+      "Permission_eaq4we",
+      "Permission_26gjrh",
+      "Permission_1gyw9h3",
+      "Permission_ik6bfp",
+      "Permission_q35bgx",
+      "Permission_1a8fq1n"
+    ]
+  },
+  "Permission_1t1i7x6": {
+    "Id": "Permission_1t1i7x6",
+    "Kind": "Permission",
+    "Column": "Work_Order_No",
+    "Permission": "Editable"
+  },
+  "Permission_1bjdcpe": {
+    "Id": "Permission_1bjdcpe",
+    "Kind": "Permission",
+    "Column": "Work_Order_Instance",
+    "Permission": "Editable"
+  },
+  "Permission_1xiqybt": {
+    "Id": "Permission_1xiqybt",
+    "Kind": "Permission",
+    "Column": "Subcontractor",
+    "Permission": "Editable"
+  },
+  "Permission_1dcdhcl": {
+    "Id": "Permission_1dcdhcl",
+    "Kind": "Permission",
+    "Column": "Site",
+    "Permission": "Editable"
+  },
+  "Permission_1vr25lg": {
+    "Id": "Permission_1vr25lg",
+    "Kind": "Permission",
+    "Column": "Root_Cause",
+    "Permission": "Editable"
+  },
+  "Permission_1pd7kc3": {
+    "Id": "Permission_1pd7kc3",
+    "Kind": "Permission",
+    "Column": "Parts_AED",
+    "Permission": "Editable"
+  },
+  "Permission_eaq4we": {
+    "Id": "Permission_eaq4we",
+    "Kind": "Permission",
+    "Column": "Labour_AED",
+    "Permission": "Editable"
+  },
+  "Permission_26gjrh": {
+    "Id": "Permission_26gjrh",
+    "Kind": "Permission",
+    "Column": "Total_AED",
+    "Permission": "Editable"
+  },
+  "Permission_1gyw9h3": {
+    "Id": "Permission_1gyw9h3",
+    "Kind": "Permission",
+    "Column": "Subcontractor_Response",
+    "Permission": "Editable"
+  },
+  "Permission_ik6bfp": {
+    "Id": "Permission_ik6bfp",
+    "Kind": "Permission",
+    "Column": "Dispute_Reason",
+    "Permission": "Editable"
+  },
+  "Permission_q35bgx": {
+    "Id": "Permission_q35bgx",
+    "Kind": "Permission",
+    "Column": "Agreed_AED",
+    "Permission": "Editable"
+  },
+  "Permission_1a8fq1n": {
+    "Id": "Permission_1a8fq1n",
+    "Kind": "Permission",
+    "Column": "Recovered_On",
+    "Permission": "Editable"
+  }
+}

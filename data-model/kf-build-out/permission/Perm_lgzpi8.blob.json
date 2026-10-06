@@ -1,0 +1,42 @@
+{
+  "Root": "Perm_lgzpi8",
+  "Perm_lgzpi8": {
+    "Id": "Perm_lgzpi8",
+    "Kind": "FlowPermission",
+    "Role": "Ro_11s1y8v",
+    "RoleName": "Plant Manager",
+    "Model": "CAFM_SLA_Policy_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_ntn9w2",
+      "Permission_h13cg3",
+      "Permission_1efcz5g",
+      "Permission_155ikz1"
+    ]
+  },
+  "Permission_ntn9w2": {
+    "Id": "Permission_ntn9w2",
+    "Kind": "Permission",
+    "Column": "Priority",
+    "Permission": "ReadOnly"
+  },
+  "Permission_h13cg3": {
+    "Id": "Permission_h13cg3",
+    "Kind": "Permission",
+    "Column": "Response_Minutes",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1efcz5g": {
+    "Id": "Permission_1efcz5g",
+    "Kind": "Permission",
+    "Column": "Resolve_Minutes",
+    "Permission": "ReadOnly"
+  },
+  "Permission_155ikz1": {
+    "Id": "Permission_155ikz1",
+    "Kind": "Permission",
+    "Column": "At_Risk_Percent",
+    "Permission": "ReadOnly"
+  }
+}

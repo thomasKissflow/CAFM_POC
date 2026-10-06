@@ -1,0 +1,28 @@
+{
+  "_id": "CAFM_Event_Type_A00",
+  "Name": "CAFM Event Type",
+  "Description": "",
+  "Type": "List",
+  "Status": "Live",
+  "ListItems": [
+    "Created",
+    "AI triage",
+    "Liability flagged",
+    "Dispatched",
+    "Arrived",
+    "Diagnosis challenge",
+    "Root cause",
+    "Reclassified",
+    "Resolved",
+    "Verified",
+    "Closed",
+    "SLA breach",
+    "Back-charge raised",
+    "Comment"
+  ],
+  "_application_id": "CAFM_POC_A00",
+  "Security": {
+    "AllowAllFlows": true,
+    "AllowedFlows": []
+  }
+}

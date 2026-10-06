@@ -1,0 +1,42 @@
+{
+  "Root": "Perm_17o071g",
+  "Perm_17o071g": {
+    "Id": "Perm_17o071g",
+    "Kind": "FlowPermission",
+    "Role": "Ro_1vmrgk3",
+    "RoleName": "FM Manager",
+    "Model": "CAFM_Unit_A00",
+    "Level": "Editable",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_1skg72o",
+      "Permission_18lb8il",
+      "Permission_1enxh1m",
+      "Permission_30ylty"
+    ]
+  },
+  "Permission_1skg72o": {
+    "Id": "Permission_1skg72o",
+    "Kind": "Permission",
+    "Column": "Unit_Number",
+    "Permission": "Editable"
+  },
+  "Permission_18lb8il": {
+    "Id": "Permission_18lb8il",
+    "Kind": "Permission",
+    "Column": "Site",
+    "Permission": "Editable"
+  },
+  "Permission_1enxh1m": {
+    "Id": "Permission_1enxh1m",
+    "Kind": "Permission",
+    "Column": "Floor",
+    "Permission": "Editable"
+  },
+  "Permission_30ylty": {
+    "Id": "Permission_30ylty",
+    "Kind": "Permission",
+    "Column": "Resident",
+    "Permission": "Editable"
+  }
+}

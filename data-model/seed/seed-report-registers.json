@@ -1,0 +1,22 @@
+{
+ "CAFM_WO_Register_A00": {
+  "existing": 0,
+  "created": 1042,
+  "failed": 0
+ },
+ "CAFM_Compliance_Certificate_A00": {
+  "existing": 0,
+  "created": 26,
+  "failed": 0
+ },
+ "CAFM_PPM_Schedule_A00": {
+  "existing": 0,
+  "created": 17,
+  "failed": 0
+ },
+ "CAFM_Equipment_A00": {
+  "existing": 1,
+  "created": 59,
+  "failed": 0
+ }
+}

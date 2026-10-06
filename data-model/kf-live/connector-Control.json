@@ -1,0 +1,45 @@
+{
+ "Control": {
+  "Connector::Action": [
+   "ForAction",
+   "ConditionalFirstPathAction",
+   "ConditionalAllPathsAction"
+  ],
+  "Id": "Control",
+  "Kind": "Connector",
+  "Name": "Control",
+  "Version": "2.0.0",
+  "Organization": {
+   "Name": "SystemConnectors",
+   "_id": "ORG5kFknvu8a4"
+  }
+ },
+ "ForAction": {
+  "Connector": "Control",
+  "Id": "ForAction",
+  "IsBuiltIn": true,
+  "Kind": "Action",
+  "Name": "Iteration",
+  "Type": "ForAction",
+  "Description": "Repeats a set of actions for a specified number of times or until a condition is met"
+ },
+ "ConditionalFirstPathAction": {
+  "Connector": "Control",
+  "Id": "ConditionalFirstPathAction",
+  "IsBuiltIn": true,
+  "Kind": "Action",
+  "Name": "Execute first matching path",
+  "Type": "ConditionalFirstPathAction",
+  "Description": "Executes only the first path that meets the specified condition"
+ },
+ "ConditionalAllPathsAction": {
+  "Connector": "Control",
+  "Id": "ConditionalAllPathsAction",
+  "IsBuiltIn": true,
+  "Kind": "Action",
+  "Name": "Execute all matching paths",
+  "Type": "ConditionalAllPathsAction",
+  "Description": "Executes all paths that meet the specified condition"
+ },
+ "Root": "Control"
+}

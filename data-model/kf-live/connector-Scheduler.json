@@ -1,0 +1,1892 @@
+{
+ "Root": "Co9f6DM76TrrP",
+ "Co9f6DM76TrrP": {
+  "Id": "Co9f6DM76TrrP",
+  "Kind": "Connector",
+  "Name": "Scheduler by Kissflow",
+  "Version": "1.0.7",
+  "Connector::Authentication": [
+   "Authentication001"
+  ],
+  "Connector::Trigger": [
+   "ScheduleDaily",
+   "ScheduleWeekly",
+   "ScheduleMonthly",
+   "Trigger_CqOusn7cF"
+  ],
+  "Organization": {
+   "_id": "ORG5kFknvu8a4",
+   "Name": "SystemConnectors"
+  }
+ },
+ "Authentication001": {
+  "Id": "Authentication001",
+  "Kind": "Authentication",
+  "Connector": "Co9f6DM76TrrP",
+  "Name": "internal_auth",
+  "Type": "InternalAuth"
+ },
+ "ScheduleDaily": {
+  "Id": "ScheduleDaily",
+  "Connector": "Co9f6DM76TrrP",
+  "Kind": "Trigger",
+  "Description": "Triggers your flow every day at the chosen hour of time.",
+  "Name": "Schedule daily",
+  "InputFields::Field": [
+   "ScheduleDailyTriggerInputFields001",
+   "ScheduleDailyTriggerInputFields002",
+   "ScheduleDailyTriggerInputFields003",
+   "ScheduleDailyTriggerDynamicField"
+  ],
+  "Trigger::TriggerRequestConfiguration": [
+   "ScheduleDailyTriggerRequestConfiguration001"
+  ]
+ },
+ "ScheduleDailyTriggerInputFields001": {
+  "Id": "ScheduleDailyTriggerInputFields001",
+  "InputFields": "ScheduleDaily",
+  "IsRequired": true,
+  "Kind": "Field",
+  "Label": "Select hour of the day",
+  "Name": "Hour",
+  "Type": "Time"
+ },
+ "ScheduleDailyTriggerInputFields002": {
+  "Id": "ScheduleDailyTriggerInputFields002",
+  "InputFields": "ScheduleDaily",
+  "Kind": "Field",
+  "Label": "Repeat frequency (in days)",
+  "Name": "Interval",
+  "Type": "Number"
+ },
+ "ScheduleDailyTriggerInputFields003": {
+  "Id": "ScheduleDailyTriggerInputFields003",
+  "AutoRefresh": true,
+  "InputFields": "ScheduleDaily",
+  "IsDropdown": true,
+  "Kind": "Field",
+  "Label": "Stoppage based on",
+  "Name": "scheduler_end_type",
+  "Type": "String",
+  "Field::Dropdown": [
+   "ScheduleDailyEndTypeDropDown"
+  ]
+ },
+ "ScheduleDailyEndTypeDropDown": {
+  "Id": "ScheduleDailyEndTypeDropDown",
+  "Field": "ScheduleDailyTriggerInputFields003",
+  "Kind": "Dropdown",
+  "Source": [
+   {
+    "FieldId": "end_date",
+    "FieldName": "Specific end date"
+   },
+   {
+    "FieldId": "count",
+    "FieldName": "Number of occurrences"
+   }
+  ],
+  "Type": "Static"
+ },
+ "ScheduleDailyTriggerDynamicField": {
+  "Id": "ScheduleDailyTriggerDynamicField",
+  "InputFields": "ScheduleDaily",
+  "IsDynamicField": true,
+  "Type": "String",
+  "Kind": "Field",
+  "Label": "Dynamic Name",
+  "Name": "DynamicField",
+  "Field::Request": [
+   "ScheduleDailyTriggerDynamicField_req"
+  ]
+ },
+ "ScheduleDailyTriggerDynamicField_req": {
+  "Id": "ScheduleDailyTriggerDynamicField_req",
+  "Field": "ScheduleDailyTriggerDynamicField",
+  "Kind": "Request",
+  "Mode": "Code",
+  "Code": "let fields=[];'end_date'===inputData.scheduler_end_type?fields.push({Id:'EndDate',Name:'EndDate',Label:'Ends on (Date)',IsRequired:!0,Type:'Date',Kind:'Field'}):'count'===inputData.scheduler_end_type&&fields.push({Id:'Count',Name:'Count',Label:'Ends after (occurrences)',IsRequired:!0,Type:'Number',Kind:'Field'});return fields"
+ },
+ "ScheduleDailyTriggerRequestConfiguration001": {
+  "Id": "ScheduleDailyTriggerRequestConfiguration001",
+  "Trigger": "ScheduleDaily",
+  "Kind": "TriggerRequestConfiguration",
+  "Type": "RESTHooks",
+  "Subscribe::Request": [
+   "ScheduleDailyTriggerSubscribe001"
+  ],
+  "Unsubscribe::Request": [
+   "TriggerUnsubscribe001"
+  ],
+  "Perform::Request": [
+   "ScheduleDailyTriggerPerform001"
+  ]
+ },
+ "ScheduleDailyTriggerSubscribe001": {
+  "Id": "ScheduleDailyTriggerSubscribe001",
+  "Subscribe": "ScheduleDailyTriggerRequestConfiguration001",
+  "Kind": "Request",
+  "Method": "POST",
+  "Mode": "Form",
+  "URL": "http://integrationv2-service:80/integration/2/{{context.Account.accountId}}/helper/schedule",
+  "Headers::Property": [
+   "HeadersProperty001"
+  ],
+  "Body::Property": [
+   "TriggerSubscribeBodyProperty001",
+   "TriggerSubscribeBodyProperty002",
+   "TriggerSubscribeBodyProperty003",
+   "TriggerSubscribeBodyProperty004",
+   "TriggerSubscribeBodyProperty005",
+   "TriggerSubscribeBodyProperty006"
+  ]
+ },
+ "HeadersProperty001": {
+  "Id": "HeadersProperty001",
+  "Headers": "ScheduleDailyTriggerSubscribe001",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Join",
+  "Property::Property": [
+   "HeadersProperty001_001",
+   "HeadersProperty001_002"
+  ]
+ },
+ "HeadersProperty001_001": {
+  "Id": "HeadersProperty001_001",
+  "Property": "HeadersProperty001",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Value",
+  "Value": "Bearer "
+ },
+ "HeadersProperty001_002": {
+  "Id": "HeadersProperty001_002",
+  "Property": "HeadersProperty001",
+  "Kind": "Property",
+  "Field": "authData.access_token",
+  "Name": "Authorization",
+  "Type": "Field"
+ },
+ "TriggerSubscribeBodyProperty001": {
+  "Id": "TriggerSubscribeBodyProperty001",
+  "Body": "ScheduleDailyTriggerSubscribe001",
+  "Kind": "Property",
+  "Field": "context.metadata.callbackURL",
+  "Name": "CallBackUrl",
+  "Type": "Field"
+ },
+ "TriggerSubscribeBodyProperty002": {
+  "Id": "TriggerSubscribeBodyProperty002",
+  "Body": "ScheduleDailyTriggerSubscribe001",
+  "Kind": "Property",
+  "Name": "Frequency",
+  "Type": "Value",
+  "Value": "DAILY"
+ },
+ "TriggerSubscribeBodyProperty003": {
+  "Id": "TriggerSubscribeBodyProperty003",
+  "Body": "ScheduleDailyTriggerSubscribe001",
+  "Kind": "Property",
+  "Field": "inputData.Interval",
+  "Name": "Interval",
+  "Type": "Field"
+ },
+ "TriggerSubscribeBodyProperty004": {
+  "Id": "TriggerSubscribeBodyProperty004",
+  "Body": "ScheduleDailyTriggerSubscribe001",
+  "Kind": "Property",
+  "Field": "inputData.Hour",
+  "Name": "Hour",
+  "Type": "Field"
+ },
+ "TriggerSubscribeBodyProperty005": {
+  "Id": "TriggerSubscribeBodyProperty005",
+  "Body": "ScheduleDailyTriggerSubscribe001",
+  "Kind": "Property",
+  "Field": "inputData.EndDate",
+  "Name": "EndDate",
+  "Type": "Field"
+ },
+ "TriggerSubscribeBodyProperty006": {
+  "Id": "TriggerSubscribeBodyProperty006",
+  "Body": "ScheduleDailyTriggerSubscribe001",
+  "Kind": "Property",
+  "Field": "inputData.Count",
+  "Name": "Count",
+  "Type": "Field"
+ },
+ "TriggerUnsubscribe001": {
+  "Id": "TriggerUnsubscribe001",
+  "Unsubscribe": "ScheduleDailyTriggerRequestConfiguration001",
+  "Kind": "Request",
+  "Method": "DELETE",
+  "Mode": "Form",
+  "URL": "http://integrationv2-service:80/integration/2/{{context.Account.accountId}}/helper/schedule/{{context.metadata.subscribedData.JobId}}",
+  "Headers::Property": [
+   "HeadersProperty002"
+  ]
+ },
+ "HeadersProperty002": {
+  "Id": "HeadersProperty002",
+  "Headers": "TriggerUnsubscribe001",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Join",
+  "Property::Property": [
+   "HeadersProperty002_001",
+   "HeadersProperty002_002"
+  ]
+ },
+ "HeadersProperty002_001": {
+  "Id": "HeadersProperty002_001",
+  "Property": "HeadersProperty002",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Value",
+  "Value": "Bearer "
+ },
+ "HeadersProperty002_002": {
+  "Id": "HeadersProperty002_002",
+  "Property": "HeadersProperty002",
+  "Kind": "Property",
+  "Field": "authData.access_token",
+  "Name": "Authorization",
+  "Type": "Field"
+ },
+ "ScheduleDailyTriggerPerform001": {
+  "Id": "ScheduleDailyTriggerPerform001",
+  "Perform": "ScheduleDailyTriggerRequestConfiguration001",
+  "Kind": "Request",
+  "Method": "POST",
+  "Mode": "Form",
+  "URL": "http://integrationv2-service:80/integration/2/{{context.Account.accountId}}/helper/schedule/test",
+  "Headers::Property": [
+   "HeadersProperty003"
+  ],
+  "Body::Property": [
+   "ScheduleDailyPerform001Property001",
+   "ScheduleDailyPerform001Property002",
+   "ScheduleDailyPerform001Property003",
+   "ScheduleDailyPerform001Property004",
+   "ScheduleDailyPerform001Property005",
+   "ScheduleDailyPerform001Property006"
+  ]
+ },
+ "HeadersProperty003": {
+  "Id": "HeadersProperty003",
+  "Headers": "ScheduleDailyTriggerPerform001",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Join",
+  "Property::Property": [
+   "HeadersProperty003_001",
+   "HeadersProperty003_002"
+  ]
+ },
+ "HeadersProperty003_001": {
+  "Id": "HeadersProperty003_001",
+  "Property": "HeadersProperty003",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Value",
+  "Value": "Bearer "
+ },
+ "HeadersProperty003_002": {
+  "Id": "HeadersProperty003_002",
+  "Property": "HeadersProperty003",
+  "Kind": "Property",
+  "Field": "authData.access_token",
+  "Name": "Authorization",
+  "Type": "Field"
+ },
+ "ScheduleDailyPerform001Property001": {
+  "Id": "ScheduleDailyPerform001Property001",
+  "Body": "ScheduleDailyTriggerPerform001",
+  "Kind": "Property",
+  "Field": "context.metadata.callbackURL",
+  "Name": "CallBackUrl",
+  "Type": "Field"
+ },
+ "ScheduleDailyPerform001Property002": {
+  "Id": "ScheduleDailyPerform001Property002",
+  "Body": "ScheduleDailyTriggerPerform001",
+  "Kind": "Property",
+  "Name": "Frequency",
+  "Type": "Value",
+  "Value": "DAILY"
+ },
+ "ScheduleDailyPerform001Property003": {
+  "Id": "ScheduleDailyPerform001Property003",
+  "Body": "ScheduleDailyTriggerPerform001",
+  "Kind": "Property",
+  "Field": "inputData.Interval",
+  "Name": "Interval",
+  "Type": "Field"
+ },
+ "ScheduleDailyPerform001Property004": {
+  "Id": "ScheduleDailyPerform001Property004",
+  "Body": "ScheduleDailyTriggerPerform001",
+  "Kind": "Property",
+  "Field": "inputData.Hour",
+  "Name": "Hour",
+  "Type": "Field"
+ },
+ "ScheduleDailyPerform001Property005": {
+  "Id": "ScheduleDailyPerform001Property005",
+  "Body": "ScheduleDailyTriggerPerform001",
+  "Kind": "Property",
+  "Field": "inputData.EndDate",
+  "Name": "EndDate",
+  "Type": "Field"
+ },
+ "ScheduleDailyPerform001Property006": {
+  "Id": "ScheduleDailyPerform001Property006",
+  "Body": "ScheduleDailyTriggerPerform001",
+  "Kind": "Property",
+  "Field": "inputData.Count",
+  "Name": "Count",
+  "Type": "Field"
+ },
+ "ScheduleWeekly": {
+  "Id": "ScheduleWeekly",
+  "Connector": "Co9f6DM76TrrP",
+  "Kind": "Trigger",
+  "Description": "Triggers your flow every week at the chosen day(s) and time of the week.",
+  "Name": "Schedule weekly",
+  "InputFields::Field": [
+   "ScheduleWeeklyTriggerInputFields001",
+   "ScheduleWeeklyTriggerInputFields002",
+   "ScheduleWeeklyTriggerInputFields003",
+   "ScheduleWeeklyTriggerInputFields004",
+   "ScheduleWeeklyTriggerDynamicField"
+  ],
+  "Trigger::TriggerRequestConfiguration": [
+   "ScheduleWeeklyTriggerRequestConfiguration001"
+  ]
+ },
+ "ScheduleWeeklyTriggerInputFields001": {
+  "Id": "ScheduleWeeklyTriggerInputFields001",
+  "InputFields": "ScheduleWeekly",
+  "Kind": "Field",
+  "Label": "Repeat frequency (in weeks)",
+  "Name": "Interval",
+  "Type": "Number"
+ },
+ "ScheduleWeeklyTriggerInputFields002": {
+  "Id": "ScheduleWeeklyTriggerInputFields002",
+  "InputFields": "ScheduleWeekly",
+  "IsDropdown": true,
+  "IsMultiValue": true,
+  "IsRequired": true,
+  "Kind": "Field",
+  "Label": "Select day(s) of the week",
+  "Name": "WeekDay",
+  "Type": "String",
+  "Field::Dropdown": [
+   "ScheduleWeeklySelectWeekdaysDropdownDropdown001"
+  ]
+ },
+ "ScheduleWeeklySelectWeekdaysDropdownDropdown001": {
+  "Id": "ScheduleWeeklySelectWeekdaysDropdownDropdown001",
+  "Field": "ScheduleWeeklyTriggerInputFields002",
+  "Kind": "Dropdown",
+  "Source": [
+   {
+    "FieldId": 0,
+    "FieldName": "Monday"
+   },
+   {
+    "FieldId": 1,
+    "FieldName": "Tuesday"
+   },
+   {
+    "FieldId": 2,
+    "FieldName": "Wednesday"
+   },
+   {
+    "FieldId": 3,
+    "FieldName": "Thursday"
+   },
+   {
+    "FieldId": 4,
+    "FieldName": "Friday"
+   },
+   {
+    "FieldId": 5,
+    "FieldName": "Saturday"
+   },
+   {
+    "FieldId": 6,
+    "FieldName": "Sunday"
+   }
+  ],
+  "Type": "Static"
+ },
+ "ScheduleWeeklyTriggerInputFields003": {
+  "Id": "ScheduleWeeklyTriggerInputFields003",
+  "AutoRefresh": true,
+  "InputFields": "ScheduleWeekly",
+  "Kind": "Field",
+  "Label": "Select hour of the day",
+  "Name": "Hour",
+  "Type": "Time"
+ },
+ "ScheduleWeeklyTriggerInputFields004": {
+  "Id": "ScheduleWeeklyTriggerInputFields004",
+  "AutoRefresh": true,
+  "InputFields": "ScheduleWeekly",
+  "IsDropdown": true,
+  "Kind": "Field",
+  "Label": "Stoppage based on",
+  "Name": "scheduler_end_type",
+  "Type": "String",
+  "Field::Dropdown": [
+   "ScheduleWeeklEndTypeDropDown"
+  ]
+ },
+ "ScheduleWeeklEndTypeDropDown": {
+  "Id": "ScheduleWeeklEndTypeDropDown",
+  "Field": "ScheduleWeeklyTriggerInputFields004",
+  "Kind": "Dropdown",
+  "Source": [
+   {
+    "FieldId": "end_date",
+    "FieldName": "Specific end date"
+   },
+   {
+    "FieldId": "count",
+    "FieldName": "Number of occurrences"
+   }
+  ],
+  "Type": "Static"
+ },
+ "ScheduleWeeklyTriggerDynamicField": {
+  "Id": "ScheduleWeeklyTriggerDynamicField",
+  "InputFields": "ScheduleWeekly",
+  "IsDynamicField": true,
+  "Type": "String",
+  "Kind": "Field",
+  "Label": "Dynamic Name",
+  "Name": "DynamicField",
+  "Field::Request": [
+   "ScheduleWeeklyTriggerDynamicField_req"
+  ]
+ },
+ "ScheduleWeeklyTriggerDynamicField_req": {
+  "Id": "ScheduleWeeklyTriggerDynamicField_req",
+  "Field": "ScheduleWeeklyTriggerDynamicField",
+  "Kind": "Request",
+  "Mode": "Code",
+  "Code": "let fields=[];'end_date'===inputData.scheduler_end_type?fields.push({Id:'EndDate',Name:'EndDate',Label:'Ends on (date)',IsRequired:!0,Type:'Date',Kind:'Field'}):'count'===inputData.scheduler_end_type&&fields.push({Id:'Count',Name:'Count',Label:'Ends after (occurrences)',IsRequired:!0,Type:'Number',Kind:'Field'});return fields"
+ },
+ "ScheduleWeeklyTriggerRequestConfiguration001": {
+  "Id": "ScheduleWeeklyTriggerRequestConfiguration001",
+  "Trigger": "ScheduleWeekly",
+  "Kind": "TriggerRequestConfiguration",
+  "Type": "RESTHooks",
+  "Subscribe::Request": [
+   "ScheduleWeeklyTriggerSubscribe001"
+  ],
+  "Unsubscribe::Request": [
+   "ScheduleWeeklyTriggerUnsubscribe001"
+  ],
+  "Perform::Request": [
+   "ScheduleWeeklyTriggerPerform001"
+  ]
+ },
+ "ScheduleWeeklyTriggerSubscribe001": {
+  "Id": "ScheduleWeeklyTriggerSubscribe001",
+  "Subscribe": "ScheduleWeeklyTriggerRequestConfiguration001",
+  "Kind": "Request",
+  "Method": "POST",
+  "Mode": "Form",
+  "URL": "http://integrationv2-service:80/integration/2/{{context.Account.accountId}}/helper/schedule",
+  "Headers::Property": [
+   "ScheduleWeeklyHeadersProperty001"
+  ],
+  "Body::Property": [
+   "ScheduleWeeklySubscribeBodyProperty001",
+   "ScheduleWeeklySubscribeBodyProperty002",
+   "ScheduleWeeklySubscribeBodyProperty003",
+   "ScheduleWeeklySubscribeBodyProperty004",
+   "ScheduleWeeklySubscribeBodyProperty005",
+   "ScheduleWeeklySubscribeBodyProperty006",
+   "ScheduleWeeklySubscribeBodyProperty007"
+  ]
+ },
+ "ScheduleWeeklyHeadersProperty001": {
+  "Id": "ScheduleWeeklyHeadersProperty001",
+  "Headers": "ScheduleWeeklyTriggerSubscribe001",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Join",
+  "Property::Property": [
+   "ScheduleWeeklyHeadersProperty001_001",
+   "ScheduleWeeklyHeadersProperty001_002"
+  ]
+ },
+ "ScheduleWeeklyHeadersProperty001_001": {
+  "Id": "ScheduleWeeklyHeadersProperty001_001",
+  "Property": "ScheduleWeeklyHeadersProperty001",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Value",
+  "Value": "Bearer "
+ },
+ "ScheduleWeeklyHeadersProperty001_002": {
+  "Id": "ScheduleWeeklyHeadersProperty001_002",
+  "Property": "ScheduleWeeklyHeadersProperty001",
+  "Kind": "Property",
+  "Field": "authData.access_token",
+  "Name": "Authorization",
+  "Type": "Field"
+ },
+ "ScheduleWeeklySubscribeBodyProperty001": {
+  "Id": "ScheduleWeeklySubscribeBodyProperty001",
+  "Body": "ScheduleWeeklyTriggerSubscribe001",
+  "Kind": "Property",
+  "Field": "context.metadata.callbackURL",
+  "Name": "CallBackUrl",
+  "Type": "Field"
+ },
+ "ScheduleWeeklySubscribeBodyProperty002": {
+  "Id": "ScheduleWeeklySubscribeBodyProperty002",
+  "Body": "ScheduleWeeklyTriggerSubscribe001",
+  "Kind": "Property",
+  "Name": "Frequency",
+  "Type": "Value",
+  "Value": "WEEKLY"
+ },
+ "ScheduleWeeklySubscribeBodyProperty003": {
+  "Id": "ScheduleWeeklySubscribeBodyProperty003",
+  "Body": "ScheduleWeeklyTriggerSubscribe001",
+  "Kind": "Property",
+  "Field": "inputData.Interval",
+  "Name": "Interval",
+  "Type": "Field"
+ },
+ "ScheduleWeeklySubscribeBodyProperty004": {
+  "Id": "ScheduleWeeklySubscribeBodyProperty004",
+  "Body": "ScheduleWeeklyTriggerSubscribe001",
+  "Kind": "Property",
+  "Field": "inputData.Hour",
+  "Name": "Hour",
+  "Type": "Field"
+ },
+ "ScheduleWeeklySubscribeBodyProperty005": {
+  "Id": "ScheduleWeeklySubscribeBodyProperty005",
+  "Body": "ScheduleWeeklyTriggerSubscribe001",
+  "Kind": "Property",
+  "Field": "inputData.WeekDay",
+  "Name": "WeekDay",
+  "Type": "Field"
+ },
+ "ScheduleWeeklySubscribeBodyProperty006": {
+  "Id": "ScheduleWeeklySubscribeBodyProperty006",
+  "Body": "ScheduleWeeklyTriggerSubscribe001",
+  "Kind": "Property",
+  "Field": "inputData.EndDate",
+  "Name": "EndDate",
+  "Type": "Field"
+ },
+ "ScheduleWeeklySubscribeBodyProperty007": {
+  "Id": "ScheduleWeeklySubscribeBodyProperty007",
+  "Body": "ScheduleWeeklyTriggerSubscribe001",
+  "Kind": "Property",
+  "Field": "inputData.Count",
+  "Name": "Count",
+  "Type": "Field"
+ },
+ "ScheduleWeeklyTriggerUnsubscribe001": {
+  "Id": "ScheduleWeeklyTriggerUnsubscribe001",
+  "Unsubscribe": "ScheduleWeeklyTriggerRequestConfiguration001",
+  "Kind": "Request",
+  "Method": "DELETE",
+  "Mode": "Form",
+  "URL": "http://integrationv2-service:80/integration/2/{{context.Account.accountId}}/helper/schedule/{{context.metadata.subscribedData.JobId}}",
+  "Headers::Property": [
+   "ScheduleWeeklyHeadersProperty002"
+  ]
+ },
+ "ScheduleWeeklyHeadersProperty002": {
+  "Id": "ScheduleWeeklyHeadersProperty002",
+  "Headers": "ScheduleWeeklyTriggerUnsubscribe001",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Join",
+  "Property::Property": [
+   "ScheduleWeeklyHeadersProperty002_001",
+   "ScheduleWeeklyHeadersProperty002_002"
+  ]
+ },
+ "ScheduleWeeklyHeadersProperty002_001": {
+  "Id": "ScheduleWeeklyHeadersProperty002_001",
+  "Property": "ScheduleWeeklyHeadersProperty002",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Value",
+  "Value": "Bearer "
+ },
+ "ScheduleWeeklyHeadersProperty002_002": {
+  "Id": "ScheduleWeeklyHeadersProperty002_002",
+  "Property": "ScheduleWeeklyHeadersProperty002",
+  "Kind": "Property",
+  "Field": "authData.access_token",
+  "Name": "Authorization",
+  "Type": "Field"
+ },
+ "ScheduleWeeklyTriggerPerform001": {
+  "Id": "ScheduleWeeklyTriggerPerform001",
+  "Perform": "ScheduleWeeklyTriggerRequestConfiguration001",
+  "Kind": "Request",
+  "Method": "POST",
+  "Mode": "Form",
+  "URL": "http://integrationv2-service:80/integration/2/{{context.Account.accountId}}/helper/schedule/test",
+  "Headers::Property": [
+   "ScheduleWeeklyHeadersProperty003"
+  ],
+  "Body::Property": [
+   "ScheduleWeeklyTriggerPerformBodyProperty001",
+   "ScheduleWeeklyTriggerPerformBodyProperty002",
+   "ScheduleWeeklyTriggerPerformBodyProperty003",
+   "ScheduleWeeklyTriggerPerformBodyProperty004",
+   "ScheduleWeeklyTriggerPerformBodyProperty005",
+   "ScheduleWeeklyTriggerPerformBodyProperty006",
+   "ScheduleWeeklyTriggerPerformBodyProperty007"
+  ]
+ },
+ "ScheduleWeeklyHeadersProperty003": {
+  "Id": "ScheduleWeeklyHeadersProperty003",
+  "Headers": "ScheduleWeeklyTriggerPerform001",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Join",
+  "Property::Property": [
+   "ScheduleWeeklyHeadersProperty003_001",
+   "ScheduleWeeklyHeadersProperty003_002"
+  ]
+ },
+ "ScheduleWeeklyHeadersProperty003_001": {
+  "Id": "ScheduleWeeklyHeadersProperty003_001",
+  "Property": "ScheduleWeeklyHeadersProperty003",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Value",
+  "Value": "Bearer "
+ },
+ "ScheduleWeeklyHeadersProperty003_002": {
+  "Id": "ScheduleWeeklyHeadersProperty003_002",
+  "Property": "ScheduleWeeklyHeadersProperty003",
+  "Kind": "Property",
+  "Field": "authData.access_token",
+  "Name": "Authorization",
+  "Type": "Field"
+ },
+ "ScheduleWeeklyTriggerPerformBodyProperty001": {
+  "Id": "ScheduleWeeklyTriggerPerformBodyProperty001",
+  "Body": "ScheduleWeeklyTriggerPerform001",
+  "Kind": "Property",
+  "Field": "context.metadata.callbackURL",
+  "Name": "CallBackUrl",
+  "Type": "Field"
+ },
+ "ScheduleWeeklyTriggerPerformBodyProperty002": {
+  "Id": "ScheduleWeeklyTriggerPerformBodyProperty002",
+  "Body": "ScheduleWeeklyTriggerPerform001",
+  "Kind": "Property",
+  "Name": "Frequency",
+  "Type": "Value",
+  "Value": "WEEKLY"
+ },
+ "ScheduleWeeklyTriggerPerformBodyProperty003": {
+  "Id": "ScheduleWeeklyTriggerPerformBodyProperty003",
+  "Body": "ScheduleWeeklyTriggerPerform001",
+  "Kind": "Property",
+  "Field": "inputData.Interval",
+  "Name": "Interval",
+  "Type": "Field"
+ },
+ "ScheduleWeeklyTriggerPerformBodyProperty004": {
+  "Id": "ScheduleWeeklyTriggerPerformBodyProperty004",
+  "Body": "ScheduleWeeklyTriggerPerform001",
+  "Kind": "Property",
+  "Field": "inputData.Hour",
+  "Name": "Hour",
+  "Type": "Field"
+ },
+ "ScheduleWeeklyTriggerPerformBodyProperty005": {
+  "Id": "ScheduleWeeklyTriggerPerformBodyProperty005",
+  "Body": "ScheduleWeeklyTriggerPerform001",
+  "Kind": "Property",
+  "Field": "inputData.WeekDay",
+  "Name": "WeekDay",
+  "Type": "Field"
+ },
+ "ScheduleWeeklyTriggerPerformBodyProperty006": {
+  "Id": "ScheduleWeeklyTriggerPerformBodyProperty006",
+  "Body": "ScheduleWeeklyTriggerPerform001",
+  "Kind": "Property",
+  "Field": "inputData.EndDate",
+  "Name": "EndDate",
+  "Type": "Field"
+ },
+ "ScheduleWeeklyTriggerPerformBodyProperty007": {
+  "Id": "ScheduleWeeklyTriggerPerformBodyProperty007",
+  "Body": "ScheduleWeeklyTriggerPerform001",
+  "Kind": "Property",
+  "Field": "inputData.Count",
+  "Name": "Count",
+  "Type": "Field"
+ },
+ "ScheduleMonthly": {
+  "Id": "ScheduleMonthly",
+  "Connector": "Co9f6DM76TrrP",
+  "Kind": "Trigger",
+  "Description": "Triggers your flow every month at the chosen day of the month.",
+  "Name": "Schedule monthly",
+  "InputFields::Field": [
+   "ScheduleMonthlyTriggerInputFields005",
+   "ScheduleMonthlyTriggerInputFields001",
+   "ScheduleMonthlyTriggerInputFields002",
+   "ScheduleMonthlyTriggerInputFields003",
+   "ScheduleMonthlyTriggerInputFields004",
+   "ScheduleMonthlyTriggerDynamicField"
+  ],
+  "Trigger::TriggerRequestConfiguration": [
+   "ScheduleMonthlyTriggerRequestConfiguration001"
+  ]
+ },
+ "ScheduleMonthlyTriggerInputFields005": {
+  "Id": "ScheduleMonthlyTriggerInputFields005",
+  "InputFields": "ScheduleMonthly",
+  "IsRequired": true,
+  "HelpText": "Set the date on which you want your scheduled trigger to start",
+  "IsDropdown": false,
+  "IsPaginated": false,
+  "Kind": "Field",
+  "Label": "Starts on",
+  "Name": "starting_date",
+  "Type": "Datetime"
+ },
+ "ScheduleMonthlyTriggerInputFields001": {
+  "Id": "ScheduleMonthlyTriggerInputFields001",
+  "InputFields": "ScheduleMonthly",
+  "Kind": "Field",
+  "Label": "Repeat frequency (in months)",
+  "Name": "Interval",
+  "Type": "Number"
+ },
+ "ScheduleMonthlyTriggerInputFields002": {
+  "Id": "ScheduleMonthlyTriggerInputFields002",
+  "InputFields": "ScheduleMonthly",
+  "IsDropdown": true,
+  "IsMultiValue": true,
+  "IsRequired": true,
+  "Kind": "Field",
+  "Label": "Select calender day of the month",
+  "Name": "MonthDay",
+  "Type": "String",
+  "Field::Dropdown": [
+   "ScheduleMonthlySelectMonthDayDropdownDropdown001"
+  ]
+ },
+ "ScheduleMonthlySelectMonthDayDropdownDropdown001": {
+  "Id": "ScheduleMonthlySelectMonthDayDropdownDropdown001",
+  "Field": "ScheduleMonthlyTriggerInputFields002",
+  "Kind": "Dropdown",
+  "Source": [
+   {
+    "FieldId": -1,
+    "FieldName": "Last day of the month"
+   },
+   {
+    "FieldId": 1,
+    "FieldName": "1"
+   },
+   {
+    "FieldId": 2,
+    "FieldName": "2"
+   },
+   {
+    "FieldId": 3,
+    "FieldName": "3"
+   },
+   {
+    "FieldId": 4,
+    "FieldName": "4"
+   },
+   {
+    "FieldId": 5,
+    "FieldName": "5"
+   },
+   {
+    "FieldId": 6,
+    "FieldName": "6"
+   },
+   {
+    "FieldId": 7,
+    "FieldName": "7"
+   },
+   {
+    "FieldId": 8,
+    "FieldName": "8"
+   },
+   {
+    "FieldId": 9,
+    "FieldName": "9"
+   },
+   {
+    "FieldId": 10,
+    "FieldName": "10"
+   },
+   {
+    "FieldId": 11,
+    "FieldName": "11"
+   },
+   {
+    "FieldId": 12,
+    "FieldName": "12"
+   },
+   {
+    "FieldId": 13,
+    "FieldName": "13"
+   },
+   {
+    "FieldId": 14,
+    "FieldName": "14"
+   },
+   {
+    "FieldId": 15,
+    "FieldName": "15"
+   },
+   {
+    "FieldId": 16,
+    "FieldName": "16"
+   },
+   {
+    "FieldId": 17,
+    "FieldName": "17"
+   },
+   {
+    "FieldId": 18,
+    "FieldName": "18"
+   },
+   {
+    "FieldId": 19,
+    "FieldName": "19"
+   },
+   {
+    "FieldId": 20,
+    "FieldName": "20"
+   },
+   {
+    "FieldId": 21,
+    "FieldName": "21"
+   },
+   {
+    "FieldId": 22,
+    "FieldName": "22"
+   },
+   {
+    "FieldId": 23,
+    "FieldName": "23"
+   },
+   {
+    "FieldId": 24,
+    "FieldName": "24"
+   },
+   {
+    "FieldId": 25,
+    "FieldName": "25"
+   },
+   {
+    "FieldId": 26,
+    "FieldName": "26"
+   },
+   {
+    "FieldId": 27,
+    "FieldName": "27"
+   },
+   {
+    "FieldId": 28,
+    "FieldName": "28"
+   },
+   {
+    "FieldId": 29,
+    "FieldName": "29"
+   },
+   {
+    "FieldId": 30,
+    "FieldName": "30"
+   },
+   {
+    "FieldId": 31,
+    "FieldName": "31"
+   }
+  ],
+  "Type": "Static"
+ },
+ "ScheduleMonthlyTriggerInputFields003": {
+  "Id": "ScheduleMonthlyTriggerInputFields003",
+  "InputFields": "ScheduleMonthly",
+  "IsRequired": true,
+  "Kind": "Field",
+  "Label": "Select time of the day",
+  "Name": "Hour",
+  "Type": "Time"
+ },
+ "ScheduleMonthlyTriggerInputFields004": {
+  "Id": "ScheduleMonthlyTriggerInputFields004",
+  "AutoRefresh": true,
+  "HelpText": "Select the type of end date for scheduler",
+  "InputFields": "ScheduleMonthly",
+  "IsDropdown": true,
+  "Kind": "Field",
+  "Label": "Stoppage based on",
+  "Name": "scheduler_end_type",
+  "Type": "String",
+  "Field::Dropdown": [
+   "ScheduleMonthlylEndTypeDropDown"
+  ]
+ },
+ "ScheduleMonthlylEndTypeDropDown": {
+  "Id": "ScheduleMonthlylEndTypeDropDown",
+  "Field": "ScheduleMonthlyTriggerInputFields004",
+  "Kind": "Dropdown",
+  "Source": [
+   {
+    "FieldId": "end_date",
+    "FieldName": "Specific end date"
+   },
+   {
+    "FieldId": "count",
+    "FieldName": "Number of occurrences"
+   }
+  ],
+  "Type": "Static"
+ },
+ "ScheduleMonthlyTriggerDynamicField": {
+  "Id": "ScheduleMonthlyTriggerDynamicField",
+  "InputFields": "ScheduleMonthly",
+  "IsDynamicField": true,
+  "Type": "String",
+  "Kind": "Field",
+  "Label": "Dynamic Name",
+  "Name": "DynamicField",
+  "Field::Request": [
+   "ScheduleMonthlyTriggerDynamicField_req"
+  ]
+ },
+ "ScheduleMonthlyTriggerDynamicField_req": {
+  "Id": "ScheduleMonthlyTriggerDynamicField_req",
+  "Field": "ScheduleMonthlyTriggerDynamicField",
+  "Kind": "Request",
+  "Mode": "Code",
+  "Code": "let fields=[];'end_date'===inputData.scheduler_end_type?fields.push({Id:'EndDate',Name:'EndDate',Label:'Ends on (date)',IsRequired:!0,Type:'Date',Kind:'Field'}):'count'===inputData.scheduler_end_type&&fields.push({Id:'Count',Name:'Count',Label:'Ends after (occurrences)',IsRequired:!0,Type:'Number',Kind:'Field'});return fields"
+ },
+ "ScheduleMonthlyTriggerRequestConfiguration001": {
+  "Id": "ScheduleMonthlyTriggerRequestConfiguration001",
+  "Trigger": "ScheduleMonthly",
+  "Kind": "TriggerRequestConfiguration",
+  "Type": "RESTHooks",
+  "Subscribe::Request": [
+   "ScheduleMonthlyTriggerSubscribe001"
+  ],
+  "Unsubscribe::Request": [
+   "ScheduleMonthlyTriggerUnsubscribe001"
+  ],
+  "Perform::Request": [
+   "ScheduleMonthlyTriggerPerform001"
+  ]
+ },
+ "ScheduleMonthlyTriggerSubscribe001": {
+  "Id": "ScheduleMonthlyTriggerSubscribe001",
+  "Subscribe": "ScheduleMonthlyTriggerRequestConfiguration001",
+  "Kind": "Request",
+  "Method": "POST",
+  "Mode": "Form",
+  "URL": "http://integrationv2-service:80/integration/2/{{context.Account.accountId}}/helper/schedule",
+  "Headers::Property": [
+   "ScheduleMonthlyHeadersProperty001"
+  ],
+  "Body::Property": [
+   "ScheduleMonthlySubscribeBodyProperty001",
+   "ScheduleMonthlySubscribeBodyProperty002",
+   "ScheduleMonthlySubscribeBodyProperty003",
+   "ScheduleMonthlySubscribeBodyProperty004",
+   "ScheduleMonthlySubscribeBodyProperty005",
+   "ScheduleMonthlySubscribeBodyProperty006",
+   "ScheduleMonthlySubscribeBodyProperty007",
+   "ScheduleMonthlySubscribeBodyProperty008"
+  ]
+ },
+ "ScheduleMonthlyHeadersProperty001": {
+  "Id": "ScheduleMonthlyHeadersProperty001",
+  "Headers": "ScheduleMonthlyTriggerSubscribe001",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Join",
+  "Property::Property": [
+   "ScheduleMonthlyHeadersProperty001_001",
+   "ScheduleMonthlyHeadersProperty001_002"
+  ]
+ },
+ "ScheduleMonthlyHeadersProperty001_001": {
+  "Id": "ScheduleMonthlyHeadersProperty001_001",
+  "Property": "ScheduleMonthlyHeadersProperty001",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Value",
+  "Value": "Bearer "
+ },
+ "ScheduleMonthlyHeadersProperty001_002": {
+  "Id": "ScheduleMonthlyHeadersProperty001_002",
+  "Property": "ScheduleMonthlyHeadersProperty001",
+  "Kind": "Property",
+  "Field": "authData.access_token",
+  "Name": "Authorization",
+  "Type": "Field"
+ },
+ "ScheduleMonthlySubscribeBodyProperty001": {
+  "Id": "ScheduleMonthlySubscribeBodyProperty001",
+  "Body": "ScheduleMonthlyTriggerSubscribe001",
+  "Kind": "Property",
+  "Field": "context.metadata.callbackURL",
+  "Name": "CallBackUrl",
+  "Type": "Field"
+ },
+ "ScheduleMonthlySubscribeBodyProperty002": {
+  "Id": "ScheduleMonthlySubscribeBodyProperty002",
+  "Body": "ScheduleMonthlyTriggerSubscribe001",
+  "Kind": "Property",
+  "Name": "Frequency",
+  "Type": "Value",
+  "Value": "MONTHLY"
+ },
+ "ScheduleMonthlySubscribeBodyProperty003": {
+  "Id": "ScheduleMonthlySubscribeBodyProperty003",
+  "Body": "ScheduleMonthlyTriggerSubscribe001",
+  "Kind": "Property",
+  "Field": "inputData.Interval",
+  "Name": "Interval",
+  "Type": "Field"
+ },
+ "ScheduleMonthlySubscribeBodyProperty004": {
+  "Id": "ScheduleMonthlySubscribeBodyProperty004",
+  "Body": "ScheduleMonthlyTriggerSubscribe001",
+  "Kind": "Property",
+  "Field": "inputData.Hour",
+  "Name": "Hour",
+  "Type": "Field"
+ },
+ "ScheduleMonthlySubscribeBodyProperty005": {
+  "Id": "ScheduleMonthlySubscribeBodyProperty005",
+  "Body": "ScheduleMonthlyTriggerSubscribe001",
+  "Kind": "Property",
+  "Field": "inputData.MonthDay",
+  "Name": "MonthDay",
+  "Type": "Field"
+ },
+ "ScheduleMonthlySubscribeBodyProperty006": {
+  "Id": "ScheduleMonthlySubscribeBodyProperty006",
+  "Body": "ScheduleMonthlyTriggerSubscribe001",
+  "Kind": "Property",
+  "Field": "inputData.EndDate",
+  "Name": "EndDate",
+  "Type": "Field"
+ },
+ "ScheduleMonthlySubscribeBodyProperty007": {
+  "Id": "ScheduleMonthlySubscribeBodyProperty007",
+  "Body": "ScheduleMonthlyTriggerSubscribe001",
+  "Kind": "Property",
+  "Field": "inputData.Count",
+  "Name": "Count",
+  "Type": "Field"
+ },
+ "ScheduleMonthlySubscribeBodyProperty008": {
+  "Id": "ScheduleMonthlySubscribeBodyProperty008",
+  "Body": "ScheduleMonthlyTriggerSubscribe001",
+  "Kind": "Property",
+  "Field": "inputData.starting_date",
+  "Name": "DTSTART",
+  "Type": "Field"
+ },
+ "ScheduleMonthlyTriggerUnsubscribe001": {
+  "Id": "ScheduleMonthlyTriggerUnsubscribe001",
+  "Unsubscribe": "ScheduleMonthlyTriggerRequestConfiguration001",
+  "Kind": "Request",
+  "Method": "DELETE",
+  "Mode": "Form",
+  "URL": "http://integrationv2-service:80/integration/2/{{context.Account.accountId}}/helper/schedule/{{context.metadata.subscribedData.JobId}}",
+  "Headers::Property": [
+   "ScheduleMonthlyHeadersProperty002"
+  ]
+ },
+ "ScheduleMonthlyHeadersProperty002": {
+  "Id": "ScheduleMonthlyHeadersProperty002",
+  "Headers": "ScheduleMonthlyTriggerUnsubscribe001",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Join",
+  "Property::Property": [
+   "ScheduleMonthlyHeadersProperty002_001",
+   "ScheduleMonthlyHeadersProperty002_002"
+  ]
+ },
+ "ScheduleMonthlyHeadersProperty002_001": {
+  "Id": "ScheduleMonthlyHeadersProperty002_001",
+  "Property": "ScheduleMonthlyHeadersProperty002",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Value",
+  "Value": "Bearer "
+ },
+ "ScheduleMonthlyHeadersProperty002_002": {
+  "Id": "ScheduleMonthlyHeadersProperty002_002",
+  "Property": "ScheduleMonthlyHeadersProperty002",
+  "Kind": "Property",
+  "Field": "authData.access_token",
+  "Name": "Authorization",
+  "Type": "Field"
+ },
+ "ScheduleMonthlyTriggerPerform001": {
+  "Id": "ScheduleMonthlyTriggerPerform001",
+  "Perform": "ScheduleMonthlyTriggerRequestConfiguration001",
+  "Kind": "Request",
+  "Method": "POST",
+  "Mode": "Form",
+  "URL": "http://integrationv2-service:80/integration/2/{{context.Account.accountId}}/helper/schedule/test",
+  "Headers::Property": [
+   "ScheduleMonthlyHeadersProperty003"
+  ],
+  "Body::Property": [
+   "ScheduleMonthlyTriggerPerformBodyProperty001",
+   "ScheduleMonthklyTriggerPerformBodyProperty002",
+   "ScheduleMonthlyTriggerPerformBodyProperty003",
+   "ScheduleMonthlyTriggerPerformBodyProperty004",
+   "ScheduleMonthlyTriggerPerformBodyProperty005",
+   "ScheduleMonthlyTriggerPerformBodyProperty006",
+   "ScheduleMonthlyTriggerPerformBodyProperty007",
+   "ScheduleMonthlyTriggerPerformBodyProperty008"
+  ]
+ },
+ "ScheduleMonthlyHeadersProperty003": {
+  "Id": "ScheduleMonthlyHeadersProperty003",
+  "Headers": "ScheduleMonthlyTriggerPerform001",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Join",
+  "Property::Property": [
+   "ScheduleMonthlyHeadersProperty003_001",
+   "ScheduleMonthlyHeadersProperty003_002"
+  ]
+ },
+ "ScheduleMonthlyHeadersProperty003_001": {
+  "Id": "ScheduleMonthlyHeadersProperty003_001",
+  "Property": "ScheduleMonthlyHeadersProperty003",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Value",
+  "Value": "Bearer "
+ },
+ "ScheduleMonthlyHeadersProperty003_002": {
+  "Id": "ScheduleMonthlyHeadersProperty003_002",
+  "Property": "ScheduleMonthlyHeadersProperty003",
+  "Kind": "Property",
+  "Field": "authData.access_token",
+  "Name": "Authorization",
+  "Type": "Field"
+ },
+ "ScheduleMonthlyTriggerPerformBodyProperty001": {
+  "Id": "ScheduleMonthlyTriggerPerformBodyProperty001",
+  "Body": "ScheduleMonthlyTriggerPerform001",
+  "Kind": "Property",
+  "Field": "context.metadata.callbackURL",
+  "Name": "CallBackUrl",
+  "Type": "Field"
+ },
+ "ScheduleMonthklyTriggerPerformBodyProperty002": {
+  "Id": "ScheduleMonthklyTriggerPerformBodyProperty002",
+  "Body": "ScheduleMonthlyTriggerPerform001",
+  "Kind": "Property",
+  "Name": "Frequency",
+  "Type": "Value",
+  "Value": "MONTHLY"
+ },
+ "ScheduleMonthlyTriggerPerformBodyProperty003": {
+  "Id": "ScheduleMonthlyTriggerPerformBodyProperty003",
+  "Body": "ScheduleMonthlyTriggerPerform001",
+  "Kind": "Property",
+  "Field": "inputData.Interval",
+  "Name": "Interval",
+  "Type": "Field"
+ },
+ "ScheduleMonthlyTriggerPerformBodyProperty004": {
+  "Id": "ScheduleMonthlyTriggerPerformBodyProperty004",
+  "Body": "ScheduleMonthlyTriggerPerform001",
+  "Kind": "Property",
+  "Field": "inputData.Hour",
+  "Name": "Hour",
+  "Type": "Field"
+ },
+ "ScheduleMonthlyTriggerPerformBodyProperty005": {
+  "Id": "ScheduleMonthlyTriggerPerformBodyProperty005",
+  "Body": "ScheduleMonthlyTriggerPerform001",
+  "Kind": "Property",
+  "Field": "inputData.MonthDay",
+  "Name": "MonthDay",
+  "Type": "Field"
+ },
+ "ScheduleMonthlyTriggerPerformBodyProperty006": {
+  "Id": "ScheduleMonthlyTriggerPerformBodyProperty006",
+  "Body": "ScheduleMonthlyTriggerPerform001",
+  "Kind": "Property",
+  "Field": "inputData.EndDate",
+  "Name": "EndDate",
+  "Type": "Field"
+ },
+ "ScheduleMonthlyTriggerPerformBodyProperty007": {
+  "Id": "ScheduleMonthlyTriggerPerformBodyProperty007",
+  "Body": "ScheduleMonthlyTriggerPerform001",
+  "Kind": "Property",
+  "Field": "inputData.Count",
+  "Name": "Count",
+  "Type": "Field"
+ },
+ "ScheduleMonthlyTriggerPerformBodyProperty008": {
+  "Id": "ScheduleMonthlyTriggerPerformBodyProperty008",
+  "Body": "ScheduleMonthlyTriggerPerform001",
+  "Kind": "Property",
+  "Field": "inputData.starting_date",
+  "Name": "DTSTART",
+  "Type": "Field"
+ },
+ "Trigger_CqOusn7cF": {
+  "Id": "Trigger_CqOusn7cF",
+  "Type": "Create",
+  "Connector": "Co9f6DM76TrrP",
+  "Kind": "Trigger",
+  "Name": "Schedule yearly",
+  "Description": "Triggers your flow every year at the chosen date of the year.",
+  "InputFields::Field": [
+   "Field_qgye6NWhl",
+   "Field_OoxuZKLls",
+   "Field_O1Of7nXtd",
+   "Field_efbqCtzeo",
+   "Field_3ddjUSNGl",
+   "Field_kWZwNTDQX",
+   "Field_SORabcswM"
+  ],
+  "Trigger::TriggerRequestConfiguration": [
+   "TriggerRequestConfiguration__nk37CYmF"
+  ]
+ },
+ "Field_qgye6NWhl": {
+  "Id": "Field_qgye6NWhl",
+  "IsRequired": true,
+  "IsMultiValue": false,
+  "IsDropdown": false,
+  "IsPaginated": false,
+  "InputFields": "Trigger_CqOusn7cF",
+  "HelpText": "Set the date on which you want your scheduled trigger to start",
+  "Kind": "Field",
+  "Type": "Datetime",
+  "Name": "starting_date",
+  "Label": "Starts on"
+ },
+ "Field_OoxuZKLls": {
+  "Id": "Field_OoxuZKLls",
+  "IsRequired": false,
+  "IsMultiValue": false,
+  "IsDropdown": false,
+  "IsPaginated": false,
+  "InputFields": "Trigger_CqOusn7cF",
+  "Kind": "Field",
+  "Type": "Number",
+  "Name": "Interval",
+  "Label": "Repeat frequency (in years)"
+ },
+ "Field_O1Of7nXtd": {
+  "Id": "Field_O1Of7nXtd",
+  "IsRequired": true,
+  "IsMultiValue": true,
+  "IsDropdown": true,
+  "IsPaginated": false,
+  "InputFields": "Trigger_CqOusn7cF",
+  "Kind": "Field",
+  "Type": "String",
+  "Name": "MonthOfYear",
+  "Label": "Select calendar month of the year",
+  "Field::Dropdown": [
+   "Dropdown_c2gWeKVtK"
+  ]
+ },
+ "Dropdown_c2gWeKVtK": {
+  "Id": "Dropdown_c2gWeKVtK",
+  "Field": "Field_O1Of7nXtd",
+  "Kind": "Dropdown",
+  "Type": "Static",
+  "Source": [
+   {
+    "FieldId": 1,
+    "FieldName": "January"
+   },
+   {
+    "FieldId": 2,
+    "FieldName": "February"
+   },
+   {
+    "FieldId": 3,
+    "FieldName": "March"
+   },
+   {
+    "FieldId": 4,
+    "FieldName": "April"
+   },
+   {
+    "FieldId": 5,
+    "FieldName": "May"
+   },
+   {
+    "FieldId": 6,
+    "FieldName": "June"
+   },
+   {
+    "FieldId": 7,
+    "FieldName": "July"
+   },
+   {
+    "FieldId": 8,
+    "FieldName": "August"
+   },
+   {
+    "FieldId": 9,
+    "FieldName": "September"
+   },
+   {
+    "FieldId": 10,
+    "FieldName": "October"
+   },
+   {
+    "FieldId": 11,
+    "FieldName": "November"
+   },
+   {
+    "FieldId": 12,
+    "FieldName": "December"
+   }
+  ]
+ },
+ "Field_efbqCtzeo": {
+  "Id": "Field_efbqCtzeo",
+  "IsRequired": true,
+  "IsMultiValue": false,
+  "IsDropdown": true,
+  "IsPaginated": false,
+  "InputFields": "Trigger_CqOusn7cF",
+  "Kind": "Field",
+  "Type": "String",
+  "Name": "DayOfMonth",
+  "Label": "Select calendar day of the month",
+  "Field::Dropdown": [
+   "Dropdown_UZ-vQMFN8"
+  ]
+ },
+ "Dropdown_UZ-vQMFN8": {
+  "Id": "Dropdown_UZ-vQMFN8",
+  "Field": "Field_efbqCtzeo",
+  "Kind": "Dropdown",
+  "Type": "Static",
+  "Source": [
+   {
+    "FieldId": -1,
+    "FieldName": "Last day of the month"
+   },
+   {
+    "FieldId": 1,
+    "FieldName": "1"
+   },
+   {
+    "FieldId": 2,
+    "FieldName": "2"
+   },
+   {
+    "FieldId": 3,
+    "FieldName": "3"
+   },
+   {
+    "FieldId": 4,
+    "FieldName": "4"
+   },
+   {
+    "FieldId": 5,
+    "FieldName": "5"
+   },
+   {
+    "FieldId": 6,
+    "FieldName": "6"
+   },
+   {
+    "FieldId": 7,
+    "FieldName": "7"
+   },
+   {
+    "FieldId": 8,
+    "FieldName": "8"
+   },
+   {
+    "FieldId": 9,
+    "FieldName": "9"
+   },
+   {
+    "FieldId": 10,
+    "FieldName": "10"
+   },
+   {
+    "FieldId": 11,
+    "FieldName": "11"
+   },
+   {
+    "FieldId": 12,
+    "FieldName": "12"
+   },
+   {
+    "FieldId": 13,
+    "FieldName": "13"
+   },
+   {
+    "FieldId": 14,
+    "FieldName": "14"
+   },
+   {
+    "FieldId": 15,
+    "FieldName": "15"
+   },
+   {
+    "FieldId": 16,
+    "FieldName": "16"
+   },
+   {
+    "FieldId": 17,
+    "FieldName": "17"
+   },
+   {
+    "FieldId": 18,
+    "FieldName": "18"
+   },
+   {
+    "FieldId": 19,
+    "FieldName": "19"
+   },
+   {
+    "FieldId": 20,
+    "FieldName": "20"
+   },
+   {
+    "FieldId": 21,
+    "FieldName": "21"
+   },
+   {
+    "FieldId": 22,
+    "FieldName": "22"
+   },
+   {
+    "FieldId": 23,
+    "FieldName": "23"
+   },
+   {
+    "FieldId": 24,
+    "FieldName": "24"
+   },
+   {
+    "FieldId": 25,
+    "FieldName": "25"
+   },
+   {
+    "FieldId": 26,
+    "FieldName": "26"
+   },
+   {
+    "FieldId": 27,
+    "FieldName": "27"
+   },
+   {
+    "FieldId": 28,
+    "FieldName": "28"
+   },
+   {
+    "FieldId": 29,
+    "FieldName": "29"
+   },
+   {
+    "FieldId": 30,
+    "FieldName": "30"
+   },
+   {
+    "FieldId": 31,
+    "FieldName": "31"
+   }
+  ]
+ },
+ "Field_3ddjUSNGl": {
+  "Id": "Field_3ddjUSNGl",
+  "IsRequired": true,
+  "IsMultiValue": false,
+  "IsDropdown": false,
+  "IsPaginated": false,
+  "InputFields": "Trigger_CqOusn7cF",
+  "Kind": "Field",
+  "Type": "Time",
+  "Name": "Hour",
+  "Label": "Select hour of the chosen date"
+ },
+ "Field_kWZwNTDQX": {
+  "Id": "Field_kWZwNTDQX",
+  "HelpText": "Select the type of end date for scheduler",
+  "IsRequired": false,
+  "IsMultiValue": false,
+  "IsDropdown": true,
+  "IsPaginated": false,
+  "InputFields": "Trigger_CqOusn7cF",
+  "AutoRefresh": true,
+  "Kind": "Field",
+  "Type": "String",
+  "Name": "scheduler_end_type",
+  "Label": "Stoppage based on",
+  "Field::Dropdown": [
+   "Dropdown_jbYk1K-rJT"
+  ]
+ },
+ "Dropdown_jbYk1K-rJT": {
+  "Id": "Dropdown_jbYk1K-rJT",
+  "Field": "Field_kWZwNTDQX",
+  "Kind": "Dropdown",
+  "Type": "Static",
+  "Source": [
+   {
+    "FieldId": "end_date",
+    "FieldName": "Specific end date"
+   },
+   {
+    "FieldId": "count",
+    "FieldName": "Number of occurrences"
+   }
+  ]
+ },
+ "Field_SORabcswM": {
+  "Id": "Field_SORabcswM",
+  "InputFields": "Trigger_CqOusn7cF",
+  "IsDynamicField": true,
+  "Type": "String",
+  "Kind": "Field",
+  "Label": "Dynamic Name",
+  "Name": "DynamicField",
+  "Field::Request": [
+   "Request_SORabcswM"
+  ]
+ },
+ "Request_SORabcswM": {
+  "Id": "Request_SORabcswM",
+  "Field": "Field_SORabcswM",
+  "Kind": "Request",
+  "Mode": "Code",
+  "Code": "let fields=[];'end_date'===inputData.scheduler_end_type?fields.push({Id:'EndDate',Name:'EndDate',Label:'Ends on (date)',IsRequired:!0,Type:'Date',Kind:'Field'}):'count'===inputData.scheduler_end_type&&fields.push({Id:'Count',Name:'Count',Label:'Ends after (occurrences)',IsRequired:!0,Type:'Number',Kind:'Field'});return fields"
+ },
+ "TriggerRequestConfiguration__nk37CYmF": {
+  "Id": "TriggerRequestConfiguration__nk37CYmF",
+  "Trigger": "Trigger_CqOusn7cF",
+  "Kind": "TriggerRequestConfiguration",
+  "Type": "RESTHooks",
+  "Subscribe::Request": [
+   "Request_zXP38eMK4"
+  ],
+  "Unsubscribe::Request": [
+   "Request_eKSbzllnY"
+  ],
+  "Perform::Request": [
+   "Request_LzqGorRBC"
+  ]
+ },
+ "Request_zXP38eMK4": {
+  "Id": "Request_zXP38eMK4",
+  "Subscribe": "TriggerRequestConfiguration__nk37CYmF",
+  "Kind": "Request",
+  "Method": "POST",
+  "URL": "http://integrationv2-service:80/integration/2/{{context.Account.accountId}}/helper/schedule",
+  "Mode": "Form",
+  "Headers::Property": [
+   "Property_tuqJcVn-7"
+  ],
+  "Body::Property": [
+   "Property_4g7EBSTx7W",
+   "Property_GkuefNugzn",
+   "Property_g0C15Hc0VS",
+   "Property_PT2UXhqoVU",
+   "Property_2IIeP7QOND",
+   "Property_9RUW3vmGjR",
+   "Property_YxXdal5aPs",
+   "Property_DMoJI0tmOD",
+   "Property_SFRUiukgi8"
+  ]
+ },
+ "Property_tuqJcVn-7": {
+  "Id": "Property_tuqJcVn-7",
+  "Headers": "Request_zXP38eMK4",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Join",
+  "Property::Property": [
+   "Property_UJKjtX9Q4i",
+   "Property_3zny-dSngJ"
+  ]
+ },
+ "Property_UJKjtX9Q4i": {
+  "Id": "Property_UJKjtX9Q4i",
+  "Property": "Property_tuqJcVn-7",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Value",
+  "Value": "Bearer "
+ },
+ "Property_3zny-dSngJ": {
+  "Id": "Property_3zny-dSngJ",
+  "Property": "Property_tuqJcVn-7",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Field",
+  "Field": "authData.access_token"
+ },
+ "Property_4g7EBSTx7W": {
+  "Id": "Property_4g7EBSTx7W",
+  "Body": "Request_zXP38eMK4",
+  "Kind": "Property",
+  "Name": "CallBackUrl",
+  "Type": "Field",
+  "Field": "context.metadata.callbackURL"
+ },
+ "Property_GkuefNugzn": {
+  "Id": "Property_GkuefNugzn",
+  "Body": "Request_zXP38eMK4",
+  "Kind": "Property",
+  "Name": "Frequency",
+  "Type": "Value",
+  "Value": "YEARLY"
+ },
+ "Property_g0C15Hc0VS": {
+  "Id": "Property_g0C15Hc0VS",
+  "Body": "Request_zXP38eMK4",
+  "Kind": "Property",
+  "Name": "Interval",
+  "Type": "Field",
+  "Field": "inputData.Interval"
+ },
+ "Property_PT2UXhqoVU": {
+  "Id": "Property_PT2UXhqoVU",
+  "Body": "Request_zXP38eMK4",
+  "Kind": "Property",
+  "Name": "Hour",
+  "Type": "Field",
+  "Field": "inputData.Hour"
+ },
+ "Property_2IIeP7QOND": {
+  "Id": "Property_2IIeP7QOND",
+  "Body": "Request_zXP38eMK4",
+  "Kind": "Property",
+  "Name": "YearMonth",
+  "Type": "Field",
+  "Field": "inputData.MonthOfYear"
+ },
+ "Property_9RUW3vmGjR": {
+  "Id": "Property_9RUW3vmGjR",
+  "Body": "Request_zXP38eMK4",
+  "Kind": "Property",
+  "Name": "MonthDay",
+  "Type": "Field",
+  "Field": "inputData.DayOfMonth"
+ },
+ "Property_YxXdal5aPs": {
+  "Id": "Property_YxXdal5aPs",
+  "Body": "Request_zXP38eMK4",
+  "Kind": "Property",
+  "Name": "DTSTART",
+  "Type": "Field",
+  "Field": "inputData.starting_date"
+ },
+ "Property_DMoJI0tmOD": {
+  "Id": "Property_DMoJI0tmOD",
+  "Body": "Request_zXP38eMK4",
+  "Kind": "Property",
+  "Name": "EndDate",
+  "Type": "Field",
+  "Field": "inputData.EndDate"
+ },
+ "Property_SFRUiukgi8": {
+  "Id": "Property_SFRUiukgi8",
+  "Body": "Request_zXP38eMK4",
+  "Kind": "Property",
+  "Name": "Count",
+  "Type": "Field",
+  "Field": "inputData.Count"
+ },
+ "Request_eKSbzllnY": {
+  "Id": "Request_eKSbzllnY",
+  "Unsubscribe": "TriggerRequestConfiguration__nk37CYmF",
+  "Kind": "Request",
+  "Method": "DELETE",
+  "URL": "http://integrationv2-service:80/integration/2/{{context.Account.accountId}}/helper/schedule/{{context.metadata.subscribedData.JobId}}",
+  "Mode": "Form",
+  "Headers::Property": [
+   "Property_33e6-Nrav"
+  ]
+ },
+ "Property_33e6-Nrav": {
+  "Id": "Property_33e6-Nrav",
+  "Headers": "Request_eKSbzllnY",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Join",
+  "Property::Property": [
+   "Property_82f1SrKm8I",
+   "Property_3caxVzUKdU"
+  ]
+ },
+ "Property_82f1SrKm8I": {
+  "Id": "Property_82f1SrKm8I",
+  "Property": "Property_33e6-Nrav",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Value",
+  "Value": "Bearer "
+ },
+ "Property_3caxVzUKdU": {
+  "Id": "Property_3caxVzUKdU",
+  "Property": "Property_33e6-Nrav",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Field",
+  "Field": "authData.access_token"
+ },
+ "Request_LzqGorRBC": {
+  "Id": "Request_LzqGorRBC",
+  "Perform": "TriggerRequestConfiguration__nk37CYmF",
+  "Kind": "Request",
+  "Method": "POST",
+  "URL": "http://integrationv2-service:80/integration/2/{{context.Account.accountId}}/helper/schedule/test",
+  "Mode": "Form",
+  "Headers::Property": [
+   "Property_BX6jlZCpM"
+  ],
+  "Body::Property": [
+   "Property_WUKZJr2148",
+   "Property_siD3RW53g2",
+   "Property_Fasan-xoRY",
+   "Property_qNWXkGCEo0",
+   "Property_4VrjFGfnIG",
+   "Property_offJExizcZ",
+   "Property_Bd4K8OkTE0",
+   "Property_DrApDWH67f",
+   "Property_jI7EJkutUa"
+  ]
+ },
+ "Property_BX6jlZCpM": {
+  "Id": "Property_BX6jlZCpM",
+  "Headers": "Request_LzqGorRBC",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Join",
+  "Property::Property": [
+   "Property__-FO6IW-t2",
+   "Property_5Ruaf1DQ-2"
+  ]
+ },
+ "Property__-FO6IW-t2": {
+  "Id": "Property__-FO6IW-t2",
+  "Property": "Property_BX6jlZCpM",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Value",
+  "Value": "Bearer "
+ },
+ "Property_5Ruaf1DQ-2": {
+  "Id": "Property_5Ruaf1DQ-2",
+  "Property": "Property_BX6jlZCpM",
+  "Kind": "Property",
+  "Name": "Authorization",
+  "Type": "Field",
+  "Field": "authData.access_token"
+ },
+ "Property_WUKZJr2148": {
+  "Id": "Property_WUKZJr2148",
+  "Body": "Request_LzqGorRBC",
+  "Kind": "Property",
+  "Name": "CallBackUrl",
+  "Type": "Field",
+  "Field": "context.metadata.callbackURL"
+ },
+ "Property_siD3RW53g2": {
+  "Id": "Property_siD3RW53g2",
+  "Body": "Request_LzqGorRBC",
+  "Kind": "Property",
+  "Name": "Interval",
+  "Type": "Field",
+  "Field": "inputData.Interval"
+ },
+ "Property_Fasan-xoRY": {
+  "Id": "Property_Fasan-xoRY",
+  "Body": "Request_LzqGorRBC",
+  "Kind": "Property",
+  "Name": "Hour",
+  "Type": "Field",
+  "Field": "inputData.Hour"
+ },
+ "Property_qNWXkGCEo0": {
+  "Id": "Property_qNWXkGCEo0",
+  "Body": "Request_LzqGorRBC",
+  "Kind": "Property",
+  "Name": "YearMonth",
+  "Type": "Field",
+  "Field": "inputData.MonthOfYear"
+ },
+ "Property_4VrjFGfnIG": {
+  "Id": "Property_4VrjFGfnIG",
+  "Body": "Request_LzqGorRBC",
+  "Kind": "Property",
+  "Name": "MonthDay",
+  "Type": "Field",
+  "Field": "inputData.DayOfMonth"
+ },
+ "Property_offJExizcZ": {
+  "Id": "Property_offJExizcZ",
+  "Body": "Request_LzqGorRBC",
+  "Kind": "Property",
+  "Name": "DTSTART",
+  "Type": "Field",
+  "Field": "inputData.starting_date"
+ },
+ "Property_Bd4K8OkTE0": {
+  "Id": "Property_Bd4K8OkTE0",
+  "Body": "Request_LzqGorRBC",
+  "Kind": "Property",
+  "Name": "Frequency",
+  "Type": "Value",
+  "Value": "YEARLY"
+ },
+ "Property_DrApDWH67f": {
+  "Id": "Property_DrApDWH67f",
+  "Body": "Request_LzqGorRBC",
+  "Kind": "Property",
+  "Name": "EndDate",
+  "Type": "Field",
+  "Field": "inputData.EndDate"
+ },
+ "Property_jI7EJkutUa": {
+  "Id": "Property_jI7EJkutUa",
+  "Body": "Request_LzqGorRBC",
+  "Kind": "Property",
+  "Name": "Count",
+  "Type": "Field",
+  "Field": "inputData.Count"
+ },
+ "_last_saved_at": "2022-12-22T10:45:03Z"
+}

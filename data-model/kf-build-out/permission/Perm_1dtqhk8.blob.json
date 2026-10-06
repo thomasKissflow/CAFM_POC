@@ -1,0 +1,91 @@
+{
+  "Root": "Perm_1dtqhk8",
+  "Perm_1dtqhk8": {
+    "Id": "Perm_1dtqhk8",
+    "Kind": "FlowPermission",
+    "Role": "Ro_11s1y8v",
+    "RoleName": "Plant Manager",
+    "Model": "CAFM_Equipment_A00",
+    "Level": "Editable",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_1kp5d9f",
+      "Permission_1m81gi8",
+      "Permission_1w3tfqt",
+      "Permission_19jscqw",
+      "Permission_1w42rm0",
+      "Permission_82yx3k",
+      "Permission_a2f0j5",
+      "Permission_1wjzyfq",
+      "Permission_1u6yzga",
+      "Permission_1ccdxs4",
+      "Permission_18wiclu"
+    ]
+  },
+  "Permission_1kp5d9f": {
+    "Id": "Permission_1kp5d9f",
+    "Kind": "Permission",
+    "Column": "Fleet_No",
+    "Permission": "Editable"
+  },
+  "Permission_1m81gi8": {
+    "Id": "Permission_1m81gi8",
+    "Kind": "Permission",
+    "Column": "Equipment_Type",
+    "Permission": "Editable"
+  },
+  "Permission_1w3tfqt": {
+    "Id": "Permission_1w3tfqt",
+    "Kind": "Permission",
+    "Column": "Make",
+    "Permission": "Editable"
+  },
+  "Permission_19jscqw": {
+    "Id": "Permission_19jscqw",
+    "Kind": "Permission",
+    "Column": "Model",
+    "Permission": "Editable"
+  },
+  "Permission_1w42rm0": {
+    "Id": "Permission_1w42rm0",
+    "Kind": "Permission",
+    "Column": "Year",
+    "Permission": "Editable"
+  },
+  "Permission_82yx3k": {
+    "Id": "Permission_82yx3k",
+    "Kind": "Permission",
+    "Column": "Current_Project",
+    "Permission": "Editable"
+  },
+  "Permission_a2f0j5": {
+    "Id": "Permission_a2f0j5",
+    "Kind": "Permission",
+    "Column": "Hour_Meter",
+    "Permission": "Editable"
+  },
+  "Permission_1wjzyfq": {
+    "Id": "Permission_1wjzyfq",
+    "Kind": "Permission",
+    "Column": "Next_Service_Hours",
+    "Permission": "Editable"
+  },
+  "Permission_1u6yzga": {
+    "Id": "Permission_1u6yzga",
+    "Kind": "Permission",
+    "Column": "Hours_To_Service",
+    "Permission": "Editable"
+  },
+  "Permission_1ccdxs4": {
+    "Id": "Permission_1ccdxs4",
+    "Kind": "Permission",
+    "Column": "TPI_Expiry",
+    "Permission": "Editable"
+  },
+  "Permission_18wiclu": {
+    "Id": "Permission_18wiclu",
+    "Kind": "Permission",
+    "Column": "Equipment_Status",
+    "Permission": "Editable"
+  }
+}

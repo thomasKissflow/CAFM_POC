@@ -1,0 +1,42 @@
+{
+  "Root": "Perm_y0crno",
+  "Perm_y0crno": {
+    "Id": "Perm_y0crno",
+    "Kind": "FlowPermission",
+    "Role": "Ro_qzo537",
+    "RoleName": "HSE Officer",
+    "Model": "CAFM_SLA_Policy_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_185jnv3",
+      "Permission_1cwh6yo",
+      "Permission_pk9qmp",
+      "Permission_gafcga"
+    ]
+  },
+  "Permission_185jnv3": {
+    "Id": "Permission_185jnv3",
+    "Kind": "Permission",
+    "Column": "Priority",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1cwh6yo": {
+    "Id": "Permission_1cwh6yo",
+    "Kind": "Permission",
+    "Column": "Response_Minutes",
+    "Permission": "ReadOnly"
+  },
+  "Permission_pk9qmp": {
+    "Id": "Permission_pk9qmp",
+    "Kind": "Permission",
+    "Column": "Resolve_Minutes",
+    "Permission": "ReadOnly"
+  },
+  "Permission_gafcga": {
+    "Id": "Permission_gafcga",
+    "Kind": "Permission",
+    "Column": "At_Risk_Percent",
+    "Permission": "ReadOnly"
+  }
+}

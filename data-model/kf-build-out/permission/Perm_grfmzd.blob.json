@@ -1,0 +1,49 @@
+{
+  "Root": "Perm_grfmzd",
+  "Perm_grfmzd": {
+    "Id": "Perm_grfmzd",
+    "Kind": "FlowPermission",
+    "Role": "Ro_1vmrgk3",
+    "RoleName": "FM Manager",
+    "Model": "CAFM_Root_Cause_A00",
+    "Level": "Editable",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_liobai",
+      "Permission_liwgs0",
+      "Permission_j6p5fm",
+      "Permission_4wwca4",
+      "Permission_1fqwvoc"
+    ]
+  },
+  "Permission_liobai": {
+    "Id": "Permission_liobai",
+    "Kind": "Permission",
+    "Column": "Root_Cause_Code",
+    "Permission": "Editable"
+  },
+  "Permission_liwgs0": {
+    "Id": "Permission_liwgs0",
+    "Kind": "Permission",
+    "Column": "Root_Cause_Name",
+    "Permission": "Editable"
+  },
+  "Permission_j6p5fm": {
+    "Id": "Permission_j6p5fm",
+    "Kind": "Permission",
+    "Column": "Root_Cause_Name_AR",
+    "Permission": "Editable"
+  },
+  "Permission_4wwca4": {
+    "Id": "Permission_4wwca4",
+    "Kind": "Permission",
+    "Column": "Trade",
+    "Permission": "Editable"
+  },
+  "Permission_1fqwvoc": {
+    "Id": "Permission_1fqwvoc",
+    "Kind": "Permission",
+    "Column": "Excluded_From_DLP",
+    "Permission": "Editable"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "Root": "Perm_1aiig1c",
+  "Perm_1aiig1c": {
+    "Id": "Perm_1aiig1c",
+    "Kind": "FlowPermission",
+    "Role": "Ro_11s1y8v",
+    "RoleName": "Plant Manager",
+    "Model": "CAFM_Unit_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_183xzsp",
+      "Permission_17e6rom",
+      "Permission_b4u1kj",
+      "Permission_gatjkf"
+    ]
+  },
+  "Permission_183xzsp": {
+    "Id": "Permission_183xzsp",
+    "Kind": "Permission",
+    "Column": "Unit_Number",
+    "Permission": "ReadOnly"
+  },
+  "Permission_17e6rom": {
+    "Id": "Permission_17e6rom",
+    "Kind": "Permission",
+    "Column": "Site",
+    "Permission": "ReadOnly"
+  },
+  "Permission_b4u1kj": {
+    "Id": "Permission_b4u1kj",
+    "Kind": "Permission",
+    "Column": "Floor",
+    "Permission": "ReadOnly"
+  },
+  "Permission_gatjkf": {
+    "Id": "Permission_gatjkf",
+    "Kind": "Permission",
+    "Column": "Resident",
+    "Permission": "ReadOnly"
+  }
+}

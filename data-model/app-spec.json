@@ -1,0 +1,2958 @@
+{
+  "app": {
+    "name": "CAFM - POC",
+    "id": "CAFM_POC_A00",
+    "description": "Contractor-shaped CAFM for Dutco Construction (demo): handover, DLP liability, work orders, compliance, plant."
+  },
+  "roles": [
+    {
+      "name": "Executive"
+    },
+    {
+      "name": "FM Manager"
+    },
+    {
+      "name": "Helpdesk"
+    },
+    {
+      "name": "DLP Manager"
+    },
+    {
+      "name": "Subcontractor Supervisor"
+    },
+    {
+      "name": "Technician"
+    },
+    {
+      "name": "Resident"
+    },
+    {
+      "name": "Compliance Officer"
+    },
+    {
+      "name": "HSE Officer"
+    },
+    {
+      "name": "Plant Manager"
+    }
+  ],
+  "lists": [
+    {
+      "name": "CAFM Priority",
+      "items": [
+        "P1",
+        "P2",
+        "P3",
+        "P4"
+      ]
+    },
+    {
+      "name": "CAFM Channel",
+      "items": [
+        "Resident app",
+        "QR poster",
+        "Phone call",
+        "Helpdesk",
+        "PPM schedule",
+        "Email",
+        "WhatsApp",
+        "BMS alarm",
+        "Voice agent"
+      ]
+    },
+    {
+      "name": "CAFM Trade",
+      "items": [
+        "HVAC",
+        "Lifts",
+        "Fire",
+        "Electrical",
+        "Plumbing",
+        "Facade",
+        "Finishes"
+      ]
+    },
+    {
+      "name": "CAFM Site Kind",
+      "items": [
+        "Residential tower",
+        "Site office",
+        "Labour accommodation",
+        "Plant yard"
+      ]
+    },
+    {
+      "name": "CAFM Asset Status",
+      "items": [
+        "Operational",
+        "Degraded",
+        "Down"
+      ]
+    },
+    {
+      "name": "CAFM Liability",
+      "items": [
+        "DLP",
+        "CHARGEABLE",
+        "DECENNIAL_REVIEW",
+        "WARRANTY",
+        "OWN_OPS",
+        "PPM"
+      ]
+    },
+    {
+      "name": "CAFM Photo Kind",
+      "items": [
+        "Report",
+        "Before",
+        "After"
+      ]
+    },
+    {
+      "name": "CAFM Compliance System",
+      "items": [
+        "Civil Defence certificate",
+        "Fire alarm",
+        "Sprinklers",
+        "Fire pumps",
+        "Emergency lighting",
+        "Extinguishers",
+        "Hassantuk link",
+        "Lift inspection",
+        "Water tank cleaning",
+        "Lifting equipment TPI"
+      ]
+    },
+    {
+      "name": "CAFM Hassantuk Status",
+      "items": [
+        "Connected",
+        "Fault",
+        "Not applicable"
+      ]
+    },
+    {
+      "name": "CAFM PPM Frequency",
+      "items": [
+        "Monthly",
+        "Quarterly",
+        "Every 6 months",
+        "Annual"
+      ]
+    },
+    {
+      "name": "CAFM Permit Type",
+      "items": [
+        "Hot work",
+        "Work at height",
+        "Electrical isolation",
+        "Confined space"
+      ]
+    },
+    {
+      "name": "CAFM Equipment Type",
+      "items": [
+        "Crawler crane",
+        "Mobile crane",
+        "Tower crane",
+        "Excavator",
+        "Wheel loader",
+        "Tipper",
+        "Low-bed trailer",
+        "Generator",
+        "Compressor",
+        "Piling rig"
+      ]
+    },
+    {
+      "name": "CAFM Equipment Status",
+      "items": [
+        "Working",
+        "Idle",
+        "Breakdown",
+        "In service"
+      ]
+    },
+    {
+      "name": "CAFM Subcontractor Response",
+      "items": [
+        "Accept",
+        "Dispute"
+      ]
+    },
+    {
+      "name": "CAFM Event Type",
+      "items": [
+        "Created",
+        "AI triage",
+        "Liability flagged",
+        "Dispatched",
+        "Arrived",
+        "Diagnosis challenge",
+        "Root cause",
+        "Reclassified",
+        "Resolved",
+        "Verified",
+        "Closed",
+        "SLA breach",
+        "Back-charge raised",
+        "Back-charge recovered",
+        "Step changed",
+        "Comment"
+      ]
+    },
+    {
+      "name": "CAFM Language",
+      "items": [
+        "English",
+        "Arabic"
+      ]
+    }
+  ],
+  "forms": [
+    {
+      "name": "CAFM Site",
+      "flowType": "Form",
+      "fields": [
+        {
+          "name": "Site Code",
+          "type": "Text",
+          "required": true,
+          "section": "Identity"
+        },
+        {
+          "name": "Site Name",
+          "type": "Text",
+          "required": true,
+          "section": "Identity"
+        },
+        {
+          "name": "Site Name AR",
+          "type": "Text",
+          "section": "Identity"
+        },
+        {
+          "name": "District",
+          "type": "Text",
+          "section": "Identity"
+        },
+        {
+          "name": "Site Kind",
+          "type": "Select",
+          "referredList": "CAFM Site Kind",
+          "required": true,
+          "section": "Identity"
+        },
+        {
+          "name": "Client Name",
+          "type": "Text",
+          "section": "Identity"
+        },
+        {
+          "name": "Own Operations",
+          "type": "Boolean",
+          "section": "Identity"
+        },
+        {
+          "name": "TOC Date",
+          "type": "Date",
+          "section": "Liability"
+        },
+        {
+          "name": "DLP Months",
+          "type": "Number",
+          "section": "Liability"
+        },
+        {
+          "name": "DLP End Date",
+          "type": "Date",
+          "section": "Liability"
+        },
+        {
+          "name": "Decennial End Date",
+          "type": "Date",
+          "section": "Liability"
+        },
+        {
+          "name": "Floors",
+          "type": "Number",
+          "section": "Size"
+        },
+        {
+          "name": "Unit Count",
+          "type": "Number",
+          "section": "Size"
+        },
+        {
+          "name": "Beds",
+          "type": "Number",
+          "section": "Size"
+        }
+      ],
+      "child_tables": [
+        {
+          "name": "Handover Pack"
+        }
+      ]
+    },
+    {
+      "name": "CAFM Subcontractor",
+      "flowType": "Form",
+      "fields": [
+        {
+          "name": "Company Name",
+          "type": "Text",
+          "required": true,
+          "section": "Company"
+        },
+        {
+          "name": "Company Name AR",
+          "type": "Text",
+          "section": "Company"
+        },
+        {
+          "name": "Trade",
+          "type": "Select",
+          "referredList": "CAFM Trade",
+          "required": true,
+          "section": "Company"
+        },
+        {
+          "name": "Supervisor",
+          "type": "User",
+          "section": "Company"
+        },
+        {
+          "name": "Contact Email",
+          "type": "Email",
+          "section": "Company"
+        },
+        {
+          "name": "Trade Licence No",
+          "type": "Text",
+          "section": "Documents"
+        },
+        {
+          "name": "Trade Licence Expiry",
+          "type": "Date",
+          "section": "Documents"
+        },
+        {
+          "name": "Insurance Expiry",
+          "type": "Date",
+          "section": "Documents"
+        },
+        {
+          "name": "Civil Defence Approved",
+          "type": "Boolean",
+          "section": "Documents"
+        },
+        {
+          "name": "Civil Defence Approval Expiry",
+          "type": "Date",
+          "section": "Documents"
+        },
+        {
+          "name": "Licence Days Left",
+          "type": "Number",
+          "section": "Documents",
+          "formula": "IF(ABS(YEAR(Trade_Licence_Expiry) * 372 + MONTH(Trade_Licence_Expiry) * 31 + DAY(Trade_Licence_Expiry) - (YEAR(TODAY()) * 372 + MONTH(TODAY()) * 31 + DAY(TODAY()))) = YEAR(Trade_Licence_Expiry) * 372 + MONTH(Trade_Licence_Expiry) * 31 + DAY(Trade_Licence_Expiry) - (YEAR(TODAY()) * 372 + MONTH(TODAY()) * 31 + DAY(TODAY())), DATEDIFF(TODAY(), Trade_Licence_Expiry, \"Day\"), 0 - DATEDIFF(TODAY(), Trade_Licence_Expiry, \"Day\"))"
+        }
+      ],
+      "child_tables": [
+        {
+          "name": "Subcontractor Technicians"
+        }
+      ]
+    },
+    {
+      "name": "CAFM Unit",
+      "flowType": "Form",
+      "fields": [
+        {
+          "name": "Unit Number",
+          "type": "Text",
+          "required": true
+        },
+        {
+          "name": "Site",
+          "type": "Reference",
+          "ref": "CAFM Site",
+          "required": true,
+          "lookup": [
+            {
+              "name": "Site Name",
+              "type": "Text"
+            }
+          ]
+        },
+        {
+          "name": "Floor",
+          "type": "Number"
+        },
+        {
+          "name": "Resident",
+          "type": "User"
+        }
+      ]
+    },
+    {
+      "name": "CAFM Asset Class",
+      "flowType": "Form",
+      "fields": [
+        {
+          "name": "Class Code",
+          "type": "Text",
+          "required": true
+        },
+        {
+          "name": "Class Name",
+          "type": "Text",
+          "required": true
+        },
+        {
+          "name": "Class Name AR",
+          "type": "Text"
+        },
+        {
+          "name": "Trade",
+          "type": "Select",
+          "referredList": "CAFM Trade",
+          "required": true
+        },
+        {
+          "name": "Warranty Months",
+          "type": "Number"
+        },
+        {
+          "name": "PPM Frequency",
+          "type": "Select",
+          "referredList": "CAFM PPM Frequency"
+        }
+      ],
+      "child_tables": [
+        {
+          "name": "Checklist Template"
+        }
+      ]
+    },
+    {
+      "name": "CAFM Request Category",
+      "flowType": "Form",
+      "fields": [
+        {
+          "name": "Category Code",
+          "type": "Text",
+          "required": true
+        },
+        {
+          "name": "Category Name",
+          "type": "Text",
+          "required": true
+        },
+        {
+          "name": "Category Name AR",
+          "type": "Text"
+        },
+        {
+          "name": "Trade",
+          "type": "Select",
+          "referredList": "CAFM Trade"
+        },
+        {
+          "name": "Base Priority",
+          "type": "Select",
+          "referredList": "CAFM Priority",
+          "required": true
+        },
+        {
+          "name": "Summer Uplift",
+          "type": "Boolean"
+        },
+        {
+          "name": "Structural",
+          "type": "Boolean"
+        }
+      ]
+    },
+    {
+      "name": "CAFM Root Cause",
+      "flowType": "Form",
+      "fields": [
+        {
+          "name": "Root Cause Code",
+          "type": "Text",
+          "required": true
+        },
+        {
+          "name": "Root Cause Name",
+          "type": "Text",
+          "required": true
+        },
+        {
+          "name": "Root Cause Name AR",
+          "type": "Text"
+        },
+        {
+          "name": "Trade",
+          "type": "Select",
+          "referredList": "CAFM Trade"
+        },
+        {
+          "name": "Excluded From DLP",
+          "type": "Boolean"
+        }
+      ]
+    },
+    {
+      "name": "CAFM SLA Policy",
+      "flowType": "Form",
+      "fields": [
+        {
+          "name": "Priority",
+          "type": "Select",
+          "referredList": "CAFM Priority",
+          "required": true
+        },
+        {
+          "name": "Response Minutes",
+          "type": "Number",
+          "required": true
+        },
+        {
+          "name": "Resolve Minutes",
+          "type": "Number",
+          "required": true
+        },
+        {
+          "name": "At Risk Percent",
+          "type": "Number"
+        }
+      ]
+    },
+    {
+      "name": "CAFM Asset",
+      "flowType": "Form",
+      "fields": [
+        {
+          "name": "Asset Tag",
+          "type": "Text",
+          "required": true,
+          "section": "Identity"
+        },
+        {
+          "name": "QR Code",
+          "type": "Text",
+          "section": "Identity"
+        },
+        {
+          "name": "Site",
+          "type": "Reference",
+          "ref": "CAFM Site",
+          "required": true,
+          "section": "Location",
+          "lookup": [
+            {
+              "name": "Site Name",
+              "type": "Text"
+            },
+            {
+              "name": "Own Operations",
+              "type": "Boolean"
+            }
+          ]
+        },
+        {
+          "name": "Unit",
+          "type": "Reference",
+          "ref": "CAFM Unit",
+          "section": "Location",
+          "lookup": [
+            {
+              "name": "Unit Number",
+              "type": "Text"
+            }
+          ]
+        },
+        {
+          "name": "Floor",
+          "type": "Number",
+          "section": "Location"
+        },
+        {
+          "name": "Location",
+          "type": "Text",
+          "section": "Location"
+        },
+        {
+          "name": "Location AR",
+          "type": "Text",
+          "section": "Location"
+        },
+        {
+          "name": "Asset Class",
+          "type": "Reference",
+          "ref": "CAFM Asset Class",
+          "required": true,
+          "section": "Identity",
+          "lookup": [
+            {
+              "name": "Class Name",
+              "type": "Text"
+            },
+            {
+              "name": "Trade",
+              "type": "Select"
+            }
+          ]
+        },
+        {
+          "name": "Make",
+          "type": "Text",
+          "section": "Identity"
+        },
+        {
+          "name": "Model",
+          "type": "Text",
+          "section": "Identity"
+        },
+        {
+          "name": "Serial Number",
+          "type": "Text",
+          "section": "Identity"
+        },
+        {
+          "name": "Installed By",
+          "type": "Reference",
+          "ref": "CAFM Subcontractor",
+          "section": "Liability",
+          "lookup": [
+            {
+              "name": "Company Name",
+              "type": "Text"
+            },
+            {
+              "name": "Supervisor",
+              "type": "User"
+            }
+          ]
+        },
+        {
+          "name": "Batch",
+          "type": "Text",
+          "section": "Liability"
+        },
+        {
+          "name": "Handover Date",
+          "type": "Date",
+          "section": "Liability"
+        },
+        {
+          "name": "DLP End Date",
+          "type": "Date",
+          "section": "Liability"
+        },
+        {
+          "name": "Warranty End Date",
+          "type": "Date",
+          "section": "Liability"
+        },
+        {
+          "name": "Decennial End Date",
+          "type": "Date",
+          "section": "Liability"
+        },
+        {
+          "name": "Asset Status",
+          "type": "Select",
+          "referredList": "CAFM Asset Status",
+          "section": "Identity"
+        },
+        {
+          "name": "Asset Photo",
+          "type": "Image",
+          "section": "Identity"
+        }
+      ]
+    },
+    {
+      "name": "CAFM PPM Schedule",
+      "flowType": "Form",
+      "fields": [
+        {
+          "name": "Schedule Title",
+          "type": "Text",
+          "required": true
+        },
+        {
+          "name": "Schedule Title AR",
+          "type": "Text"
+        },
+        {
+          "name": "Site",
+          "type": "Reference",
+          "ref": "CAFM Site",
+          "required": true,
+          "lookup": [
+            {
+              "name": "Site Name",
+              "type": "Text"
+            }
+          ]
+        },
+        {
+          "name": "Asset Class",
+          "type": "Reference",
+          "ref": "CAFM Asset Class",
+          "required": true,
+          "lookup": [
+            {
+              "name": "Class Name",
+              "type": "Text"
+            }
+          ]
+        },
+        {
+          "name": "Frequency",
+          "type": "Select",
+          "referredList": "CAFM PPM Frequency",
+          "required": true
+        },
+        {
+          "name": "Asset Count",
+          "type": "Number"
+        },
+        {
+          "name": "Contractor",
+          "type": "Reference",
+          "ref": "CAFM Subcontractor",
+          "lookup": [
+            {
+              "name": "Company Name",
+              "type": "Text"
+            }
+          ]
+        },
+        {
+          "name": "Next Due Date",
+          "type": "Date"
+        },
+        {
+          "name": "Active",
+          "type": "Boolean"
+        }
+      ]
+    },
+    {
+      "name": "CAFM Compliance Certificate",
+      "flowType": "Form",
+      "fields": [
+        {
+          "name": "Site",
+          "type": "Reference",
+          "ref": "CAFM Site",
+          "required": true,
+          "lookup": [
+            {
+              "name": "Site Name",
+              "type": "Text"
+            }
+          ]
+        },
+        {
+          "name": "Compliance System",
+          "type": "Select",
+          "referredList": "CAFM Compliance System",
+          "required": true
+        },
+        {
+          "name": "Contractor",
+          "type": "Reference",
+          "ref": "CAFM Subcontractor",
+          "lookup": [
+            {
+              "name": "Company Name",
+              "type": "Text"
+            }
+          ]
+        },
+        {
+          "name": "Certificate No",
+          "type": "Text"
+        },
+        {
+          "name": "Issued On",
+          "type": "Date"
+        },
+        {
+          "name": "Expires On",
+          "type": "Date",
+          "required": true
+        },
+        {
+          "name": "Last Inspection",
+          "type": "Date"
+        },
+        {
+          "name": "Open Findings",
+          "type": "Number"
+        },
+        {
+          "name": "Hassantuk Status",
+          "type": "Select",
+          "referredList": "CAFM Hassantuk Status"
+        },
+        {
+          "name": "Evidence",
+          "type": "Attachment"
+        },
+        {
+          "name": "Days To Expiry",
+          "type": "Number",
+          "formula": "IF(ABS(YEAR(Expires_On) * 372 + MONTH(Expires_On) * 31 + DAY(Expires_On) - (YEAR(TODAY()) * 372 + MONTH(TODAY()) * 31 + DAY(TODAY()))) = YEAR(Expires_On) * 372 + MONTH(Expires_On) * 31 + DAY(Expires_On) - (YEAR(TODAY()) * 372 + MONTH(TODAY()) * 31 + DAY(TODAY())), DATEDIFF(TODAY(), Expires_On, \"Day\"), 0 - DATEDIFF(TODAY(), Expires_On, \"Day\"))"
+        }
+      ]
+    },
+    {
+      "name": "CAFM Equipment",
+      "flowType": "Form",
+      "fields": [
+        {
+          "name": "Fleet No",
+          "type": "Text",
+          "required": true
+        },
+        {
+          "name": "Equipment Type",
+          "type": "Select",
+          "referredList": "CAFM Equipment Type",
+          "required": true
+        },
+        {
+          "name": "Make",
+          "type": "Text"
+        },
+        {
+          "name": "Model",
+          "type": "Text"
+        },
+        {
+          "name": "Year",
+          "type": "Number"
+        },
+        {
+          "name": "Current Project",
+          "type": "Text"
+        },
+        {
+          "name": "Hour Meter",
+          "type": "Number"
+        },
+        {
+          "name": "Next Service Hours",
+          "type": "Number"
+        },
+        {
+          "name": "Hours To Service",
+          "type": "Number",
+          "formula": "Next_Service_Hours - Hour_Meter"
+        },
+        {
+          "name": "TPI Expiry",
+          "type": "Date"
+        },
+        {
+          "name": "Equipment Status",
+          "type": "Select",
+          "referredList": "CAFM Equipment Status"
+        }
+      ]
+    },
+    {
+      "name": "CAFM Work Order",
+      "flowType": "Process",
+      "fields": [
+        {
+          "name": "Site",
+          "type": "Reference",
+          "ref": "CAFM Site",
+          "required": true,
+          "section": "Request",
+          "autofill": true,
+          "lookup": [
+            {
+              "name": "Site Name",
+              "type": "Text"
+            },
+            {
+              "name": "Own Operations",
+              "type": "Boolean"
+            }
+          ]
+        },
+        {
+          "name": "Unit",
+          "type": "Reference",
+          "ref": "CAFM Unit",
+          "section": "Request",
+          "lookup": [
+            {
+              "name": "Unit Number",
+              "type": "Text"
+            }
+          ]
+        },
+        {
+          "name": "Category",
+          "type": "Reference",
+          "ref": "CAFM Request Category",
+          "required": true,
+          "section": "Request",
+          "autofill": true,
+          "lookup": [
+            {
+              "name": "Category Name",
+              "type": "Text"
+            },
+            {
+              "name": "Base Priority",
+              "type": "Select"
+            },
+            {
+              "name": "Summer Uplift",
+              "type": "Boolean"
+            },
+            {
+              "name": "Structural",
+              "type": "Boolean"
+            }
+          ]
+        },
+        {
+          "name": "Request Title",
+          "type": "Text",
+          "required": true,
+          "section": "Request"
+        },
+        {
+          "name": "Description",
+          "type": "Textarea",
+          "section": "Request"
+        },
+        {
+          "name": "Description Language",
+          "type": "Select",
+          "referredList": "CAFM Language",
+          "section": "Request"
+        },
+        {
+          "name": "Channel",
+          "type": "Select",
+          "referredList": "CAFM Channel",
+          "required": true,
+          "section": "Request"
+        },
+        {
+          "name": "Reporter Name",
+          "type": "Text",
+          "section": "Request"
+        },
+        {
+          "name": "First Contact At",
+          "type": "DateTime",
+          "required": true,
+          "section": "Request"
+        },
+        {
+          "name": "Conversation Transcript",
+          "type": "Textarea",
+          "section": "Request"
+        },
+        {
+          "name": "Vulnerable Occupant",
+          "type": "Boolean",
+          "section": "Request"
+        },
+        {
+          "name": "Access Window",
+          "type": "Text",
+          "section": "Request"
+        },
+        {
+          "name": "Asset",
+          "type": "Reference",
+          "ref": "CAFM Asset",
+          "section": "Triage",
+          "autofill": true,
+          "lookup": [
+            {
+              "name": "Asset Tag",
+              "type": "Text"
+            },
+            {
+              "name": "DLP End Date",
+              "type": "Date"
+            },
+            {
+              "name": "Warranty End Date",
+              "type": "Date"
+            },
+            {
+              "name": "Decennial End Date",
+              "type": "Date"
+            },
+            {
+              "name": "Batch",
+              "type": "Text"
+            }
+          ]
+        },
+        {
+          "name": "Own Operations",
+          "type": "Boolean",
+          "section": "Liability data"
+        },
+        {
+          "name": "Base Priority",
+          "type": "Text",
+          "section": "Liability data"
+        },
+        {
+          "name": "Summer Uplift",
+          "type": "Boolean",
+          "section": "Liability data"
+        },
+        {
+          "name": "Structural",
+          "type": "Boolean",
+          "section": "Liability data"
+        },
+        {
+          "name": "Asset Tag",
+          "type": "Text",
+          "section": "Liability data"
+        },
+        {
+          "name": "DLP End Date",
+          "type": "Date",
+          "section": "Liability data"
+        },
+        {
+          "name": "Warranty End Date",
+          "type": "Date",
+          "section": "Liability data"
+        },
+        {
+          "name": "Decennial End Date",
+          "type": "Date",
+          "section": "Liability data"
+        },
+        {
+          "name": "Batch",
+          "type": "Text",
+          "section": "Liability data"
+        },
+        {
+          "name": "Installed By",
+          "type": "Reference",
+          "ref": "CAFM Subcontractor",
+          "section": "Triage",
+          "lookup": [
+            {
+              "name": "Company Name",
+              "type": "Text"
+            },
+            {
+              "name": "Supervisor",
+              "type": "User"
+            }
+          ]
+        },
+        {
+          "name": "Report Month",
+          "type": "Number",
+          "section": "Triage",
+          "formula": "MONTH(First_Contact_At)"
+        },
+        {
+          "name": "Summer Flag",
+          "type": "Number",
+          "section": "Triage",
+          "formula": "IF(Summer_Uplift, IF(MONTH(First_Contact_At) = 6, 1, IF(MONTH(First_Contact_At) = 7, 1, IF(MONTH(First_Contact_At) = 8, 1, IF(MONTH(First_Contact_At) = 9, 1, 0)))), 0)"
+        },
+        {
+          "name": "Priority Code",
+          "type": "Number",
+          "section": "Triage",
+          "formula": "IF(Base_Priority = \"P1\", 1, IF(Base_Priority = \"P2\", 2, IF(Base_Priority = \"P3\", IF(Summer_Flag = 1, 2, 3), 4)))"
+        },
+        {
+          "name": "Response Minutes",
+          "type": "Number",
+          "section": "Triage",
+          "formula": "IF(Priority_Code = 1, 30, IF(Priority_Code = 2, 60, IF(Priority_Code = 3, 240, 1440)))"
+        },
+        {
+          "name": "Resolve Minutes",
+          "type": "Number",
+          "section": "Triage",
+          "formula": "IF(Priority_Code = 1, 240, IF(Priority_Code = 2, 480, IF(Priority_Code = 3, 4320, 14400)))"
+        },
+        {
+          "name": "Root Cause",
+          "type": "Reference",
+          "ref": "CAFM Root Cause",
+          "section": "Execution",
+          "autofill": true,
+          "lookup": [
+            {
+              "name": "Root Cause Name",
+              "type": "Text"
+            },
+            {
+              "name": "Excluded From DLP",
+              "type": "Boolean"
+            }
+          ]
+        },
+        {
+          "name": "Excluded From DLP",
+          "type": "Boolean",
+          "section": "Liability data"
+        },
+        {
+          "name": "DLP Covered",
+          "type": "Number",
+          "section": "Triage",
+          "formula": "IF(ABS(YEAR(DLP_End_Date) * 372 + MONTH(DLP_End_Date) * 31 + DAY(DLP_End_Date) - (YEAR(First_Contact_At) * 372 + MONTH(First_Contact_At) * 31 + DAY(First_Contact_At))) = YEAR(DLP_End_Date) * 372 + MONTH(DLP_End_Date) * 31 + DAY(DLP_End_Date) - (YEAR(First_Contact_At) * 372 + MONTH(First_Contact_At) * 31 + DAY(First_Contact_At)), 1, 0)"
+        },
+        {
+          "name": "Warranty Covered",
+          "type": "Number",
+          "section": "Triage",
+          "formula": "IF(ABS(YEAR(Warranty_End_Date) * 372 + MONTH(Warranty_End_Date) * 31 + DAY(Warranty_End_Date) - (YEAR(First_Contact_At) * 372 + MONTH(First_Contact_At) * 31 + DAY(First_Contact_At))) = YEAR(Warranty_End_Date) * 372 + MONTH(Warranty_End_Date) * 31 + DAY(Warranty_End_Date) - (YEAR(First_Contact_At) * 372 + MONTH(First_Contact_At) * 31 + DAY(First_Contact_At)), 1, 0)"
+        },
+        {
+          "name": "Liability Code",
+          "type": "Number",
+          "section": "Triage",
+          "formula": "IF(Own_Operations, 5, IF(Structural, 3, IF(Excluded_From_DLP, 2, IF(DLP_Covered = 1, 1, IF(Warranty_Covered = 1, 4, 2)))))"
+        },
+        {
+          "name": "Dispatch Code",
+          "type": "Number",
+          "section": "Triage",
+          "formula": "IF(Liability_Code = 1, 1, IF(Liability_Code = 4, 1, IF(Liability_Code = 3, 3, 2)))"
+        },
+        {
+          "name": "AI Suggested Category",
+          "type": "Text",
+          "section": "Triage"
+        },
+        {
+          "name": "AI Confidence",
+          "type": "Number",
+          "section": "Triage"
+        },
+        {
+          "name": "Assigned Technician",
+          "type": "User",
+          "section": "Dispatch"
+        },
+        {
+          "name": "Accepted At",
+          "type": "DateTime",
+          "section": "Dispatch"
+        },
+        {
+          "name": "Arrived At",
+          "type": "DateTime",
+          "section": "Execution"
+        },
+        {
+          "name": "On Hold Reason",
+          "type": "Text",
+          "section": "Execution"
+        },
+        {
+          "name": "Supply Air Reading",
+          "type": "Number",
+          "section": "Execution"
+        },
+        {
+          "name": "Diagnosis Challenge Shown",
+          "type": "Boolean",
+          "section": "Execution"
+        },
+        {
+          "name": "Challenge Acknowledged",
+          "type": "Boolean",
+          "section": "Execution"
+        },
+        {
+          "name": "Closeout Note",
+          "type": "Textarea",
+          "section": "Execution"
+        },
+        {
+          "name": "Labour AED",
+          "type": "Number",
+          "section": "Execution"
+        },
+        {
+          "name": "Occupant Signature",
+          "type": "Image",
+          "section": "Execution"
+        },
+        {
+          "name": "Resolved At",
+          "type": "DateTime",
+          "section": "Execution"
+        },
+        {
+          "name": "Verified At",
+          "type": "DateTime",
+          "section": "Verification"
+        },
+        {
+          "name": "Back-charge Ref",
+          "type": "Text",
+          "section": "Verification"
+        },
+        {
+          "name": "Parts AED",
+          "type": "Number",
+          "section": "Execution",
+          "aggregate": {
+            "fn": "SUM",
+            "over": "WO Parts",
+            "field": "Line Total AED"
+          }
+        }
+      ],
+      "workflow": {
+        "steps": [
+          {
+            "name": "Request raised",
+            "actor": "Resident",
+            "field_permissions": {
+              "Triage": "Hidden",
+              "Liability data": "Hidden",
+              "Dispatch": "Hidden",
+              "Execution": "Hidden",
+              "Verification": "Hidden",
+              "WO Checklist": "Hidden",
+              "WO Parts": "Hidden"
+            }
+          },
+          {
+            "name": "Triage",
+            "actor": "Helpdesk",
+            "field_permissions": {
+              "Triage": "Editable",
+              "Request": "Editable"
+            }
+          },
+          {
+            "name": "Subcontractor dispatch",
+            "actor": "Subcontractor Supervisor",
+            "condition": "Dispatch_Code = 1",
+            "field_permissions": {
+              "Dispatch": "Editable"
+            }
+          },
+          {
+            "name": "FM dispatch",
+            "actor": "FM Manager",
+            "condition": "Dispatch_Code = 2",
+            "field_permissions": {
+              "Dispatch": "Editable"
+            }
+          },
+          {
+            "name": "Engineering review",
+            "actor": "DLP Manager",
+            "condition": "Dispatch_Code = 3",
+            "field_permissions": {
+              "Dispatch": "Editable",
+              "Execution": "Editable"
+            }
+          },
+          {
+            "name": "Work in progress",
+            "actor": "Technician",
+            "field_permissions": {
+              "Execution": "Editable",
+              "WO Checklist": "Editable",
+              "WO Photos": "Editable",
+              "WO Parts": "Editable",
+              "Root Cause": "Editable"
+            }
+          },
+          {
+            "name": "Verify and close",
+            "actor": "Helpdesk",
+            "field_permissions": {
+              "Verification": "Editable"
+            }
+          },
+          {
+            "name": "Closed"
+          }
+        ]
+      },
+      "child_tables": [
+        {
+          "name": "WO Checklist"
+        },
+        {
+          "name": "WO Photos"
+        },
+        {
+          "name": "WO Parts"
+        }
+      ]
+    },
+    {
+      "name": "CAFM Back-charge",
+      "flowType": "Process",
+      "fields": [
+        {
+          "name": "Work Order No",
+          "type": "Text",
+          "required": true
+        },
+        {
+          "name": "Work Order Instance",
+          "type": "Text"
+        },
+        {
+          "name": "Subcontractor",
+          "type": "Reference",
+          "ref": "CAFM Subcontractor",
+          "required": true,
+          "lookup": [
+            {
+              "name": "Company Name",
+              "type": "Text"
+            },
+            {
+              "name": "Supervisor",
+              "type": "User"
+            }
+          ]
+        },
+        {
+          "name": "Site",
+          "type": "Reference",
+          "ref": "CAFM Site",
+          "lookup": [
+            {
+              "name": "Site Name",
+              "type": "Text"
+            }
+          ]
+        },
+        {
+          "name": "Root Cause",
+          "type": "Reference",
+          "ref": "CAFM Root Cause",
+          "lookup": [
+            {
+              "name": "Root Cause Name",
+              "type": "Text"
+            }
+          ]
+        },
+        {
+          "name": "Parts AED",
+          "type": "Number"
+        },
+        {
+          "name": "Labour AED",
+          "type": "Number"
+        },
+        {
+          "name": "Total AED",
+          "type": "Number",
+          "formula": "Parts_AED + Labour_AED"
+        },
+        {
+          "name": "Subcontractor Response",
+          "type": "Select",
+          "referredList": "CAFM Subcontractor Response",
+          "section": "Response"
+        },
+        {
+          "name": "Dispute Reason",
+          "type": "Textarea",
+          "section": "Response"
+        },
+        {
+          "name": "Agreed AED",
+          "type": "Number",
+          "section": "Settlement"
+        },
+        {
+          "name": "Recovered On",
+          "type": "Date",
+          "section": "Settlement"
+        }
+      ],
+      "workflow": {
+        "steps": [
+          {
+            "name": "Back-charge raised",
+            "actor": "DLP Manager"
+          },
+          {
+            "name": "Subcontractor response",
+            "actor": "Subcontractor Supervisor",
+            "field_permissions": {
+              "Response": "Editable"
+            }
+          },
+          {
+            "name": "Dispute review",
+            "actor": "DLP Manager",
+            "condition": "Subcontractor_Response = \"Dispute\"",
+            "field_permissions": {
+              "Settlement": "Editable"
+            }
+          },
+          {
+            "name": "Recovery confirmation",
+            "actor": "DLP Manager",
+            "field_permissions": {
+              "Settlement": "Editable"
+            }
+          },
+          {
+            "name": "Recovered"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CAFM Permit To Work",
+      "flowType": "Process",
+      "fields": [
+        {
+          "name": "Permit Type",
+          "type": "Select",
+          "referredList": "CAFM Permit Type",
+          "required": true
+        },
+        {
+          "name": "Site",
+          "type": "Reference",
+          "ref": "CAFM Site",
+          "required": true,
+          "lookup": [
+            {
+              "name": "Site Name",
+              "type": "Text"
+            }
+          ]
+        },
+        {
+          "name": "Work Order No",
+          "type": "Text"
+        },
+        {
+          "name": "Work Location",
+          "type": "Text",
+          "required": true
+        },
+        {
+          "name": "Valid From",
+          "type": "DateTime",
+          "required": true
+        },
+        {
+          "name": "Valid To",
+          "type": "DateTime",
+          "required": true
+        },
+        {
+          "name": "Gas Test Reading",
+          "type": "Text"
+        },
+        {
+          "name": "Isolation Points",
+          "type": "Textarea"
+        },
+        {
+          "name": "Approval Note",
+          "type": "Textarea",
+          "section": "HSE"
+        },
+        {
+          "name": "Closed Out At",
+          "type": "DateTime",
+          "section": "Close-out"
+        }
+      ],
+      "workflow": {
+        "steps": [
+          {
+            "name": "Permit requested",
+            "actor": "Technician"
+          },
+          {
+            "name": "HSE approval",
+            "actor": "HSE Officer",
+            "field_permissions": {
+              "HSE": "Editable"
+            }
+          },
+          {
+            "name": "Work active",
+            "actor": "Technician",
+            "field_permissions": {
+              "Permit Controls": "Editable",
+              "Close-out": "Editable"
+            }
+          },
+          {
+            "name": "HSE close-out",
+            "actor": "HSE Officer",
+            "field_permissions": {
+              "HSE": "Editable"
+            }
+          },
+          {
+            "name": "Permit closed"
+          }
+        ]
+      },
+      "child_tables": [
+        {
+          "name": "Permit Controls"
+        }
+      ]
+    },
+    {
+      "name": "CAFM WO Event",
+      "flowType": "Form",
+      "fields": [
+        {
+          "name": "Work Order No",
+          "type": "Text",
+          "required": true
+        },
+        {
+          "name": "Work Order Instance",
+          "type": "Text"
+        },
+        {
+          "name": "Event Type",
+          "type": "Select",
+          "referredList": "CAFM Event Type",
+          "required": true
+        },
+        {
+          "name": "Event At",
+          "type": "DateTime",
+          "required": true
+        },
+        {
+          "name": "Actor",
+          "type": "User"
+        },
+        {
+          "name": "Actor Label",
+          "type": "Text"
+        },
+        {
+          "name": "Event Detail",
+          "type": "Textarea"
+        }
+      ]
+    },
+    {
+      "name": "CAFM WO Register",
+      "flowType": "Form",
+      "fields": [
+        {
+          "name": "Work Order No",
+          "type": "Text",
+          "required": true,
+          "section": "Identity"
+        },
+        {
+          "name": "Work Order Instance",
+          "type": "Text",
+          "section": "Identity"
+        },
+        {
+          "name": "Site",
+          "type": "Reference",
+          "ref": "CAFM Site",
+          "section": "Identity",
+          "lookup": [
+            {
+              "name": "Site Name",
+              "type": "Text"
+            }
+          ]
+        },
+        {
+          "name": "Unit Number",
+          "type": "Text",
+          "section": "Identity"
+        },
+        {
+          "name": "Asset Tag",
+          "type": "Text",
+          "section": "Identity"
+        },
+        {
+          "name": "Batch",
+          "type": "Text",
+          "section": "Identity"
+        },
+        {
+          "name": "Category Name",
+          "type": "Text",
+          "section": "Identity"
+        },
+        {
+          "name": "Channel",
+          "type": "Select",
+          "referredList": "CAFM Channel",
+          "section": "Identity"
+        },
+        {
+          "name": "Priority",
+          "type": "Select",
+          "referredList": "CAFM Priority",
+          "section": "Clock"
+        },
+        {
+          "name": "Summer Uplift",
+          "type": "Boolean",
+          "section": "Clock"
+        },
+        {
+          "name": "Liability",
+          "type": "Select",
+          "referredList": "CAFM Liability",
+          "section": "Liability"
+        },
+        {
+          "name": "Current Step",
+          "type": "Text",
+          "section": "Clock"
+        },
+        {
+          "name": "Priority Code",
+          "type": "Number",
+          "section": "Clock"
+        },
+        {
+          "name": "Liability Code",
+          "type": "Number",
+          "section": "Liability"
+        },
+        {
+          "name": "First Contact At",
+          "type": "DateTime",
+          "section": "Clock"
+        },
+        {
+          "name": "Response Due At",
+          "type": "DateTime",
+          "section": "Clock"
+        },
+        {
+          "name": "Resolve Due At",
+          "type": "DateTime",
+          "section": "Clock"
+        },
+        {
+          "name": "Responded At",
+          "type": "DateTime",
+          "section": "Clock"
+        },
+        {
+          "name": "Resolved At",
+          "type": "DateTime",
+          "section": "Clock"
+        },
+        {
+          "name": "Closed At",
+          "type": "DateTime",
+          "section": "Clock"
+        },
+        {
+          "name": "Subcontractor",
+          "type": "Reference",
+          "ref": "CAFM Subcontractor",
+          "section": "Liability",
+          "lookup": [
+            {
+              "name": "Company Name",
+              "type": "Text"
+            }
+          ]
+        },
+        {
+          "name": "Technician",
+          "type": "User",
+          "section": "Liability"
+        },
+        {
+          "name": "Root Cause Name",
+          "type": "Text",
+          "section": "Liability"
+        },
+        {
+          "name": "Parts AED",
+          "type": "Number",
+          "section": "Cost"
+        },
+        {
+          "name": "Labour AED",
+          "type": "Number",
+          "section": "Cost"
+        },
+        {
+          "name": "Total Cost AED",
+          "type": "Number",
+          "section": "Cost",
+          "formula": "Parts_AED + Labour_AED"
+        },
+        {
+          "name": "Back-charge Ref",
+          "type": "Text",
+          "section": "Cost"
+        },
+        {
+          "name": "Back-charge Status",
+          "type": "Text",
+          "section": "Cost"
+        },
+        {
+          "name": "Recovered On",
+          "type": "Date",
+          "section": "Cost"
+        }
+      ]
+    },
+    {
+      "name": "CAFM Snag",
+      "flowType": "Case",
+      "fields": [
+        {
+          "name": "Site",
+          "type": "Reference",
+          "ref": "CAFM Site",
+          "required": true,
+          "lookup": [
+            {
+              "name": "Site Name",
+              "type": "Text"
+            }
+          ]
+        },
+        {
+          "name": "Unit",
+          "type": "Reference",
+          "ref": "CAFM Unit",
+          "lookup": [
+            {
+              "name": "Unit Number",
+              "type": "Text"
+            }
+          ]
+        },
+        {
+          "name": "Trade",
+          "type": "Select",
+          "referredList": "CAFM Trade"
+        },
+        {
+          "name": "Subcontractor",
+          "type": "Reference",
+          "ref": "CAFM Subcontractor",
+          "lookup": [
+            {
+              "name": "Company Name",
+              "type": "Text"
+            }
+          ]
+        },
+        {
+          "name": "Snag Location",
+          "type": "Text"
+        },
+        {
+          "name": "Snag Photo",
+          "type": "Image"
+        }
+      ],
+      "caseflow": {
+        "statuses": [
+          {
+            "name": "Open",
+            "category": "NotStarted"
+          },
+          {
+            "name": "In progress",
+            "category": "InProgress"
+          },
+          {
+            "name": "Ready for inspection",
+            "category": "InProgress"
+          },
+          {
+            "name": "Carried into DLP",
+            "category": "InProgress"
+          },
+          {
+            "name": "Closed",
+            "category": "Done"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CAFM Breakdown",
+      "flowType": "Case",
+      "fields": [
+        {
+          "name": "Equipment",
+          "type": "Reference",
+          "ref": "CAFM Equipment",
+          "required": true,
+          "lookup": [
+            {
+              "name": "Fleet No",
+              "type": "Text"
+            },
+            {
+              "name": "Model",
+              "type": "Text"
+            }
+          ]
+        },
+        {
+          "name": "Reported At",
+          "type": "DateTime"
+        },
+        {
+          "name": "Downtime Hours",
+          "type": "Number"
+        },
+        {
+          "name": "Repair Cost AED",
+          "type": "Number"
+        }
+      ],
+      "caseflow": {
+        "statuses": [
+          {
+            "name": "Reported",
+            "category": "NotStarted"
+          },
+          {
+            "name": "Diagnosing",
+            "category": "InProgress"
+          },
+          {
+            "name": "Awaiting parts",
+            "category": "InProgress"
+          },
+          {
+            "name": "Under repair",
+            "category": "InProgress"
+          },
+          {
+            "name": "Back in service",
+            "category": "Done"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CAFM AI Conversation",
+      "flowType": "Form",
+      "fields": [
+        {
+          "name": "Session Id",
+          "type": "Text",
+          "required": true,
+          "section": "Call"
+        },
+        {
+          "name": "Started At",
+          "type": "DateTime",
+          "section": "Call"
+        },
+        {
+          "name": "Ended At",
+          "type": "DateTime",
+          "section": "Call"
+        },
+        {
+          "name": "Duration Seconds",
+          "type": "Number",
+          "section": "Call"
+        },
+        {
+          "name": "Language",
+          "type": "Select",
+          "referredList": "CAFM Language",
+          "section": "Call"
+        },
+        {
+          "name": "Caller Name",
+          "type": "Text",
+          "section": "Call"
+        },
+        {
+          "name": "Caller Role",
+          "type": "Text",
+          "section": "Call"
+        },
+        {
+          "name": "Voice Engine",
+          "type": "Text",
+          "section": "Call"
+        },
+        {
+          "name": "Model",
+          "type": "Text",
+          "section": "Call"
+        },
+        {
+          "name": "Work Order Ref",
+          "type": "Text",
+          "section": "Call"
+        },
+        {
+          "name": "Work Order Instance",
+          "type": "Text",
+          "section": "Call"
+        },
+        {
+          "name": "Transcript",
+          "type": "Textarea",
+          "section": "Transcript"
+        },
+        {
+          "name": "Summary",
+          "type": "Textarea",
+          "section": "Summary"
+        },
+        {
+          "name": "Key Points",
+          "type": "Textarea",
+          "section": "Summary"
+        },
+        {
+          "name": "Action Items",
+          "type": "Textarea",
+          "section": "Summary"
+        },
+        {
+          "name": "Open Questions",
+          "type": "Textarea",
+          "section": "Summary"
+        },
+        {
+          "name": "Sentiment",
+          "type": "Text",
+          "section": "Insights"
+        },
+        {
+          "name": "Intents",
+          "type": "Textarea",
+          "section": "Insights"
+        },
+        {
+          "name": "Issues Raised",
+          "type": "Textarea",
+          "section": "Insights"
+        },
+        {
+          "name": "Suggested Follow Ups",
+          "type": "Textarea",
+          "section": "Insights"
+        },
+        {
+          "name": "Insights JSON",
+          "type": "Textarea",
+          "section": "Insights"
+        },
+        {
+          "name": "Input Tokens",
+          "type": "Number",
+          "section": "Usage"
+        },
+        {
+          "name": "Output Tokens",
+          "type": "Number",
+          "section": "Usage"
+        },
+        {
+          "name": "Total Tokens",
+          "type": "Number",
+          "section": "Usage"
+        }
+      ]
+    },
+    {
+      "name": "CAFM AI Setting",
+      "flowType": "Form",
+      "fields": [
+        {
+          "name": "Setting Key",
+          "type": "Text",
+          "required": true
+        },
+        {
+          "name": "Setting Value",
+          "type": "Textarea"
+        },
+        {
+          "name": "Updated By",
+          "type": "Text"
+        },
+        {
+          "name": "Updated At",
+          "type": "DateTime"
+        }
+      ]
+    },
+    {
+      "name": "Handover Pack",
+      "flowType": "Form",
+      "fields": [
+        {
+          "name": "Pack Item",
+          "type": "Text",
+          "required": true
+        },
+        {
+          "name": "Received",
+          "type": "Boolean"
+        },
+        {
+          "name": "Received On",
+          "type": "Date"
+        },
+        {
+          "name": "Item Count",
+          "type": "Number"
+        },
+        {
+          "name": "Pack Document",
+          "type": "Attachment"
+        }
+      ]
+    },
+    {
+      "name": "Subcontractor Technicians",
+      "flowType": "Form",
+      "fields": [
+        {
+          "name": "Technician",
+          "type": "User",
+          "required": true
+        },
+        {
+          "name": "Skill",
+          "type": "Text"
+        }
+      ]
+    },
+    {
+      "name": "Checklist Template",
+      "flowType": "Form",
+      "fields": [
+        {
+          "name": "Check Step",
+          "type": "Text",
+          "required": true
+        },
+        {
+          "name": "Check Step AR",
+          "type": "Text"
+        },
+        {
+          "name": "Needs Reading",
+          "type": "Boolean"
+        }
+      ]
+    },
+    {
+      "name": "WO Checklist",
+      "flowType": "Form",
+      "fields": [
+        {
+          "name": "Check Step",
+          "type": "Text",
+          "required": true
+        },
+        {
+          "name": "Done",
+          "type": "Boolean"
+        },
+        {
+          "name": "Reading",
+          "type": "Text"
+        }
+      ]
+    },
+    {
+      "name": "WO Photos",
+      "flowType": "Form",
+      "fields": [
+        {
+          "name": "Photo",
+          "type": "Image",
+          "required": true
+        },
+        {
+          "name": "Photo Kind",
+          "type": "Select",
+          "referredList": "CAFM Photo Kind"
+        },
+        {
+          "name": "Caption",
+          "type": "Text"
+        }
+      ]
+    },
+    {
+      "name": "WO Parts",
+      "flowType": "Form",
+      "fields": [
+        {
+          "name": "Part",
+          "type": "Text",
+          "required": true
+        },
+        {
+          "name": "Qty",
+          "type": "Number"
+        },
+        {
+          "name": "Unit Cost AED",
+          "type": "Number"
+        },
+        {
+          "name": "Line Total AED",
+          "type": "Number",
+          "formula": "Qty * Unit_Cost_AED"
+        }
+      ]
+    },
+    {
+      "name": "Permit Controls",
+      "flowType": "Form",
+      "fields": [
+        {
+          "name": "Control",
+          "type": "Text",
+          "required": true
+        },
+        {
+          "name": "Confirmed",
+          "type": "Boolean"
+        }
+      ]
+    }
+  ],
+  "childTables": [
+    {
+      "parent": "CAFM Site",
+      "child": "Handover Pack",
+      "field": "Handover Pack"
+    },
+    {
+      "parent": "CAFM Subcontractor",
+      "child": "Subcontractor Technicians",
+      "field": "Subcontractor Technicians"
+    },
+    {
+      "parent": "CAFM Asset Class",
+      "child": "Checklist Template",
+      "field": "Checklist Template"
+    },
+    {
+      "parent": "CAFM Work Order",
+      "child": "WO Checklist",
+      "field": "WO Checklist"
+    },
+    {
+      "parent": "CAFM Work Order",
+      "child": "WO Photos",
+      "field": "WO Photos"
+    },
+    {
+      "parent": "CAFM Work Order",
+      "child": "WO Parts",
+      "field": "WO Parts"
+    },
+    {
+      "parent": "CAFM Permit To Work",
+      "child": "Permit Controls",
+      "field": "Permit Controls"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "Executive",
+      "model": "CAFM Site",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Helpdesk",
+      "model": "CAFM Site",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Subcontractor Supervisor",
+      "model": "CAFM Site",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Technician",
+      "model": "CAFM Site",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Resident",
+      "model": "CAFM Site",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Compliance Officer",
+      "model": "CAFM Site",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "HSE Officer",
+      "model": "CAFM Site",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Plant Manager",
+      "model": "CAFM Site",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Executive",
+      "model": "CAFM Unit",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Helpdesk",
+      "model": "CAFM Unit",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Subcontractor Supervisor",
+      "model": "CAFM Unit",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Technician",
+      "model": "CAFM Unit",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Resident",
+      "model": "CAFM Unit",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Compliance Officer",
+      "model": "CAFM Unit",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "HSE Officer",
+      "model": "CAFM Unit",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Plant Manager",
+      "model": "CAFM Unit",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Executive",
+      "model": "CAFM Asset Class",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Helpdesk",
+      "model": "CAFM Asset Class",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Subcontractor Supervisor",
+      "model": "CAFM Asset Class",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Technician",
+      "model": "CAFM Asset Class",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Resident",
+      "model": "CAFM Asset Class",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Compliance Officer",
+      "model": "CAFM Asset Class",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "HSE Officer",
+      "model": "CAFM Asset Class",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Plant Manager",
+      "model": "CAFM Asset Class",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Executive",
+      "model": "CAFM Request Category",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Helpdesk",
+      "model": "CAFM Request Category",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Subcontractor Supervisor",
+      "model": "CAFM Request Category",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Technician",
+      "model": "CAFM Request Category",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Resident",
+      "model": "CAFM Request Category",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Compliance Officer",
+      "model": "CAFM Request Category",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "HSE Officer",
+      "model": "CAFM Request Category",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Plant Manager",
+      "model": "CAFM Request Category",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Executive",
+      "model": "CAFM Root Cause",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Helpdesk",
+      "model": "CAFM Root Cause",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Subcontractor Supervisor",
+      "model": "CAFM Root Cause",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Technician",
+      "model": "CAFM Root Cause",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Resident",
+      "model": "CAFM Root Cause",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Compliance Officer",
+      "model": "CAFM Root Cause",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "HSE Officer",
+      "model": "CAFM Root Cause",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Plant Manager",
+      "model": "CAFM Root Cause",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Executive",
+      "model": "CAFM SLA Policy",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Helpdesk",
+      "model": "CAFM SLA Policy",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Subcontractor Supervisor",
+      "model": "CAFM SLA Policy",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Technician",
+      "model": "CAFM SLA Policy",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Resident",
+      "model": "CAFM SLA Policy",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Compliance Officer",
+      "model": "CAFM SLA Policy",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "HSE Officer",
+      "model": "CAFM SLA Policy",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Plant Manager",
+      "model": "CAFM SLA Policy",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Executive",
+      "model": "CAFM Subcontractor",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Helpdesk",
+      "model": "CAFM Subcontractor",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Subcontractor Supervisor",
+      "model": "CAFM Subcontractor",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Technician",
+      "model": "CAFM Subcontractor",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Resident",
+      "model": "CAFM Subcontractor",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Compliance Officer",
+      "model": "CAFM Subcontractor",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "HSE Officer",
+      "model": "CAFM Subcontractor",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Plant Manager",
+      "model": "CAFM Subcontractor",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Executive",
+      "model": "CAFM Asset",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Helpdesk",
+      "model": "CAFM Asset",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Subcontractor Supervisor",
+      "model": "CAFM Asset",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Technician",
+      "model": "CAFM Asset",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Resident",
+      "model": "CAFM Asset",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Compliance Officer",
+      "model": "CAFM Asset",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "HSE Officer",
+      "model": "CAFM Asset",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Plant Manager",
+      "model": "CAFM Asset",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "FM Manager",
+      "model": "CAFM Site",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "FM Manager",
+      "model": "CAFM Unit",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "FM Manager",
+      "model": "CAFM Asset Class",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "FM Manager",
+      "model": "CAFM Request Category",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "FM Manager",
+      "model": "CAFM Root Cause",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "FM Manager",
+      "model": "CAFM SLA Policy",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "FM Manager",
+      "model": "CAFM Subcontractor",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "FM Manager",
+      "model": "CAFM Asset",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "DLP Manager",
+      "model": "CAFM Site",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "DLP Manager",
+      "model": "CAFM Unit",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "DLP Manager",
+      "model": "CAFM Asset Class",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "DLP Manager",
+      "model": "CAFM Request Category",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "DLP Manager",
+      "model": "CAFM Root Cause",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "DLP Manager",
+      "model": "CAFM SLA Policy",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "DLP Manager",
+      "model": "CAFM Subcontractor",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "DLP Manager",
+      "model": "CAFM Asset",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "Resident",
+      "model": "CAFM Work Order",
+      "level": "Editable",
+      "scope": "my-items"
+    },
+    {
+      "role": "Helpdesk",
+      "model": "CAFM Work Order",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "FM Manager",
+      "model": "CAFM Work Order",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "DLP Manager",
+      "model": "CAFM Work Order",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "Subcontractor Supervisor",
+      "model": "CAFM Work Order",
+      "level": "Editable",
+      "scope": "my-items"
+    },
+    {
+      "role": "Technician",
+      "model": "CAFM Work Order",
+      "level": "Editable",
+      "scope": "my-items"
+    },
+    {
+      "role": "Executive",
+      "model": "CAFM Work Order",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "DLP Manager",
+      "model": "CAFM Back-charge",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "Subcontractor Supervisor",
+      "model": "CAFM Back-charge",
+      "level": "Editable",
+      "scope": "my-items"
+    },
+    {
+      "role": "Executive",
+      "model": "CAFM Back-charge",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Technician",
+      "model": "CAFM Permit To Work",
+      "level": "Editable",
+      "scope": "my-items"
+    },
+    {
+      "role": "HSE Officer",
+      "model": "CAFM Permit To Work",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "FM Manager",
+      "model": "CAFM Permit To Work",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Executive",
+      "model": "CAFM WO Event",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "FM Manager",
+      "model": "CAFM WO Event",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Helpdesk",
+      "model": "CAFM WO Event",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "DLP Manager",
+      "model": "CAFM WO Event",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Subcontractor Supervisor",
+      "model": "CAFM WO Event",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Technician",
+      "model": "CAFM WO Event",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Compliance Officer",
+      "model": "CAFM WO Event",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "HSE Officer",
+      "model": "CAFM WO Event",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Plant Manager",
+      "model": "CAFM WO Event",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Executive",
+      "model": "CAFM WO Register",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "FM Manager",
+      "model": "CAFM WO Register",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Helpdesk",
+      "model": "CAFM WO Register",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "DLP Manager",
+      "model": "CAFM WO Register",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Compliance Officer",
+      "model": "CAFM WO Register",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Subcontractor Supervisor",
+      "model": "CAFM WO Register",
+      "level": "ReadOnly",
+      "scope": "my-items"
+    },
+    {
+      "role": "DLP Manager",
+      "model": "CAFM Snag",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "Subcontractor Supervisor",
+      "model": "CAFM Snag",
+      "level": "Editable",
+      "scope": "my-items"
+    },
+    {
+      "role": "Executive",
+      "model": "CAFM Snag",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Compliance Officer",
+      "model": "CAFM Compliance Certificate",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "FM Manager",
+      "model": "CAFM Compliance Certificate",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Executive",
+      "model": "CAFM Compliance Certificate",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "FM Manager",
+      "model": "CAFM PPM Schedule",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "Compliance Officer",
+      "model": "CAFM PPM Schedule",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Plant Manager",
+      "model": "CAFM Equipment",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "Executive",
+      "model": "CAFM Equipment",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Plant Manager",
+      "model": "CAFM Breakdown",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "Executive",
+      "model": "CAFM Breakdown",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "Resident",
+      "model": "CAFM AI Conversation",
+      "level": "Editable",
+      "scope": "my-items"
+    },
+    {
+      "role": "Helpdesk",
+      "model": "CAFM AI Conversation",
+      "level": "Editable",
+      "scope": "all"
+    },
+    {
+      "role": "Executive",
+      "model": "CAFM AI Conversation",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "FM Manager",
+      "model": "CAFM AI Conversation",
+      "level": "ReadOnly",
+      "scope": "all"
+    },
+    {
+      "role": "DLP Manager",
+      "model": "CAFM AI Conversation",
+      "level": "ReadOnly",
+      "scope": "all"
+    }
+  ]
+}

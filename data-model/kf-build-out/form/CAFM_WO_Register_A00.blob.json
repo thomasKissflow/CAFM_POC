@@ -1,0 +1,918 @@
+{
+  "Root": "CAFM_WO_Register_A00",
+  "CAFM_WO_Register_A00": {
+    "Id": "CAFM_WO_Register_A00",
+    "Name": "CAFM WO Register",
+    "Kind": "Model",
+    "FlowType": "Form",
+    "Description": "",
+    "Model::Row": [
+      "Row_c25u3u",
+      "Row_c25u3v",
+      "Row_c25u3w",
+      "Row_c25u3x"
+    ],
+    "Model::Field": [
+      "Work_Order_No",
+      "Work_Order_Instance",
+      "Site",
+      "Unit_Number",
+      "Asset_Tag",
+      "Batch",
+      "Category_Name",
+      "Channel",
+      "Priority",
+      "Summer_Uplift",
+      "Liability",
+      "Current_Step",
+      "Priority_Code",
+      "Liability_Code",
+      "First_Contact_At",
+      "Response_Due_At",
+      "Resolve_Due_At",
+      "Responded_At",
+      "Resolved_At",
+      "Closed_At",
+      "Subcontractor",
+      "Technician",
+      "Root_Cause_Name",
+      "Parts_AED",
+      "Labour_AED",
+      "Total_Cost_AED",
+      "Back_charge_Ref",
+      "Back_charge_Status",
+      "Recovered_On"
+    ]
+  },
+  "Row_c25u3u": {
+    "Id": "Row_c25u3u",
+    "Kind": "Row",
+    "Model": "CAFM_WO_Register_A00",
+    "Row::Column": [
+      "Column_c25u3u"
+    ]
+  },
+  "Column_c25u3u": {
+    "Id": "Column_c25u3u",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "Identity",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_c25u3u",
+    "Column::Row": [
+      "Row_c24lyc",
+      "Row_c24lyd",
+      "Row_c24lye",
+      "Row_c24lyf"
+    ]
+  },
+  "Row_c24lyc": {
+    "Id": "Row_c24lyc",
+    "Kind": "Row",
+    "Column": "Column_c25u3u",
+    "Row::Column": [
+      "Column_3mrwpl",
+      "Column_15jg8lt"
+    ]
+  },
+  "Column_3mrwpl": {
+    "Id": "Column_3mrwpl",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_c24lyc",
+    "Column::Field": [
+      "Work_Order_No"
+    ]
+  },
+  "Column_15jg8lt": {
+    "Id": "Column_15jg8lt",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_c24lyc",
+    "Column::Field": [
+      "Work_Order_Instance"
+    ]
+  },
+  "Row_c24lyd": {
+    "Id": "Row_c24lyd",
+    "Kind": "Row",
+    "Column": "Column_c25u3u",
+    "Row::Column": [
+      "Column_c1halw",
+      "Column_qq5kav"
+    ]
+  },
+  "Column_c1halw": {
+    "Id": "Column_c1halw",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_c24lyd",
+    "Column::Field": [
+      "Site"
+    ]
+  },
+  "Column_qq5kav": {
+    "Id": "Column_qq5kav",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_c24lyd",
+    "Column::Field": [
+      "Unit_Number"
+    ]
+  },
+  "Row_c24lye": {
+    "Id": "Row_c24lye",
+    "Kind": "Row",
+    "Column": "Column_c25u3u",
+    "Row::Column": [
+      "Column_kmhixm",
+      "Column_15v46bl"
+    ]
+  },
+  "Column_kmhixm": {
+    "Id": "Column_kmhixm",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_c24lye",
+    "Column::Field": [
+      "Asset_Tag"
+    ]
+  },
+  "Column_15v46bl": {
+    "Id": "Column_15v46bl",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_c24lye",
+    "Column::Field": [
+      "Batch"
+    ]
+  },
+  "Row_c24lyf": {
+    "Id": "Row_c24lyf",
+    "Kind": "Row",
+    "Column": "Column_c25u3u",
+    "Row::Column": [
+      "Column_y8zdnh",
+      "Column_dxu1a0"
+    ]
+  },
+  "Column_y8zdnh": {
+    "Id": "Column_y8zdnh",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_c24lyf",
+    "Column::Field": [
+      "Category_Name"
+    ]
+  },
+  "Column_dxu1a0": {
+    "Id": "Column_dxu1a0",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_c24lyf",
+    "Column::Field": [
+      "Channel"
+    ]
+  },
+  "Row_c25u3v": {
+    "Id": "Row_c25u3v",
+    "Kind": "Row",
+    "Model": "CAFM_WO_Register_A00",
+    "Row::Column": [
+      "Column_c25u3v"
+    ]
+  },
+  "Column_c25u3v": {
+    "Id": "Column_c25u3v",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "Clock",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_c25u3v",
+    "Column::Row": [
+      "Row_c24msl",
+      "Row_c24msm",
+      "Row_c24msn",
+      "Row_c24mso",
+      "Row_c24msp"
+    ]
+  },
+  "Row_c24msl": {
+    "Id": "Row_c24msl",
+    "Kind": "Row",
+    "Column": "Column_c25u3v",
+    "Row::Column": [
+      "Column_13c7w5d",
+      "Column_14fe1zf"
+    ]
+  },
+  "Column_13c7w5d": {
+    "Id": "Column_13c7w5d",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_c24msl",
+    "Column::Field": [
+      "Priority"
+    ]
+  },
+  "Column_14fe1zf": {
+    "Id": "Column_14fe1zf",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_c24msl",
+    "Column::Field": [
+      "Summer_Uplift"
+    ]
+  },
+  "Row_c24msm": {
+    "Id": "Row_c24msm",
+    "Kind": "Row",
+    "Column": "Column_c25u3v",
+    "Row::Column": [
+      "Column_1z0zee5",
+      "Column_ih5g4b"
+    ]
+  },
+  "Column_1z0zee5": {
+    "Id": "Column_1z0zee5",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_c24msm",
+    "Column::Field": [
+      "Current_Step"
+    ]
+  },
+  "Column_ih5g4b": {
+    "Id": "Column_ih5g4b",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_c24msm",
+    "Column::Field": [
+      "Priority_Code"
+    ]
+  },
+  "Row_c24msn": {
+    "Id": "Row_c24msn",
+    "Kind": "Row",
+    "Column": "Column_c25u3v",
+    "Row::Column": [
+      "Column_j5bgpy",
+      "Column_vciein"
+    ]
+  },
+  "Column_j5bgpy": {
+    "Id": "Column_j5bgpy",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_c24msn",
+    "Column::Field": [
+      "First_Contact_At"
+    ]
+  },
+  "Column_vciein": {
+    "Id": "Column_vciein",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_c24msn",
+    "Column::Field": [
+      "Response_Due_At"
+    ]
+  },
+  "Row_c24mso": {
+    "Id": "Row_c24mso",
+    "Kind": "Row",
+    "Column": "Column_c25u3v",
+    "Row::Column": [
+      "Column_1orfne8",
+      "Column_1fe7i53"
+    ]
+  },
+  "Column_1orfne8": {
+    "Id": "Column_1orfne8",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_c24mso",
+    "Column::Field": [
+      "Resolve_Due_At"
+    ]
+  },
+  "Column_1fe7i53": {
+    "Id": "Column_1fe7i53",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_c24mso",
+    "Column::Field": [
+      "Responded_At"
+    ]
+  },
+  "Row_c24msp": {
+    "Id": "Row_c24msp",
+    "Kind": "Row",
+    "Column": "Column_c25u3v",
+    "Row::Column": [
+      "Column_1q8iguv",
+      "Column_1ay4bt9"
+    ]
+  },
+  "Column_1q8iguv": {
+    "Id": "Column_1q8iguv",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_c24msp",
+    "Column::Field": [
+      "Resolved_At"
+    ]
+  },
+  "Column_1ay4bt9": {
+    "Id": "Column_1ay4bt9",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_c24msp",
+    "Column::Field": [
+      "Closed_At"
+    ]
+  },
+  "Row_c25u3w": {
+    "Id": "Row_c25u3w",
+    "Kind": "Row",
+    "Model": "CAFM_WO_Register_A00",
+    "Row::Column": [
+      "Column_c25u3w"
+    ]
+  },
+  "Column_c25u3w": {
+    "Id": "Column_c25u3w",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "Liability",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_c25u3w",
+    "Column::Row": [
+      "Row_c24nmu",
+      "Row_c24nmv",
+      "Row_c24nmw"
+    ]
+  },
+  "Row_c24nmu": {
+    "Id": "Row_c24nmu",
+    "Kind": "Row",
+    "Column": "Column_c25u3w",
+    "Row::Column": [
+      "Column_18bv8yq",
+      "Column_qu5wkc"
+    ]
+  },
+  "Column_18bv8yq": {
+    "Id": "Column_18bv8yq",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_c24nmu",
+    "Column::Field": [
+      "Liability"
+    ]
+  },
+  "Column_qu5wkc": {
+    "Id": "Column_qu5wkc",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_c24nmu",
+    "Column::Field": [
+      "Liability_Code"
+    ]
+  },
+  "Row_c24nmv": {
+    "Id": "Row_c24nmv",
+    "Kind": "Row",
+    "Column": "Column_c25u3w",
+    "Row::Column": [
+      "Column_840n48",
+      "Column_16bezrp"
+    ]
+  },
+  "Column_840n48": {
+    "Id": "Column_840n48",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_c24nmv",
+    "Column::Field": [
+      "Subcontractor"
+    ]
+  },
+  "Column_16bezrp": {
+    "Id": "Column_16bezrp",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_c24nmv",
+    "Column::Field": [
+      "Technician"
+    ]
+  },
+  "Row_c24nmw": {
+    "Id": "Row_c24nmw",
+    "Kind": "Row",
+    "Column": "Column_c25u3w",
+    "Row::Column": [
+      "Column_aosuvn"
+    ]
+  },
+  "Column_aosuvn": {
+    "Id": "Column_aosuvn",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_c24nmw",
+    "Column::Field": [
+      "Root_Cause_Name"
+    ]
+  },
+  "Row_c25u3x": {
+    "Id": "Row_c25u3x",
+    "Kind": "Row",
+    "Model": "CAFM_WO_Register_A00",
+    "Row::Column": [
+      "Column_c25u3x"
+    ]
+  },
+  "Column_c25u3x": {
+    "Id": "Column_c25u3x",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "Cost",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_c25u3x",
+    "Column::Row": [
+      "Row_c24oh3",
+      "Row_c24oh4",
+      "Row_c24oh5"
+    ]
+  },
+  "Row_c24oh3": {
+    "Id": "Row_c24oh3",
+    "Kind": "Row",
+    "Column": "Column_c25u3x",
+    "Row::Column": [
+      "Column_o4dhpu",
+      "Column_1rr6q25"
+    ]
+  },
+  "Column_o4dhpu": {
+    "Id": "Column_o4dhpu",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_c24oh3",
+    "Column::Field": [
+      "Parts_AED"
+    ]
+  },
+  "Column_1rr6q25": {
+    "Id": "Column_1rr6q25",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_c24oh3",
+    "Column::Field": [
+      "Labour_AED"
+    ]
+  },
+  "Row_c24oh4": {
+    "Id": "Row_c24oh4",
+    "Kind": "Row",
+    "Column": "Column_c25u3x",
+    "Row::Column": [
+      "Column_1elg7ok",
+      "Column_fc0nud"
+    ]
+  },
+  "Column_1elg7ok": {
+    "Id": "Column_1elg7ok",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_c24oh4",
+    "Column::Field": [
+      "Total_Cost_AED"
+    ]
+  },
+  "Column_fc0nud": {
+    "Id": "Column_fc0nud",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_c24oh4",
+    "Column::Field": [
+      "Back_charge_Ref"
+    ]
+  },
+  "Row_c24oh5": {
+    "Id": "Row_c24oh5",
+    "Kind": "Row",
+    "Column": "Column_c25u3x",
+    "Row::Column": [
+      "Column_1ukb1ek",
+      "Column_1rqu7p6"
+    ]
+  },
+  "Column_1ukb1ek": {
+    "Id": "Column_1ukb1ek",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_c24oh5",
+    "Column::Field": [
+      "Back_charge_Status"
+    ]
+  },
+  "Column_1rqu7p6": {
+    "Id": "Column_1rqu7p6",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_c24oh5",
+    "Column::Field": [
+      "Recovered_On"
+    ]
+  },
+  "Work_Order_No": {
+    "Id": "Work_Order_No",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Work Order No",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_3mrwpl",
+    "Required": true
+  },
+  "Work_Order_Instance": {
+    "Id": "Work_Order_Instance",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Work Order Instance",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_15jg8lt"
+  },
+  "QueryDefinition_c1halw": {
+    "Id": "QueryDefinition_c1halw",
+    "Kind": "QueryDefinition",
+    "Field": "Site",
+    "LHSModel": "CAFM_Site_A00",
+    "FlowType": "Form",
+    "LookupField": [
+      {
+        "Id": "Site_Name",
+        "Name": "Site Name",
+        "Type": "Text"
+      }
+    ],
+    "HiddenField": []
+  },
+  "Site": {
+    "Id": "Site",
+    "Kind": "Field",
+    "Type": "Reference",
+    "Name": "Site",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_c1halw",
+    "Field::QueryDefinition": [
+      "QueryDefinition_c1halw"
+    ]
+  },
+  "Unit_Number": {
+    "Id": "Unit_Number",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Unit Number",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_qq5kav"
+  },
+  "Asset_Tag": {
+    "Id": "Asset_Tag",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Asset Tag",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_kmhixm"
+  },
+  "Batch": {
+    "Id": "Batch",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Batch",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_15v46bl"
+  },
+  "Category_Name": {
+    "Id": "Category_Name",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Category Name",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_y8zdnh"
+  },
+  "Channel": {
+    "Id": "Channel",
+    "Kind": "Field",
+    "Type": "Select",
+    "Name": "Channel",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_dxu1a0",
+    "ReferredList": "CAFM_Channel_A00"
+  },
+  "Priority": {
+    "Id": "Priority",
+    "Kind": "Field",
+    "Type": "Select",
+    "Name": "Priority",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_13c7w5d",
+    "ReferredList": "CAFM_Priority_A00"
+  },
+  "Summer_Uplift": {
+    "Id": "Summer_Uplift",
+    "Kind": "Field",
+    "Type": "Boolean",
+    "Name": "Summer Uplift",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_14fe1zf"
+  },
+  "Liability": {
+    "Id": "Liability",
+    "Kind": "Field",
+    "Type": "Select",
+    "Name": "Liability",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_18bv8yq",
+    "ReferredList": "CAFM_Liability_A00"
+  },
+  "Current_Step": {
+    "Id": "Current_Step",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Current Step",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_1z0zee5"
+  },
+  "Priority_Code": {
+    "Id": "Priority_Code",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "Priority Code",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_ih5g4b"
+  },
+  "Liability_Code": {
+    "Id": "Liability_Code",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "Liability Code",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_qu5wkc"
+  },
+  "First_Contact_At": {
+    "Id": "First_Contact_At",
+    "Kind": "Field",
+    "Type": "DateTime",
+    "Name": "First Contact At",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_j5bgpy"
+  },
+  "Response_Due_At": {
+    "Id": "Response_Due_At",
+    "Kind": "Field",
+    "Type": "DateTime",
+    "Name": "Response Due At",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_vciein"
+  },
+  "Resolve_Due_At": {
+    "Id": "Resolve_Due_At",
+    "Kind": "Field",
+    "Type": "DateTime",
+    "Name": "Resolve Due At",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_1orfne8"
+  },
+  "Responded_At": {
+    "Id": "Responded_At",
+    "Kind": "Field",
+    "Type": "DateTime",
+    "Name": "Responded At",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_1fe7i53"
+  },
+  "Resolved_At": {
+    "Id": "Resolved_At",
+    "Kind": "Field",
+    "Type": "DateTime",
+    "Name": "Resolved At",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_1q8iguv"
+  },
+  "Closed_At": {
+    "Id": "Closed_At",
+    "Kind": "Field",
+    "Type": "DateTime",
+    "Name": "Closed At",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_1ay4bt9"
+  },
+  "QueryDefinition_840n48": {
+    "Id": "QueryDefinition_840n48",
+    "Kind": "QueryDefinition",
+    "Field": "Subcontractor",
+    "LHSModel": "CAFM_Subcontractor_A00",
+    "FlowType": "Form",
+    "LookupField": [
+      {
+        "Id": "Company_Name",
+        "Name": "Company Name",
+        "Type": "Text"
+      }
+    ],
+    "HiddenField": []
+  },
+  "Subcontractor": {
+    "Id": "Subcontractor",
+    "Kind": "Field",
+    "Type": "Reference",
+    "Name": "Subcontractor",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_840n48",
+    "Field::QueryDefinition": [
+      "QueryDefinition_840n48"
+    ]
+  },
+  "QueryDefinition_16bezrp": {
+    "Id": "QueryDefinition_16bezrp",
+    "Kind": "QueryDefinition",
+    "Field": "Technician",
+    "LHSModel": "User",
+    "FlowType": "User",
+    "LookupField": [],
+    "HiddenField": []
+  },
+  "Technician": {
+    "Id": "Technician",
+    "Kind": "Field",
+    "Type": "User",
+    "Name": "Technician",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_16bezrp",
+    "Field::QueryDefinition": [
+      "QueryDefinition_16bezrp"
+    ]
+  },
+  "Root_Cause_Name": {
+    "Id": "Root_Cause_Name",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Root Cause Name",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_aosuvn"
+  },
+  "Parts_AED": {
+    "Id": "Parts_AED",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "Parts AED",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_o4dhpu"
+  },
+  "Labour_AED": {
+    "Id": "Labour_AED",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "Labour AED",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_1rr6q25"
+  },
+  "Expression_1elg7ok": {
+    "Id": "Expression_1elg7ok",
+    "Kind": "Expression",
+    "Field": "Total_Cost_AED",
+    "ExpressionStr": "Parts_AED + Labour_AED",
+    "Expression::Node": [
+      "Node_g4vfu0"
+    ]
+  },
+  "Node_g4vfty": {
+    "Id": "Node_g4vfty",
+    "Kind": "Node",
+    "DataType": "Number",
+    "Type": "Field",
+    "Field": "Parts_AED",
+    "Node": "Node_g4vfu0"
+  },
+  "Node_g4vftz": {
+    "Id": "Node_g4vftz",
+    "Kind": "Node",
+    "DataType": "Number",
+    "Type": "Field",
+    "Field": "Labour_AED",
+    "Node": "Node_g4vfu0"
+  },
+  "Node_g4vfu0": {
+    "Id": "Node_g4vfu0",
+    "Kind": "Node",
+    "DataType": "Number",
+    "Type": "Function",
+    "Value": "+",
+    "Category": "Number",
+    "Syntax": "Infix",
+    "Node::Node": [
+      "Node_g4vfty",
+      "Node_g4vftz"
+    ],
+    "FieldRefCount": 2,
+    "Expression": "Expression_1elg7ok"
+  },
+  "Total_Cost_AED": {
+    "Id": "Total_Cost_AED",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "Total Cost AED",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_1elg7ok",
+    "Field::Expression": [
+      "Expression_1elg7ok"
+    ]
+  },
+  "Back_charge_Ref": {
+    "Id": "Back_charge_Ref",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Back-charge Ref",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_fc0nud"
+  },
+  "Back_charge_Status": {
+    "Id": "Back_charge_Status",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Back-charge Status",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_1ukb1ek"
+  },
+  "Recovered_On": {
+    "Id": "Recovered_On",
+    "Kind": "Field",
+    "Type": "Date",
+    "Name": "Recovered On",
+    "Model": "CAFM_WO_Register_A00",
+    "Column": "Column_1rqu7p6"
+  }
+}

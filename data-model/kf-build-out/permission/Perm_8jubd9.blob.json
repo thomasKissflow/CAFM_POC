@@ -1,0 +1,91 @@
+{
+  "Root": "Perm_8jubd9",
+  "Perm_8jubd9": {
+    "Id": "Perm_8jubd9",
+    "Kind": "FlowPermission",
+    "Role": "Ro_b2tazi",
+    "RoleName": "Compliance Officer",
+    "Model": "CAFM_Compliance_Certificate_A00",
+    "Level": "Editable",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_w3juyl",
+      "Permission_1s34esn",
+      "Permission_mk156v",
+      "Permission_1rja50n",
+      "Permission_pw61bl",
+      "Permission_1xvghk4",
+      "Permission_ro8cc7",
+      "Permission_s5vlez",
+      "Permission_w7qw9p",
+      "Permission_6s6vsb",
+      "Permission_uxtkt7"
+    ]
+  },
+  "Permission_w3juyl": {
+    "Id": "Permission_w3juyl",
+    "Kind": "Permission",
+    "Column": "Site",
+    "Permission": "Editable"
+  },
+  "Permission_1s34esn": {
+    "Id": "Permission_1s34esn",
+    "Kind": "Permission",
+    "Column": "Compliance_System",
+    "Permission": "Editable"
+  },
+  "Permission_mk156v": {
+    "Id": "Permission_mk156v",
+    "Kind": "Permission",
+    "Column": "Contractor",
+    "Permission": "Editable"
+  },
+  "Permission_1rja50n": {
+    "Id": "Permission_1rja50n",
+    "Kind": "Permission",
+    "Column": "Certificate_No",
+    "Permission": "Editable"
+  },
+  "Permission_pw61bl": {
+    "Id": "Permission_pw61bl",
+    "Kind": "Permission",
+    "Column": "Issued_On",
+    "Permission": "Editable"
+  },
+  "Permission_1xvghk4": {
+    "Id": "Permission_1xvghk4",
+    "Kind": "Permission",
+    "Column": "Expires_On",
+    "Permission": "Editable"
+  },
+  "Permission_ro8cc7": {
+    "Id": "Permission_ro8cc7",
+    "Kind": "Permission",
+    "Column": "Last_Inspection",
+    "Permission": "Editable"
+  },
+  "Permission_s5vlez": {
+    "Id": "Permission_s5vlez",
+    "Kind": "Permission",
+    "Column": "Open_Findings",
+    "Permission": "Editable"
+  },
+  "Permission_w7qw9p": {
+    "Id": "Permission_w7qw9p",
+    "Kind": "Permission",
+    "Column": "Hassantuk_Status",
+    "Permission": "Editable"
+  },
+  "Permission_6s6vsb": {
+    "Id": "Permission_6s6vsb",
+    "Kind": "Permission",
+    "Column": "Evidence",
+    "Permission": "Editable"
+  },
+  "Permission_uxtkt7": {
+    "Id": "Permission_uxtkt7",
+    "Kind": "Permission",
+    "Column": "Days_To_Expiry",
+    "Permission": "Editable"
+  }
+}

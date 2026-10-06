@@ -1,0 +1,17 @@
+{
+  "_id": "CAFM_Photo_Kind_A00",
+  "Name": "CAFM Photo Kind",
+  "Description": "",
+  "Type": "List",
+  "Status": "Live",
+  "ListItems": [
+    "Report",
+    "Before",
+    "After"
+  ],
+  "_application_id": "CAFM_POC_A00",
+  "Security": {
+    "AllowAllFlows": true,
+    "AllowedFlows": []
+  }
+}

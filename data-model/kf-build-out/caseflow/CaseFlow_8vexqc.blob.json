@@ -1,0 +1,175 @@
+{
+  "Root": "CaseFlow_8vexqc",
+  "Status_un5as0": {
+    "Id": "Status_un5as0",
+    "Kind": "Status",
+    "Name": "Open",
+    "Category": "NotStarted",
+    "IsSystem": false,
+    "Resources": [],
+    "OutwardStatus": [
+      "Status_f9bl8q",
+      "Status_1mpphh2",
+      "Status_akywxe",
+      "Status_1cv9tq0",
+      "Status_1w8rnyo"
+    ],
+    "EntryRule": [],
+    "ExitRule": [],
+    "Rule": [],
+    "SLADisabled": false
+  },
+  "Status_f9bl8q": {
+    "Id": "Status_f9bl8q",
+    "Kind": "Status",
+    "Name": "In progress",
+    "Category": "InProgress",
+    "IsSystem": false,
+    "Resources": [],
+    "OutwardStatus": [
+      "Status_un5as0",
+      "Status_1mpphh2",
+      "Status_akywxe",
+      "Status_1cv9tq0",
+      "Status_1w8rnyo"
+    ],
+    "EntryRule": [],
+    "ExitRule": [],
+    "Rule": [],
+    "SLADisabled": false
+  },
+  "Status_1mpphh2": {
+    "Id": "Status_1mpphh2",
+    "Kind": "Status",
+    "Name": "Ready for inspection",
+    "Category": "InProgress",
+    "IsSystem": false,
+    "Resources": [],
+    "OutwardStatus": [
+      "Status_un5as0",
+      "Status_f9bl8q",
+      "Status_akywxe",
+      "Status_1cv9tq0",
+      "Status_1w8rnyo"
+    ],
+    "EntryRule": [],
+    "ExitRule": [],
+    "Rule": [],
+    "SLADisabled": false
+  },
+  "Status_akywxe": {
+    "Id": "Status_akywxe",
+    "Kind": "Status",
+    "Name": "Carried into DLP",
+    "Category": "InProgress",
+    "IsSystem": false,
+    "Resources": [],
+    "OutwardStatus": [
+      "Status_un5as0",
+      "Status_f9bl8q",
+      "Status_1mpphh2",
+      "Status_1cv9tq0",
+      "Status_1w8rnyo"
+    ],
+    "EntryRule": [],
+    "ExitRule": [],
+    "Rule": [],
+    "SLADisabled": false
+  },
+  "Status_1cv9tq0": {
+    "Id": "Status_1cv9tq0",
+    "Kind": "Status",
+    "Name": "Closed",
+    "Category": "Closed",
+    "IsSystem": false,
+    "Resources": [],
+    "OutwardStatus": [
+      "Status_un5as0",
+      "Status_f9bl8q",
+      "Status_1mpphh2",
+      "Status_akywxe",
+      "Status_1w8rnyo"
+    ],
+    "EntryRule": [],
+    "ExitRule": [],
+    "Rule": [],
+    "SLADisabled": false
+  },
+  "Status_1w8rnyo": {
+    "Id": "Status_1w8rnyo",
+    "Kind": "Status",
+    "Name": "Reopened",
+    "Category": "ReOpened",
+    "IsSystem": true,
+    "Resources": [],
+    "OutwardStatus": [
+      "Status_un5as0",
+      "Status_f9bl8q",
+      "Status_1mpphh2",
+      "Status_akywxe",
+      "Status_1cv9tq0"
+    ],
+    "EntryRule": [],
+    "ExitRule": [],
+    "Rule": [],
+    "SLADisabled": false
+  },
+  "State_Not_Started": {
+    "Id": "State_Not_Started",
+    "Name": "Not started",
+    "Category": "NotStarted",
+    "IsSystem": true,
+    "IsDefaultState": true,
+    "IsLastState": false,
+    "Kind": "State"
+  },
+  "State_In_Progress": {
+    "Id": "State_In_Progress",
+    "Name": "In progress",
+    "Category": "InProgress",
+    "IsSystem": true,
+    "IsDefaultState": false,
+    "IsLastState": false,
+    "Kind": "State"
+  },
+  "State_On_Hold": {
+    "Id": "State_On_Hold",
+    "Name": "On hold",
+    "Category": "NotStarted",
+    "IsSystem": true,
+    "IsDefaultState": false,
+    "IsLastState": false,
+    "Kind": "State"
+  },
+  "State_Done": {
+    "Id": "State_Done",
+    "Name": "Done",
+    "Category": "Closed",
+    "IsSystem": true,
+    "IsDefaultState": false,
+    "IsLastState": true,
+    "Kind": "State"
+  },
+  "CaseFlow_8vexqc": {
+    "Id": "CaseFlow_8vexqc",
+    "Name": "CAFM Snag flow",
+    "Kind": "CaseFlow",
+    "Model": "CAFM_Snag_A00",
+    "Type": "Case",
+    "FlowType": "CaseFlow",
+    "CaseFlow::Status": [
+      "Status_un5as0",
+      "Status_f9bl8q",
+      "Status_1mpphh2",
+      "Status_akywxe",
+      "Status_1cv9tq0",
+      "Status_1w8rnyo"
+    ],
+    "CaseFlow::State": [
+      "State_Not_Started",
+      "State_In_Progress",
+      "State_On_Hold",
+      "State_Done"
+    ]
+  }
+}

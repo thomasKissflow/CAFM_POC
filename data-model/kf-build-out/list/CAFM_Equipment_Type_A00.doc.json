@@ -1,0 +1,24 @@
+{
+  "_id": "CAFM_Equipment_Type_A00",
+  "Name": "CAFM Equipment Type",
+  "Description": "",
+  "Type": "List",
+  "Status": "Live",
+  "ListItems": [
+    "Crawler crane",
+    "Mobile crane",
+    "Tower crane",
+    "Excavator",
+    "Wheel loader",
+    "Tipper",
+    "Low-bed trailer",
+    "Generator",
+    "Compressor",
+    "Piling rig"
+  ],
+  "_application_id": "CAFM_POC_A00",
+  "Security": {
+    "AllowAllFlows": true,
+    "AllowedFlows": []
+  }
+}

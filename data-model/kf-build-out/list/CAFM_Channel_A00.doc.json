@@ -1,0 +1,23 @@
+{
+  "_id": "CAFM_Channel_A00",
+  "Name": "CAFM Channel",
+  "Description": "",
+  "Type": "List",
+  "Status": "Live",
+  "ListItems": [
+    "Resident app",
+    "QR poster",
+    "Phone call",
+    "Helpdesk",
+    "PPM schedule",
+    "Email",
+    "WhatsApp",
+    "BMS alarm",
+    "Voice agent"
+  ],
+  "_application_id": "CAFM_POC_A00",
+  "Security": {
+    "AllowAllFlows": true,
+    "AllowedFlows": []
+  }
+}

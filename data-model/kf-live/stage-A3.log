@@ -1,0 +1,192 @@
+stage A: 17 forms, 16 lists, 10 roles, 102 permissions
+07:02:59   incremental: 14 flow(s) in checkpoint — unchanged ones will be skipped (KF_FORCE_REPUBLISH=1 to force)
+07:02:59   reuse app CAFM_POC_A00
+07:02:59   role Executive → reused
+07:02:59   role FM Manager → reused
+07:02:59   role Helpdesk → reused
+07:02:59   role DLP Manager → reused
+07:02:59   role Subcontractor Supervisor → reused
+07:02:59   role Technician → reused
+07:02:59   role Resident → reused
+07:02:59   role Compliance Officer → reused
+07:02:59   role HSE Officer → reused
+07:02:59   role Plant Manager → reused
+07:03:10   roles: developer UsATUIj4RC2p added to 10/10 role(s)
+07:03:10   reuse: 40 flow ids from map (skip create for those; new/recreated artifacts in this IR still get created)
+07:03:10   list-items CAFM_Channel_A00 → 200 (9)
+07:03:10   list-items CAFM_Trade_A00 → 200 (7)
+07:03:10   list-items CAFM_Site_Kind_A00 → 200 (4)
+07:03:10   list-items CAFM_Priority_A00 → 200 (4)
+07:03:10   list-items CAFM_Asset_Status_A00 → 200 (3)
+07:03:10   list-items CAFM_Compliance_System_A00 → 200 (10)
+07:03:10   list-items CAFM_Hassantuk_Status_A00 → 200 (3)
+07:03:10   list-items CAFM_Liability_A00 → 200 (6)
+07:03:10   list-items CAFM_Photo_Kind_A00 → 200 (3)
+07:03:10   list-items CAFM_PPM_Frequency_A00 → 200 (4)
+07:03:10   list-items CAFM_Permit_Type_A00 → 200 (4)
+07:03:10   list-items CAFM_Equipment_Status_A00 → 200 (4)
+07:03:10   list-items CAFM_Event_Type_A00 → 200 (14)
+07:03:10   list-items CAFM_Equipment_Type_A00 → 200 (10)
+07:03:10   list-items CAFM_Subcontractor_Response_A00 → 200 (2)
+07:03:10   list-items CAFM_Language_A00 → 200 (2)
+07:03:10   body CAFM_Site_A00 → skip (unchanged, already published)
+07:03:10   body CAFM_Subcontractor_A00 → skip (unchanged, already published)
+07:03:10   body CAFM_Unit_A00 → skip (unchanged, already published)
+07:03:10   body CAFM_Asset_Class_A00 → skip (unchanged, already published)
+07:03:10   body CAFM_Request_Category_A00 → skip (unchanged, already published)
+07:03:10   body CAFM_Root_Cause_A00 → skip (unchanged, already published)
+07:03:10   body CAFM_SLA_Policy_A00 → skip (unchanged, already published)
+07:03:10   body CAFM_Asset_A00 → skip (unchanged, already published)
+07:03:10   body CAFM_PPM_Schedule_A00 → skip (unchanged, already published)
+07:03:10   body CAFM_Compliance_Certificate_A00 → skip (unchanged, already published)
+07:03:10   body CAFM_Equipment_A00 → skip (unchanged, already published)
+07:03:10   body CAFM_WO_Event_A00 → skip (unchanged, already published)
+07:03:10   body CAFM_WO_Register_A00 → skip (unchanged, already published)
+07:03:13   body CAFM_zz_Formula_Sandbox_A00 → draft 200, publish 200
+07:03:13   access Helpdesk → CAFM Site (form) 200
+07:03:13   access Resident → CAFM Site (form) 200
+07:03:15   access Subcontractor Supervisor → CAFM Site (form) 423
+07:03:15   access Technician → CAFM Site (form) 423
+07:03:15   access Executive → CAFM Site (form) 423
+07:03:17   access Plant Manager → CAFM Site (form) 423
+07:03:18   access Executive → CAFM Unit (form) 200
+07:03:18   access HSE Officer → CAFM Site (form) 423
+07:03:18   access Technician → CAFM Unit (form) 200
+07:03:19   access Compliance Officer → CAFM Unit (form) 200
+07:03:19   access Resident → CAFM Unit (form) 200
+07:03:19   access Subcontractor Supervisor → CAFM Unit (form) 423
+07:03:19   access HSE Officer → CAFM Unit (form) 200
+07:03:19   access Plant Manager → CAFM Unit (form) 200
+07:03:20   access Helpdesk → CAFM Unit (form) 200
+07:03:20   access Compliance Officer → CAFM Site (form) 200
+07:03:21   access Helpdesk → CAFM Asset Class (form) 423
+07:03:21   access Subcontractor Supervisor → CAFM Asset Class (form) 423
+07:03:22   access Technician → CAFM Asset Class (form) 423
+07:03:22   access Resident → CAFM Asset Class (form) 423
+07:03:22   access Executive → CAFM Request Category (form) 200
+07:03:23   access Compliance Officer → CAFM Asset Class (form) 423
+07:03:23   access Helpdesk → CAFM Request Category (form) 200
+07:03:23   access HSE Officer → CAFM Asset Class (form) 423
+07:03:24   access Plant Manager → CAFM Asset Class (form) 423
+07:03:25   access Technician → CAFM Request Category (form) 423
+07:03:25   access Resident → CAFM Request Category (form) 423
+07:03:26   access Compliance Officer → CAFM Request Category (form) 423
+07:03:26   access Subcontractor Supervisor → CAFM Request Category (form) 200
+07:03:26   access Executive → CAFM Root Cause (form) 200
+07:03:27   access HSE Officer → CAFM Request Category (form) 200
+07:03:27   access Plant Manager → CAFM Request Category (form) 200
+07:03:29   access Subcontractor Supervisor → CAFM Root Cause (form) 423
+07:03:29   access Technician → CAFM Root Cause (form) 423
+07:03:29   access Executive → CAFM Asset Class (form) 200
+07:03:31   access Resident → CAFM Root Cause (form) 423
+07:03:31   access Executive → CAFM SLA Policy (form) 200
+07:03:31   access HSE Officer → CAFM Root Cause (form) 423
+07:03:31   access Compliance Officer → CAFM Root Cause (form) 423
+07:03:31   access Plant Manager → CAFM Root Cause (form) 423
+07:03:31   access Helpdesk → CAFM SLA Policy (form) 200
+07:03:31   access Resident → CAFM SLA Policy (form) 200
+07:03:32   access HSE Officer → CAFM SLA Policy (form) 200
+07:03:32   access Plant Manager → CAFM SLA Policy (form) 200
+07:03:32   access Executive → CAFM Subcontractor (form) 200
+07:03:32   access Helpdesk → CAFM Subcontractor (form) 200
+07:03:33   access Helpdesk → CAFM Root Cause (form) 200
+07:03:33   access Technician → CAFM SLA Policy (form) 423
+07:03:33   access Subcontractor Supervisor → CAFM Subcontractor (form) 200
+07:03:33   access Compliance Officer → CAFM SLA Policy (form) 423
+07:03:34   access Technician → CAFM Subcontractor (form) 423
+07:03:35   access Compliance Officer → CAFM Subcontractor (form) 423
+07:03:35   access HSE Officer → CAFM Subcontractor (form) 423
+07:03:35   access Executive → CAFM Asset (form) 200
+07:03:35   access Helpdesk → CAFM Asset (form) 200
+07:03:35   access Subcontractor Supervisor → CAFM SLA Policy (form) 200
+07:03:36   access Resident → CAFM Subcontractor (form) 200
+07:03:37   access Technician → CAFM Asset (form) 423
+07:03:37   access Resident → CAFM Asset (form) 423
+07:03:38   access Compliance Officer → CAFM Asset (form) 423
+07:03:38   access FM Manager → CAFM Site (form) 200
+07:03:39   access HSE Officer → CAFM Asset (form) 423
+07:03:39   access FM Manager → CAFM Unit (form) 200
+07:03:39   access FM Manager → CAFM Request Category (form) 200
+07:03:39   access Plant Manager → CAFM Asset (form) 423
+07:03:39   access FM Manager → CAFM Asset Class (form) 200
+07:03:39   access FM Manager → CAFM SLA Policy (form) 200
+07:03:39   access FM Manager → CAFM Root Cause (form) 200
+07:03:40   access Plant Manager → CAFM Subcontractor (form) 200
+07:03:40   access DLP Manager → CAFM Site (form) 200
+07:03:40   access DLP Manager → CAFM Unit (form) 200
+07:03:40   access DLP Manager → CAFM Asset Class (form) 200
+07:03:40   access DLP Manager → CAFM Request Category (form) 200
+07:03:40   access DLP Manager → CAFM Root Cause (form) 200
+07:03:40   access DLP Manager → CAFM Subcontractor (form) 200
+07:03:41   access DLP Manager → CAFM SLA Policy (form) 200
+07:03:41   access Executive → CAFM WO Event (form) 200
+07:03:41   access FM Manager → CAFM Subcontractor (form) 200
+07:03:41   access FM Manager → CAFM WO Event (form) 200
+07:03:41   access FM Manager → CAFM Asset (form) 423
+07:03:41   access Helpdesk → CAFM WO Event (form) 200
+07:03:41   access DLP Manager → CAFM WO Event (form) 200
+07:03:42   access Subcontractor Supervisor → CAFM Asset (form) 200
+07:03:42   access DLP Manager → CAFM Asset (form) 200
+07:03:43   access Technician → CAFM WO Event (form) 423
+07:03:43   access Compliance Officer → CAFM WO Event (form) 423
+07:03:43   access Executive → CAFM WO Register (form) 200
+07:03:43   access FM Manager → CAFM WO Register (form) 200
+07:03:44   access HSE Officer → CAFM WO Event (form) 423
+07:03:44   access Plant Manager → CAFM WO Event (form) 423
+07:03:45   access Compliance Officer → CAFM WO Register (form) 423
+07:03:46   access Compliance Officer → CAFM Compliance Certificate (form) 200
+07:03:46   access DLP Manager → CAFM WO Register (form) 423
+07:03:46   access Subcontractor Supervisor → CAFM WO Register (form) 423
+07:03:47   access Subcontractor Supervisor → CAFM WO Event (form) 200
+07:03:48   access Executive → CAFM Compliance Certificate (form) 423
+07:03:48   access Helpdesk → CAFM WO Register (form) 200
+07:03:49   access FM Manager → CAFM Compliance Certificate (form) 200
+07:03:49   access Plant Manager → CAFM Equipment (form) 200
+07:03:49   access Compliance Officer → CAFM PPM Schedule (form) 423
+07:03:50   access Executive → CAFM Equipment (form) 200
+07:03:51   access FM Manager → CAFM PPM Schedule (form) 200
+app CAFM_POC_A00 · created 0 · published 14 · skipped 13
+roles: Executive(200), FM Manager(200), Helpdesk(200), DLP Manager(200), Subcontractor Supervisor(200), Technician(200), Resident(200), Compliance Officer(200), HSE Officer(200), Plant Manager(200)
+errors:
+  ✗ member grant Subcontractor Supervisor → CAFM Site (form) failed: 423
+  ✗ member grant Technician → CAFM Site (form) failed: 423
+  ✗ member grant Executive → CAFM Site (form) failed: 423
+  ✗ member grant Plant Manager → CAFM Site (form) failed: 423
+  ✗ member grant HSE Officer → CAFM Site (form) failed: 423
+  ✗ member grant Subcontractor Supervisor → CAFM Unit (form) failed: 423
+  ✗ member grant Helpdesk → CAFM Asset Class (form) failed: 423
+  ✗ member grant Subcontractor Supervisor → CAFM Asset Class (form) failed: 423
+  ✗ member grant Technician → CAFM Asset Class (form) failed: 423
+  ✗ member grant Resident → CAFM Asset Class (form) failed: 423
+  ✗ member grant Compliance Officer → CAFM Asset Class (form) failed: 423
+  ✗ member grant HSE Officer → CAFM Asset Class (form) failed: 423
+  ✗ member grant Plant Manager → CAFM Asset Class (form) failed: 423
+  ✗ member grant Technician → CAFM Request Category (form) failed: 423
+  ✗ member grant Resident → CAFM Request Category (form) failed: 423
+  ✗ member grant Compliance Officer → CAFM Request Category (form) failed: 423
+  ✗ member grant Subcontractor Supervisor → CAFM Root Cause (form) failed: 423
+  ✗ member grant Technician → CAFM Root Cause (form) failed: 423
+  ✗ member grant Resident → CAFM Root Cause (form) failed: 423
+  ✗ member grant HSE Officer → CAFM Root Cause (form) failed: 423
+  ✗ member grant Compliance Officer → CAFM Root Cause (form) failed: 423
+  ✗ member grant Plant Manager → CAFM Root Cause (form) failed: 423
+  ✗ member grant Technician → CAFM SLA Policy (form) failed: 423
+  ✗ member grant Compliance Officer → CAFM SLA Policy (form) failed: 423
+  ✗ member grant Technician → CAFM Subcontractor (form) failed: 423
+  ✗ member grant Compliance Officer → CAFM Subcontractor (form) failed: 423
+  ✗ member grant HSE Officer → CAFM Subcontractor (form) failed: 423
+  ✗ member grant Technician → CAFM Asset (form) failed: 423
+  ✗ member grant Resident → CAFM Asset (form) failed: 423
+  ✗ member grant Compliance Officer → CAFM Asset (form) failed: 423
+  ✗ member grant HSE Officer → CAFM Asset (form) failed: 423
+  ✗ member grant Plant Manager → CAFM Asset (form) failed: 423
+  ✗ member grant FM Manager → CAFM Asset (form) failed: 423
+  ✗ member grant Technician → CAFM WO Event (form) failed: 423
+  ✗ member grant Compliance Officer → CAFM WO Event (form) failed: 423
+  ✗ member grant HSE Officer → CAFM WO Event (form) failed: 423
+  ✗ member grant Plant Manager → CAFM WO Event (form) failed: 423
+  ✗ member grant Compliance Officer → CAFM WO Register (form) failed: 423
+  ✗ member grant DLP Manager → CAFM WO Register (form) failed: 423
+  ✗ member grant Subcontractor Supervisor → CAFM WO Register (form) failed: 423
+  ✗ member grant Executive → CAFM Compliance Certificate (form) failed: 423
+  ✗ member grant Compliance Officer → CAFM PPM Schedule (form) failed: 423

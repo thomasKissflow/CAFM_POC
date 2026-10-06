@@ -1,0 +1,18 @@
+{
+  "_id": "CAFM_Equipment_Status_A00",
+  "Name": "CAFM Equipment Status",
+  "Description": "",
+  "Type": "List",
+  "Status": "Live",
+  "ListItems": [
+    "Working",
+    "Idle",
+    "Breakdown",
+    "In service"
+  ],
+  "_application_id": "CAFM_POC_A00",
+  "Security": {
+    "AllowAllFlows": true,
+    "AllowedFlows": []
+  }
+}

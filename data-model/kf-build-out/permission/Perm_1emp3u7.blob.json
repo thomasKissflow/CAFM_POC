@@ -1,0 +1,42 @@
+{
+  "Root": "Perm_1emp3u7",
+  "Perm_1emp3u7": {
+    "Id": "Perm_1emp3u7",
+    "Kind": "FlowPermission",
+    "Role": "Ro_b2tazi",
+    "RoleName": "Compliance Officer",
+    "Model": "CAFM_Unit_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_1rxc51o",
+      "Permission_1yzu32x",
+      "Permission_1xlutza",
+      "Permission_1b4ic76"
+    ]
+  },
+  "Permission_1rxc51o": {
+    "Id": "Permission_1rxc51o",
+    "Kind": "Permission",
+    "Column": "Unit_Number",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1yzu32x": {
+    "Id": "Permission_1yzu32x",
+    "Kind": "Permission",
+    "Column": "Site",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1xlutza": {
+    "Id": "Permission_1xlutza",
+    "Kind": "Permission",
+    "Column": "Floor",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1b4ic76": {
+    "Id": "Permission_1b4ic76",
+    "Kind": "Permission",
+    "Column": "Resident",
+    "Permission": "ReadOnly"
+  }
+}

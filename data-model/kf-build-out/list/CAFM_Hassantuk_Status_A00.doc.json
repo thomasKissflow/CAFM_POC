@@ -1,0 +1,17 @@
+{
+  "_id": "CAFM_Hassantuk_Status_A00",
+  "Name": "CAFM Hassantuk Status",
+  "Description": "",
+  "Type": "List",
+  "Status": "Live",
+  "ListItems": [
+    "Connected",
+    "Fault",
+    "Not applicable"
+  ],
+  "_application_id": "CAFM_POC_A00",
+  "Security": {
+    "AllowAllFlows": true,
+    "AllowedFlows": []
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "Root": "Perm_1u8p78u",
+  "Perm_1u8p78u": {
+    "Id": "Perm_1u8p78u",
+    "Kind": "FlowPermission",
+    "Role": "Ro_mh5b4l",
+    "RoleName": "Helpdesk",
+    "Model": "CAFM_WO_Event_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_vn0ice",
+      "Permission_15oh9ee",
+      "Permission_j7rrfr",
+      "Permission_13h93ve",
+      "Permission_16a19i5",
+      "Permission_1cvo2t8",
+      "Permission_w8umrc"
+    ]
+  },
+  "Permission_vn0ice": {
+    "Id": "Permission_vn0ice",
+    "Kind": "Permission",
+    "Column": "Work_Order_No",
+    "Permission": "ReadOnly"
+  },
+  "Permission_15oh9ee": {
+    "Id": "Permission_15oh9ee",
+    "Kind": "Permission",
+    "Column": "Work_Order_Instance",
+    "Permission": "ReadOnly"
+  },
+  "Permission_j7rrfr": {
+    "Id": "Permission_j7rrfr",
+    "Kind": "Permission",
+    "Column": "Event_Type",
+    "Permission": "ReadOnly"
+  },
+  "Permission_13h93ve": {
+    "Id": "Permission_13h93ve",
+    "Kind": "Permission",
+    "Column": "Event_At",
+    "Permission": "ReadOnly"
+  },
+  "Permission_16a19i5": {
+    "Id": "Permission_16a19i5",
+    "Kind": "Permission",
+    "Column": "Actor",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1cvo2t8": {
+    "Id": "Permission_1cvo2t8",
+    "Kind": "Permission",
+    "Column": "Actor_Label",
+    "Permission": "ReadOnly"
+  },
+  "Permission_w8umrc": {
+    "Id": "Permission_w8umrc",
+    "Kind": "Permission",
+    "Column": "Event_Detail",
+    "Permission": "ReadOnly"
+  }
+}

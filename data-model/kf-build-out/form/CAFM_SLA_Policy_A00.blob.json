@@ -1,0 +1,138 @@
+{
+  "Root": "CAFM_SLA_Policy_A00",
+  "CAFM_SLA_Policy_A00": {
+    "Id": "CAFM_SLA_Policy_A00",
+    "Name": "CAFM SLA Policy",
+    "Kind": "Model",
+    "FlowType": "Form",
+    "Description": "",
+    "Model::Row": [
+      "Row_12aumjz"
+    ],
+    "Model::Field": [
+      "Priority",
+      "Response_Minutes",
+      "Resolve_Minutes",
+      "At_Risk_Percent"
+    ]
+  },
+  "Row_12aumjz": {
+    "Id": "Row_12aumjz",
+    "Kind": "Row",
+    "Model": "CAFM_SLA_Policy_A00",
+    "Row::Column": [
+      "Column_12aumjz"
+    ]
+  },
+  "Column_12aumjz": {
+    "Id": "Column_12aumjz",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "Details",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_12aumjz",
+    "Column::Row": [
+      "Row_12ateeh",
+      "Row_12ateei"
+    ]
+  },
+  "Row_12ateeh": {
+    "Id": "Row_12ateeh",
+    "Kind": "Row",
+    "Column": "Column_12aumjz",
+    "Row::Column": [
+      "Column_547dae",
+      "Column_wzqcxj"
+    ]
+  },
+  "Column_547dae": {
+    "Id": "Column_547dae",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_12ateeh",
+    "Column::Field": [
+      "Priority"
+    ]
+  },
+  "Column_wzqcxj": {
+    "Id": "Column_wzqcxj",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_12ateeh",
+    "Column::Field": [
+      "Response_Minutes"
+    ]
+  },
+  "Row_12ateei": {
+    "Id": "Row_12ateei",
+    "Kind": "Row",
+    "Column": "Column_12aumjz",
+    "Row::Column": [
+      "Column_1j7r0dk",
+      "Column_19xwm75"
+    ]
+  },
+  "Column_1j7r0dk": {
+    "Id": "Column_1j7r0dk",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_12ateei",
+    "Column::Field": [
+      "Resolve_Minutes"
+    ]
+  },
+  "Column_19xwm75": {
+    "Id": "Column_19xwm75",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_12ateei",
+    "Column::Field": [
+      "At_Risk_Percent"
+    ]
+  },
+  "Priority": {
+    "Id": "Priority",
+    "Kind": "Field",
+    "Type": "Select",
+    "Name": "Priority",
+    "Model": "CAFM_SLA_Policy_A00",
+    "Column": "Column_547dae",
+    "Required": true,
+    "ReferredList": "CAFM_Priority_A00"
+  },
+  "Response_Minutes": {
+    "Id": "Response_Minutes",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "Response Minutes",
+    "Model": "CAFM_SLA_Policy_A00",
+    "Column": "Column_wzqcxj",
+    "Required": true
+  },
+  "Resolve_Minutes": {
+    "Id": "Resolve_Minutes",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "Resolve Minutes",
+    "Model": "CAFM_SLA_Policy_A00",
+    "Column": "Column_1j7r0dk",
+    "Required": true
+  },
+  "At_Risk_Percent": {
+    "Id": "At_Risk_Percent",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "At Risk Percent",
+    "Model": "CAFM_SLA_Policy_A00",
+    "Column": "Column_19xwm75"
+  }
+}

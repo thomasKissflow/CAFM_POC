@@ -1,0 +1,98 @@
+{
+  "Root": "Perm_p8q5cg",
+  "Perm_p8q5cg": {
+    "Id": "Perm_p8q5cg",
+    "Kind": "FlowPermission",
+    "Role": "Ro_rxtjhz",
+    "RoleName": "Executive",
+    "Model": "CAFM_Back_charge_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_eo5y90",
+      "Permission_9bvoyk",
+      "Permission_j5eonn",
+      "Permission_16xcpgf",
+      "Permission_13e007y",
+      "Permission_lrhad9",
+      "Permission_1kys1i0",
+      "Permission_xlubrr",
+      "Permission_1vzk4sh",
+      "Permission_1p2mrov",
+      "Permission_1wr782j",
+      "Permission_1lmezxh"
+    ]
+  },
+  "Permission_eo5y90": {
+    "Id": "Permission_eo5y90",
+    "Kind": "Permission",
+    "Column": "Work_Order_No",
+    "Permission": "ReadOnly"
+  },
+  "Permission_9bvoyk": {
+    "Id": "Permission_9bvoyk",
+    "Kind": "Permission",
+    "Column": "Work_Order_Instance",
+    "Permission": "ReadOnly"
+  },
+  "Permission_j5eonn": {
+    "Id": "Permission_j5eonn",
+    "Kind": "Permission",
+    "Column": "Subcontractor",
+    "Permission": "ReadOnly"
+  },
+  "Permission_16xcpgf": {
+    "Id": "Permission_16xcpgf",
+    "Kind": "Permission",
+    "Column": "Site",
+    "Permission": "ReadOnly"
+  },
+  "Permission_13e007y": {
+    "Id": "Permission_13e007y",
+    "Kind": "Permission",
+    "Column": "Root_Cause",
+    "Permission": "ReadOnly"
+  },
+  "Permission_lrhad9": {
+    "Id": "Permission_lrhad9",
+    "Kind": "Permission",
+    "Column": "Parts_AED",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1kys1i0": {
+    "Id": "Permission_1kys1i0",
+    "Kind": "Permission",
+    "Column": "Labour_AED",
+    "Permission": "ReadOnly"
+  },
+  "Permission_xlubrr": {
+    "Id": "Permission_xlubrr",
+    "Kind": "Permission",
+    "Column": "Total_AED",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1vzk4sh": {
+    "Id": "Permission_1vzk4sh",
+    "Kind": "Permission",
+    "Column": "Subcontractor_Response",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1p2mrov": {
+    "Id": "Permission_1p2mrov",
+    "Kind": "Permission",
+    "Column": "Dispute_Reason",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1wr782j": {
+    "Id": "Permission_1wr782j",
+    "Kind": "Permission",
+    "Column": "Agreed_AED",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1lmezxh": {
+    "Id": "Permission_1lmezxh",
+    "Kind": "Permission",
+    "Column": "Recovered_On",
+    "Permission": "ReadOnly"
+  }
+}

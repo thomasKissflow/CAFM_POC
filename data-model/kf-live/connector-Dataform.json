@@ -1,0 +1,1433 @@
+{
+ "Root": "Co4mIEiAdtSb",
+ "Co4mIEiAdtSb": {
+  "Id": "Co4mIEiAdtSb",
+  "Description": "Dataforms Connector",
+  "Kind": "Connector",
+  "Name": "Kissflow Dataform",
+  "Version": "1.5.4",
+  "Organization": {
+   "_id": "ORG5kFkh0BUGV",
+   "Name": "Kissflow"
+  },
+  "Connector::Authentication": [
+   "Authentication001"
+  ],
+  "Connector::Trigger": [
+   "ItemCreated",
+   "ItemUpdated",
+   "ItemDeleted"
+  ],
+  "Connector::Action": [
+   "CreateAndSubmitItem",
+   "UpdateAnItem",
+   "FetchAnItem",
+   "FetchManyItems",
+   "Action_DeleteAnItem"
+  ]
+ },
+ "Authentication001": {
+  "Id": "Authentication001",
+  "Kind": "Authentication",
+  "ConnectionLabel": "{{APIKeyName}}",
+  "Connector": "Co4mIEiAdtSb",
+  "Name": "ApiKeyAuth Authentication",
+  "Type": "ApiKeyAuth",
+  "Authentication::Field": [
+   "AuthField001",
+   "AuthField002",
+   "AuthField003",
+   "AuthField004"
+  ],
+  "TestRequest::Request": [
+   "AuthRequest001"
+  ]
+ },
+ "AuthField001": {
+  "Id": "AuthField001",
+  "Authentication": "Authentication001",
+  "HelpText": "Enter your unique Kissflow account ID here. Get it from My settings > API authentication > Account ID",
+  "IsRequired": true,
+  "Kind": "Field",
+  "Label": "Account ID",
+  "Name": "account_id",
+  "Type": "String"
+ },
+ "AuthField002": {
+  "Id": "AuthField002",
+  "Authentication": "Authentication001",
+  "HelpText": "Enter your Kissflow account domain name here. For example, stark-industries.kissflow.com",
+  "IsRequired": true,
+  "Kind": "Field",
+  "Label": "Account Domain",
+  "Name": "account_domain",
+  "Type": "String"
+ },
+ "AuthField003": {
+  "Id": "AuthField003",
+  "Authentication": "Authentication001",
+  "HelpText": "Enter your private Access key ID here. Get it from My settings > API authentication > Create access key > Access keys",
+  "IsRequired": true,
+  "Kind": "Field",
+  "Label": "Access key ID",
+  "Name": "access_key_id",
+  "Type": "Password"
+ },
+ "AuthField004": {
+  "Id": "AuthField004",
+  "Authentication": "Authentication001",
+  "HelpText": "Enter your private API key here. Get it from My settings > API authentication > Create access key > Access key secret",
+  "IsRequired": true,
+  "Kind": "Field",
+  "Label": "Access key secret",
+  "Name": "access_key_secret",
+  "Type": "Password"
+ },
+ "AuthRequest001": {
+  "Id": "AuthRequest001",
+  "TestRequest": "Authentication001",
+  "Kind": "Request",
+  "Method": "GET",
+  "Mode": "Form",
+  "URL": "https://{{authData.account_domain}}/user/2/{{authData.account_id}}/api/verify",
+  "Headers::Property": [
+   "Authproperty001",
+   "Authproperty002"
+  ]
+ },
+ "Authproperty001": {
+  "Id": "Authproperty001",
+  "Headers": "AuthRequest001",
+  "Kind": "Property",
+  "Field": "authData.access_key_id",
+  "Name": "X-Access-Key-Id",
+  "Type": "Field"
+ },
+ "Authproperty002": {
+  "Id": "Authproperty002",
+  "Headers": "AuthRequest001",
+  "Kind": "Property",
+  "Field": "authData.access_key_secret",
+  "Name": "X-Access-Key-Secret",
+  "Type": "Field"
+ },
+ "ItemCreated": {
+  "Id": "ItemCreated",
+  "Connector": "Co4mIEiAdtSb",
+  "Kind": "Trigger",
+  "Description": "Triggers when a user submits a new dataform item.",
+  "Name": "When an item is added to a dataform",
+  "InputFields::Field": [
+   "ActionField007"
+  ],
+  "Trigger::TriggerRequestConfiguration": [
+   "TriggerRequestConfiguration001"
+  ]
+ },
+ "ActionField007": {
+  "Id": "ActionField007",
+  "AutoRefresh": true,
+  "InputFields": "ItemCreated",
+  "IsDropdown": true,
+  "IsRequired": true,
+  "Kind": "Field",
+  "Label": "Choose a dataform",
+  "Name": "form_id",
+  "Type": "String",
+  "Field::Dropdown": [
+   "Dropdown006"
+  ]
+ },
+ "Dropdown006": {
+  "Id": "Dropdown006",
+  "Field": "ActionField007",
+  "FieldId": "_id",
+  "FieldName": "Name",
+  "Kind": "Dropdown",
+  "Type": "Request",
+  "Dropdown::Request": [
+   "DropdownRequest006"
+  ]
+ },
+ "DropdownRequest006": {
+  "Id": "DropdownRequest006",
+  "Dropdown": "Dropdown006",
+  "Kind": "Request",
+  "Method": "GET",
+  "Mode": "Form",
+  "URL": "https://{{authData.account_domain}}/flow/2/{{authData.account_id}}/form/?page_size=1000&_application_id={{context.Account.applicationId}}",
+  "Headers::Property": [
+   "HeadersProperty001",
+   "HeadersProperty002"
+  ]
+ },
+ "HeadersProperty001": {
+  "Id": "HeadersProperty001",
+  "Headers": "DropdownRequest006",
+  "Kind": "Property",
+  "Field": "authData.access_key_id",
+  "Name": "X-Access-Key-Id",
+  "Type": "Field"
+ },
+ "HeadersProperty002": {
+  "Id": "HeadersProperty002",
+  "Headers": "DropdownRequest006",
+  "Kind": "Property",
+  "Field": "authData.access_key_secret",
+  "Name": "X-Access-Key-Secret",
+  "Type": "Field"
+ },
+ "TriggerRequestConfiguration001": {
+  "Id": "TriggerRequestConfiguration001",
+  "Trigger": "ItemCreated",
+  "Kind": "TriggerRequestConfiguration",
+  "Type": "RESTHooks",
+  "Subscribe::Request": [
+   "EventSubscribe001"
+  ],
+  "Unsubscribe::Request": [
+   "EventUnsubscribe001"
+  ],
+  "Perform::Request": [
+   "GetProcessItem002"
+  ]
+ },
+ "EventSubscribe001": {
+  "Id": "EventSubscribe001",
+  "Subscribe": "TriggerRequestConfiguration001",
+  "Kind": "Request",
+  "Method": "POST",
+  "Mode": "Form",
+  "URL": "http://eventsubscriptionv2-service:80/event/kfv2/{{authData.account_id}}/subscription",
+  "Headers::Property": [
+   "HeadersProperty003",
+   "HeadersProperty004"
+  ],
+  "Body::Property": [
+   "BodyProperty001",
+   "BodyProperty002",
+   "BodyProperty003",
+   "BodyProperty004",
+   "BodyProperty005"
+  ]
+ },
+ "HeadersProperty003": {
+  "Id": "HeadersProperty003",
+  "Headers": "EventSubscribe001",
+  "Kind": "Property",
+  "Field": "authData.access_key_id",
+  "Name": "X-Access-Key-Id",
+  "Type": "Field"
+ },
+ "HeadersProperty004": {
+  "Id": "HeadersProperty004",
+  "Headers": "EventSubscribe001",
+  "Kind": "Property",
+  "Field": "authData.access_key_secret",
+  "Name": "X-Access-Key-Secret",
+  "Type": "Field"
+ },
+ "BodyProperty001": {
+  "Id": "BodyProperty001",
+  "Body": "EventSubscribe001",
+  "Kind": "Property",
+  "Field": "inputData.form_id",
+  "Name": "FlowId",
+  "Type": "Field"
+ },
+ "BodyProperty002": {
+  "Id": "BodyProperty002",
+  "Body": "EventSubscribe001",
+  "Kind": "Property",
+  "Name": "EventType",
+  "Type": "Value",
+  "Value": "form_submit"
+ },
+ "BodyProperty003": {
+  "Id": "BodyProperty003",
+  "Body": "EventSubscribe001",
+  "Kind": "Property",
+  "Name": "FlowType",
+  "Type": "Value",
+  "Value": "form"
+ },
+ "BodyProperty004": {
+  "Id": "BodyProperty004",
+  "Body": "EventSubscribe001",
+  "Kind": "Property",
+  "Name": "Name",
+  "Type": "Value",
+  "Value": "Dataform Integration Subscription"
+ },
+ "BodyProperty005": {
+  "Id": "BodyProperty005",
+  "Body": "EventSubscribe001",
+  "Kind": "Property",
+  "Name": "Request",
+  "Type": "Object",
+  "Property::Property": [
+   "BodyProperty006",
+   "BodyProperty007"
+  ]
+ },
+ "BodyProperty006": {
+  "Id": "BodyProperty006",
+  "Property": "BodyProperty005",
+  "Kind": "Property",
+  "Name": "Method",
+  "Type": "Value",
+  "Value": "POST"
+ },
+ "BodyProperty007": {
+  "Id": "BodyProperty007",
+  "Property": "BodyProperty005",
+  "Kind": "Property",
+  "Field": "context.metadata._callbackURL",
+  "Name": "URL",
+  "Type": "Field"
+ },
+ "EventUnsubscribe001": {
+  "Id": "EventUnsubscribe001",
+  "Unsubscribe": "TriggerRequestConfiguration001",
+  "Kind": "Request",
+  "Method": "DELETE",
+  "Mode": "Form",
+  "URL": "http://eventsubscriptionv2-service:80/event/2/{{authData.account_id}}/subscription/{{context.metadata.subscribedData.SubscriptionId}}",
+  "Headers::Property": [
+   "HeadersProperty005",
+   "HeadersProperty006"
+  ]
+ },
+ "HeadersProperty005": {
+  "Id": "HeadersProperty005",
+  "Headers": "EventUnsubscribe001",
+  "Kind": "Property",
+  "Field": "authData.access_key_id",
+  "Name": "X-Access-Key-Id",
+  "Type": "Field"
+ },
+ "HeadersProperty006": {
+  "Id": "HeadersProperty006",
+  "Headers": "EventUnsubscribe001",
+  "Kind": "Property",
+  "Field": "authData.access_key_secret",
+  "Name": "X-Access-Key-Secret",
+  "Type": "Field"
+ },
+ "GetProcessItem002": {
+  "Id": "GetProcessItem002",
+  "Perform": "TriggerRequestConfiguration001",
+  "Kind": "Request",
+  "Method": "GET",
+  "Mode": "Form",
+  "URL": "https://{{authData.account_domain}}/form/2/{{authData.account_id}}/{{inputData.form_id}}/test_data?_application_id={{inputData.application_id}}",
+  "Headers::Property": [
+   "HeadersProperty001",
+   "HeadersProperty002"
+  ]
+ },
+ "ItemUpdated": {
+  "Id": "ItemUpdated",
+  "Type": "Create",
+  "Connector": "Co4mIEiAdtSb",
+  "Kind": "Trigger",
+  "Name": "When an item is updated in a dataform",
+  "Description": "Triggers when a user edits and submits an existing dataform item.",
+  "InputFields::Field": [
+   "Field_6AhY5Tnlw"
+  ],
+  "Trigger::TriggerRequestConfiguration": [
+   "TriggerRequestConfiguration_mu8dQ88ky"
+  ]
+ },
+ "Field_6AhY5Tnlw": {
+  "Id": "Field_6AhY5Tnlw",
+  "InputFields": "ItemUpdated",
+  "IsRequired": true,
+  "IsMultiValue": false,
+  "AutoRefresh": true,
+  "IsDropdown": true,
+  "AllowMultiples": false,
+  "IsPaginated": false,
+  "Kind": "Field",
+  "Name": "form_id",
+  "Label": "Choose a dataform",
+  "Type": "String",
+  "Field::Dropdown": [
+   "Dropdown_CoP4bya7x4"
+  ]
+ },
+ "Dropdown_CoP4bya7x4": {
+  "Id": "Dropdown_CoP4bya7x4",
+  "Field": "Field_6AhY5Tnlw",
+  "FieldId": "_id",
+  "FieldName": "Name",
+  "Kind": "Dropdown",
+  "Type": "Request",
+  "Dropdown::Request": [
+   "Request_pHktJT917-"
+  ]
+ },
+ "Request_pHktJT917-": {
+  "Id": "Request_pHktJT917-",
+  "Dropdown": "Dropdown_CoP4bya7x4",
+  "Kind": "Request",
+  "URL": "https://{{authData.account_domain}}/flow/2/{{authData.account_id}}/form/?page_size=1000&_application_id={{context.Account.applicationId}}",
+  "Method": "GET",
+  "Mode": "Form",
+  "Headers::Property": [
+   "Property_rXLs7MWtpB",
+   "Property_sHwdPy6-1D"
+  ]
+ },
+ "Property_rXLs7MWtpB": {
+  "Id": "Property_rXLs7MWtpB",
+  "Headers": "Request_pHktJT917-",
+  "Kind": "Property",
+  "Name": "X-Access-Key-Id",
+  "Type": "Field",
+  "Field": "authData.access_key_id"
+ },
+ "Property_sHwdPy6-1D": {
+  "Id": "Property_sHwdPy6-1D",
+  "Headers": "Request_pHktJT917-",
+  "Kind": "Property",
+  "Name": "X-Access-Key-Secret",
+  "Type": "Field",
+  "Field": "authData.access_key_secret"
+ },
+ "TriggerRequestConfiguration_mu8dQ88ky": {
+  "Id": "TriggerRequestConfiguration_mu8dQ88ky",
+  "Trigger": "ItemUpdated",
+  "Kind": "TriggerRequestConfiguration",
+  "Type": "RESTHooks",
+  "Subscribe::Request": [
+   "Request_-Hr_MJoVAV"
+  ],
+  "Unsubscribe::Request": [
+   "Request_b4n-PJFlO"
+  ],
+  "Perform::Request": [
+   "Request_6YDfXKd-g"
+  ]
+ },
+ "Request_-Hr_MJoVAV": {
+  "Id": "Request_-Hr_MJoVAV",
+  "Subscribe": "TriggerRequestConfiguration_mu8dQ88ky",
+  "Kind": "Request",
+  "URL": "http://eventsubscriptionv2-service:80/event/kfv2/{{authData.account_id}}/subscription",
+  "Method": "POST",
+  "Mode": "Form",
+  "Headers::Property": [
+   "Property_Rrh--Y1RO",
+   "Property_KzXF1TK09s"
+  ],
+  "Body::Property": [
+   "Property_qP2Vxhs0x4",
+   "Property_8VVic5Sqat",
+   "Property_sqXajaWh2D",
+   "Property_XZUmdkSS3r",
+   "Property_SByji5C69W"
+  ]
+ },
+ "Property_Rrh--Y1RO": {
+  "Id": "Property_Rrh--Y1RO",
+  "Headers": "Request_-Hr_MJoVAV",
+  "Kind": "Property",
+  "Name": "X-Access-Key-Id",
+  "Type": "Field",
+  "Field": "authData.access_key_id"
+ },
+ "Property_KzXF1TK09s": {
+  "Id": "Property_KzXF1TK09s",
+  "Headers": "Request_-Hr_MJoVAV",
+  "Kind": "Property",
+  "Name": "X-Access-Key-Secret",
+  "Type": "Field",
+  "Field": "authData.access_key_secret"
+ },
+ "Property_qP2Vxhs0x4": {
+  "Id": "Property_qP2Vxhs0x4",
+  "Body": "Request_-Hr_MJoVAV",
+  "Kind": "Property",
+  "Name": "FlowId",
+  "Type": "Field",
+  "Field": "inputData.form_id"
+ },
+ "Property_8VVic5Sqat": {
+  "Id": "Property_8VVic5Sqat",
+  "Body": "Request_-Hr_MJoVAV",
+  "Kind": "Property",
+  "Name": "EventType",
+  "Type": "Value",
+  "Value": "form_update"
+ },
+ "Property_sqXajaWh2D": {
+  "Id": "Property_sqXajaWh2D",
+  "Body": "Request_-Hr_MJoVAV",
+  "Kind": "Property",
+  "Name": "FlowType",
+  "Type": "Value",
+  "Value": "form"
+ },
+ "Property_XZUmdkSS3r": {
+  "Id": "Property_XZUmdkSS3r",
+  "Body": "Request_-Hr_MJoVAV",
+  "Kind": "Property",
+  "Name": "Name",
+  "Type": "Value",
+  "Value": "Dataform Integration Subscription"
+ },
+ "Property_SByji5C69W": {
+  "Id": "Property_SByji5C69W",
+  "Body": "Request_-Hr_MJoVAV",
+  "Kind": "Property",
+  "Name": "Request",
+  "Type": "Object",
+  "Property::Property": [
+   "Property_SwAxI8FhJ_",
+   "Property_Ou2lRlkaDh"
+  ]
+ },
+ "Property_SwAxI8FhJ_": {
+  "Id": "Property_SwAxI8FhJ_",
+  "Property": "Property_SByji5C69W",
+  "Kind": "Property",
+  "Name": "Method",
+  "Type": "Value",
+  "Value": "POST"
+ },
+ "Property_Ou2lRlkaDh": {
+  "Id": "Property_Ou2lRlkaDh",
+  "Property": "Property_SByji5C69W",
+  "Kind": "Property",
+  "Field": "context.metadata._callbackURL",
+  "Name": "URL",
+  "Type": "Field"
+ },
+ "Request_b4n-PJFlO": {
+  "Id": "Request_b4n-PJFlO",
+  "Unsubscribe": "TriggerRequestConfiguration_mu8dQ88ky",
+  "Kind": "Request",
+  "URL": "http://eventsubscriptionv2-service:80/event/2/{{authData.account_id}}/subscription/{{context.metadata.subscribedData.SubscriptionId}}",
+  "Method": "DELETE",
+  "Mode": "Form",
+  "Headers::Property": [
+   "Property_TaEpEhT3nU",
+   "Property_Zcf2oGKn1a"
+  ]
+ },
+ "Property_TaEpEhT3nU": {
+  "Id": "Property_TaEpEhT3nU",
+  "Headers": "Request_b4n-PJFlO",
+  "Kind": "Property",
+  "Name": "X-Access-Key-Id",
+  "Type": "Field",
+  "Field": "authData.access_key_id"
+ },
+ "Property_Zcf2oGKn1a": {
+  "Id": "Property_Zcf2oGKn1a",
+  "Headers": "Request_b4n-PJFlO",
+  "Kind": "Property",
+  "Name": "X-Access-Key-Secret",
+  "Type": "Field",
+  "Field": "authData.access_key_secret"
+ },
+ "Request_6YDfXKd-g": {
+  "Id": "Request_6YDfXKd-g",
+  "Perform": "TriggerRequestConfiguration_mu8dQ88ky",
+  "Kind": "Request",
+  "URL": "https://{{authData.account_domain}}/form/2/{{authData.account_id}}/{{inputData.form_id}}/test_data?_application_id={{inputData.application_id}}",
+  "Method": "GET",
+  "Mode": "Form",
+  "Headers::Property": [
+   "Property_TcYblyuxV",
+   "Property__AQEmoISKv"
+  ]
+ },
+ "Property_TcYblyuxV": {
+  "Id": "Property_TcYblyuxV",
+  "Headers": "Request_6YDfXKd-g",
+  "Kind": "Property",
+  "Name": "X-Access-Key-Id",
+  "Type": "Field",
+  "Field": "authData.access_key_id"
+ },
+ "Property__AQEmoISKv": {
+  "Id": "Property__AQEmoISKv",
+  "Headers": "Request_6YDfXKd-g",
+  "Kind": "Property",
+  "Name": "X-Access-Key-Secret",
+  "Type": "Field",
+  "Field": "authData.access_key_secret"
+ },
+ "ItemDeleted": {
+  "Id": "ItemDeleted",
+  "Type": "Create",
+  "Connector": "Co4mIEiAdtSb",
+  "Kind": "Trigger",
+  "Name": "When an item is deleted in a dataform",
+  "Description": "Triggers when a user deletes a previously submitted dataform item.",
+  "InputFields::Field": [
+   "Field_eGXykLAhN"
+  ],
+  "Trigger::TriggerRequestConfiguration": [
+   "TriggerRequestConfiguration_Gs_-Zogum"
+  ]
+ },
+ "Field_eGXykLAhN": {
+  "Id": "Field_eGXykLAhN",
+  "InputFields": "ItemDeleted",
+  "IsRequired": true,
+  "IsMultiValue": false,
+  "AutoRefresh": true,
+  "IsDropdown": true,
+  "AllowMultiples": false,
+  "IsPaginated": false,
+  "Kind": "Field",
+  "Name": "form_id",
+  "Label": "Choose a dataform",
+  "Type": "String",
+  "Field::Dropdown": [
+   "Dropdown_VBBrnkN6TB"
+  ]
+ },
+ "Dropdown_VBBrnkN6TB": {
+  "Id": "Dropdown_VBBrnkN6TB",
+  "Field": "Field_eGXykLAhN",
+  "FieldId": "_id",
+  "FieldName": "Name",
+  "Kind": "Dropdown",
+  "Type": "Request",
+  "Dropdown::Request": [
+   "Request_cd8pNEwlDK"
+  ]
+ },
+ "Request_cd8pNEwlDK": {
+  "Id": "Request_cd8pNEwlDK",
+  "Dropdown": "Dropdown_VBBrnkN6TB",
+  "Kind": "Request",
+  "URL": "https://{{authData.account_domain}}/flow/2/{{authData.account_id}}/form/?page_size=1000&_application_id={{context.Account.applicationId}}",
+  "Method": "GET",
+  "Mode": "Form",
+  "Headers::Property": [
+   "Property_rCoRQJTH4T",
+   "Property_cmb4Cp-Hj5"
+  ]
+ },
+ "Property_rCoRQJTH4T": {
+  "Id": "Property_rCoRQJTH4T",
+  "Headers": "Request_cd8pNEwlDK",
+  "Kind": "Property",
+  "Name": "X-Access-Key-Id",
+  "Type": "Field",
+  "Field": "authData.access_key_id"
+ },
+ "Property_cmb4Cp-Hj5": {
+  "Id": "Property_cmb4Cp-Hj5",
+  "Headers": "Request_cd8pNEwlDK",
+  "Kind": "Property",
+  "Name": "X-Access-Key-Secret",
+  "Type": "Field",
+  "Field": "authData.access_key_secret"
+ },
+ "TriggerRequestConfiguration_Gs_-Zogum": {
+  "Id": "TriggerRequestConfiguration_Gs_-Zogum",
+  "Trigger": "ItemDeleted",
+  "Kind": "TriggerRequestConfiguration",
+  "Type": "RESTHooks",
+  "Subscribe::Request": [
+   "Request_oQ7G4MTHaQ"
+  ],
+  "Unsubscribe::Request": [
+   "Request_bxEqfyYLo"
+  ],
+  "Perform::Request": [
+   "Request_UaXd1oMvm"
+  ]
+ },
+ "Request_oQ7G4MTHaQ": {
+  "Id": "Request_oQ7G4MTHaQ",
+  "Subscribe": "TriggerRequestConfiguration_Gs_-Zogum",
+  "Kind": "Request",
+  "URL": "http://eventsubscriptionv2-service:80/event/kfv2/{{authData.account_id}}/subscription",
+  "Method": "POST",
+  "Mode": "Form",
+  "Headers::Property": [
+   "Property_uImlJc7luu",
+   "Property_rylzHGnjIx"
+  ],
+  "Body::Property": [
+   "Property_Pc31VqGKLg",
+   "Property_B5IVvCO2fe",
+   "Property_S9e6_yUnb9",
+   "Property_9lptv0wxOD",
+   "Property_HbRZ1ARDHH"
+  ]
+ },
+ "Property_uImlJc7luu": {
+  "Id": "Property_uImlJc7luu",
+  "Headers": "Request_oQ7G4MTHaQ",
+  "Kind": "Property",
+  "Name": "X-Access-Key-Id",
+  "Type": "Field",
+  "Field": "authData.access_key_id"
+ },
+ "Property_rylzHGnjIx": {
+  "Id": "Property_rylzHGnjIx",
+  "Headers": "Request_oQ7G4MTHaQ",
+  "Kind": "Property",
+  "Name": "X-Access-Key-Secret",
+  "Type": "Field",
+  "Field": "authData.access_key_secret"
+ },
+ "Property_Pc31VqGKLg": {
+  "Id": "Property_Pc31VqGKLg",
+  "Body": "Request_oQ7G4MTHaQ",
+  "Kind": "Property",
+  "Name": "FlowId",
+  "Type": "Field",
+  "Field": "inputData.form_id"
+ },
+ "Property_B5IVvCO2fe": {
+  "Id": "Property_B5IVvCO2fe",
+  "Body": "Request_oQ7G4MTHaQ",
+  "Kind": "Property",
+  "Name": "EventType",
+  "Type": "Value",
+  "Value": "form_delete"
+ },
+ "Property_S9e6_yUnb9": {
+  "Id": "Property_S9e6_yUnb9",
+  "Body": "Request_oQ7G4MTHaQ",
+  "Kind": "Property",
+  "Name": "FlowType",
+  "Type": "Value",
+  "Value": "form"
+ },
+ "Property_9lptv0wxOD": {
+  "Id": "Property_9lptv0wxOD",
+  "Body": "Request_oQ7G4MTHaQ",
+  "Kind": "Property",
+  "Name": "Name",
+  "Type": "Value",
+  "Value": "Dataform Integration Subscription"
+ },
+ "Property_HbRZ1ARDHH": {
+  "Id": "Property_HbRZ1ARDHH",
+  "Body": "Request_oQ7G4MTHaQ",
+  "Kind": "Property",
+  "Name": "Request",
+  "Type": "Object",
+  "Property::Property": [
+   "Property_ilYxzo3hR_",
+   "Property_ulH2AoyjAr"
+  ]
+ },
+ "Property_ilYxzo3hR_": {
+  "Id": "Property_ilYxzo3hR_",
+  "Property": "Property_HbRZ1ARDHH",
+  "Kind": "Property",
+  "Name": "Method",
+  "Type": "Value",
+  "Value": "POST"
+ },
+ "Property_ulH2AoyjAr": {
+  "Id": "Property_ulH2AoyjAr",
+  "Property": "Property_HbRZ1ARDHH",
+  "Kind": "Property",
+  "Field": "context.metadata._callbackURL",
+  "Name": "URL",
+  "Type": "Field"
+ },
+ "Request_bxEqfyYLo": {
+  "Id": "Request_bxEqfyYLo",
+  "Unsubscribe": "TriggerRequestConfiguration_Gs_-Zogum",
+  "Kind": "Request",
+  "URL": "http://eventsubscriptionv2-service:80/event/2/{{authData.account_id}}/subscription/{{context.metadata.subscribedData.SubscriptionId}}",
+  "Method": "DELETE",
+  "Mode": "Form",
+  "Headers::Property": [
+   "Property_P4lhvY6BZa",
+   "Property_EfyQGjtnYZ"
+  ]
+ },
+ "Property_P4lhvY6BZa": {
+  "Id": "Property_P4lhvY6BZa",
+  "Headers": "Request_bxEqfyYLo",
+  "Kind": "Property",
+  "Name": "X-Access-Key-Id",
+  "Type": "Field",
+  "Field": "authData.access_key_id"
+ },
+ "Property_EfyQGjtnYZ": {
+  "Id": "Property_EfyQGjtnYZ",
+  "Headers": "Request_bxEqfyYLo",
+  "Kind": "Property",
+  "Name": "X-Access-Key-Secret",
+  "Type": "Field",
+  "Field": "authData.access_key_secret"
+ },
+ "Request_UaXd1oMvm": {
+  "Id": "Request_UaXd1oMvm",
+  "Perform": "TriggerRequestConfiguration_Gs_-Zogum",
+  "Kind": "Request",
+  "URL": "https://{{authData.account_domain}}/form/2/{{authData.account_id}}/{{inputData.form_id}}/test_data?_application_id={{inputData.application_id}}",
+  "Method": "GET",
+  "Mode": "Form",
+  "Headers::Property": [
+   "Property_JDa-VjuQ3q",
+   "Property_dwlwkKqzjN"
+  ]
+ },
+ "Property_JDa-VjuQ3q": {
+  "Id": "Property_JDa-VjuQ3q",
+  "Headers": "Request_UaXd1oMvm",
+  "Kind": "Property",
+  "Name": "X-Access-Key-Id",
+  "Type": "Field",
+  "Field": "authData.access_key_id"
+ },
+ "Property_dwlwkKqzjN": {
+  "Id": "Property_dwlwkKqzjN",
+  "Headers": "Request_UaXd1oMvm",
+  "Kind": "Property",
+  "Name": "X-Access-Key-Secret",
+  "Type": "Field",
+  "Field": "authData.access_key_secret"
+ },
+ "CreateAndSubmitItem": {
+  "Id": "CreateAndSubmitItem",
+  "Connector": "Co4mIEiAdtSb",
+  "Kind": "Action",
+  "Description": "This action creates and submits a dataform item using the inputs passed into this step.",
+  "Name": "Create and submit an item",
+  "Type": "Create",
+  "InputFields::Field": [
+   "ActionField002",
+   "DynamicField001"
+  ],
+  "Action::Request": [
+   "Request_z4WbZ1EpW"
+  ]
+ },
+ "ActionField002": {
+  "Id": "ActionField002",
+  "AutoRefresh": true,
+  "InputFields": "CreateAndSubmitItem",
+  "IsDropdown": true,
+  "IsRequired": true,
+  "AttachmentType": "Both",
+  "Kind": "Field",
+  "Label": "Choose a dataform",
+  "Name": "form_id",
+  "Type": "String",
+  "Field::Dropdown": [
+   "Dropdown002"
+  ]
+ },
+ "Dropdown002": {
+  "Id": "Dropdown002",
+  "Field": "ActionField002",
+  "FieldId": "_id",
+  "FieldName": "Name",
+  "Kind": "Dropdown",
+  "Type": "Request",
+  "Dropdown::Request": [
+   "DropdownRequest002"
+  ]
+ },
+ "DropdownRequest002": {
+  "Id": "DropdownRequest002",
+  "Dropdown": "Dropdown002",
+  "Kind": "Request",
+  "Mode": "Code",
+  "Code": "const options = {url: `https://${authData.account_domain}/flow/2/${authData.account_id}/form`,method: 'GET',headers: {'X-Access-Key-Id': authData.access_key_id,'X-Access-Key-Secret': authData.access_key_secret,'Content-Type': 'application/json','Accept': 'application/json'},params: {'page_size': 1000}};const response = await request(options);let data = await response.json();const config = {url: `https://${authData.account_domain}/flow/2/${authData.account_id}/permissible`,method: 'POST',headers: {'X-Access-Key-Id': authData.access_key_id,'X-Access-Key-Secret': authData.access_key_secret,'Content-Type': 'application/json','Accept': 'application/json'},body: {'Filter': {'LHSField': 'Type','RHSValue': 'Application,Portal','Operator': 'PART_OF'}}};const res = await request(config);const applications = await res.json();data = data.map((app) => {if (app._application_id) {const appData = applications.find(({_id}) => _id === app._application_id);if (appData) {app.Name = `${app.Name} - ${appData.Name}`;}}return app;});return data;"
+ },
+ "DynamicField001": {
+  "Id": "DynamicField001",
+  "InputFields": "CreateAndSubmitItem",
+  "IsDynamicField": true,
+  "Type": "String",
+  "Kind": "Field",
+  "Label": "Dynamic Name",
+  "Name": "DynamicField",
+  "Field::Request": [
+   "DynamicFieldRequest001"
+  ]
+ },
+ "DynamicFieldRequest001": {
+  "Id": "DynamicFieldRequest001",
+  "Field": "DynamicField001",
+  "Kind": "Request",
+  "Mode": "Code",
+  "Code": "const options={url:`https://${authData.account_domain}/form/2/${authData.account_id}/${inputData.form_id}/allfields`,method:'GET',headers:{'X-Access-Key-Id':authData.access_key_id,'X-Access-Key-Secret':authData.access_key_secret},params:{'read_only':!1,'system_fields':!1}};return request(options).then((response)=>response.json()).then((json)=>{logger.info(JSON.stringify(json));const results=json[inputData.form_id];var actionFields=[];let fieldMap={DateTime:'Datetime',User:'Object',Boolean:'Boolean',UserGroupList:'Object',Number:'Number',Json:'Object',JSON:'Object',Date:'Date',StarRating:'Number',Slider:'Number',Checklist:'Object',MultiUser:'Object',Reference:'Object'};createField=(Id,Name,Label,IsRequired=!1,Type)=>{return{Id:Id,Name:Name,Label:Label,IsRequired:IsRequired,Kind:'Field',Type:Type||'String'}};convertFields=(inputFields)=>{let fields=[];inputFields.forEach(function(field){if(!field.IsSystemField&&!field.ReadOnly){let actionField=createField(field.Id,field.Id,field.Name,field.Required?!0:!1,fieldMap[field.Type]);if(field.Type=='MultiUser'||field.Type=='User'){actionField['Field::Field']=[createField('_id','_id','Id',!0)];actionField.IsMultiValue=field.Type=='MultiUser'}else if(field.Type=='Reference'){actionField['Field::Field']=[createField('_id','_id','Id',!0)]}else if(field.Type=='Multiselect'||field.Type=='Checkbox'){actionField.IsMultiValue=!0}else if(field.Type=='Checklist'){actionField['Field::Field']=[createField('value','value','value',!0),createField('selected','selected','selected',!0,'Boolean')];actionField.IsMultiValue=!0};fields.push(actionField)}});return fields};convertTables=(tableFields)=>{return{'Field::Field':convertFields(tableFields.Fields),'Id':tableFields.Id,'IsMultiValue':!0,'IsRequired':!1,'Kind':'Field','Label':tableFields.Name,'Name':`Table::${tableFields.Id}`,'Type':'Object'}};actionFields=convertFields(results.Fields);if(results.Tables){results.Tables.forEach((id)=>{actionFields.push(convertTables(results[id]))})};return actionFields})"
+ },
+ "Request_z4WbZ1EpW": {
+  "Id": "Request_z4WbZ1EpW",
+  "Action": "CreateAndSubmitItem",
+  "Kind": "Request",
+  "Mode": "Code",
+  "Code": "let initiatePayload = { ...inputData };delete initiatePayload.form_id; delete initiatePayload.application_id; const initiateOptions = {url: `https://${authData.account_domain}/form/2/${authData.account_id}/${inputData.form_id}/create/submit`,method: 'POST',headers: {'X-Access-Key-Id': authData.access_key_id,'X-Access-Key-Secret': authData.access_key_secret},body: initiatePayload}; return request(initiateOptions).then((response) => response.json()).then((submitJson) => submitJson);"
+ },
+ "UpdateAnItem": {
+  "Id": "UpdateAnItem",
+  "Connector": "Co4mIEiAdtSb",
+  "Kind": "Action",
+  "Description": "This action updates the fields in a dataform item.",
+  "Name": "Update an item",
+  "Type": "Create",
+  "InputFields::Field": [
+   "ActionField004",
+   "ActionField005",
+   "DynamicField002"
+  ],
+  "Action::Request": [
+   "ActionRequest002"
+  ]
+ },
+ "ActionField004": {
+  "Id": "ActionField004",
+  "AutoRefresh": true,
+  "InputFields": "UpdateAnItem",
+  "IsDropdown": true,
+  "IsRequired": true,
+  "AttachmentType": "Both",
+  "Kind": "Field",
+  "Label": "Choose a dataform",
+  "Name": "form_id",
+  "Type": "String",
+  "Field::Dropdown": [
+   "Dropdown004"
+  ]
+ },
+ "Dropdown004": {
+  "Id": "Dropdown004",
+  "Field": "ActionField004",
+  "FieldId": "_id",
+  "FieldName": "Name",
+  "Kind": "Dropdown",
+  "Type": "Request",
+  "Dropdown::Request": [
+   "DropdownRequest004"
+  ]
+ },
+ "DropdownRequest004": {
+  "Id": "DropdownRequest004",
+  "Dropdown": "Dropdown004",
+  "Kind": "Request",
+  "Mode": "Code",
+  "Code": "const options = {url: `https://${authData.account_domain}/flow/2/${authData.account_id}/form`,method: 'GET',headers: {'X-Access-Key-Id': authData.access_key_id,'X-Access-Key-Secret': authData.access_key_secret,'Content-Type': 'application/json','Accept': 'application/json'},params: {'page_size': 1000}};const response = await request(options);let data = await response.json();const config = {url: `https://${authData.account_domain}/flow/2/${authData.account_id}/permissible`,method: 'POST',headers: {'X-Access-Key-Id': authData.access_key_id,'X-Access-Key-Secret': authData.access_key_secret,'Content-Type': 'application/json','Accept': 'application/json'},body: {'Filter': {'LHSField': 'Type','RHSValue': 'Application,Portal','Operator': 'PART_OF'}}};const res = await request(config);const applications = await res.json();data = data.map((app) => {if (app._application_id) {const appData = applications.find(({_id}) => _id === app._application_id);if (appData) {app.Name = `${app.Name} - ${appData.Name}`;}}return app;});return data;"
+ },
+ "ActionField005": {
+  "Id": "ActionField005",
+  "InputFields": "UpdateAnItem",
+  "IsRequired": true,
+  "Kind": "Field",
+  "Label": "Dataform item ID",
+  "Name": "instance_id",
+  "Type": "String"
+ },
+ "DynamicField002": {
+  "Id": "DynamicField002",
+  "InputFields": "UpdateAnItem",
+  "IsDynamicField": true,
+  "Type": "String",
+  "Kind": "Field",
+  "Label": "Dynamic Name",
+  "Name": "DynamicField",
+  "Field::Request": [
+   "DynamicFieldRequest002"
+  ]
+ },
+ "DynamicFieldRequest002": {
+  "Id": "DynamicFieldRequest002",
+  "Field": "DynamicField002",
+  "Kind": "Request",
+  "Mode": "Code",
+  "Code": "const options = {\n    url: `https://${authData.account_domain}/form/2/${authData.account_id}/${inputData.form_id}/allfields`,\n    method: 'GET',\n    headers: {\n        'X-Access-Key-Id': authData.access_key_id,\n        'X-Access-Key-Secret': authData.access_key_secret\n    },\n    params: {\n        'read_only': !1,\n        'system_fields': !1\n    }\n};\nreturn request(options).then((response) => response.json()).then((json) => {\n    logger.info(JSON.stringify(json));\n    const results = json[inputData.form_id];\n    var actionFields = [];\n    let fieldMap = {\n        DateTime: 'Datetime',\n        User: 'Object',\n        Boolean: 'Boolean',\n        UserGroupList: 'Object',\n        Number: 'Number',\n        Json: 'Object',\n        JSON: 'Object',\n        Date: 'Date',\n        StarRating: 'Number',\n        Slider: 'Number',\n        Checklist: 'Object',\n        MultiUser: 'Object',\n        Reference: 'Object'\n    };\n    createField = (Id, Name, Label, IsRequired = !1, Type) => {\n        return {\n            Id: Id,\n            Name: Name,\n            Label: Label,\n            IsRequired: false,\n            Kind: 'Field',\n            Type: Type || 'String'\n        }\n    };\n    convertFields = (inputFields) => {\n        let fields = [];\n        inputFields.forEach(function(field) {\n            if (!field.IsSystemField && !field.ReadOnly) {\n                let actionField = createField(field.Id, field.Id, field.Name, field.Required ? !0 : !1, fieldMap[field.Type]);\n                if (field.Type == 'MultiUser' || field.Type == 'User') {\n                    actionField['Field::Field'] = [createField('_id', '_id', 'Id', !0)];\n                    actionField.IsMultiValue = field.Type == 'MultiUser'\n                } else if (field.Type == 'Reference') {\n                    actionField['Field::Field'] = [createField('_id', '_id', 'Id', !0)]\n                } else if (field.Type == 'Multiselect' || field.Type == 'Checkbox') {\n                    actionField.IsMultiValue = !0\n                } else if (field.Type == 'Checklist') {\n                    actionField['Field::Field'] = [createField('value', 'value', 'value', !0), createField('selected', 'selected', 'selected', !0, 'Boolean')];\n                    actionField.IsMultiValue = !0\n                };\n                fields.push(actionField)\n            }\n        });\n        return fields\n    };\n    convertTables = (tableFields) => {\n        return {\n            'Field::Field': [createField('_id', '_id', 'Id', !1), ...convertFields(tableFields.Fields)],\n            'Id': tableFields.Id,\n            'IsMultiValue': !0,\n            'IsRequired': !1,\n            'Kind': 'Field',\n            'Label': tableFields.Name,\n            'Name': `Table::${tableFields.Id}`,\n            'Type': 'Object'\n        }\n    };\n    actionFields = convertFields(results.Fields);\n    if (results.Tables) {\n        results.Tables.forEach((id) => {\n            actionFields.push(convertTables(results[id]))\n        })\n    };\n    return actionFields\n})"
+ },
+ "ActionRequest002": {
+  "Id": "ActionRequest002",
+  "Action": "UpdateAnItem",
+  "Kind": "Request",
+  "Code": "let payload = { ...inputData }; delete payload.form_id; delete payload.application_id; delete payload.instance_id; const initiateOptions = { url: `https://${authData.account_domain}/form/2/${authData.account_id}/${inputData.form_id}/${inputData.instance_id}`, method: 'POST', headers: { 'X-Access-Key-Id': authData.access_key_id, 'X-Access-Key-Secret': authData.access_key_secret }, body: { _id: inputData.instance_id, ...payload } }; return request(initiateOptions).then((response) => response.json());",
+  "Mode": "Code"
+ },
+ "FetchAnItem": {
+  "Id": "FetchAnItem",
+  "Connector": "Co4mIEiAdtSb",
+  "Kind": "Action",
+  "Type": "Create",
+  "Name": "Fetch an item",
+  "Description": "This action retrieves a specific item from your dataform with its item ID.",
+  "InputFields::Field": [
+   "Field_aWJts6IZX",
+   "Field_TxKo_j3St",
+   "Field_uO6vt4jqM",
+   "Field_iijyfqTxm"
+  ],
+  "Action::Request": [
+   "Request_lwoys-dcC"
+  ]
+ },
+ "Field_aWJts6IZX": {
+  "Id": "Field_aWJts6IZX",
+  "InputFields": "FetchAnItem",
+  "HelpText": "Choose the dataform from which you want to retrieve the item",
+  "IsRequired": true,
+  "IsMultiValue": false,
+  "AutoRefresh": true,
+  "IsDropdown": true,
+  "AllowMultiples": false,
+  "IsPaginated": false,
+  "Kind": "Field",
+  "Name": "formId",
+  "Label": "Choose a dataform",
+  "Type": "String",
+  "Field::Dropdown": [
+   "Dropdown_TyujGmZYrn"
+  ]
+ },
+ "Dropdown_TyujGmZYrn": {
+  "Id": "Dropdown_TyujGmZYrn",
+  "Field": "Field_aWJts6IZX",
+  "FieldId": "_id",
+  "FieldName": "Name",
+  "Kind": "Dropdown",
+  "Type": "Request",
+  "Dropdown::Request": [
+   "Request_xsBCs6YslM"
+  ]
+ },
+ "Request_xsBCs6YslM": {
+  "Id": "Request_xsBCs6YslM",
+  "Dropdown": "Dropdown_TyujGmZYrn",
+  "Kind": "Request",
+  "Mode": "Code",
+  "Code": "const options = {url: `https://${authData.account_domain}/flow/2/${authData.account_id}/form`,method: 'GET',headers: {'X-Access-Key-Id': authData.access_key_id,'X-Access-Key-Secret': authData.access_key_secret,'Content-Type': 'application/json','Accept': 'application/json'},params: {'page_size': 1000}};const response = await request(options);let data = await response.json();const config = {url: `https://${authData.account_domain}/flow/2/${authData.account_id}/permissible`,method: 'POST',headers: {'X-Access-Key-Id': authData.access_key_id,'X-Access-Key-Secret': authData.access_key_secret,'Content-Type': 'application/json','Accept': 'application/json'},body: {'Filter': {'LHSField': 'Type','RHSValue': 'Application,Portal','Operator': 'PART_OF'}}};const res = await request(config);const applications = await res.json();data = data.map((form) => {if (form._application_id) {const appData = applications.find(({_id}) => _id === form._application_id);if (appData) {form.Name = `${form.Name} - ${appData.Name}`;}}return form;});return data;",
+  "Headers::Property": [
+   "Property_dqCP0huPD",
+   "Property_XwPvjfkOV3"
+  ]
+ },
+ "Property_dqCP0huPD": {
+  "Id": "Property_dqCP0huPD",
+  "Headers": "Request_xsBCs6YslM",
+  "Kind": "Property",
+  "Name": "X-Access-Key-Id",
+  "Type": "Field",
+  "Field": "authData.access_key_id"
+ },
+ "Property_XwPvjfkOV3": {
+  "Id": "Property_XwPvjfkOV3",
+  "Headers": "Request_xsBCs6YslM",
+  "Kind": "Property",
+  "Name": "X-Access-Key-Secret",
+  "Type": "Field",
+  "Field": "authData.access_key_secret"
+ },
+ "Field_TxKo_j3St": {
+  "Id": "Field_TxKo_j3St",
+  "InputFields": "FetchAnItem",
+  "HelpText": "Choose the dataform view from which you want to retrieve the item",
+  "IsRequired": true,
+  "IsMultiValue": false,
+  "AutoRefresh": false,
+  "IsDropdown": true,
+  "AllowMultiples": false,
+  "IsPaginated": false,
+  "Kind": "Field",
+  "Name": "viewId",
+  "Label": "Choose the view",
+  "Type": "String",
+  "Field::Dropdown": [
+   "Dropdown_vN9UBG3Rhu"
+  ]
+ },
+ "Dropdown_vN9UBG3Rhu": {
+  "Id": "Dropdown_vN9UBG3Rhu",
+  "Field": "Field_TxKo_j3St",
+  "FieldId": "_id",
+  "FieldName": "Name",
+  "Kind": "Dropdown",
+  "Type": "Request",
+  "Dropdown::Request": [
+   "Request_nJ1f3kB26o"
+  ]
+ },
+ "Request_nJ1f3kB26o": {
+  "Id": "Request_nJ1f3kB26o",
+  "Dropdown": "Dropdown_vN9UBG3Rhu",
+  "Kind": "Request",
+  "Mode": "Code",
+  "Code": "const options = {url: `https://${authData.account_domain}/flow/2/${authData.account_id}/form/${inputData.formId}`,method: 'GET',params: {},headers: {'X-Access-Key-Id': authData.access_key_id,'X-Access-Key-Secret': authData.access_key_secret},};if (inputData._can_impersonate && inputData._impersonate_user) {options.headers['X-Impersonated-User'] = inputData._impersonate_user;}return request(options).then((res) => {return res.json();}).then(response => {const list = response.FormView;return [{_id: 'all_items',Name: 'All Items'}, ...list]});"
+ },
+ "Field_uO6vt4jqM": {
+  "Id": "Field_uO6vt4jqM",
+  "InputFields": "FetchAnItem",
+  "HelpText": "Enter the ID of the item you want to retrieve",
+  "IsRequired": true,
+  "IsMultiValue": false,
+  "AutoRefresh": false,
+  "IsDropdown": false,
+  "AllowMultiples": false,
+  "Kind": "Field",
+  "Name": "itemId",
+  "Label": "Item ID",
+  "Type": "String"
+ },
+ "Field_iijyfqTxm": {
+  "Id": "Field_iijyfqTxm",
+  "IsDynamicField": true,
+  "InputFields": "FetchAnItem",
+  "Kind": "Field",
+  "Name": "DynamicField",
+  "Label": "Dynamic Name",
+  "Field::Request": [
+   "Request_BtgbI_vN7r"
+  ]
+ },
+ "Request_BtgbI_vN7r": {
+  "Id": "Request_BtgbI_vN7r",
+  "Field": "Field_iijyfqTxm",
+  "Kind": "Request",
+  "Mode": "Code",
+  "Code": "const options = {\n    url: `https://${authData.account_domain}/flow/2/${authData.account_id}/form/${inputData.formId}/impersonation/validate`,\n    method: 'GET',\n    headers: {\n        'X-Access-Key-Id': authData.access_key_id,\n        'X-Access-Key-Secret': authData.access_key_secret,\n    },\n};\nreturn request(options)\n    .then((response) => response.json())\n    .then(({\n        Impersonate\n    }) => {\n        const impersonationFields = [];\n        if (Impersonate) {\n            impersonationFields.push({\n                Id: \"_can_impersonate\",\n                Name: \"_can_impersonate\",\n                Label: \"Enable impersonation\",\n                IsRequired: false,\n                Kind: \"Field\",\n                Type: \"Boolean\",\n                HelpText: \"Enabling impersonation allows the service account to impersonate and act on behalf of another user\",\n                DefaultValue: false,\n                AutoRefresh: true,\n                InputType: \"Static\",\n                FieldIndex: 2\n            });\n        } else {\n            if (inputData._can_impersonate) {\n                inputData._can_impersonate = false;\n            }\n        }\n\n        if (inputData._can_impersonate) {\n            impersonationFields.push({\n                Id: \"_impersonate_user\",\n                Name: \"_impersonate_user\",\n                Label: \"Choose user to impersonate\",\n                InputFields: 'CustomCall',\n                Kind: \"Field\",\n                Type: \"String\",\n                AutoRefresh: true,\n                FieldIndex: 3,\n                HelpText: \"Choose the user who the service account should impersonate or select _created_by._id from the list of fields\",\n                IsDropdown: true,\n                IsRequired: true,\n                IsPaginated: true,\n                Dropdown: {\n                    Kind: \"Dropdown\",\n                    Mode: \"Code\",\n                    Type: 'Request',\n                    FieldId: \"_id\",\n                    FieldName: \"Name\",\n                    Code: \"const options = {url: `https://${authData.account_domain}/user/2/${authData.account_id}`,method: 'GET',headers: {'X-Access-Key-Id': authData.access_key_id,'X-Access-Key-Secret': authData.access_key_secret,'Content-Type': 'application/json','Accept': 'application/json'},params: {'page_number': context.metadata.page, 'page_size': 10}};if (context.metadata.query) {options.params.q = context.metadata.query};return request(options).then((response) => response.json()).then((json) => {return json})\"\n                }\n            });\n        }\n        return impersonationFields;\n    });"
+ },
+ "Request_lwoys-dcC": {
+  "Id": "Request_lwoys-dcC",
+  "Action": "FetchAnItem",
+  "Kind": "Request",
+  "Code": "let options = {url: `https://${authData.account_domain}/form/2/${authData.account_id}/${inputData.formId}`,method: 'POST',headers: {'X-Access-Key-Id': authData.access_key_id,'X-Access-Key-Secret': authData.access_key_secret},body: {},params: {page_number: 1,page_size: 200}};if (inputData._can_impersonate && inputData._impersonate_user) {options.headers['X-Impersonated-User'] = inputData._impersonate_user;}if (inputData.viewId !== 'all_items') {options.url += `/view/${inputData.viewId}`}options.url += '/list';options.body = {'Filter': {'AND': [{'OR': [{'LHSField': '_id','Operator': 'EQUAL_TO','RHSType': 'Value','RHSValue': inputData.itemId,}]}]}};return request(options).then(res => res.json()).then(response => {if (response.Data.length == 1) {return {'Status': 'Success',Data: response.Data[0]}}return {'Status': 'We could not find any item with the given ID.'}});",
+  "Mode": "Code"
+ },
+ "FetchManyItems": {
+  "Id": "FetchManyItems",
+  "Connector": "Co4mIEiAdtSb",
+  "Kind": "Action",
+  "Type": "Create",
+  "Name": "Fetch one or more items",
+  "Description": "This action retrieves multiple items from your dataform.",
+  "InputFields::Field": [
+   "Field_21tl6yAXi",
+   "Field_VUG9TGTmc",
+   "Field_z5h_Yj0uD",
+   "Field_g6bxFI_tr",
+   "Field_NqV1Rtkcv",
+   "Field_p4Ddmv-LO",
+   "Field_CoegvM8Hv"
+  ],
+  "Action::Request": [
+   "Request_IESjlw_4D"
+  ]
+ },
+ "Field_21tl6yAXi": {
+  "Id": "Field_21tl6yAXi",
+  "InputFields": "FetchManyItems",
+  "HelpText": "Choose the dataform from which you want to retrieve the items",
+  "IsRequired": true,
+  "IsMultiValue": false,
+  "AutoRefresh": true,
+  "IsDropdown": true,
+  "AllowMultiples": false,
+  "IsPaginated": false,
+  "Kind": "Field",
+  "Name": "formId",
+  "Label": "Choose a dataform",
+  "Type": "String",
+  "Field::Dropdown": [
+   "Dropdown_IdAPtn1qqk"
+  ]
+ },
+ "Dropdown_IdAPtn1qqk": {
+  "Id": "Dropdown_IdAPtn1qqk",
+  "Field": "Field_21tl6yAXi",
+  "FieldId": "_id",
+  "FieldName": "Name",
+  "Kind": "Dropdown",
+  "Type": "Request",
+  "Dropdown::Request": [
+   "Request_OttXxIf-DJ"
+  ]
+ },
+ "Request_OttXxIf-DJ": {
+  "Id": "Request_OttXxIf-DJ",
+  "Dropdown": "Dropdown_IdAPtn1qqk",
+  "Kind": "Request",
+  "Mode": "Code",
+  "Code": "const options = {url: `https://${authData.account_domain}/flow/2/${authData.account_id}/form`,method: 'GET',headers: {'X-Access-Key-Id': authData.access_key_id,'X-Access-Key-Secret': authData.access_key_secret,'Content-Type': 'application/json','Accept': 'application/json'},params: {'page_size': 1000}};const response = await request(options);let data = await response.json();const config = {url: `https://${authData.account_domain}/flow/2/${authData.account_id}/permissible`,method: 'POST',headers: {'X-Access-Key-Id': authData.access_key_id,'X-Access-Key-Secret': authData.access_key_secret,'Content-Type': 'application/json','Accept': 'application/json'},body: {'Filter': {'LHSField': 'Type','RHSValue': 'Application,Portal','Operator': 'PART_OF'}}};const res = await request(config);const applications = await res.json();data = data.map((form) => {if (form._application_id) {const appData = applications.find(({_id}) => _id === form._application_id);if (appData) {form.Name = `${form.Name} - ${appData.Name}`;}}return form;});return data;",
+  "Headers::Property": [
+   "Property_kK0nw9Onw",
+   "Property_qWk29H1LGZ"
+  ]
+ },
+ "Property_kK0nw9Onw": {
+  "Id": "Property_kK0nw9Onw",
+  "Headers": "Request_OttXxIf-DJ",
+  "Kind": "Property",
+  "Name": "X-Access-Key-Id",
+  "Type": "Field",
+  "Field": "authData.access_key_id"
+ },
+ "Property_qWk29H1LGZ": {
+  "Id": "Property_qWk29H1LGZ",
+  "Headers": "Request_OttXxIf-DJ",
+  "Kind": "Property",
+  "Name": "X-Access-Key-Secret",
+  "Type": "Field",
+  "Field": "authData.access_key_secret"
+ },
+ "Field_VUG9TGTmc": {
+  "Id": "Field_VUG9TGTmc",
+  "InputFields": "FetchManyItems",
+  "HelpText": "Choose the dataform view from which you want to retrieve the items",
+  "IsRequired": true,
+  "IsMultiValue": false,
+  "AutoRefresh": true,
+  "IsDropdown": true,
+  "AllowMultiples": false,
+  "IsPaginated": false,
+  "Kind": "Field",
+  "Name": "viewId",
+  "Label": "Choose the view",
+  "Type": "String",
+  "Field::Dropdown": [
+   "Dropdown_KqlRgylAP_"
+  ]
+ },
+ "Dropdown_KqlRgylAP_": {
+  "Id": "Dropdown_KqlRgylAP_",
+  "Field": "Field_VUG9TGTmc",
+  "FieldId": "_id",
+  "FieldName": "Name",
+  "Kind": "Dropdown",
+  "Type": "Request",
+  "Dropdown::Request": [
+   "Request_7dFYibfNaj"
+  ]
+ },
+ "Request_7dFYibfNaj": {
+  "Id": "Request_7dFYibfNaj",
+  "Dropdown": "Dropdown_KqlRgylAP_",
+  "Kind": "Request",
+  "Code": "const options = {url: `https://${authData.account_domain}/flow/2/${authData.account_id}/form/${inputData.formId}`,method: 'GET',params: {},headers: {'X-Access-Key-Id': authData.access_key_id,'X-Access-Key-Secret': authData.access_key_secret},};if (inputData._can_impersonate && inputData._impersonate_user) {options.headers['X-Impersonated-User'] = inputData._impersonate_user;}return request(options).then((res) => {return res.json();}).then(response => {const list = response.FormView;return [{_id: 'all_items',Name: 'All Items'}, ...list]});",
+  "Mode": "Code"
+ },
+ "Field_z5h_Yj0uD": {
+  "Id": "Field_z5h_Yj0uD",
+  "InputFields": "FetchManyItems",
+  "HelpText": "Select the dataform fields you want to include in the result",
+  "IsRequired": true,
+  "IsMultiValue": true,
+  "AutoRefresh": false,
+  "IsDropdown": true,
+  "AllowMultiples": false,
+  "IsPaginated": false,
+  "Kind": "Field",
+  "Name": "columns",
+  "Label": "Specify fields",
+  "Type": "String",
+  "Field::Dropdown": [
+   "Dropdown_YZUG6RciFC"
+  ]
+ },
+ "Dropdown_YZUG6RciFC": {
+  "Id": "Dropdown_YZUG6RciFC",
+  "Field": "Field_z5h_Yj0uD",
+  "FieldId": "Id",
+  "FieldName": "Name",
+  "Kind": "Dropdown",
+  "Type": "Request",
+  "Dropdown::Request": [
+   "Request_QylPSWYqZz"
+  ]
+ },
+ "Request_QylPSWYqZz": {
+  "Id": "Request_QylPSWYqZz",
+  "Dropdown": "Dropdown_YZUG6RciFC",
+  "Kind": "Request",
+  "Code": "const options = {url: `https://${authData.account_domain}/form/2/${authData.account_id}/${inputData.formId}`,method: 'GET',params: {},headers: {'X-Access-Key-Id': authData.access_key_id,'X-Access-Key-Secret': authData.access_key_secret}};if (inputData._can_impersonate && inputData._impersonate_user) {options.headers['X-Impersonated-User'] = inputData._impersonate_user;}if (inputData.viewId !== 'all_items') {options.url += `/view/${inputData.viewId}`}options.url += '/fields';return request(options).then(res => res.json()).then(response => {return response.filter(item => item.IsSystemField === !1);})",
+  "Mode": "Code"
+ },
+ "Field_g6bxFI_tr": {
+  "Id": "Field_g6bxFI_tr",
+  "InputFields": "FetchManyItems",
+  "HelpText": "Add filters to refine your search results",
+  "Kind": "Field",
+  "Name": "filter",
+  "Label": "Filter",
+  "Type": "Criteria",
+  "IsLHSDropdown": true,
+  "IsRHSDropdown": false,
+  "LHSField::Dropdown": [
+   "Dropdown_YRT6PIgD84"
+  ]
+ },
+ "Dropdown_YRT6PIgD84": {
+  "Id": "Dropdown_YRT6PIgD84",
+  "LHSField": "Field_g6bxFI_tr",
+  "FieldId": "FieldId",
+  "FieldName": "FieldName",
+  "FieldType": "FieldType",
+  "FieldIconType": "FieldIconType",
+  "IsSubArray": "IsSubArray",
+  "Kind": "Dropdown",
+  "Type": "Request",
+  "Dropdown::Request": [
+   "Request_1ckEt4zTRV"
+  ]
+ },
+ "Request_1ckEt4zTRV": {
+  "Id": "Request_1ckEt4zTRV",
+  "Dropdown": "Dropdown_YRT6PIgD84",
+  "Kind": "Request",
+  "Code": "if (!inputData.formId) {throw new KissflowException('Please select a dataform first!')}const ADVANCE_FILTER_CHILD_OPTIONS = {Currency: [{FieldId: 'Unit',FieldName: 'Unit',FieldType: 'String',FieldIconType: 'CurrencyUnit',IsSubArray: !1}, {FieldId: 'Value',FieldName: 'Value',FieldType: 'Number',FieldIconType: 'CurrencyValue',IsSubArray: !1}],User: [{FieldId: 'Name',FieldName: 'Name',FieldType: 'String',FieldIconType: 'Text',IsSubArray: !1}, {FieldId: 'Email',FieldName: 'Email address',FieldType: 'String',FieldIconType: 'Email',IsSubArray: !1}, {FieldId: 'Manager',FieldName: 'Manager',FieldType: 'Object',FieldIconType: 'User',IsSubArray: !1}, {FieldId: 'UserType',FieldName: 'User type',FieldType: 'String',FieldIconType: 'Text',IsSubArray: !1}, {FieldId: 'Status',FieldName: 'Status',FieldType: 'String',FieldIconType: 'Text',IsSubArray: !1}, {FieldId: 'Designation',FieldName: 'Designation',FieldType: 'String',FieldIconType: 'Text',IsSubArray: !1}]};const SUPPORTED_FIELD_TYPES = {Text: 'String',DateTime: 'DateTime',User: 'Object',Boolean: 'Boolean',UserGroupList: 'Object',Number: 'Number',Json: 'Object',JSON: 'Object',Date: 'Date',Image: 'String',StarRating: 'Number',Slider: 'Number',Checklist: 'Object',MultiUser: 'Object',Reference: 'Object',Currency: 'String',TextArea: 'String',Email: 'String',Attachment: 'Object',Checkbox: 'Object',Select: 'Object',Multiselect: 'Object',CurrencyValue: '',CurrencyUnit: '',SequenceNumber: 'String'};let subArrayCall = !1;if (context.metadata.path.length > 0) {subArrayCall = !0};let options = {url: `https://${authData.account_domain}/form/2/${authData.account_id}/${inputData.formId}`,method: 'GET',params: {},headers: {'X-Access-Key-Id': authData.access_key_id,'X-Access-Key-Secret': authData.access_key_secret}};if (inputData.viewId !== 'all_items') {options.url += `/view/${inputData.viewId}`}options.url += '/fields';return request(options).then(res => res.json()).then(response => {const columns = response.filter(item => item.IsSystemField === !1 && !['Signature', 'Image', 'Geolocation'].includes(item.Type));if (subArrayCall) {const parentId = context.metadata.path[0];const matchingColumn = columns.find(column => column.Id === parentId);if (matchingColumn.Type === 'Reference') {const result = matchingColumn.Attributes.map(attribute => ({FieldId: attribute.Id,FieldName: attribute.Name,FieldType: SUPPORTED_FIELD_TYPES[attribute.Type] || 'String',FieldIconType: attribute.Type,IsSubArray: !1}));return result} else {return ADVANCE_FILTER_CHILD_OPTIONS[matchingColumn.Type]}};const hasSubArray = (type) => {return ['Currency', 'User', 'Reference'].includes(type)};const parsedFields = columns.map((item) => {const {Id,Name,Type} = item;const parsedElement = {FieldId: Id,FieldName: Name,FieldIconType: Type,FieldType: SUPPORTED_FIELD_TYPES[Type] || 'String',IsSubArray: hasSubArray(Type)};return parsedElement});return parsedFields})",
+  "Mode": "Code"
+ },
+ "Field_NqV1Rtkcv": {
+  "Id": "Field_NqV1Rtkcv",
+  "InputFields": "FetchManyItems",
+  "IsRequired": false,
+  "IsMultiValue": false,
+  "AutoRefresh": true,
+  "IsDropdown": false,
+  "AllowMultiples": false,
+  "HelpText": "Enter the page number from which you want to fetch the items. If unspecified, items from page 1 will be fetched by default.",
+  "Kind": "Field",
+  "Name": "pageNumber",
+  "Label": "Page number",
+  "Type": "Number"
+ },
+ "Field_p4Ddmv-LO": {
+  "Id": "Field_p4Ddmv-LO",
+  "InputFields": "FetchManyItems",
+  "HelpText": "Enter the number of items you want to fetch from a page. If unspecified, 200 items will be fetched by default. The maximum limit is 500 items per request.",
+  "IsRequired": false,
+  "IsMultiValue": false,
+  "AutoRefresh": true,
+  "IsDropdown": false,
+  "AllowMultiples": false,
+  "Kind": "Field",
+  "Name": "pageSize",
+  "Label": "Items per page",
+  "Type": "Number"
+ },
+ "Field_CoegvM8Hv": {
+  "Id": "Field_CoegvM8Hv",
+  "IsDynamicField": true,
+  "InputFields": "FetchManyItems",
+  "Kind": "Field",
+  "Name": "DynamicField",
+  "Label": "Dynamic Name",
+  "Field::Request": [
+   "Request_mbYpZc0lH5"
+  ]
+ },
+ "Request_mbYpZc0lH5": {
+  "Id": "Request_mbYpZc0lH5",
+  "Field": "Field_CoegvM8Hv",
+  "Kind": "Request",
+  "Mode": "Code",
+  "Code": "const options = {\n    url: `https://${authData.account_domain}/flow/2/${authData.account_id}/form/${inputData.dataset_id}/impersonation/validate`,\n    method: 'GET',\n    headers: {\n        'X-Access-Key-Id': authData.access_key_id,\n        'X-Access-Key-Secret': authData.access_key_secret,\n    },\n};\nreturn request(options)\n    .then((response) => response.json())\n    .then(({\n        Impersonate\n    }) => {\n        const impersonationFields = [];\n        if (Impersonate) {\n            impersonationFields.push({\n                Id: \"_can_impersonate\",\n                Name: \"_can_impersonate\",\n                Label: \"Enable impersonation\",\n                IsRequired: false,\n                Kind: \"Field\",\n                Type: \"Boolean\",\n                HelpText: \"Enabling impersonation allows the service account to impersonate and act on behalf of another user\",\n                DefaultValue: false,\n                AutoRefresh: true,\n                InputType: \"Static\",\n                FieldIndex: 2\n            });\n        } else {\n            if (inputData._can_impersonate) {\n                inputData._can_impersonate = false;\n            }\n        }\n        if (inputData._can_impersonate) {\n            impersonationFields.push({\n                Id: \"_impersonate_user\",\n                Name: \"_impersonate_user\",\n                Label: \"Choose user to impersonate\",\n                InputFields: 'CustomCall',\n                Kind: \"Field\",\n                Type: \"String\",\n                AutoRefresh: true,\n                FieldIndex: 3,\n                HelpText: \"Choose the user who the service account should impersonate or select _created_by._id from the list of fields\",\n                IsDropdown: true,\n                IsRequired: true,\n                IsPaginated: true,\n                Dropdown: {\n                    Kind: \"Dropdown\",\n                    Mode: \"Code\",\n                    Type: 'Request',\n                    FieldId: \"_id\",\n                    FieldName: \"Name\",\n                    Code: \"const options = {url: `https://${authData.account_domain}/user/2/${authData.account_id}`,method: 'GET',headers: {'X-Access-Key-Id': authData.access_key_id,'X-Access-Key-Secret': authData.access_key_secret,'Content-Type': 'application/json','Accept': 'application/json'},params: {'page_number': context.metadata.page, 'page_size': 10}};if (context.metadata.query) {options.params.q = context.metadata.query};return request(options).then((response) => response.json()).then((json) => {return json})\"\n                }\n            });\n        }\n        return impersonationFields;\n    });"
+ },
+ "Request_IESjlw_4D": {
+  "Id": "Request_IESjlw_4D",
+  "Action": "FetchManyItems",
+  "Kind": "Request",
+  "Code": "const pageNumber = inputData.pageNumber ? inputData.pageNumber : 1;const pageSize = inputData.pageSize ? inputData.pageSize : 200;let options = {url: `https://${authData.account_domain}/form/2/${authData.account_id}/${inputData.formId}`,method: 'POST',headers: {'X-Access-Key-Id': authData.access_key_id,'X-Access-Key-Secret': authData.access_key_secret},body: {},params: {page_number: pageNumber > 0 ? pageNumber : 1,page_size: pageSize <= 500 ? pageSize : 500}};if (inputData._can_impersonate && inputData._impersonate_user) {options.headers['X-Impersonated-User'] = inputData._impersonate_user;}if (inputData.viewId !== 'all_items') {options.url += `/view/${inputData.viewId}`}options.url += '/list';const filterType = inputData.filter?.IsOR ? 'OR' : 'AND';const filterColumns = inputData.columns.map(column => {return {Id: column}});const filter = {[filterType]: []};if (inputData.filter?.ConditionList) {inputData.filter.ConditionList.forEach((condition, index) => {const lhs = condition.LHS.split('.');filter[filterType].push({OR: [{'LHSField': lhs[0],'Operator': condition.Operator,'RHSType': 'Value','RHSValue': condition.RHS,'RHSField': null,'LHSAttribute': lhs.length > 1 ? lhs[1] : null,'RHSAttribute': null}]})})};options.body = {Columns: filterColumns,Filter: filter};return request(options).then(res => res.json()).then(response => {return {Data: response.Data}})",
+  "Mode": "Code"
+ },
+ "Action_DeleteAnItem": {
+  "Id": "Action_DeleteAnItem",
+  "Connector": "Co4mIEiAdtSb",
+  "Kind": "Action",
+  "Type": "Create",
+  "Name": "Delete an item",
+  "Description": "This action deletes a specific item from your dataform with its item ID.",
+  "InputFields::Field": [
+   "Field_nQMKKXe2c",
+   "Field_9mWLZwjhj",
+   "Field_2qkivvIGO"
+  ],
+  "Action::Request": [
+   "Request_e9nE9w8Xf"
+  ]
+ },
+ "Field_nQMKKXe2c": {
+  "Id": "Field_nQMKKXe2c",
+  "InputFields": "Action_DeleteAnItem",
+  "HelpText": "Choose the dataform from which you want to delete the item",
+  "IsRequired": true,
+  "IsMultiValue": false,
+  "AutoRefresh": true,
+  "IsDropdown": true,
+  "AllowMultiples": false,
+  "IsPaginated": false,
+  "Kind": "Field",
+  "Name": "form_id",
+  "Label": "Choose a dataform",
+  "Type": "String",
+  "Field::Dropdown": [
+   "Dropdown_JhEr00zI_9"
+  ]
+ },
+ "Dropdown_JhEr00zI_9": {
+  "Id": "Dropdown_JhEr00zI_9",
+  "Field": "Field_nQMKKXe2c",
+  "FieldId": "_id",
+  "FieldName": "Name",
+  "Kind": "Dropdown",
+  "Type": "Request",
+  "Dropdown::Request": [
+   "Request_3TLRXpYSI0"
+  ]
+ },
+ "Request_3TLRXpYSI0": {
+  "Id": "Request_3TLRXpYSI0",
+  "Dropdown": "Dropdown_JhEr00zI_9",
+  "Kind": "Request",
+  "Code": "const options = {url: `https://${authData.account_domain}/flow/2/${authData.account_id}/form`,method: 'GET',headers: {'X-Access-Key-Id': authData.access_key_id,'X-Access-Key-Secret': authData.access_key_secret,'Content-Type': 'application/json','Accept': 'application/json'},params: {'page_size': 1000}};const response = await request(options);let data = await response.json();const config = {url: `https://${authData.account_domain}/flow/2/${authData.account_id}/permissible`,method: 'POST',headers: {'X-Access-Key-Id': authData.access_key_id,'X-Access-Key-Secret': authData.access_key_secret,'Content-Type': 'application/json','Accept': 'application/json'},body: {'Filter': {'LHSField': 'Type','RHSValue': 'Application,Portal','Operator': 'PART_OF'}}};const res = await request(config);const applications = await res.json();data = data.map((form) => {if (form._application_id) {const appData = applications.find(({_id}) => _id === form._application_id);if (appData) {form.Name = `${form.Name} - ${appData.Name}`;}}return form;});return data;",
+  "Mode": "Code"
+ },
+ "Field_9mWLZwjhj": {
+  "Id": "Field_9mWLZwjhj",
+  "InputFields": "Action_DeleteAnItem",
+  "HelpText": "Enter the ID of the item you want to delete",
+  "IsRequired": true,
+  "IsMultiValue": false,
+  "AutoRefresh": false,
+  "IsDropdown": false,
+  "AllowMultiples": false,
+  "Kind": "Field",
+  "Name": "instance_id",
+  "Label": "Item ID",
+  "Type": "String"
+ },
+ "Field_2qkivvIGO": {
+  "Id": "Field_2qkivvIGO",
+  "IsDynamicField": true,
+  "InputFields": "Action_DeleteAnItem",
+  "Kind": "Field",
+  "Name": "DynamicField",
+  "Label": "Dynamic Name",
+  "Field::Request": [
+   "Request_0PQugq3K_2"
+  ]
+ },
+ "Request_0PQugq3K_2": {
+  "Id": "Request_0PQugq3K_2",
+  "Field": "Field_2qkivvIGO",
+  "Kind": "Request",
+  "Mode": "Code",
+  "Code": "const options = {\n    url: `https://${authData.account_domain}/flow/2/${authData.account_id}/form/${inputData.formId}/impersonation/validate`,\n    method: 'GET',\n    headers: {\n        'X-Access-Key-Id': authData.access_key_id,\n        'X-Access-Key-Secret': authData.access_key_secret,\n    },\n};\nreturn request(options)\n    .then((response) => response.json())\n    .then(({\n        Impersonate\n    }) => {\n        const impersonationFields = [];\n        if (Impersonate) {\n            impersonationFields.push({\n                Id: \"_can_impersonate\",\n                Name: \"_can_impersonate\",\n                Label: \"Enable impersonation\",\n                IsRequired: false,\n                Kind: \"Field\",\n                Type: \"Boolean\",\n                HelpText: \"Enabling impersonation allows the service account to impersonate and act on behalf of another user\",\n                DefaultValue: false,\n                AutoRefresh: true,\n                InputType: \"Static\",\n                FieldIndex: 2\n            });\n        } else {\n            if (inputData._can_impersonate) {\n                inputData._can_impersonate = false;\n            }\n        }\n\n        if (inputData._can_impersonate) {\n            impersonationFields.push({\n                Id: \"_impersonate_user\",\n                Name: \"_impersonate_user\",\n                Label: \"Choose user to impersonate\",\n                InputFields: 'CustomCall',\n                Kind: \"Field\",\n                Type: \"String\",\n                AutoRefresh: true,\n                FieldIndex: 3,\n                HelpText: \"Choose the user who the service account should impersonate or select _created_by._id from the list of fields\",\n                IsDropdown: true,\n                IsRequired: true,\n                IsPaginated: true,\n                Dropdown: {\n                    Kind: \"Dropdown\",\n                    Mode: \"Code\",\n                    Type: 'Request',\n                    FieldId: \"_id\",\n                    FieldName: \"Name\",\n                    Code: \"const options = {url: `https://${authData.account_domain}/user/2/${authData.account_id}`,method: 'GET',headers: {'X-Access-Key-Id': authData.access_key_id,'X-Access-Key-Secret': authData.access_key_secret,'Content-Type': 'application/json','Accept': 'application/json'},params: {'page_number': context.metadata.page, 'page_size': 10}};if (context.metadata.query) {options.params.q = context.metadata.query};return request(options).then((response) => response.json()).then((json) => {return json})\"\n                }\n            });\n        }\n        return impersonationFields;\n    });"
+ },
+ "Request_e9nE9w8Xf": {
+  "Id": "Request_e9nE9w8Xf",
+  "Action": "Action_DeleteAnItem",
+  "Kind": "Request",
+  "Code": "const initiateOptions = {url: `https://${authData.account_domain}/form/2/${authData.account_id}/${inputData.form_id}/${inputData.instance_id}`,method: 'DELETE',headers: {'X-Access-Key-Id': authData.access_key_id,'X-Access-Key-Secret': authData.access_key_secret}};return request(initiateOptions).then((response) => response.json());",
+  "Mode": "Code"
+ },
+ "_last_saved_at": "2024-07-15T07:13:07Z"
+}

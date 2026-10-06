@@ -1,0 +1,174 @@
+{
+  "Root": "CAFM_Breakdown_A00",
+  "CAFM_Breakdown_A00": {
+    "Id": "CAFM_Breakdown_A00",
+    "Name": "CAFM Breakdown",
+    "Kind": "Model",
+    "FlowType": "Case",
+    "Description": "",
+    "Model::Row": [
+      "Row_dgeqhp"
+    ],
+    "Model::Field": [
+      "Equipment",
+      "Reported_At",
+      "Downtime_Hours",
+      "Repair_Cost_AED"
+    ],
+    "Model::Appearance": [
+      "Appearance_jxwsvs"
+    ]
+  },
+  "Row_dgeqhp": {
+    "Id": "Row_dgeqhp",
+    "Kind": "Row",
+    "Model": "CAFM_Breakdown_A00",
+    "Row::Column": [
+      "Column_dgeqhp"
+    ]
+  },
+  "Column_dgeqhp": {
+    "Id": "Column_dgeqhp",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "Details",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_dgeqhp",
+    "Column::Row": [
+      "Row_dgdic7",
+      "Row_dgdic8"
+    ]
+  },
+  "Row_dgdic7": {
+    "Id": "Row_dgdic7",
+    "Kind": "Row",
+    "Column": "Column_dgeqhp",
+    "Row::Column": [
+      "Column_14eijyi",
+      "Column_1v6xne3"
+    ]
+  },
+  "Column_14eijyi": {
+    "Id": "Column_14eijyi",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_dgdic7",
+    "Column::Field": [
+      "Equipment"
+    ]
+  },
+  "Column_1v6xne3": {
+    "Id": "Column_1v6xne3",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_dgdic7",
+    "Column::Field": [
+      "Reported_At"
+    ]
+  },
+  "Row_dgdic8": {
+    "Id": "Row_dgdic8",
+    "Kind": "Row",
+    "Column": "Column_dgeqhp",
+    "Row::Column": [
+      "Column_xl93vt",
+      "Column_uofddi"
+    ]
+  },
+  "Column_xl93vt": {
+    "Id": "Column_xl93vt",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_dgdic8",
+    "Column::Field": [
+      "Downtime_Hours"
+    ]
+  },
+  "Column_uofddi": {
+    "Id": "Column_uofddi",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_dgdic8",
+    "Column::Field": [
+      "Repair_Cost_AED"
+    ]
+  },
+  "QueryDefinition_14eijyi": {
+    "Id": "QueryDefinition_14eijyi",
+    "Kind": "QueryDefinition",
+    "Field": "Equipment",
+    "LHSModel": "CAFM_Equipment_A00",
+    "FlowType": "Form",
+    "LookupField": [
+      {
+        "Id": "Fleet_No",
+        "Name": "Fleet No",
+        "Type": "Text"
+      },
+      {
+        "Id": "Model",
+        "Name": "Model",
+        "Type": "Text"
+      }
+    ],
+    "HiddenField": []
+  },
+  "Equipment": {
+    "Id": "Equipment",
+    "Kind": "Field",
+    "Type": "Reference",
+    "Name": "Equipment",
+    "Model": "CAFM_Breakdown_A00",
+    "Column": "Column_14eijyi",
+    "Required": true,
+    "Field::QueryDefinition": [
+      "QueryDefinition_14eijyi"
+    ]
+  },
+  "Reported_At": {
+    "Id": "Reported_At",
+    "Kind": "Field",
+    "Type": "DateTime",
+    "Name": "Reported At",
+    "Model": "CAFM_Breakdown_A00",
+    "Column": "Column_1v6xne3"
+  },
+  "Downtime_Hours": {
+    "Id": "Downtime_Hours",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "Downtime Hours",
+    "Model": "CAFM_Breakdown_A00",
+    "Column": "Column_xl93vt"
+  },
+  "Repair_Cost_AED": {
+    "Id": "Repair_Cost_AED",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "Repair Cost AED",
+    "Model": "CAFM_Breakdown_A00",
+    "Column": "Column_uofddi"
+  },
+  "Appearance_jxwsvs": {
+    "Id": "Appearance_jxwsvs",
+    "Kind": "Appearance",
+    "Model": "CAFM_Breakdown_A00",
+    "Appearance::Style": [
+      "Style_jxwsvs"
+    ]
+  },
+  "Style_jxwsvs": {
+    "Id": "Style_jxwsvs",
+    "Kind": "Style",
+    "Appearance": "Appearance_jxwsvs"
+  }
+}

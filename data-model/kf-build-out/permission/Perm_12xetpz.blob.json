@@ -1,0 +1,63 @@
+{
+  "Root": "Perm_12xetpz",
+  "Perm_12xetpz": {
+    "Id": "Perm_12xetpz",
+    "Kind": "FlowPermission",
+    "Role": "Ro_b2tazi",
+    "RoleName": "Compliance Officer",
+    "Model": "CAFM_WO_Event_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_1ob6f7u",
+      "Permission_1hsur2a",
+      "Permission_m0230z",
+      "Permission_9zznye",
+      "Permission_1rcvm6h",
+      "Permission_1xs0nag",
+      "Permission_bl8usk"
+    ]
+  },
+  "Permission_1ob6f7u": {
+    "Id": "Permission_1ob6f7u",
+    "Kind": "Permission",
+    "Column": "Work_Order_No",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1hsur2a": {
+    "Id": "Permission_1hsur2a",
+    "Kind": "Permission",
+    "Column": "Work_Order_Instance",
+    "Permission": "ReadOnly"
+  },
+  "Permission_m0230z": {
+    "Id": "Permission_m0230z",
+    "Kind": "Permission",
+    "Column": "Event_Type",
+    "Permission": "ReadOnly"
+  },
+  "Permission_9zznye": {
+    "Id": "Permission_9zznye",
+    "Kind": "Permission",
+    "Column": "Event_At",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1rcvm6h": {
+    "Id": "Permission_1rcvm6h",
+    "Kind": "Permission",
+    "Column": "Actor",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1xs0nag": {
+    "Id": "Permission_1xs0nag",
+    "Kind": "Permission",
+    "Column": "Actor_Label",
+    "Permission": "ReadOnly"
+  },
+  "Permission_bl8usk": {
+    "Id": "Permission_bl8usk",
+    "Kind": "Permission",
+    "Column": "Event_Detail",
+    "Permission": "ReadOnly"
+  }
+}

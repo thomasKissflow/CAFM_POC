@@ -1,0 +1,42 @@
+{
+  "Root": "Perm_qv6u5b",
+  "Perm_qv6u5b": {
+    "Id": "Perm_qv6u5b",
+    "Kind": "FlowPermission",
+    "Role": "Ro_b2tazi",
+    "RoleName": "Compliance Officer",
+    "Model": "CAFM_SLA_Policy_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_vh14nx",
+      "Permission_x1qeoe",
+      "Permission_1aluvtr",
+      "Permission_11c0hnc"
+    ]
+  },
+  "Permission_vh14nx": {
+    "Id": "Permission_vh14nx",
+    "Kind": "Permission",
+    "Column": "Priority",
+    "Permission": "ReadOnly"
+  },
+  "Permission_x1qeoe": {
+    "Id": "Permission_x1qeoe",
+    "Kind": "Permission",
+    "Column": "Response_Minutes",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1aluvtr": {
+    "Id": "Permission_1aluvtr",
+    "Kind": "Permission",
+    "Column": "Resolve_Minutes",
+    "Permission": "ReadOnly"
+  },
+  "Permission_11c0hnc": {
+    "Id": "Permission_11c0hnc",
+    "Kind": "Permission",
+    "Column": "At_Risk_Percent",
+    "Permission": "ReadOnly"
+  }
+}

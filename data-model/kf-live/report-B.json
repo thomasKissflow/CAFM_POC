@@ -1,0 +1,855 @@
+{
+ "app": "CAFM_POC_A00",
+ "created": [
+  {
+   "type": "process",
+   "gen": "CAFM_Back_charge_A00",
+   "server": "CAFM_Back_charge_A00"
+  },
+  {
+   "type": "process",
+   "gen": "CAFM_Permit_To_Work_A00",
+   "server": "CAFM_Permit_To_Work_A00"
+  },
+  {
+   "type": "process",
+   "gen": "CAFM_Work_Order_A00",
+   "server": "CAFM_Work_Order_A00"
+  },
+  {
+   "type": "case",
+   "gen": "CAFM_Breakdown_A00",
+   "server": "CAFM_Breakdown_A00"
+  },
+  {
+   "type": "case",
+   "gen": "CAFM_Snag_A00",
+   "server": "CAFM_Snag_A00"
+  },
+  {
+   "type": "page",
+   "gen": "CAFM_Snag_A00_board",
+   "server": "CAFM_Snag_Board"
+  },
+  {
+   "type": "page",
+   "gen": "CAFM_Breakdown_A00_board",
+   "server": "CAFM_Breakdown_Board"
+  }
+ ],
+ "published": [
+  "CAFM_Back_charge_A00",
+  "CAFM_Breakdown_A00",
+  "CAFM_Site_A00",
+  "CAFM_Subcontractor_A00",
+  "CAFM_Unit_A00",
+  "CAFM_Asset_Class_A00",
+  "CAFM_Request_Category_A00",
+  "CAFM_Root_Cause_A00",
+  "CAFM_SLA_Policy_A00",
+  "CAFM_Asset_A00",
+  "CAFM_PPM_Schedule_A00",
+  "CAFM_Compliance_Certificate_A00",
+  "CAFM_Equipment_A00",
+  "CAFM_WO_Event_A00",
+  "CAFM_WO_Register_A00",
+  "CAFM_Work_Order_A00",
+  "CAFM_Permit_To_Work_A00",
+  "CAFM_Snag_A00"
+ ],
+ "skipped": [
+  "CAFM_Site_A00",
+  "CAFM_Subcontractor_A00",
+  "CAFM_Unit_A00",
+  "CAFM_Asset_Class_A00",
+  "CAFM_Request_Category_A00",
+  "CAFM_Root_Cause_A00",
+  "CAFM_SLA_Policy_A00",
+  "CAFM_Asset_A00",
+  "CAFM_PPM_Schedule_A00",
+  "CAFM_Compliance_Certificate_A00",
+  "CAFM_Equipment_A00",
+  "CAFM_WO_Event_A00",
+  "CAFM_WO_Register_A00"
+ ],
+ "roles": [
+  {
+   "name": "Executive",
+   "status": 200,
+   "id": "RoEEjuYEQbol",
+   "reused": true
+  },
+  {
+   "name": "FM Manager",
+   "status": 200,
+   "id": "RoEEjuYSCfSu",
+   "reused": true
+  },
+  {
+   "name": "Helpdesk",
+   "status": 200,
+   "id": "RoEEjuYaLn8T",
+   "reused": true
+  },
+  {
+   "name": "DLP Manager",
+   "status": 200,
+   "id": "RoEEjuYkVL8v",
+   "reused": true
+  },
+  {
+   "name": "Subcontractor Supervisor",
+   "status": 200,
+   "id": "RoEEjuYybo_m",
+   "reused": true
+  },
+  {
+   "name": "Technician",
+   "status": 200,
+   "id": "RoEEjwAsHNTT",
+   "reused": true
+  },
+  {
+   "name": "Resident",
+   "status": 200,
+   "id": "RoEEjuZRKpZ0",
+   "reused": true
+  },
+  {
+   "name": "Compliance Officer",
+   "status": 200,
+   "id": "RoEEjuZk82sb",
+   "reused": true
+  },
+  {
+   "name": "HSE Officer",
+   "status": 200,
+   "id": "RoEEjuZvcKp5",
+   "reused": true
+  },
+  {
+   "name": "Plant Manager",
+   "status": 200,
+   "id": "RoEEju_3NoWQ",
+   "reused": true
+  }
+ ],
+ "errors": [
+  "member grant Helpdesk → CAFM Site (form) failed: 423",
+  "member grant Resident → CAFM Site (form) failed: 423",
+  "member grant Executive → CAFM Subcontractor (form) failed: 423",
+  "member grant Resident → CAFM Asset (form) failed: 423",
+  "member grant FM Manager → CAFM Work Order (process) failed: 423"
+ ],
+ "verified": {
+  "nestedInApp": 36,
+  "flows": [
+   "CAFM_Snag_A00(Live)",
+   "CAFM_Breakdown_A00(Live)",
+   "CAFM_Permit_To_Work_A00(Live)",
+   "CAFM_Work_Order_A00(Live)",
+   "CAFM_Back_charge_A00(Live)",
+   "CAFM_zz_Formula_Sandbox_2_A00(Live)",
+   "CAFM_zz_Formula_Sandbox_A00(Live)",
+   "CAFM_WO_Register_A00(Live)",
+   "CAFM_WO_Event_A00(Live)",
+   "CAFM_Asset_A00(Live)",
+   "CAFM_Equipment_A00(Live)",
+   "CAFM_Compliance_Certificate_A00(Live)",
+   "CAFM_PPM_Schedule_A00(Live)",
+   "CAFM_Root_Cause_A00(Live)",
+   "CAFM_SLA_Policy_A00(Live)",
+   "CAFM_Request_Category_A00(Live)",
+   "CAFM_Asset_Class_A00(Live)",
+   "CAFM_Unit_A00(Live)",
+   "CAFM_Subcontractor_A00(Live)",
+   "CAFM_Language_A00(Live)",
+   "CAFM_Site_A00(Live)",
+   "CAFM_Event_Type_A00(Live)",
+   "CAFM_PPM_Frequency_A00(Live)",
+   "CAFM_Subcontractor_Response_A00(Live)",
+   "CAFM_Equipment_Status_A00(Live)",
+   "CAFM_Equipment_Type_A00(Live)",
+   "CAFM_Permit_Type_A00(Live)",
+   "CAFM_Site_Kind_A00(Live)",
+   "CAFM_Hassantuk_Status_A00(Live)",
+   "CAFM_Compliance_System_A00(Live)",
+   "CAFM_Photo_Kind_A00(Live)",
+   "CAFM_Liability_A00(Live)",
+   "CAFM_Asset_Status_A00(Live)",
+   "CAFM_Trade_A00(Live)",
+   "CAFM_Channel_A00(Live)",
+   "CAFM_Priority_A00(Live)"
+  ]
+ },
+ "reused": true,
+ "listItems": [
+  {
+   "id": "CAFM_Trade_A00",
+   "count": 7
+  },
+  {
+   "id": "CAFM_Channel_A00",
+   "count": 9
+  },
+  {
+   "id": "CAFM_Site_Kind_A00",
+   "count": 4
+  },
+  {
+   "id": "CAFM_Liability_A00",
+   "count": 6
+  },
+  {
+   "id": "CAFM_Photo_Kind_A00",
+   "count": 3
+  },
+  {
+   "id": "CAFM_Priority_A00",
+   "count": 4
+  },
+  {
+   "id": "CAFM_Compliance_System_A00",
+   "count": 10
+  },
+  {
+   "id": "CAFM_Hassantuk_Status_A00",
+   "count": 3
+  },
+  {
+   "id": "CAFM_Asset_Status_A00",
+   "count": 3
+  },
+  {
+   "id": "CAFM_PPM_Frequency_A00",
+   "count": 4
+  },
+  {
+   "id": "CAFM_Permit_Type_A00",
+   "count": 4
+  },
+  {
+   "id": "CAFM_Equipment_Type_A00",
+   "count": 10
+  },
+  {
+   "id": "CAFM_Equipment_Status_A00",
+   "count": 4
+  },
+  {
+   "id": "CAFM_Subcontractor_Response_A00",
+   "count": 2
+  },
+  {
+   "id": "CAFM_Event_Type_A00",
+   "count": 14
+  },
+  {
+   "id": "CAFM_Language_A00",
+   "count": 2
+  }
+ ],
+ "members": [
+  {
+   "role": "Executive",
+   "model": "CAFM Site",
+   "status": 200
+  },
+  {
+   "role": "Compliance Officer",
+   "model": "CAFM Site",
+   "status": 200
+  },
+  {
+   "role": "HSE Officer",
+   "model": "CAFM Site",
+   "status": 200
+  },
+  {
+   "role": "Plant Manager",
+   "model": "CAFM Site",
+   "status": 200
+  },
+  {
+   "role": "Executive",
+   "model": "CAFM Unit",
+   "status": 200
+  },
+  {
+   "role": "Helpdesk",
+   "model": "CAFM Site",
+   "status": 423
+  },
+  {
+   "role": "Resident",
+   "model": "CAFM Site",
+   "status": 423
+  },
+  {
+   "role": "Technician",
+   "model": "CAFM Site",
+   "status": 200
+  },
+  {
+   "role": "Subcontractor Supervisor",
+   "model": "CAFM Unit",
+   "status": 200
+  },
+  {
+   "role": "Subcontractor Supervisor",
+   "model": "CAFM Site",
+   "status": 200
+  },
+  {
+   "role": "Helpdesk",
+   "model": "CAFM Unit",
+   "status": 200
+  },
+  {
+   "role": "Compliance Officer",
+   "model": "CAFM Unit",
+   "status": 200
+  },
+  {
+   "role": "Plant Manager",
+   "model": "CAFM Unit",
+   "status": 200
+  },
+  {
+   "role": "Executive",
+   "model": "CAFM Asset Class",
+   "status": 200
+  },
+  {
+   "role": "Helpdesk",
+   "model": "CAFM Asset Class",
+   "status": 200
+  },
+  {
+   "role": "Technician",
+   "model": "CAFM Asset Class",
+   "status": 200
+  },
+  {
+   "role": "Subcontractor Supervisor",
+   "model": "CAFM Asset Class",
+   "status": 200
+  },
+  {
+   "role": "Resident",
+   "model": "CAFM Unit",
+   "status": 200
+  },
+  {
+   "role": "Technician",
+   "model": "CAFM Unit",
+   "status": 200
+  },
+  {
+   "role": "HSE Officer",
+   "model": "CAFM Asset Class",
+   "status": 200
+  },
+  {
+   "role": "Plant Manager",
+   "model": "CAFM Asset Class",
+   "status": 200
+  },
+  {
+   "role": "HSE Officer",
+   "model": "CAFM Unit",
+   "status": 200
+  },
+  {
+   "role": "Executive",
+   "model": "CAFM Request Category",
+   "status": 200
+  },
+  {
+   "role": "Helpdesk",
+   "model": "CAFM Request Category",
+   "status": 200
+  },
+  {
+   "role": "Technician",
+   "model": "CAFM Request Category",
+   "status": 200
+  },
+  {
+   "role": "Resident",
+   "model": "CAFM Request Category",
+   "status": 200
+  },
+  {
+   "role": "Compliance Officer",
+   "model": "CAFM Request Category",
+   "status": 200
+  },
+  {
+   "role": "HSE Officer",
+   "model": "CAFM Request Category",
+   "status": 200
+  },
+  {
+   "role": "Resident",
+   "model": "CAFM Asset Class",
+   "status": 200
+  },
+  {
+   "role": "Executive",
+   "model": "CAFM Root Cause",
+   "status": 200
+  },
+  {
+   "role": "Helpdesk",
+   "model": "CAFM Root Cause",
+   "status": 200
+  },
+  {
+   "role": "Compliance Officer",
+   "model": "CAFM Asset Class",
+   "status": 200
+  },
+  {
+   "role": "Subcontractor Supervisor",
+   "model": "CAFM Root Cause",
+   "status": 200
+  },
+  {
+   "role": "Subcontractor Supervisor",
+   "model": "CAFM Request Category",
+   "status": 200
+  },
+  {
+   "role": "Resident",
+   "model": "CAFM Root Cause",
+   "status": 200
+  },
+  {
+   "role": "HSE Officer",
+   "model": "CAFM Root Cause",
+   "status": 200
+  },
+  {
+   "role": "Executive",
+   "model": "CAFM SLA Policy",
+   "status": 200
+  },
+  {
+   "role": "Plant Manager",
+   "model": "CAFM Request Category",
+   "status": 200
+  },
+  {
+   "role": "Helpdesk",
+   "model": "CAFM SLA Policy",
+   "status": 200
+  },
+  {
+   "role": "Subcontractor Supervisor",
+   "model": "CAFM SLA Policy",
+   "status": 200
+  },
+  {
+   "role": "Technician",
+   "model": "CAFM Root Cause",
+   "status": 200
+  },
+  {
+   "role": "Resident",
+   "model": "CAFM SLA Policy",
+   "status": 200
+  },
+  {
+   "role": "Compliance Officer",
+   "model": "CAFM Root Cause",
+   "status": 200
+  },
+  {
+   "role": "Compliance Officer",
+   "model": "CAFM SLA Policy",
+   "status": 200
+  },
+  {
+   "role": "Plant Manager",
+   "model": "CAFM SLA Policy",
+   "status": 200
+  },
+  {
+   "role": "Plant Manager",
+   "model": "CAFM Root Cause",
+   "status": 200
+  },
+  {
+   "role": "Helpdesk",
+   "model": "CAFM Subcontractor",
+   "status": 200
+  },
+  {
+   "role": "Technician",
+   "model": "CAFM Subcontractor",
+   "status": 200
+  },
+  {
+   "role": "Resident",
+   "model": "CAFM Subcontractor",
+   "status": 200
+  },
+  {
+   "role": "Technician",
+   "model": "CAFM SLA Policy",
+   "status": 200
+  },
+  {
+   "role": "Compliance Officer",
+   "model": "CAFM Subcontractor",
+   "status": 200
+  },
+  {
+   "role": "HSE Officer",
+   "model": "CAFM SLA Policy",
+   "status": 200
+  },
+  {
+   "role": "Executive",
+   "model": "CAFM Subcontractor",
+   "status": 423
+  },
+  {
+   "role": "Executive",
+   "model": "CAFM Asset",
+   "status": 200
+  },
+  {
+   "role": "Subcontractor Supervisor",
+   "model": "CAFM Subcontractor",
+   "status": 200
+  },
+  {
+   "role": "Helpdesk",
+   "model": "CAFM Asset",
+   "status": 200
+  },
+  {
+   "role": "Subcontractor Supervisor",
+   "model": "CAFM Asset",
+   "status": 200
+  },
+  {
+   "role": "Technician",
+   "model": "CAFM Asset",
+   "status": 200
+  },
+  {
+   "role": "HSE Officer",
+   "model": "CAFM Subcontractor",
+   "status": 200
+  },
+  {
+   "role": "Compliance Officer",
+   "model": "CAFM Asset",
+   "status": 200
+  },
+  {
+   "role": "HSE Officer",
+   "model": "CAFM Asset",
+   "status": 200
+  },
+  {
+   "role": "Plant Manager",
+   "model": "CAFM Asset",
+   "status": 200
+  },
+  {
+   "role": "Plant Manager",
+   "model": "CAFM Subcontractor",
+   "status": 200
+  },
+  {
+   "role": "FM Manager",
+   "model": "CAFM Site",
+   "status": 200
+  },
+  {
+   "role": "FM Manager",
+   "model": "CAFM Unit",
+   "status": 200
+  },
+  {
+   "role": "FM Manager",
+   "model": "CAFM Asset Class",
+   "status": 200
+  },
+  {
+   "role": "FM Manager",
+   "model": "CAFM Request Category",
+   "status": 200
+  },
+  {
+   "role": "FM Manager",
+   "model": "CAFM Subcontractor",
+   "status": 200
+  },
+  {
+   "role": "FM Manager",
+   "model": "CAFM Root Cause",
+   "status": 200
+  },
+  {
+   "role": "FM Manager",
+   "model": "CAFM SLA Policy",
+   "status": 200
+  },
+  {
+   "role": "Resident",
+   "model": "CAFM Asset",
+   "status": 423
+  },
+  {
+   "role": "FM Manager",
+   "model": "CAFM Asset",
+   "status": 200
+  },
+  {
+   "role": "DLP Manager",
+   "model": "CAFM Site",
+   "status": 200
+  },
+  {
+   "role": "DLP Manager",
+   "model": "CAFM Unit",
+   "status": 200
+  },
+  {
+   "role": "DLP Manager",
+   "model": "CAFM Asset Class",
+   "status": 200
+  },
+  {
+   "role": "DLP Manager",
+   "model": "CAFM Subcontractor",
+   "status": 200
+  },
+  {
+   "role": "DLP Manager",
+   "model": "CAFM SLA Policy",
+   "status": 200
+  },
+  {
+   "role": "DLP Manager",
+   "model": "CAFM Request Category",
+   "status": 200
+  },
+  {
+   "role": "DLP Manager",
+   "model": "CAFM Root Cause",
+   "status": 200
+  },
+  {
+   "role": "DLP Manager",
+   "model": "CAFM Asset",
+   "status": 200
+  },
+  {
+   "role": "Resident",
+   "model": "CAFM Work Order",
+   "status": 200
+  },
+  {
+   "role": "Subcontractor Supervisor",
+   "model": "CAFM Work Order",
+   "status": 200
+  },
+  {
+   "role": "Technician",
+   "model": "CAFM Work Order",
+   "status": 200
+  },
+  {
+   "role": "FM Manager",
+   "model": "CAFM Work Order",
+   "status": 423
+  },
+  {
+   "role": "Helpdesk",
+   "model": "CAFM Work Order",
+   "status": 200
+  },
+  {
+   "role": "DLP Manager",
+   "model": "CAFM Work Order",
+   "status": 200
+  },
+  {
+   "role": "Executive",
+   "model": "CAFM Work Order",
+   "status": 200
+  },
+  {
+   "role": "DLP Manager",
+   "model": "CAFM Back-charge",
+   "status": 200
+  },
+  {
+   "role": "Subcontractor Supervisor",
+   "model": "CAFM Back-charge",
+   "status": 200
+  },
+  {
+   "role": "Executive",
+   "model": "CAFM Back-charge",
+   "status": 200
+  },
+  {
+   "role": "Technician",
+   "model": "CAFM Permit To Work",
+   "status": 200
+  },
+  {
+   "role": "HSE Officer",
+   "model": "CAFM Permit To Work",
+   "status": 200
+  },
+  {
+   "role": "Executive",
+   "model": "CAFM WO Event",
+   "status": 200
+  },
+  {
+   "role": "FM Manager",
+   "model": "CAFM WO Event",
+   "status": 200
+  },
+  {
+   "role": "DLP Manager",
+   "model": "CAFM WO Event",
+   "status": 200
+  },
+  {
+   "role": "Subcontractor Supervisor",
+   "model": "CAFM WO Event",
+   "status": 200
+  },
+  {
+   "role": "Technician",
+   "model": "CAFM WO Event",
+   "status": 200
+  },
+  {
+   "role": "Compliance Officer",
+   "model": "CAFM WO Event",
+   "status": 200
+  },
+  {
+   "role": "Plant Manager",
+   "model": "CAFM WO Event",
+   "status": 200
+  },
+  {
+   "role": "FM Manager",
+   "model": "CAFM WO Register",
+   "status": 200
+  },
+  {
+   "role": "FM Manager",
+   "model": "CAFM Permit To Work",
+   "status": 200
+  },
+  {
+   "role": "Helpdesk",
+   "model": "CAFM WO Register",
+   "status": 200
+  },
+  {
+   "role": "Helpdesk",
+   "model": "CAFM WO Event",
+   "status": 200
+  },
+  {
+   "role": "DLP Manager",
+   "model": "CAFM WO Register",
+   "status": 200
+  },
+  {
+   "role": "Subcontractor Supervisor",
+   "model": "CAFM WO Register",
+   "status": 200
+  },
+  {
+   "role": "HSE Officer",
+   "model": "CAFM WO Event",
+   "status": 200
+  },
+  {
+   "role": "Subcontractor Supervisor",
+   "model": "CAFM Snag",
+   "status": 200
+  },
+  {
+   "role": "Executive",
+   "model": "CAFM WO Register",
+   "status": 200
+  },
+  {
+   "role": "Compliance Officer",
+   "model": "CAFM Compliance Certificate",
+   "status": 200
+  },
+  {
+   "role": "Executive",
+   "model": "CAFM Snag",
+   "status": 200
+  },
+  {
+   "role": "Compliance Officer",
+   "model": "CAFM WO Register",
+   "status": 200
+  },
+  {
+   "role": "FM Manager",
+   "model": "CAFM Compliance Certificate",
+   "status": 200
+  },
+  {
+   "role": "Executive",
+   "model": "CAFM Compliance Certificate",
+   "status": 200
+  },
+  {
+   "role": "FM Manager",
+   "model": "CAFM PPM Schedule",
+   "status": 200
+  },
+  {
+   "role": "Plant Manager",
+   "model": "CAFM Equipment",
+   "status": 200
+  },
+  {
+   "role": "Compliance Officer",
+   "model": "CAFM PPM Schedule",
+   "status": 200
+  },
+  {
+   "role": "Executive",
+   "model": "CAFM Equipment",
+   "status": 200
+  },
+  {
+   "role": "DLP Manager",
+   "model": "CAFM Snag",
+   "status": 200
+  },
+  {
+   "role": "Executive",
+   "model": "CAFM Breakdown",
+   "status": 200
+  },
+  {
+   "role": "Plant Manager",
+   "model": "CAFM Breakdown",
+   "status": 200
+  }
+ ],
+ "preferences": []
+}

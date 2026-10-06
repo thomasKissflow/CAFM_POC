@@ -1,0 +1,42 @@
+{
+  "Root": "Perm_rwqqgx",
+  "Perm_rwqqgx": {
+    "Id": "Perm_rwqqgx",
+    "Kind": "FlowPermission",
+    "Role": "Ro_12sl9a8",
+    "RoleName": "DLP Manager",
+    "Model": "CAFM_SLA_Policy_A00",
+    "Level": "Editable",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_go36ri",
+      "Permission_daqdin",
+      "Permission_1mx8pls",
+      "Permission_1dnebfd"
+    ]
+  },
+  "Permission_go36ri": {
+    "Id": "Permission_go36ri",
+    "Kind": "Permission",
+    "Column": "Priority",
+    "Permission": "Editable"
+  },
+  "Permission_daqdin": {
+    "Id": "Permission_daqdin",
+    "Kind": "Permission",
+    "Column": "Response_Minutes",
+    "Permission": "Editable"
+  },
+  "Permission_1mx8pls": {
+    "Id": "Permission_1mx8pls",
+    "Kind": "Permission",
+    "Column": "Resolve_Minutes",
+    "Permission": "Editable"
+  },
+  "Permission_1dnebfd": {
+    "Id": "Permission_1dnebfd",
+    "Kind": "Permission",
+    "Column": "At_Risk_Percent",
+    "Permission": "Editable"
+  }
+}

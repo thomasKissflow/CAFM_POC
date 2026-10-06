@@ -1,0 +1,360 @@
+{
+  "Root": "CAFM_Equipment_A00",
+  "CAFM_Equipment_A00": {
+    "Id": "CAFM_Equipment_A00",
+    "Name": "CAFM Equipment",
+    "Kind": "Model",
+    "FlowType": "Form",
+    "Description": "",
+    "Model::Row": [
+      "Row_1enalbs"
+    ],
+    "Model::Field": [
+      "Fleet_No",
+      "Equipment_Type",
+      "Make",
+      "Model",
+      "Year",
+      "Current_Project",
+      "Hour_Meter",
+      "Next_Service_Hours",
+      "Hours_To_Service",
+      "TPI_Expiry",
+      "Equipment_Status"
+    ]
+  },
+  "Row_1enalbs": {
+    "Id": "Row_1enalbs",
+    "Kind": "Row",
+    "Model": "CAFM_Equipment_A00",
+    "Row::Column": [
+      "Column_1enalbs"
+    ]
+  },
+  "Column_1enalbs": {
+    "Id": "Column_1enalbs",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "Details",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_1enalbs",
+    "Column::Row": [
+      "Row_1en9d6a",
+      "Row_1en9d6b",
+      "Row_1en9d6c",
+      "Row_1en9d6d",
+      "Row_1en9d6e",
+      "Row_1en9d6f"
+    ]
+  },
+  "Row_1en9d6a": {
+    "Id": "Row_1en9d6a",
+    "Kind": "Row",
+    "Column": "Column_1enalbs",
+    "Row::Column": [
+      "Column_7av1yx",
+      "Column_1u0392e"
+    ]
+  },
+  "Column_7av1yx": {
+    "Id": "Column_7av1yx",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_1en9d6a",
+    "Column::Field": [
+      "Fleet_No"
+    ]
+  },
+  "Column_1u0392e": {
+    "Id": "Column_1u0392e",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_1en9d6a",
+    "Column::Field": [
+      "Equipment_Type"
+    ]
+  },
+  "Row_1en9d6b": {
+    "Id": "Row_1en9d6b",
+    "Kind": "Row",
+    "Column": "Column_1enalbs",
+    "Row::Column": [
+      "Column_1emh8i3",
+      "Column_10wi5jy"
+    ]
+  },
+  "Column_1emh8i3": {
+    "Id": "Column_1emh8i3",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_1en9d6b",
+    "Column::Field": [
+      "Make"
+    ]
+  },
+  "Column_10wi5jy": {
+    "Id": "Column_10wi5jy",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_1en9d6b",
+    "Column::Field": [
+      "Model"
+    ]
+  },
+  "Row_1en9d6c": {
+    "Id": "Row_1en9d6c",
+    "Kind": "Row",
+    "Column": "Column_1enalbs",
+    "Row::Column": [
+      "Column_1emqkda",
+      "Column_1fp9xnq"
+    ]
+  },
+  "Column_1emqkda": {
+    "Id": "Column_1emqkda",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_1en9d6c",
+    "Column::Field": [
+      "Year"
+    ]
+  },
+  "Column_1fp9xnq": {
+    "Id": "Column_1fp9xnq",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_1en9d6c",
+    "Column::Field": [
+      "Current_Project"
+    ]
+  },
+  "Row_1en9d6d": {
+    "Id": "Row_1en9d6d",
+    "Kind": "Row",
+    "Column": "Column_1enalbs",
+    "Row::Column": [
+      "Column_1mbt16v",
+      "Column_19fj8q4"
+    ]
+  },
+  "Column_1mbt16v": {
+    "Id": "Column_1mbt16v",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_1en9d6d",
+    "Column::Field": [
+      "Hour_Meter"
+    ]
+  },
+  "Column_19fj8q4": {
+    "Id": "Column_19fj8q4",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_1en9d6d",
+    "Column::Field": [
+      "Next_Service_Hours"
+    ]
+  },
+  "Row_1en9d6e": {
+    "Id": "Row_1en9d6e",
+    "Kind": "Row",
+    "Column": "Column_1enalbs",
+    "Row::Column": [
+      "Column_dzpcgg",
+      "Column_pknwgq"
+    ]
+  },
+  "Column_dzpcgg": {
+    "Id": "Column_dzpcgg",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_1en9d6e",
+    "Column::Field": [
+      "Hours_To_Service"
+    ]
+  },
+  "Column_pknwgq": {
+    "Id": "Column_pknwgq",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_1en9d6e",
+    "Column::Field": [
+      "TPI_Expiry"
+    ]
+  },
+  "Row_1en9d6f": {
+    "Id": "Row_1en9d6f",
+    "Kind": "Row",
+    "Column": "Column_1enalbs",
+    "Row::Column": [
+      "Column_1rqcrl4"
+    ]
+  },
+  "Column_1rqcrl4": {
+    "Id": "Column_1rqcrl4",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_1en9d6f",
+    "Column::Field": [
+      "Equipment_Status"
+    ]
+  },
+  "Fleet_No": {
+    "Id": "Fleet_No",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Fleet No",
+    "Model": "CAFM_Equipment_A00",
+    "Column": "Column_7av1yx",
+    "Required": true
+  },
+  "Equipment_Type": {
+    "Id": "Equipment_Type",
+    "Kind": "Field",
+    "Type": "Select",
+    "Name": "Equipment Type",
+    "Model": "CAFM_Equipment_A00",
+    "Column": "Column_1u0392e",
+    "Required": true,
+    "ReferredList": "CAFM_Equipment_Type_A00"
+  },
+  "Make": {
+    "Id": "Make",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Make",
+    "Model": "CAFM_Equipment_A00",
+    "Column": "Column_1emh8i3"
+  },
+  "Model": {
+    "Id": "Model",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Model",
+    "Model": "CAFM_Equipment_A00",
+    "Column": "Column_10wi5jy"
+  },
+  "Year": {
+    "Id": "Year",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "Year",
+    "Model": "CAFM_Equipment_A00",
+    "Column": "Column_1emqkda"
+  },
+  "Current_Project": {
+    "Id": "Current_Project",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Current Project",
+    "Model": "CAFM_Equipment_A00",
+    "Column": "Column_1fp9xnq"
+  },
+  "Hour_Meter": {
+    "Id": "Hour_Meter",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "Hour Meter",
+    "Model": "CAFM_Equipment_A00",
+    "Column": "Column_1mbt16v"
+  },
+  "Next_Service_Hours": {
+    "Id": "Next_Service_Hours",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "Next Service Hours",
+    "Model": "CAFM_Equipment_A00",
+    "Column": "Column_19fj8q4"
+  },
+  "Expression_dzpcgg": {
+    "Id": "Expression_dzpcgg",
+    "Kind": "Expression",
+    "Field": "Hours_To_Service",
+    "ExpressionStr": "Next_Service_Hours - Hour_Meter",
+    "Expression::Node": [
+      "Node_e0jost"
+    ]
+  },
+  "Node_e0josr": {
+    "Id": "Node_e0josr",
+    "Kind": "Node",
+    "DataType": "Number",
+    "Type": "Field",
+    "Field": "Next_Service_Hours",
+    "Node": "Node_e0jost"
+  },
+  "Node_e0joss": {
+    "Id": "Node_e0joss",
+    "Kind": "Node",
+    "DataType": "Number",
+    "Type": "Field",
+    "Field": "Hour_Meter",
+    "Node": "Node_e0jost"
+  },
+  "Node_e0jost": {
+    "Id": "Node_e0jost",
+    "Kind": "Node",
+    "DataType": "Number",
+    "Type": "Function",
+    "Value": "-",
+    "Category": "Number",
+    "Syntax": "Infix",
+    "Node::Node": [
+      "Node_e0josr",
+      "Node_e0joss"
+    ],
+    "FieldRefCount": 2,
+    "Expression": "Expression_dzpcgg"
+  },
+  "Hours_To_Service": {
+    "Id": "Hours_To_Service",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "Hours To Service",
+    "Model": "CAFM_Equipment_A00",
+    "Column": "Column_dzpcgg",
+    "Field::Expression": [
+      "Expression_dzpcgg"
+    ]
+  },
+  "TPI_Expiry": {
+    "Id": "TPI_Expiry",
+    "Kind": "Field",
+    "Type": "Date",
+    "Name": "TPI Expiry",
+    "Model": "CAFM_Equipment_A00",
+    "Column": "Column_pknwgq"
+  },
+  "Equipment_Status": {
+    "Id": "Equipment_Status",
+    "Kind": "Field",
+    "Type": "Select",
+    "Name": "Equipment Status",
+    "Model": "CAFM_Equipment_A00",
+    "Column": "Column_1rqcrl4",
+    "ReferredList": "CAFM_Equipment_Status_A00"
+  }
+}

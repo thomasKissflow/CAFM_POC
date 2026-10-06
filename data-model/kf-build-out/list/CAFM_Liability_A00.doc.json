@@ -1,0 +1,20 @@
+{
+  "_id": "CAFM_Liability_A00",
+  "Name": "CAFM Liability",
+  "Description": "",
+  "Type": "List",
+  "Status": "Live",
+  "ListItems": [
+    "DLP",
+    "CHARGEABLE",
+    "DECENNIAL_REVIEW",
+    "WARRANTY",
+    "OWN_OPS",
+    "PPM"
+  ],
+  "_application_id": "CAFM_POC_A00",
+  "Security": {
+    "AllowAllFlows": true,
+    "AllowedFlows": []
+  }
+}

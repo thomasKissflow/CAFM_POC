@@ -1,0 +1,63 @@
+{
+  "Root": "Perm_ikm7w8",
+  "Perm_ikm7w8": {
+    "Id": "Perm_ikm7w8",
+    "Kind": "FlowPermission",
+    "Role": "Ro_11s1y8v",
+    "RoleName": "Plant Manager",
+    "Model": "CAFM_WO_Event_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_iic2hf",
+      "Permission_1245yrv",
+      "Permission_h86bng",
+      "Permission_1fjla3z",
+      "Permission_o4mkgi",
+      "Permission_1ia4nu9",
+      "Permission_1wftsr1"
+    ]
+  },
+  "Permission_iic2hf": {
+    "Id": "Permission_iic2hf",
+    "Kind": "Permission",
+    "Column": "Work_Order_No",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1245yrv": {
+    "Id": "Permission_1245yrv",
+    "Kind": "Permission",
+    "Column": "Work_Order_Instance",
+    "Permission": "ReadOnly"
+  },
+  "Permission_h86bng": {
+    "Id": "Permission_h86bng",
+    "Kind": "Permission",
+    "Column": "Event_Type",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1fjla3z": {
+    "Id": "Permission_1fjla3z",
+    "Kind": "Permission",
+    "Column": "Event_At",
+    "Permission": "ReadOnly"
+  },
+  "Permission_o4mkgi": {
+    "Id": "Permission_o4mkgi",
+    "Kind": "Permission",
+    "Column": "Actor",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1ia4nu9": {
+    "Id": "Permission_1ia4nu9",
+    "Kind": "Permission",
+    "Column": "Actor_Label",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1wftsr1": {
+    "Id": "Permission_1wftsr1",
+    "Kind": "Permission",
+    "Column": "Event_Detail",
+    "Permission": "ReadOnly"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "Root": "Perm_1s3fc8q",
+  "Perm_1s3fc8q": {
+    "Id": "Perm_1s3fc8q",
+    "Kind": "FlowPermission",
+    "Role": "Ro_1vmrgk3",
+    "RoleName": "FM Manager",
+    "Model": "CAFM_Asset_Class_A00",
+    "Level": "Editable",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_aen3cb",
+      "Permission_aev8tt",
+      "Permission_l38p0j",
+      "Permission_jg8ld7",
+      "Permission_zv0v9n",
+      "Permission_poa1x5"
+    ]
+  },
+  "Permission_aen3cb": {
+    "Id": "Permission_aen3cb",
+    "Kind": "Permission",
+    "Column": "Class_Code",
+    "Permission": "Editable"
+  },
+  "Permission_aev8tt": {
+    "Id": "Permission_aev8tt",
+    "Kind": "Permission",
+    "Column": "Class_Name",
+    "Permission": "Editable"
+  },
+  "Permission_l38p0j": {
+    "Id": "Permission_l38p0j",
+    "Kind": "Permission",
+    "Column": "Class_Name_AR",
+    "Permission": "Editable"
+  },
+  "Permission_jg8ld7": {
+    "Id": "Permission_jg8ld7",
+    "Kind": "Permission",
+    "Column": "Trade",
+    "Permission": "Editable"
+  },
+  "Permission_zv0v9n": {
+    "Id": "Permission_zv0v9n",
+    "Kind": "Permission",
+    "Column": "Warranty_Months",
+    "Permission": "Editable"
+  },
+  "Permission_poa1x5": {
+    "Id": "Permission_poa1x5",
+    "Kind": "Permission",
+    "Column": "PPM_Frequency",
+    "Permission": "Editable"
+  }
+}

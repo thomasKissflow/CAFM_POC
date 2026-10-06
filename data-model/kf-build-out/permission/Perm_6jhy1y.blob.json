@@ -1,0 +1,91 @@
+{
+  "Root": "Perm_6jhy1y",
+  "Perm_6jhy1y": {
+    "Id": "Perm_6jhy1y",
+    "Kind": "FlowPermission",
+    "Role": "Ro_rxtjhz",
+    "RoleName": "Executive",
+    "Model": "CAFM_Compliance_Certificate_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_1wt59ma",
+      "Permission_kcrs70",
+      "Permission_18kmhmk",
+      "Permission_x7abh8",
+      "Permission_1xly8cm",
+      "Permission_kuxs0p",
+      "Permission_l3z170",
+      "Permission_ksblfk",
+      "Permission_sqjufm",
+      "Permission_18p6jxc",
+      "Permission_ltr9s"
+    ]
+  },
+  "Permission_1wt59ma": {
+    "Id": "Permission_1wt59ma",
+    "Kind": "Permission",
+    "Column": "Site",
+    "Permission": "ReadOnly"
+  },
+  "Permission_kcrs70": {
+    "Id": "Permission_kcrs70",
+    "Kind": "Permission",
+    "Column": "Compliance_System",
+    "Permission": "ReadOnly"
+  },
+  "Permission_18kmhmk": {
+    "Id": "Permission_18kmhmk",
+    "Kind": "Permission",
+    "Column": "Contractor",
+    "Permission": "ReadOnly"
+  },
+  "Permission_x7abh8": {
+    "Id": "Permission_x7abh8",
+    "Kind": "Permission",
+    "Column": "Certificate_No",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1xly8cm": {
+    "Id": "Permission_1xly8cm",
+    "Kind": "Permission",
+    "Column": "Issued_On",
+    "Permission": "ReadOnly"
+  },
+  "Permission_kuxs0p": {
+    "Id": "Permission_kuxs0p",
+    "Kind": "Permission",
+    "Column": "Expires_On",
+    "Permission": "ReadOnly"
+  },
+  "Permission_l3z170": {
+    "Id": "Permission_l3z170",
+    "Kind": "Permission",
+    "Column": "Last_Inspection",
+    "Permission": "ReadOnly"
+  },
+  "Permission_ksblfk": {
+    "Id": "Permission_ksblfk",
+    "Kind": "Permission",
+    "Column": "Open_Findings",
+    "Permission": "ReadOnly"
+  },
+  "Permission_sqjufm": {
+    "Id": "Permission_sqjufm",
+    "Kind": "Permission",
+    "Column": "Hassantuk_Status",
+    "Permission": "ReadOnly"
+  },
+  "Permission_18p6jxc": {
+    "Id": "Permission_18p6jxc",
+    "Kind": "Permission",
+    "Column": "Evidence",
+    "Permission": "ReadOnly"
+  },
+  "Permission_ltr9s": {
+    "Id": "Permission_ltr9s",
+    "Kind": "Permission",
+    "Column": "Days_To_Expiry",
+    "Permission": "ReadOnly"
+  }
+}

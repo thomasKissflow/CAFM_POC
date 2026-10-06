@@ -1,0 +1,91 @@
+{
+  "Root": "Perm_as5gl6",
+  "Perm_as5gl6": {
+    "Id": "Perm_as5gl6",
+    "Kind": "FlowPermission",
+    "Role": "Ro_12sl9a8",
+    "RoleName": "DLP Manager",
+    "Model": "CAFM_Subcontractor_A00",
+    "Level": "Editable",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_1y73cr",
+      "Permission_11prgkt",
+      "Permission_da3owk",
+      "Permission_1n8lbpi",
+      "Permission_1n4pnpz",
+      "Permission_9aat36",
+      "Permission_z72b52",
+      "Permission_zie698",
+      "Permission_10wubvo",
+      "Permission_1pewzjc",
+      "Permission_1qe4jjl"
+    ]
+  },
+  "Permission_1y73cr": {
+    "Id": "Permission_1y73cr",
+    "Kind": "Permission",
+    "Column": "Company_Name",
+    "Permission": "Editable"
+  },
+  "Permission_11prgkt": {
+    "Id": "Permission_11prgkt",
+    "Kind": "Permission",
+    "Column": "Company_Name_AR",
+    "Permission": "Editable"
+  },
+  "Permission_da3owk": {
+    "Id": "Permission_da3owk",
+    "Kind": "Permission",
+    "Column": "Trade",
+    "Permission": "Editable"
+  },
+  "Permission_1n8lbpi": {
+    "Id": "Permission_1n8lbpi",
+    "Kind": "Permission",
+    "Column": "Supervisor",
+    "Permission": "Editable"
+  },
+  "Permission_1n4pnpz": {
+    "Id": "Permission_1n4pnpz",
+    "Kind": "Permission",
+    "Column": "Contact_Email",
+    "Permission": "Editable"
+  },
+  "Permission_9aat36": {
+    "Id": "Permission_9aat36",
+    "Kind": "Permission",
+    "Column": "Trade_Licence_No",
+    "Permission": "Editable"
+  },
+  "Permission_z72b52": {
+    "Id": "Permission_z72b52",
+    "Kind": "Permission",
+    "Column": "Trade_Licence_Expiry",
+    "Permission": "Editable"
+  },
+  "Permission_zie698": {
+    "Id": "Permission_zie698",
+    "Kind": "Permission",
+    "Column": "Insurance_Expiry",
+    "Permission": "Editable"
+  },
+  "Permission_10wubvo": {
+    "Id": "Permission_10wubvo",
+    "Kind": "Permission",
+    "Column": "Civil_Defence_Approved",
+    "Permission": "Editable"
+  },
+  "Permission_1pewzjc": {
+    "Id": "Permission_1pewzjc",
+    "Kind": "Permission",
+    "Column": "Civil_Defence_Approval_Expiry",
+    "Permission": "Editable"
+  },
+  "Permission_1qe4jjl": {
+    "Id": "Permission_1qe4jjl",
+    "Kind": "Permission",
+    "Column": "Licence_Days_Left",
+    "Permission": "Editable"
+  }
+}

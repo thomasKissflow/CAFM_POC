@@ -1,0 +1,62 @@
+[
+ {
+  "ok": false,
+  "k": "W1",
+  "msg": "parts child table: 0 rows, line totals  → Parts AED undefined (want 450)"
+ },
+ {
+  "ok": true,
+  "k": "W1",
+  "msg": "DLP job closed ⇒ ? [Completed] (completed)"
+ },
+ {
+  "ok": true,
+  "k": "W3",
+  "msg": "chargeable job closed ⇒ ? [Completed] (completed)"
+ },
+ {
+  "ok": true,
+  "k": "W5",
+  "msg": "after engineering review ⇒ Work in progress [InProgress] → Technician"
+ },
+ {
+  "ok": true,
+  "k": "B1",
+  "msg": "Total AED 800 (want 800)"
+ },
+ {
+  "ok": true,
+  "k": "B1",
+  "msg": "Accept skips dispute review ⇒ Recovery confirmation [InProgress] → DLP Manager"
+ },
+ {
+  "ok": true,
+  "k": "B1",
+  "msg": "recovered ⇒ ? [Completed] (completed)"
+ },
+ {
+  "ok": false,
+  "k": "B2",
+  "msg": "Dispute routes to review ⇒ Recovery confirmation [InProgress] → DLP Manager"
+ },
+ {
+  "ok": true,
+  "k": "B3",
+  "msg": "wrong back-charge rejected ⇒ ? [Rejected] (rejected)"
+ },
+ {
+  "ok": true,
+  "k": "P1",
+  "msg": "hot work permit closed ⇒ ? [Completed] (completed)"
+ },
+ {
+  "ok": true,
+  "k": "P2",
+  "msg": "confined space permit rejected at HSE approval ⇒ ? [Rejected] (rejected)"
+ },
+ {
+  "ok": true,
+  "k": "W10",
+  "msg": "debug probe rejected ⇒ rejected"
+ }
+]

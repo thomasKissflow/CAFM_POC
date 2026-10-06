@@ -1,0 +1,56 @@
+{
+  "Root": "Perm_1ukmwev",
+  "Perm_1ukmwev": {
+    "Id": "Perm_1ukmwev",
+    "Kind": "FlowPermission",
+    "Role": "Ro_1mqmbww",
+    "RoleName": "Subcontractor Supervisor",
+    "Model": "CAFM_Asset_Class_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_1wlut02",
+      "Permission_1wm2yhk",
+      "Permission_1rnyvhm",
+      "Permission_57bzaq",
+      "Permission_hoew5u",
+      "Permission_1w908e8"
+    ]
+  },
+  "Permission_1wlut02": {
+    "Id": "Permission_1wlut02",
+    "Kind": "Permission",
+    "Column": "Class_Code",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1wm2yhk": {
+    "Id": "Permission_1wm2yhk",
+    "Kind": "Permission",
+    "Column": "Class_Name",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1rnyvhm": {
+    "Id": "Permission_1rnyvhm",
+    "Kind": "Permission",
+    "Column": "Class_Name_AR",
+    "Permission": "ReadOnly"
+  },
+  "Permission_57bzaq": {
+    "Id": "Permission_57bzaq",
+    "Kind": "Permission",
+    "Column": "Trade",
+    "Permission": "ReadOnly"
+  },
+  "Permission_hoew5u": {
+    "Id": "Permission_hoew5u",
+    "Kind": "Permission",
+    "Column": "Warranty_Months",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1w908e8": {
+    "Id": "Permission_1w908e8",
+    "Kind": "Permission",
+    "Column": "PPM_Frequency",
+    "Permission": "ReadOnly"
+  }
+}

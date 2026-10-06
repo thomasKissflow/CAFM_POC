@@ -1,0 +1,651 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-22T04:13:12+00:00",
+  "title": "Design System: CAFM",
+  "extensions": {
+    "colorMeta": {
+      "fluoro": {
+        "role": "primary",
+        "displayName": "Survey Fluoro",
+        "canonical": "oklch(68.2% 0.211 38)",
+        "tonalRamp": [
+          "oklch(15% 0.190 38)",
+          "oklch(26% 0.190 38)",
+          "oklch(37% 0.190 38)",
+          "oklch(48% 0.190 38)",
+          "oklch(60% 0.190 38)",
+          "oklch(72% 0.190 38)",
+          "oklch(84% 0.190 38)",
+          "oklch(95% 0.076 38)"
+        ]
+      },
+      "fluoro-ink": {
+        "role": "primary",
+        "displayName": "Fluoro Ink",
+        "canonical": "oklch(51.9% 0.163 39)",
+        "tonalRamp": [
+          "oklch(15% 0.163 39)",
+          "oklch(26% 0.163 39)",
+          "oklch(37% 0.163 39)",
+          "oklch(48% 0.163 39)",
+          "oklch(60% 0.163 39)",
+          "oklch(72% 0.163 39)",
+          "oklch(84% 0.163 39)",
+          "oklch(95% 0.065 39)"
+        ]
+      },
+      "fluoro-wash": {
+        "role": "primary",
+        "displayName": "Fluoro Wash",
+        "canonical": "oklch(94.7% 0.029 47)",
+        "tonalRamp": [
+          "oklch(15% 0.029 47)",
+          "oklch(26% 0.029 47)",
+          "oklch(37% 0.029 47)",
+          "oklch(48% 0.029 47)",
+          "oklch(60% 0.029 47)",
+          "oklch(72% 0.029 47)",
+          "oklch(84% 0.029 47)",
+          "oklch(95% 0.012 47)"
+        ]
+      },
+      "breach": {
+        "role": "secondary",
+        "displayName": "Level-Staff Red",
+        "canonical": "oklch(53.1% 0.206 27)",
+        "tonalRamp": [
+          "oklch(15% 0.190 27)",
+          "oklch(26% 0.190 27)",
+          "oklch(37% 0.190 27)",
+          "oklch(48% 0.190 27)",
+          "oklch(60% 0.190 27)",
+          "oklch(72% 0.190 27)",
+          "oklch(84% 0.190 27)",
+          "oklch(95% 0.076 27)"
+        ]
+      },
+      "breach-wash": {
+        "role": "secondary",
+        "displayName": "Breach Wash",
+        "canonical": "oklch(93.9% 0.028 23)",
+        "tonalRamp": [
+          "oklch(15% 0.028 23)",
+          "oklch(26% 0.028 23)",
+          "oklch(37% 0.028 23)",
+          "oklch(48% 0.028 23)",
+          "oklch(60% 0.028 23)",
+          "oklch(72% 0.028 23)",
+          "oklch(84% 0.028 23)",
+          "oklch(95% 0.011 23)"
+        ]
+      },
+      "risk": {
+        "role": "secondary",
+        "displayName": "Survey Amber Ink",
+        "canonical": "oklch(55.9% 0.122 68)",
+        "tonalRamp": [
+          "oklch(15% 0.122 68)",
+          "oklch(26% 0.122 68)",
+          "oklch(37% 0.122 68)",
+          "oklch(48% 0.122 68)",
+          "oklch(60% 0.122 68)",
+          "oklch(72% 0.122 68)",
+          "oklch(84% 0.122 68)",
+          "oklch(95% 0.049 68)"
+        ]
+      },
+      "risk-fill": {
+        "role": "secondary",
+        "displayName": "Survey Amber",
+        "canonical": "oklch(80.9% 0.162 81)",
+        "tonalRamp": [
+          "oklch(15% 0.162 81)",
+          "oklch(26% 0.162 81)",
+          "oklch(37% 0.162 81)",
+          "oklch(48% 0.162 81)",
+          "oklch(60% 0.162 81)",
+          "oklch(72% 0.162 81)",
+          "oklch(84% 0.162 81)",
+          "oklch(95% 0.065 81)"
+        ]
+      },
+      "risk-wash": {
+        "role": "secondary",
+        "displayName": "Amber Wash",
+        "canonical": "oklch(96.0% 0.042 89)",
+        "tonalRamp": [
+          "oklch(15% 0.042 89)",
+          "oklch(26% 0.042 89)",
+          "oklch(37% 0.042 89)",
+          "oklch(48% 0.042 89)",
+          "oklch(60% 0.042 89)",
+          "oklch(72% 0.042 89)",
+          "oklch(84% 0.042 89)",
+          "oklch(95% 0.017 89)"
+        ]
+      },
+      "ok": {
+        "role": "secondary",
+        "displayName": "Benchmark Green",
+        "canonical": "oklch(49.2% 0.103 157)",
+        "tonalRamp": [
+          "oklch(15% 0.103 157)",
+          "oklch(26% 0.103 157)",
+          "oklch(37% 0.103 157)",
+          "oklch(48% 0.103 157)",
+          "oklch(60% 0.103 157)",
+          "oklch(72% 0.103 157)",
+          "oklch(84% 0.103 157)",
+          "oklch(95% 0.041 157)"
+        ]
+      },
+      "ok-wash": {
+        "role": "secondary",
+        "displayName": "Green Wash",
+        "canonical": "oklch(93.5% 0.026 158)",
+        "tonalRamp": [
+          "oklch(15% 0.026 158)",
+          "oklch(26% 0.026 158)",
+          "oklch(37% 0.026 158)",
+          "oklch(48% 0.026 158)",
+          "oklch(60% 0.026 158)",
+          "oklch(72% 0.026 158)",
+          "oklch(84% 0.026 158)",
+          "oklch(95% 0.010 158)"
+        ]
+      },
+      "chargeable": {
+        "role": "tertiary",
+        "displayName": "Survey Blue",
+        "canonical": "oklch(43.8% 0.159 264)",
+        "tonalRamp": [
+          "oklch(15% 0.159 264)",
+          "oklch(26% 0.159 264)",
+          "oklch(37% 0.159 264)",
+          "oklch(48% 0.159 264)",
+          "oklch(60% 0.159 264)",
+          "oklch(72% 0.159 264)",
+          "oklch(84% 0.159 264)",
+          "oklch(95% 0.064 264)"
+        ]
+      },
+      "chargeable-wash": {
+        "role": "tertiary",
+        "displayName": "Survey Blue Wash",
+        "canonical": "oklch(93.3% 0.022 266)",
+        "tonalRamp": [
+          "oklch(15% 0.022 266)",
+          "oklch(26% 0.022 266)",
+          "oklch(37% 0.022 266)",
+          "oklch(48% 0.022 266)",
+          "oklch(60% 0.022 266)",
+          "oklch(72% 0.022 266)",
+          "oklch(84% 0.022 266)",
+          "oklch(95% 0.009 266)"
+        ]
+      },
+      "decennial": {
+        "role": "tertiary",
+        "displayName": "Decennial Violet",
+        "canonical": "oklch(46.3% 0.153 302)",
+        "tonalRamp": [
+          "oklch(15% 0.153 302)",
+          "oklch(26% 0.153 302)",
+          "oklch(37% 0.153 302)",
+          "oklch(48% 0.153 302)",
+          "oklch(60% 0.153 302)",
+          "oklch(72% 0.153 302)",
+          "oklch(84% 0.153 302)",
+          "oklch(95% 0.061 302)"
+        ]
+      },
+      "decennial-wash": {
+        "role": "tertiary",
+        "displayName": "Violet Wash",
+        "canonical": "oklch(93.8% 0.023 306)",
+        "tonalRamp": [
+          "oklch(15% 0.023 306)",
+          "oklch(26% 0.023 306)",
+          "oklch(37% 0.023 306)",
+          "oklch(48% 0.023 306)",
+          "oklch(60% 0.023 306)",
+          "oklch(72% 0.023 306)",
+          "oklch(84% 0.023 306)",
+          "oklch(95% 0.009 306)"
+        ]
+      },
+      "ownops": {
+        "role": "tertiary",
+        "displayName": "Own-Ops Slate",
+        "canonical": "oklch(43.6% 0.018 181)",
+        "tonalRamp": [
+          "oklch(15% 0.018 181)",
+          "oklch(26% 0.018 181)",
+          "oklch(37% 0.018 181)",
+          "oklch(48% 0.018 181)",
+          "oklch(60% 0.018 181)",
+          "oklch(72% 0.018 181)",
+          "oklch(84% 0.018 181)",
+          "oklch(95% 0.007 181)"
+        ]
+      },
+      "ownops-wash": {
+        "role": "tertiary",
+        "displayName": "Slate Wash",
+        "canonical": "oklch(92.7% 0.006 170)",
+        "tonalRamp": [
+          "oklch(15% 0.006 170)",
+          "oklch(26% 0.006 170)",
+          "oklch(37% 0.006 170)",
+          "oklch(48% 0.006 170)",
+          "oklch(60% 0.006 170)",
+          "oklch(72% 0.006 170)",
+          "oklch(84% 0.006 170)",
+          "oklch(95% 0.002 170)"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Fair-Faced Concrete",
+        "canonical": "oklch(92.5% 0.005 146)",
+        "tonalRamp": [
+          "oklch(15% 0.005 146)",
+          "oklch(26% 0.005 146)",
+          "oklch(37% 0.005 146)",
+          "oklch(48% 0.005 146)",
+          "oklch(60% 0.005 146)",
+          "oklch(72% 0.005 146)",
+          "oklch(84% 0.005 146)",
+          "oklch(95% 0.002 146)"
+        ]
+      },
+      "ground-2": {
+        "role": "neutral",
+        "displayName": "Deep Concrete",
+        "canonical": "oklch(89.1% 0.006 154)",
+        "tonalRamp": [
+          "oklch(15% 0.006 154)",
+          "oklch(26% 0.006 154)",
+          "oklch(37% 0.006 154)",
+          "oklch(48% 0.006 154)",
+          "oklch(60% 0.006 154)",
+          "oklch(72% 0.006 154)",
+          "oklch(84% 0.006 154)",
+          "oklch(95% 0.002 154)"
+        ]
+      },
+      "sheet": {
+        "role": "neutral",
+        "displayName": "Drawing Sheet",
+        "canonical": "oklch(98.8% 0.001 106)",
+        "tonalRamp": [
+          "oklch(15% 0.001 106)",
+          "oklch(26% 0.001 106)",
+          "oklch(37% 0.001 106)",
+          "oklch(48% 0.001 106)",
+          "oklch(60% 0.001 106)",
+          "oklch(72% 0.001 106)",
+          "oklch(84% 0.001 106)",
+          "oklch(95% 0.001 106)"
+        ]
+      },
+      "sheet-2": {
+        "role": "neutral",
+        "displayName": "Recessed Sheet",
+        "canonical": "oklch(96.3% 0.003 128)",
+        "tonalRamp": [
+          "oklch(15% 0.003 128)",
+          "oklch(26% 0.003 128)",
+          "oklch(37% 0.003 128)",
+          "oklch(48% 0.003 128)",
+          "oklch(60% 0.003 128)",
+          "oklch(72% 0.003 128)",
+          "oklch(84% 0.003 128)",
+          "oklch(95% 0.001 128)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Drafting Ink",
+        "canonical": "oklch(21.2% 0.008 248)",
+        "tonalRamp": [
+          "oklch(15% 0.008 248)",
+          "oklch(26% 0.008 248)",
+          "oklch(37% 0.008 248)",
+          "oklch(48% 0.008 248)",
+          "oklch(60% 0.008 248)",
+          "oklch(72% 0.008 248)",
+          "oklch(84% 0.008 248)",
+          "oklch(95% 0.003 248)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink Secondary",
+        "canonical": "oklch(37.6% 0.013 248)",
+        "tonalRamp": [
+          "oklch(15% 0.013 248)",
+          "oklch(26% 0.013 248)",
+          "oklch(37% 0.013 248)",
+          "oklch(48% 0.013 248)",
+          "oklch(60% 0.013 248)",
+          "oklch(72% 0.013 248)",
+          "oklch(84% 0.013 248)",
+          "oklch(95% 0.005 248)"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Ink Tertiary",
+        "canonical": "oklch(49.6% 0.014 248)",
+        "tonalRamp": [
+          "oklch(15% 0.014 248)",
+          "oklch(26% 0.014 248)",
+          "oklch(37% 0.014 248)",
+          "oklch(48% 0.014 248)",
+          "oklch(60% 0.014 248)",
+          "oklch(72% 0.014 248)",
+          "oklch(84% 0.014 248)",
+          "oklch(95% 0.006 248)"
+        ]
+      },
+      "seam": {
+        "role": "neutral",
+        "displayName": "Hairline Seam",
+        "canonical": "oklch(85.1% 0.006 154)",
+        "tonalRamp": [
+          "oklch(15% 0.006 154)",
+          "oklch(26% 0.006 154)",
+          "oklch(37% 0.006 154)",
+          "oklch(48% 0.006 154)",
+          "oklch(60% 0.006 154)",
+          "oklch(72% 0.006 154)",
+          "oklch(84% 0.006 154)",
+          "oklch(95% 0.002 154)"
+        ]
+      },
+      "seam-strong": {
+        "role": "neutral",
+        "displayName": "Strong Seam",
+        "canonical": "oklch(72.9% 0.008 165)",
+        "tonalRamp": [
+          "oklch(15% 0.008 165)",
+          "oklch(26% 0.008 165)",
+          "oklch(37% 0.008 165)",
+          "oklch(48% 0.008 165)",
+          "oklch(60% 0.008 165)",
+          "oklch(72% 0.008 165)",
+          "oklch(84% 0.008 165)",
+          "oklch(95% 0.003 165)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Page Title",
+        "purpose": "One per screen, in the page header."
+      },
+      "title": {
+        "displayName": "Panel Title",
+        "purpose": "Panel header strips and section heads."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text and controls; 1.65 line-height in RTL."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Field and row labels in ink-2."
+      },
+      "chip": {
+        "displayName": "Chip",
+        "purpose": "Chips and tags."
+      },
+      "reading-lead": {
+        "displayName": "Reading Lead",
+        "purpose": "The lead liability-ledger figure."
+      },
+      "reading": {
+        "displayName": "Reading",
+        "purpose": "IDs, tags, chainage, clocks, durations, variance and targets."
+      }
+    },
+    "shadows": [
+      {
+        "name": "lift",
+        "value": "0 1px 2px rgb(22 25 28 / 0.06), 0 8px 24px -12px rgb(22 25 28 / 0.18)",
+        "purpose": "Selected item (active nav, selected tile) or hover on a board card. Never at rest."
+      },
+      {
+        "name": "float",
+        "value": "0 2px 4px rgb(22 25 28 / 0.08), 0 20px 48px -16px rgb(22 25 28 / 0.32)",
+        "purpose": "Overlays only: tooltip, dropdown, drawer, demo panel, phone frame, challenge dialog."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Entrance rise (360ms, 6px) for panels and dialogs."
+      },
+      {
+        "name": "state",
+        "value": "150ms",
+        "purpose": "Background, border and 1px press transitions on buttons and controls."
+      },
+      {
+        "name": "peg-pulse",
+        "value": "2.4s ease-in-out infinite",
+        "purpose": "Fluoro ring pulse on today's chainage peg."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0.01ms",
+        "purpose": "All animation and transition durations collapse under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "phone-frame",
+        "value": "900px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "xl",
+        "value": "1280px"
+      },
+      {
+        "name": "2xl",
+        "value": "1536px"
+      }
+    ],
+    "patterns": [
+      {
+        "name": "crosshair",
+        "purpose": "Selected record: 10px fluoro corner ticks top-start and bottom-end, RTL-mirrored."
+      },
+      {
+        "name": "hazard",
+        "purpose": "-45deg stripe, blocked/breached only: hazard (red 5/5px), hazard-on-red (22% black on red), hazard-soft (12% red 6/6px)."
+      },
+      {
+        "name": "survey-grid",
+        "purpose": "24px 5%-ink grid backdrop available for the title strip."
+      },
+      {
+        "name": "preview-outline",
+        "purpose": "1px dashed ink-3 border around AI-derived content."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button (Fluoro)",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one primary action per screen, e.g. Start guided demo.",
+      "html": "<button class=\"ds-btn-primary\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M6 4l14 8-14 8z\"/></svg>Start guided demo</button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;gap:8px;height:36px;padding:0 14px;background:var(--color-fluoro,#ff5a1f);color:var(--color-ink,#16191c);border:1px solid #e24a10;border-radius:4px;font:600 13.5px 'Readex Pro Variable','Readex Pro',system-ui,sans-serif;cursor:pointer;transition:background-color .15s,transform .15s}.ds-btn-primary:hover{background:#ff6b36}.ds-btn-primary:active{background:#f04d12;transform:translateY(1px)}.ds-btn-primary:focus-visible{outline:2px solid #ff5a1f;outline-offset:2px}"
+    },
+    {
+      "name": "Ink Button",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Confirmed in-context actions (Raise batch DLP claim, Ask).",
+      "html": "<button class=\"ds-btn-ink\">Raise batch DLP claim</button>",
+      "css": ".ds-btn-ink{height:36px;padding:0 14px;background:var(--color-ink,#16191c);color:var(--color-sheet,#fbfbfa);border:1px solid var(--color-ink,#16191c);border-radius:4px;font:500 13.5px 'Readex Pro Variable',system-ui,sans-serif;cursor:pointer;transition:background-color .15s}.ds-btn-ink:hover{background:var(--color-ink-2,#3c4248)}.ds-btn-ink:active{transform:translateY(1px)}.ds-btn-ink:focus-visible{outline:2px solid #ff5a1f;outline-offset:2px}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Default button on a sheet.",
+      "html": "<button class=\"ds-btn-secondary\">Export audit pack</button>",
+      "css": ".ds-btn-secondary{height:36px;padding:0 14px;background:var(--color-sheet,#fbfbfa);color:var(--color-ink,#16191c);border:1px solid var(--color-seam-strong,#a3a9a6);border-radius:4px;font:400 13.5px 'Readex Pro Variable',system-ui,sans-serif;cursor:pointer;transition:background-color .15s,border-color .15s}.ds-btn-secondary:hover{background:var(--color-sheet-2,#f2f3f1);border-color:var(--color-ink-3,#5c636a)}.ds-btn-secondary:active{transform:translateY(1px)}.ds-btn-secondary:focus-visible{outline:2px solid #ff5a1f;outline-offset:2px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Labelled 40px field with fluoro caret and focus ring.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-field-label\">Asset tag</span><input class=\"ds-input\" placeholder=\"FCU-1511-01\"></label>",
+      "css": ".ds-field{display:flex;flex-direction:column;gap:6px;font-family:'Readex Pro Variable',system-ui,sans-serif}.ds-field-label{font-size:12.5px;font-weight:500;color:var(--color-ink-2,#3c4248)}.ds-input{height:40px;padding:0 12px;background:var(--color-sheet,#fbfbfa);color:var(--color-ink,#16191c);border:1px solid var(--color-seam-strong,#a3a9a6);border-radius:4px;font-size:14px;caret-color:#ff5a1f;transition:border-color .15s}.ds-input::placeholder{color:var(--color-ink-3,#5c636a)}.ds-input:hover{border-color:var(--color-ink-3,#5c636a)}.ds-input:focus{outline:none;border-color:var(--color-ink,#16191c)}.ds-input:focus-visible{outline:2px solid #ff5a1f;outline-offset:0}"
+    },
+    {
+      "name": "Liability Chips",
+      "kind": "chip",
+      "refersTo": "chip-liability-dlp",
+      "description": "Peg mark plus named liability; never colour alone.",
+      "html": "<span class=\"ds-chip ds-chip-dlp\"><i class=\"ds-peg\"></i>DLP</span> <span class=\"ds-chip ds-chip-chg\"><i class=\"ds-peg\"></i>Chargeable</span> <span class=\"ds-chip ds-chip-breach\">Breached</span>",
+      "css": ".ds-chip{display:inline-flex;align-items:center;gap:6px;height:22px;padding:0 6px;border-radius:3px;font:500 11.5px/1 'Readex Pro Variable',system-ui,sans-serif;white-space:nowrap}.ds-peg{display:inline-block;width:4px;height:10px;transform:rotate(12deg);background:currentColor}.ds-chip-dlp{background:#ffe8dd;color:#b23b09;border:1px solid rgb(255 90 31/.5)}.ds-chip-dlp .ds-peg{background:#ff5a1f}.ds-chip-chg{background:#e2e9f8;color:#2349a8;border:1px solid rgb(35 73 168/.3)}.ds-chip-breach{background:#c8161d;color:#fff}"
+    },
+    {
+      "name": "Sheet Panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Flat white sheet on concrete with a ruled 44px header strip.",
+      "html": "<div class=\"ds-ground\"><section class=\"ds-panel\"><header class=\"ds-panel-head\"><h2>Liability ledger</h2><span>View all</span></header><div class=\"ds-panel-body\"><div class=\"ds-row\"><span>Pending recovery</span><b>AED 17,540</b></div><div class=\"ds-row\"><span>In dispute</span><b class=\"ds-risk\">AED 11,940</b></div></div></section></div>",
+      "css": ".ds-ground{background:#e4e7e4;padding:16px;font-family:'Readex Pro Variable',system-ui,sans-serif}.ds-panel{background:#fbfbfa;border:1px solid #cbcfcc;border-radius:4px}.ds-panel-head{display:flex;justify-content:space-between;align-items:center;min-height:44px;padding:8px 16px;border-bottom:1px solid #cbcfcc}.ds-panel-head h2{margin:0;font-size:13.5px;font-weight:600;color:#16191c}.ds-panel-head span{font-size:12.5px;color:#3c4248}.ds-panel-body{padding:4px 16px}.ds-row{display:flex;justify-content:space-between;align-items:baseline;padding:10px 0;border-bottom:1px solid #cbcfcc;font-size:13.5px;color:#16191c}.ds-row:last-child{border-bottom:0}.ds-row b{font:500 17px 'JetBrains Mono Variable','JetBrains Mono',monospace;font-variant-numeric:tabular-nums;letter-spacing:-.01em}.ds-risk{color:#a26400}"
+    },
+    {
+      "name": "Side-Rail Nav",
+      "kind": "nav",
+      "refersTo": "nav-item-active",
+      "description": "Concrete rail; active item lifted with fluoro crosshair corners.",
+      "html": "<nav class=\"ds-rail\"><div class=\"ds-rail-group\">Operations</div><a class=\"ds-nav ds-nav-active\">Command centre</a><a class=\"ds-nav\">Work orders</a><a class=\"ds-nav\">Assets</a></nav>",
+      "css": ".ds-rail{width:228px;background:#d8dcd9;padding:20px 12px;font-family:'Readex Pro Variable',system-ui,sans-serif}.ds-rail-group{padding:0 8px 6px;font-size:11px;font-weight:500;color:#5c636a}.ds-nav{position:relative;display:flex;align-items:center;height:36px;padding:0 8px;border-radius:4px;font-size:13.5px;color:#3c4248;cursor:pointer;transition:background-color .15s}.ds-nav:hover{background:rgb(251 251 250/.6);color:#16191c}.ds-nav-active{background:#fbfbfa;color:#16191c;font-weight:500;box-shadow:0 1px 2px rgb(22 25 28/.06),0 8px 24px -12px rgb(22 25 28/.18)}.ds-nav-active::before,.ds-nav-active::after{content:'';position:absolute;width:10px;height:10px;border:solid #ff5a1f}.ds-nav-active::before{top:-1px;left:-1px;border-width:2px 0 0 2px}.ds-nav-active::after{bottom:-1px;right:-1px;border-width:0 2px 2px 0}.ds-nav:focus-visible{outline:2px solid #ff5a1f;outline-offset:2px}"
+    },
+    {
+      "name": "Level-Staff SLA Gauge",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "SLA allowance as a graduated staff to 125%; fluoro reading line; mono remaining time.",
+      "html": "<div class=\"ds-gauge\"><svg viewBox=\"0 0 200 16\" preserveAspectRatio=\"none\" class=\"ds-gauge-svg\"><rect width=\"200\" height=\"16\" fill=\"#f2f3f1\"/><rect x=\"120\" width=\"40\" height=\"16\" fill=\"#fdf1d2\"/><rect x=\"160\" width=\"40\" height=\"16\" fill=\"#fde4e2\"/><rect y=\"6.7\" width=\"104\" height=\"9.3\" fill=\"#3c4248\"/><rect x=\"0\" y=\"0\" width=\"7.4\" height=\"5.4\" fill=\"var(--color-ink)\" opacity=\"0.85\"/><rect x=\"16\" y=\"0\" width=\"7.4\" height=\"5.4\" fill=\"var(--color-ink)\" opacity=\"0.85\"/><rect x=\"32\" y=\"0\" width=\"7.4\" height=\"5.4\" fill=\"var(--color-ink)\" opacity=\"0.85\"/><rect x=\"48\" y=\"0\" width=\"7.4\" height=\"5.4\" fill=\"var(--color-ink)\" opacity=\"0.85\"/><rect x=\"64\" y=\"0\" width=\"7.4\" height=\"5.4\" fill=\"var(--color-ink)\" opacity=\"0.85\"/><rect x=\"80\" y=\"0\" width=\"7.4\" height=\"5.4\" fill=\"var(--color-ink)\" opacity=\"0.85\"/><rect x=\"96\" y=\"0\" width=\"7.4\" height=\"5.4\" fill=\"var(--color-ink)\" opacity=\"0.85\"/><rect x=\"112\" y=\"0\" width=\"7.4\" height=\"5.4\" fill=\"var(--color-ink)\" opacity=\"0.85\"/><rect x=\"128\" y=\"0\" width=\"7.4\" height=\"5.4\" fill=\"var(--color-ink)\" opacity=\"0.85\"/><rect x=\"144\" y=\"0\" width=\"7.4\" height=\"5.4\" fill=\"var(--color-ink)\" opacity=\"0.85\"/><rect x=\"160\" y=\"0\" width=\"7.4\" height=\"5.4\" fill=\"var(--color-breach)\" opacity=\"0.85\"/><rect x=\"176\" y=\"0\" width=\"7.4\" height=\"5.4\" fill=\"var(--color-breach)\" opacity=\"0.85\"/><rect x=\"192\" y=\"0\" width=\"7.4\" height=\"5.4\" fill=\"var(--color-breach)\" opacity=\"0.85\"/><line x1=\"40\" x2=\"40\" y2=\"16\" stroke=\"#5c636a\" stroke-width=\".7\"/><line x1=\"80\" x2=\"80\" y2=\"16\" stroke=\"#5c636a\" stroke-width=\".7\"/><line x1=\"120\" x2=\"120\" y2=\"16\" stroke=\"#5c636a\" stroke-width=\".7\"/><line x1=\"160\" x2=\"160\" y2=\"16\" stroke=\"#c8161d\" stroke-width=\"1.4\"/><line x1=\"104\" x2=\"104\" y2=\"16\" stroke=\"#ff5a1f\" stroke-width=\"2\"/><rect x=\".5\" y=\".5\" width=\"199\" height=\"15\" fill=\"none\" stroke=\"#a3a9a6\" stroke-width=\".8\"/></svg><span class=\"ds-gauge-read\">4h 32min left</span></div>",
+      "css": ".ds-gauge{display:flex;align-items:center;gap:12px;width:360px}.ds-gauge-svg{flex:1;height:16px}.ds-gauge-read{font:400 12px 'JetBrains Mono Variable','JetBrains Mono',monospace;font-variant-numeric:tabular-nums;color:#3c4248;white-space:nowrap}"
+    },
+    {
+      "name": "DLP Chainage Ruler",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "DLP from TOC (CH 0+000) to expiry with today's fluoro peg.",
+      "html": "<div class=\"ds-ch\"><div class=\"ds-ch-road\"><div class=\"ds-ch-done\"></div></div><div class=\"ds-ch-end ds-ch-s\"></div><div class=\"ds-ch-end ds-ch-e\"></div><div class=\"ds-ch-peg\"><i></i><b></b></div><div class=\"ds-ch-read\"><span><bdi dir=\"ltr\">CH 0+000</bdi> · TOC 1 Mar 2026</span><span class=\"ds-ch-now\"><bdi dir=\"ltr\">CH 0+170</bdi> · 170d elapsed · 194d remaining</span><span>DLP end · <bdi dir=\"ltr\">CH 0+365</bdi></span></div></div>",
+      "css": ".ds-ch{position:relative;width:520px;height:64px;font:11px 'Readex Pro Variable',system-ui,sans-serif;color:#3c4248}.ds-ch-road{position:absolute;inset-inline:0;top:18px;height:10px;border:1px solid #a3a9a6;background:#f2f3f1}.ds-ch-done{width:46.6%;height:100%;background-color:rgb(22 25 28/.08);background-image:repeating-linear-gradient(-45deg,rgb(200 22 29/.12) 0 6px,transparent 6px 12px)}.ds-ch-end{position:absolute;top:10px;width:2px;height:26px}.ds-ch-s{inset-inline-start:0;background:#16191c}.ds-ch-e{inset-inline-end:0;background:#c8161d}.ds-ch-peg{position:absolute;top:0;inset-inline-start:46.6%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center}.ds-ch-peg i{width:0;height:0;border-inline:6px solid transparent;border-top:9px solid #ff5a1f}.ds-ch-peg b{width:2px;height:26px;background:#ff5a1f}.ds-ch-read{position:absolute;bottom:0;inset-inline:0;display:flex;justify-content:space-between}.ds-ch-read bdi{font-family:'JetBrains Mono Variable','JetBrains Mono',monospace}.ds-ch-now{color:#b23b09;font-weight:500}"
+    },
+    {
+      "name": "AI Preview Tag",
+      "kind": "chip",
+      "refersTo": "",
+      "description": "Dashed outline marking every AI-derived element.",
+      "html": "<span class=\"ds-ai\" tabindex=\"0\"><svg width=\"11\" height=\"11\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" aria-hidden=\"true\"><path d=\"M12 3l1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2z\"/></svg>AI preview</span>",
+      "css": ".ds-ai{display:inline-flex;align-items:center;gap:4px;height:20px;padding:0 6px;border:1px dashed #5c636a;border-radius:3px;font:500 11px 'Readex Pro Variable',system-ui,sans-serif;color:#3c4248}.ds-ai:focus-visible{outline:2px solid #ff5a1f;outline-offset:2px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Setting-Out Sheet",
+    "overview": "CAFM is laid out the way a site engineer sets out a building: every asset is located, and every obligation is measured against a graduated instrument. The ground is fair-faced concrete, a cool pale grey. Work sits on it as white sheets joined by hairline seams. Ink is near-black. Colour appears only as a survey mark: fluorescent orange where the contractor is liable or where the primary action lives, level-staff red for a breach, survey blue for work that can be charged back. The UI is read in the same order as a field book. Who pays and how much time is left come first, and the label comes second.\n\nThe screens are dense and ruled. Hierarchy comes from type size and ruled rows, not from boxes inside boxes. The command centre, for example, is one sheet divided by seams rather than a row of KPI tiles. Numbers that are readings (IDs, chainage, clocks, money, percentages) are set in a monospaced face, so they line up like instrument output. Everything else uses one bilingual humanist sans that carries English and Arabic at equal weight. The layout mirrors fully for RTL through logical properties. Latin readings stay left-to-right inside `bdi`.\n\nThe world rejects the card-grid admin dashboard: a dark sidebar, a row of KPI tiles and drop-shadowed cards.",
+    "keyCharacteristics": [
+      "Cool concrete ground, white sheets, 1px seams. Flat at rest.",
+      "Colour is a survey mark with a fixed meaning, and it is always paired with a word.",
+      "Two faces: Readex Pro for language, JetBrains Mono for readings.",
+      "4px corners. Sheets and chips have square-ish, drafted edges.",
+      "Signature instruments: the level-staff SLA gauge, vertical staff readings and the DLP chainage ruler.",
+      "Setting-out crosshair corners mark the selected record. A hazard diagonal marks only blocked or breached states.",
+      "Full RTL parity. Arabic body text gets a looser line height (1.65)."
+    ],
+    "rules": [
+      {
+        "name": "The Survey Mark Rule",
+        "body": "Each chromatic colour has one meaning: fluoro means liability or the primary action, red means breach, blue means chargeable. Never use a mark decoratively, and never let colour be the only signal. Every liability chip carries its name next to a small rotated peg mark.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Fluoro Action Rule",
+        "body": "A screen has at most one fluoro button. Secondary and inline actions use ink, secondary or ghost buttons. The batch \"Raise batch DLP claim\" button is ink, not fluoro.",
+        "section": "colors"
+      },
+      {
+        "name": "The Text-Safe Mark Rule",
+        "body": "Fluoro and amber are graphic colours. When they carry text on a light ground, switch to `fluoro-ink` or `risk`.",
+        "section": "colors"
+      },
+      {
+        "name": "The Readings-Are-Mono Rule",
+        "body": "Monospace is reserved for measured values: IDs, tags, chainage, clocks, durations, money and percentages in ledgers. Words are never set in mono. A Latin reading inside Arabic text is wrapped in `<bdi dir=\"ltr\">`.",
+        "section": "typography"
+      },
+      {
+        "name": "The Size-Not-Boxes Rule",
+        "body": "Executive hierarchy comes from type size inside ruled rows. A bigger number does not get a bigger box.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Sheet Rule",
+        "body": "Sheets and panels are flat at rest: a border in `seam`, no shadow. Lift answers selection or hover. Float belongs to things that sit above the page.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Crosshair Rule",
+        "body": "A selected or current record is marked by two 10px fluoro corner ticks, top-start and bottom-end, which mirror in RTL. Use this for the active nav item, the current role and the selected category. Do not use a filled accent background.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Hazard Rule",
+        "body": "The -45 degree diagonal stripe (red at 5px on and 5px off, or a darker overlay on red) means blocked or breached only. Examples are breached work-order cards (a 4px top band), missed PPM cells, the expired compliance segment, the on-hold status (soft variant) and the elapsed stretch of the chainage (soft variant). Do not use it for emphasis.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Preview Outline Rule",
+        "body": "Anything produced by AI carries a 1px dashed `ink-3` outline and the \"AI preview\" tag. Only AI content and future or upcoming states use dashed borders.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "**Do** place every surface as a `sheet` (#fbfbfa, 1px `seam`, 4px) on the concrete `ground`, and divide related content with seams inside one sheet.",
+      "**Do** name the liability, SLA phase or RAG state in words beside every colour mark.",
+      "**Do** set IDs, tags, chainage, clocks, durations and ledger money in JetBrains Mono with tabular numerals, and wrap Latin readings in `<bdi dir=\"ltr\">` in Arabic contexts.",
+      "**Do** show time against an allowance with the level-staff gauge, and the DLP period with the chainage ruler.",
+      "**Do** mark the selected record with fluoro crosshair corners.",
+      "**Do** tag every AI-derived element with the dashed \"AI preview\" outline.",
+      "**Do** use logical properties for every inline offset, so RTL mirrors without overrides."
+    ],
+    "donts": [
+      "**Don't** build a card-grid admin dashboard with a dark sidebar and KPI tiles. Put figures in ruled ledger rows at the size their importance deserves.",
+      "**Don't** give sheets or panels a resting drop shadow. Lift is for selection or hover, and Float is for overlays.",
+      "**Don't** use the hazard diagonal for anything other than blocked or breached states.",
+      "**Don't** put more than one fluoro button on a screen, or use fluoro or amber as text colour on a light ground.",
+      "**Don't** set words, labels or headings in monospace.",
+      "**Don't** introduce corners above 6px on in-app surfaces."
+    ]
+  }
+}

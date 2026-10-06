@@ -1,0 +1,42 @@
+{
+  "Root": "Perm_1flrz4h",
+  "Perm_1flrz4h": {
+    "Id": "Perm_1flrz4h",
+    "Kind": "FlowPermission",
+    "Role": "Ro_12sl9a8",
+    "RoleName": "DLP Manager",
+    "Model": "CAFM_Unit_A00",
+    "Level": "Editable",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_1jp469x",
+      "Permission_1npfotu",
+      "Permission_1g881j3",
+      "Permission_cnep0b"
+    ]
+  },
+  "Permission_1jp469x": {
+    "Id": "Permission_1jp469x",
+    "Kind": "Permission",
+    "Column": "Unit_Number",
+    "Permission": "Editable"
+  },
+  "Permission_1npfotu": {
+    "Id": "Permission_1npfotu",
+    "Kind": "Permission",
+    "Column": "Site",
+    "Permission": "Editable"
+  },
+  "Permission_1g881j3": {
+    "Id": "Permission_1g881j3",
+    "Kind": "Permission",
+    "Column": "Floor",
+    "Permission": "Editable"
+  },
+  "Permission_cnep0b": {
+    "Id": "Permission_cnep0b",
+    "Kind": "Permission",
+    "Column": "Resident",
+    "Permission": "Editable"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "Root": "Perm_1frf9qf",
+  "Perm_1frf9qf": {
+    "Id": "Perm_1frf9qf",
+    "Kind": "FlowPermission",
+    "Role": "Ro_12sl9a8",
+    "RoleName": "DLP Manager",
+    "Model": "CAFM_Asset_Class_A00",
+    "Level": "Editable",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_12hbe3l",
+      "Permission_12hjjl3",
+      "Permission_4do7rt",
+      "Permission_1kc72zl",
+      "Permission_mbdc3l",
+      "Permission_8ypkof"
+    ]
+  },
+  "Permission_12hbe3l": {
+    "Id": "Permission_12hbe3l",
+    "Kind": "Permission",
+    "Column": "Class_Code",
+    "Permission": "Editable"
+  },
+  "Permission_12hjjl3": {
+    "Id": "Permission_12hjjl3",
+    "Kind": "Permission",
+    "Column": "Class_Name",
+    "Permission": "Editable"
+  },
+  "Permission_4do7rt": {
+    "Id": "Permission_4do7rt",
+    "Kind": "Permission",
+    "Column": "Class_Name_AR",
+    "Permission": "Editable"
+  },
+  "Permission_1kc72zl": {
+    "Id": "Permission_1kc72zl",
+    "Kind": "Permission",
+    "Column": "Trade",
+    "Permission": "Editable"
+  },
+  "Permission_mbdc3l": {
+    "Id": "Permission_mbdc3l",
+    "Kind": "Permission",
+    "Column": "Warranty_Months",
+    "Permission": "Editable"
+  },
+  "Permission_8ypkof": {
+    "Id": "Permission_8ypkof",
+    "Kind": "Permission",
+    "Column": "PPM_Frequency",
+    "Permission": "Editable"
+  }
+}

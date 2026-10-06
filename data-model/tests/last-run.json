@@ -1,0 +1,445 @@
+{
+ "at": "2026-10-01T08:12:16.492Z",
+ "passed": 73,
+ "failed": 0,
+ "results": [
+  {
+   "area": "structure",
+   "name": "CAFM Site is live as \"Buildings & Facilities\"",
+   "ok": true,
+   "detail": "200 Live \"Buildings & Facilities\""
+  },
+  {
+   "area": "structure",
+   "name": "CAFM Subcontractor is live as \"Subcontractors\"",
+   "ok": true,
+   "detail": "200 Live \"Subcontractors\""
+  },
+  {
+   "area": "structure",
+   "name": "CAFM Unit is live as \"Apartments\"",
+   "ok": true,
+   "detail": "200 Live \"Apartments\""
+  },
+  {
+   "area": "structure",
+   "name": "CAFM Asset Class is live as \"Asset Types\"",
+   "ok": true,
+   "detail": "200 Live \"Asset Types\""
+  },
+  {
+   "area": "structure",
+   "name": "CAFM Request Category is live as \"Request Types\"",
+   "ok": true,
+   "detail": "200 Live \"Request Types\""
+  },
+  {
+   "area": "structure",
+   "name": "CAFM Root Cause is live as \"Fault Causes\"",
+   "ok": true,
+   "detail": "200 Live \"Fault Causes\""
+  },
+  {
+   "area": "structure",
+   "name": "CAFM SLA Policy is live as \"SLA Targets\"",
+   "ok": true,
+   "detail": "200 Live \"SLA Targets\""
+  },
+  {
+   "area": "structure",
+   "name": "CAFM Asset is live as \"Asset Register\"",
+   "ok": true,
+   "detail": "200 Live \"Asset Register\""
+  },
+  {
+   "area": "structure",
+   "name": "CAFM PPM Schedule is live as \"Planned Maintenance\"",
+   "ok": true,
+   "detail": "200 Live \"Planned Maintenance\""
+  },
+  {
+   "area": "structure",
+   "name": "CAFM Compliance Certificate is live as \"Compliance Certificates\"",
+   "ok": true,
+   "detail": "200 Live \"Compliance Certificates\""
+  },
+  {
+   "area": "structure",
+   "name": "CAFM Equipment is live as \"Plant & Fleet\"",
+   "ok": true,
+   "detail": "200 Live \"Plant & Fleet\""
+  },
+  {
+   "area": "structure",
+   "name": "CAFM Work Order is live as \"Work Order\"",
+   "ok": true,
+   "detail": "200 Live \"Work Order\""
+  },
+  {
+   "area": "structure",
+   "name": "CAFM Back-charge is live as \"DLP Cost Recovery\"",
+   "ok": true,
+   "detail": "200 Live \"DLP Cost Recovery\""
+  },
+  {
+   "area": "structure",
+   "name": "CAFM Permit To Work is live as \"Permit to Work\"",
+   "ok": true,
+   "detail": "200 Live \"Permit to Work\""
+  },
+  {
+   "area": "structure",
+   "name": "CAFM WO Event is live as \"Work Order Activity Log\"",
+   "ok": true,
+   "detail": "200 Live \"Work Order Activity Log\""
+  },
+  {
+   "area": "structure",
+   "name": "CAFM WO Register is live as \"Work Order History\"",
+   "ok": true,
+   "detail": "200 Live \"Work Order History\""
+  },
+  {
+   "area": "structure",
+   "name": "CAFM Snag is live as \"Handover Snags\"",
+   "ok": true,
+   "detail": "200 Live \"Handover Snags\""
+  },
+  {
+   "area": "structure",
+   "name": "CAFM Breakdown is live as \"Plant Breakdowns\"",
+   "ok": true,
+   "detail": "200 Live \"Plant Breakdowns\""
+  },
+  {
+   "area": "structure",
+   "name": "CAFM AI Conversation is live as \"AI Conversations\"",
+   "ok": true,
+   "detail": "200 Live \"AI Conversations\""
+  },
+  {
+   "area": "structure",
+   "name": "CAFM AI Setting is live as \"AI Settings\"",
+   "ok": true,
+   "detail": "200 Live \"AI Settings\""
+  },
+  {
+   "area": "structure",
+   "name": "list CAFM Priority",
+   "ok": true,
+   "detail": "4 items"
+  },
+  {
+   "area": "structure",
+   "name": "list CAFM Channel",
+   "ok": true,
+   "detail": "9 items"
+  },
+  {
+   "area": "structure",
+   "name": "list CAFM Trade",
+   "ok": true,
+   "detail": "7 items"
+  },
+  {
+   "area": "structure",
+   "name": "list CAFM Site Kind",
+   "ok": true,
+   "detail": "4 items"
+  },
+  {
+   "area": "structure",
+   "name": "list CAFM Asset Status",
+   "ok": true,
+   "detail": "3 items"
+  },
+  {
+   "area": "structure",
+   "name": "list CAFM Liability",
+   "ok": true,
+   "detail": "6 items"
+  },
+  {
+   "area": "structure",
+   "name": "list CAFM Photo Kind",
+   "ok": true,
+   "detail": "3 items"
+  },
+  {
+   "area": "structure",
+   "name": "list CAFM Compliance System",
+   "ok": true,
+   "detail": "10 items"
+  },
+  {
+   "area": "structure",
+   "name": "list CAFM Hassantuk Status",
+   "ok": true,
+   "detail": "3 items"
+  },
+  {
+   "area": "structure",
+   "name": "list CAFM PPM Frequency",
+   "ok": true,
+   "detail": "4 items"
+  },
+  {
+   "area": "structure",
+   "name": "list CAFM Permit Type",
+   "ok": true,
+   "detail": "4 items"
+  },
+  {
+   "area": "structure",
+   "name": "list CAFM Equipment Type",
+   "ok": true,
+   "detail": "10 items"
+  },
+  {
+   "area": "structure",
+   "name": "list CAFM Equipment Status",
+   "ok": true,
+   "detail": "4 items"
+  },
+  {
+   "area": "structure",
+   "name": "list CAFM Subcontractor Response",
+   "ok": true,
+   "detail": "2 items"
+  },
+  {
+   "area": "structure",
+   "name": "list CAFM Event Type",
+   "ok": true,
+   "detail": "16 items"
+  },
+  {
+   "area": "structure",
+   "name": "list CAFM Language",
+   "ok": true,
+   "detail": "2 items"
+  },
+  {
+   "area": "structure",
+   "name": "10 app roles, no duplicates",
+   "ok": true,
+   "detail": "Admin, Compliance Officer, DLP Manager, Executive, FM Manager, HSE Officer, Helpdesk, Plant Manager, Resident, Subcontractor Supervisor, Technician, User"
+  },
+  {
+   "area": "access",
+   "name": "every IR grant present on the live flow",
+   "ok": true,
+   "detail": "125 present, 0 missing"
+  },
+  {
+   "area": "access",
+   "name": "Resident can raise work orders",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "access",
+   "name": "Executive is view-only on work orders",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "access",
+   "name": "CAFM Work Order: no role has DataAdmin",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "access",
+   "name": "CAFM Back-charge: no role has DataAdmin",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "access",
+   "name": "CAFM Permit To Work: no role has DataAdmin",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "permissions",
+   "name": "CAFM_Work_Order_A00: step permissions linked to their fields",
+   "ok": true,
+   "detail": "437/437 linked"
+  },
+  {
+   "area": "permissions",
+   "name": "CAFM_Back_charge_A00: step permissions linked to their fields",
+   "ok": true,
+   "detail": "63/63 linked"
+  },
+  {
+   "area": "permissions",
+   "name": "CAFM_Permit_To_Work_A00: step permissions linked to their fields",
+   "ok": true,
+   "detail": "58/58 linked"
+  },
+  {
+   "area": "integrations",
+   "name": "WO created → add 'Created' to the WO activity log",
+   "ok": true,
+   "detail": "8 bindings · off (switch on in builder)"
+  },
+  {
+   "area": "integrations",
+   "name": "WO moves to next step → add 'Step changed' to the WO activity log",
+   "ok": true,
+   "detail": "7 bindings · off (switch on in builder)"
+  },
+  {
+   "area": "integrations",
+   "name": "WO misses its deadline → add 'SLA breach' to the WO activity log",
+   "ok": true,
+   "detail": "7 bindings · off (switch on in builder)"
+  },
+  {
+   "area": "integrations",
+   "name": "WO misses its deadline → email the FM manager",
+   "ok": true,
+   "detail": "1 bindings · off (switch on in builder)"
+  },
+  {
+   "area": "integrations",
+   "name": "WO closed (DLP) → raise a Back-charge to the installing subcontractor",
+   "ok": true,
+   "detail": "11 bindings · ON"
+  },
+  {
+   "area": "integrations",
+   "name": "WO closed → add a row to the WO Register (history)",
+   "ok": true,
+   "detail": "17 bindings · off (switch on in builder)"
+  },
+  {
+   "area": "integrations",
+   "name": "Back-charge recovered → add 'Back-charge recovered' to the WO activity log",
+   "ok": true,
+   "detail": "7 bindings · ON"
+  },
+  {
+   "area": "seed",
+   "name": "CAFM_Site_A00: all 1 demo records, no duplicates",
+   "ok": true,
+   "detail": "1 rows, 1 unique keys"
+  },
+  {
+   "area": "seed",
+   "name": "CAFM_Subcontractor_A00: all 5 demo records, no duplicates",
+   "ok": true,
+   "detail": "5 rows, 5 unique keys"
+  },
+  {
+   "area": "seed",
+   "name": "CAFM_Unit_A00: all 18 demo records, no duplicates",
+   "ok": true,
+   "detail": "24 rows, 24 unique keys"
+  },
+  {
+   "area": "seed",
+   "name": "CAFM_Asset_A00: all 6 demo records, no duplicates",
+   "ok": true,
+   "detail": "6 rows, 6 unique keys"
+  },
+  {
+   "area": "seed",
+   "name": "CAFM_WO_Register_A00: all 12 demo records, no duplicates",
+   "ok": true,
+   "detail": "12 rows, 12 unique keys"
+  },
+  {
+   "area": "seed",
+   "name": "CAFM_Compliance_Certificate_A00: all 2 demo records, no duplicates",
+   "ok": true,
+   "detail": "2 rows, 2 unique keys"
+  },
+  {
+   "area": "seed",
+   "name": "CAFM_PPM_Schedule_A00: all 2 demo records, no duplicates",
+   "ok": true,
+   "detail": "2 rows, 2 unique keys"
+  },
+  {
+   "area": "seed",
+   "name": "CAFM_Equipment_A00: all 2 demo records, no duplicates",
+   "ok": true,
+   "detail": "2 rows, 2 unique keys"
+  },
+  {
+   "area": "seed",
+   "name": "snags: 4 with the demo's status mix",
+   "ok": true,
+   "detail": "{\"In progress\":1,\"Open\":1,\"Carried into DLP\":1,\"Closed\":1}"
+  },
+  {
+   "area": "seed",
+   "name": "history: DLP jobs = demo back-charges",
+   "ok": true,
+   "detail": "10 DLP rows vs 10 back-charges"
+  },
+  {
+   "area": "seed",
+   "name": "history: Total Cost formula computed",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "contract",
+   "name": "CAFM_Work_Order_A00: 30 adapter fields exist",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "contract",
+   "name": "CAFM_Back_charge_A00: 9 adapter fields exist",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "contract",
+   "name": "CAFM_Asset_A00: 10 adapter fields exist",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "contract",
+   "name": "CAFM_WO_Register_A00: 12 adapter fields exist",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "area": "formulas",
+   "name": "WO-26-04817: priority + liability computed by Kissflow match the demo",
+   "ok": true,
+   "detail": "L1 P4 D1 1440m"
+  },
+  {
+   "area": "formulas",
+   "name": "WO-26-04832: priority + liability computed by Kissflow match the demo",
+   "ok": true,
+   "detail": "L1 P1 D1 30m"
+  },
+  {
+   "area": "formulas",
+   "name": "WO-26-04844: priority + liability computed by Kissflow match the demo",
+   "ok": true,
+   "detail": "L1 P4 D1 1440m"
+  },
+  {
+   "area": "formulas",
+   "name": "WO-26-04854: priority + liability computed by Kissflow match the demo",
+   "ok": true,
+   "detail": "L1 P2 D1 60m"
+  },
+  {
+   "area": "formulas",
+   "name": "WO-26-04855: priority + liability computed by Kissflow match the demo",
+   "ok": true,
+   "detail": "L1 P3 D1 240m"
+  }
+ ]
+}

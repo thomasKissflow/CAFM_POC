@@ -1,0 +1,42 @@
+{
+  "Root": "Perm_1puk6hg",
+  "Perm_1puk6hg": {
+    "Id": "Perm_1puk6hg",
+    "Kind": "FlowPermission",
+    "Role": "Ro_qzo537",
+    "RoleName": "HSE Officer",
+    "Model": "CAFM_Unit_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_j0bylc",
+      "Permission_1qdbyzx",
+      "Permission_1x3pb4q",
+      "Permission_12cbjti"
+    ]
+  },
+  "Permission_j0bylc": {
+    "Id": "Permission_j0bylc",
+    "Kind": "Permission",
+    "Column": "Unit_Number",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1qdbyzx": {
+    "Id": "Permission_1qdbyzx",
+    "Kind": "Permission",
+    "Column": "Site",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1x3pb4q": {
+    "Id": "Permission_1x3pb4q",
+    "Kind": "Permission",
+    "Column": "Floor",
+    "Permission": "ReadOnly"
+  },
+  "Permission_12cbjti": {
+    "Id": "Permission_12cbjti",
+    "Kind": "Permission",
+    "Column": "Resident",
+    "Permission": "ReadOnly"
+  }
+}

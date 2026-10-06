@@ -1,0 +1,17 @@
+{
+  "_id": "CAFM_Asset_Status_A00",
+  "Name": "CAFM Asset Status",
+  "Description": "",
+  "Type": "List",
+  "Status": "Live",
+  "ListItems": [
+    "Operational",
+    "Degraded",
+    "Down"
+  ],
+  "_application_id": "CAFM_POC_A00",
+  "Security": {
+    "AllowAllFlows": true,
+    "AllowedFlows": []
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "Root": "Perm_1vgu9gv",
+  "Perm_1vgu9gv": {
+    "Id": "Perm_1vgu9gv",
+    "Kind": "FlowPermission",
+    "Role": "Ro_mh5b4l",
+    "RoleName": "Helpdesk",
+    "Model": "CAFM_Subcontractor_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_yxxs2q",
+      "Permission_1gknrhw",
+      "Permission_1uuwspn",
+      "Permission_1dqutm5",
+      "Permission_bedfxa",
+      "Permission_2e4fl5",
+      "Permission_12xlwnh",
+      "Permission_sm7sr7",
+      "Permission_1m48xe3",
+      "Permission_13ok3n3",
+      "Permission_1bzmby0"
+    ]
+  },
+  "Permission_yxxs2q": {
+    "Id": "Permission_yxxs2q",
+    "Kind": "Permission",
+    "Column": "Company_Name",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1gknrhw": {
+    "Id": "Permission_1gknrhw",
+    "Kind": "Permission",
+    "Column": "Company_Name_AR",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1uuwspn": {
+    "Id": "Permission_1uuwspn",
+    "Kind": "Permission",
+    "Column": "Trade",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1dqutm5": {
+    "Id": "Permission_1dqutm5",
+    "Kind": "Permission",
+    "Column": "Supervisor",
+    "Permission": "ReadOnly"
+  },
+  "Permission_bedfxa": {
+    "Id": "Permission_bedfxa",
+    "Kind": "Permission",
+    "Column": "Contact_Email",
+    "Permission": "ReadOnly"
+  },
+  "Permission_2e4fl5": {
+    "Id": "Permission_2e4fl5",
+    "Kind": "Permission",
+    "Column": "Trade_Licence_No",
+    "Permission": "ReadOnly"
+  },
+  "Permission_12xlwnh": {
+    "Id": "Permission_12xlwnh",
+    "Kind": "Permission",
+    "Column": "Trade_Licence_Expiry",
+    "Permission": "ReadOnly"
+  },
+  "Permission_sm7sr7": {
+    "Id": "Permission_sm7sr7",
+    "Kind": "Permission",
+    "Column": "Insurance_Expiry",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1m48xe3": {
+    "Id": "Permission_1m48xe3",
+    "Kind": "Permission",
+    "Column": "Civil_Defence_Approved",
+    "Permission": "ReadOnly"
+  },
+  "Permission_13ok3n3": {
+    "Id": "Permission_13ok3n3",
+    "Kind": "Permission",
+    "Column": "Civil_Defence_Approval_Expiry",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1bzmby0": {
+    "Id": "Permission_1bzmby0",
+    "Kind": "Permission",
+    "Column": "Licence_Days_Left",
+    "Permission": "ReadOnly"
+  }
+}

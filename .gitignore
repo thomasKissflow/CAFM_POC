@@ -1,0 +1,24 @@
+# --- secrets: never commit ---------------------------------------------------
+.env
+.env.*
+!.env.example
+# Kissflow data dumps. CAFM_AI_Setting_A00.json contains the Gemini API key.
+data-model/backups/
+
+# --- build output and dependencies -------------------------------------------
+node_modules/
+dist/
+*.zip
+
+# --- regenerable artefacts ----------------------------------------------------
+# 100 MB of raw screen recording and narration WAVs; `npm run video` rebuilds them.
+app/scripts/video/build/
+# Screenshot sweeps from qa-shots.mjs; rebuilt by `node scripts/qa-shots.mjs <dir>`.
+app/qa-shots/
+app/qa-brand/
+app/qa-brand2/
+app/qa-final/
+.impeccable/review/
+
+# --- macOS --------------------------------------------------------------------
+.DS_Store

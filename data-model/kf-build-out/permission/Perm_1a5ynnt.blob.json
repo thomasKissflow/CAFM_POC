@@ -1,0 +1,49 @@
+{
+  "Root": "Perm_1a5ynnt",
+  "Perm_1a5ynnt": {
+    "Id": "Perm_1a5ynnt",
+    "Kind": "FlowPermission",
+    "Role": "Ro_qzo537",
+    "RoleName": "HSE Officer",
+    "Model": "CAFM_Root_Cause_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_veqbv4",
+      "Permission_veyhcm",
+      "Permission_dfg414",
+      "Permission_1t40emq",
+      "Permission_pqruwy"
+    ]
+  },
+  "Permission_veqbv4": {
+    "Id": "Permission_veqbv4",
+    "Kind": "Permission",
+    "Column": "Root_Cause_Code",
+    "Permission": "ReadOnly"
+  },
+  "Permission_veyhcm": {
+    "Id": "Permission_veyhcm",
+    "Kind": "Permission",
+    "Column": "Root_Cause_Name",
+    "Permission": "ReadOnly"
+  },
+  "Permission_dfg414": {
+    "Id": "Permission_dfg414",
+    "Kind": "Permission",
+    "Column": "Root_Cause_Name_AR",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1t40emq": {
+    "Id": "Permission_1t40emq",
+    "Kind": "Permission",
+    "Column": "Trade",
+    "Permission": "ReadOnly"
+  },
+  "Permission_pqruwy": {
+    "Id": "Permission_pqruwy",
+    "Kind": "Permission",
+    "Column": "Excluded_From_DLP",
+    "Permission": "ReadOnly"
+  }
+}

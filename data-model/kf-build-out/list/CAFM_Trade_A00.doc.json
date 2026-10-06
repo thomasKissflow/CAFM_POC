@@ -1,0 +1,21 @@
+{
+  "_id": "CAFM_Trade_A00",
+  "Name": "CAFM Trade",
+  "Description": "",
+  "Type": "List",
+  "Status": "Live",
+  "ListItems": [
+    "HVAC",
+    "Lifts",
+    "Fire",
+    "Electrical",
+    "Plumbing",
+    "Facade",
+    "Finishes"
+  ],
+  "_application_id": "CAFM_POC_A00",
+  "Security": {
+    "AllowAllFlows": true,
+    "AllowedFlows": []
+  }
+}

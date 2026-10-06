@@ -1,0 +1,229 @@
+{
+  "Root": "CAFM_WO_Event_A00",
+  "CAFM_WO_Event_A00": {
+    "Id": "CAFM_WO_Event_A00",
+    "Name": "CAFM WO Event",
+    "Kind": "Model",
+    "FlowType": "Form",
+    "Description": "",
+    "Model::Row": [
+      "Row_19hc3hj"
+    ],
+    "Model::Field": [
+      "Work_Order_No",
+      "Work_Order_Instance",
+      "Event_Type",
+      "Event_At",
+      "Actor",
+      "Actor_Label",
+      "Event_Detail"
+    ]
+  },
+  "Row_19hc3hj": {
+    "Id": "Row_19hc3hj",
+    "Kind": "Row",
+    "Model": "CAFM_WO_Event_A00",
+    "Row::Column": [
+      "Column_19hc3hj"
+    ]
+  },
+  "Column_19hc3hj": {
+    "Id": "Column_19hc3hj",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "Details",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_19hc3hj",
+    "Column::Row": [
+      "Row_19havc1",
+      "Row_19havc2",
+      "Row_19havc3",
+      "Row_19havc4"
+    ]
+  },
+  "Row_19havc1": {
+    "Id": "Row_19havc1",
+    "Kind": "Row",
+    "Column": "Column_19hc3hj",
+    "Row::Column": [
+      "Column_142xtdi",
+      "Column_1g85n8u"
+    ]
+  },
+  "Column_142xtdi": {
+    "Id": "Column_142xtdi",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_19havc1",
+    "Column::Field": [
+      "Work_Order_No"
+    ]
+  },
+  "Column_1g85n8u": {
+    "Id": "Column_1g85n8u",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_19havc1",
+    "Column::Field": [
+      "Work_Order_Instance"
+    ]
+  },
+  "Row_19havc2": {
+    "Id": "Row_19havc2",
+    "Kind": "Row",
+    "Column": "Column_19hc3hj",
+    "Row::Column": [
+      "Column_1ek3a9r",
+      "Column_1e2op2q"
+    ]
+  },
+  "Column_1ek3a9r": {
+    "Id": "Column_1ek3a9r",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_19havc2",
+    "Column::Field": [
+      "Event_Type"
+    ]
+  },
+  "Column_1e2op2q": {
+    "Id": "Column_1e2op2q",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_19havc2",
+    "Column::Field": [
+      "Event_At"
+    ]
+  },
+  "Row_19havc3": {
+    "Id": "Row_19havc3",
+    "Kind": "Row",
+    "Column": "Column_19hc3hj",
+    "Row::Column": [
+      "Column_89e0z9",
+      "Column_hpjiok"
+    ]
+  },
+  "Column_89e0z9": {
+    "Id": "Column_89e0z9",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_19havc3",
+    "Column::Field": [
+      "Actor"
+    ]
+  },
+  "Column_hpjiok": {
+    "Id": "Column_hpjiok",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_19havc3",
+    "Column::Field": [
+      "Actor_Label"
+    ]
+  },
+  "Row_19havc4": {
+    "Id": "Row_19havc4",
+    "Kind": "Row",
+    "Column": "Column_19hc3hj",
+    "Row::Column": [
+      "Column_1x3d040"
+    ]
+  },
+  "Column_1x3d040": {
+    "Id": "Column_1x3d040",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_19havc4",
+    "Column::Field": [
+      "Event_Detail"
+    ]
+  },
+  "Work_Order_No": {
+    "Id": "Work_Order_No",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Work Order No",
+    "Model": "CAFM_WO_Event_A00",
+    "Column": "Column_142xtdi",
+    "Required": true
+  },
+  "Work_Order_Instance": {
+    "Id": "Work_Order_Instance",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Work Order Instance",
+    "Model": "CAFM_WO_Event_A00",
+    "Column": "Column_1g85n8u"
+  },
+  "Event_Type": {
+    "Id": "Event_Type",
+    "Kind": "Field",
+    "Type": "Select",
+    "Name": "Event Type",
+    "Model": "CAFM_WO_Event_A00",
+    "Column": "Column_1ek3a9r",
+    "Required": true,
+    "ReferredList": "CAFM_Event_Type_A00"
+  },
+  "Event_At": {
+    "Id": "Event_At",
+    "Kind": "Field",
+    "Type": "DateTime",
+    "Name": "Event At",
+    "Model": "CAFM_WO_Event_A00",
+    "Column": "Column_1e2op2q",
+    "Required": true
+  },
+  "QueryDefinition_89e0z9": {
+    "Id": "QueryDefinition_89e0z9",
+    "Kind": "QueryDefinition",
+    "Field": "Actor",
+    "LHSModel": "User",
+    "FlowType": "User",
+    "LookupField": [],
+    "HiddenField": []
+  },
+  "Actor": {
+    "Id": "Actor",
+    "Kind": "Field",
+    "Type": "User",
+    "Name": "Actor",
+    "Model": "CAFM_WO_Event_A00",
+    "Column": "Column_89e0z9",
+    "Field::QueryDefinition": [
+      "QueryDefinition_89e0z9"
+    ]
+  },
+  "Actor_Label": {
+    "Id": "Actor_Label",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Actor Label",
+    "Model": "CAFM_WO_Event_A00",
+    "Column": "Column_hpjiok"
+  },
+  "Event_Detail": {
+    "Id": "Event_Detail",
+    "Kind": "Field",
+    "Type": "Textarea",
+    "Name": "Event Detail",
+    "Model": "CAFM_WO_Event_A00",
+    "Column": "Column_1x3d040"
+  }
+}

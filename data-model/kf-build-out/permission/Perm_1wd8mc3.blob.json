@@ -1,0 +1,364 @@
+{
+  "Root": "Perm_1wd8mc3",
+  "Perm_1wd8mc3": {
+    "Id": "Perm_1wd8mc3",
+    "Kind": "FlowPermission",
+    "Role": "Ro_174d02r",
+    "RoleName": "Resident",
+    "Model": "CAFM_Work_Order_A00",
+    "Level": "Editable",
+    "Scope": "my",
+    "FlowPermission::Permission": [
+      "Permission_1n1gzla",
+      "Permission_1n1imzd",
+      "Permission_m2pmyf",
+      "Permission_1wnl5tv",
+      "Permission_f9m3od",
+      "Permission_13gglhc",
+      "Permission_izlde",
+      "Permission_1opcc18",
+      "Permission_1futh28",
+      "Permission_78bnel",
+      "Permission_ig7hhh",
+      "Permission_1hpvl5u",
+      "Permission_u61al5",
+      "Permission_1xsm34",
+      "Permission_z9z4dx",
+      "Permission_1l6tkat",
+      "Permission_jeh0qa",
+      "Permission_1awtod0",
+      "Permission_13faw0c",
+      "Permission_16v9k84",
+      "Permission_dr729b",
+      "Permission_u6cvaz",
+      "Permission_19u7wgj",
+      "Permission_n2ip5m",
+      "Permission_1vcu3kb",
+      "Permission_z8kyfp",
+      "Permission_18avcto",
+      "Permission_1lpkqm5",
+      "Permission_1pa706l",
+      "Permission_1k9a1a1",
+      "Permission_8zld5s",
+      "Permission_debr3s",
+      "Permission_bqh97a",
+      "Permission_ui7ycj",
+      "Permission_qz6o96",
+      "Permission_1ytruts",
+      "Permission_rmrkn0",
+      "Permission_1ceuyw6",
+      "Permission_19f6rve",
+      "Permission_kyishv",
+      "Permission_zzpare",
+      "Permission_1czn5ey",
+      "Permission_1cs58hv",
+      "Permission_rall0c",
+      "Permission_7tuzhj",
+      "Permission_m990xz",
+      "Permission_1rhojbl",
+      "Permission_4gdryz",
+      "Permission_e67mpb",
+      "Permission_1eepn58"
+    ]
+  },
+  "Permission_1n1gzla": {
+    "Id": "Permission_1n1gzla",
+    "Kind": "Permission",
+    "Column": "Site",
+    "Permission": "Editable"
+  },
+  "Permission_1n1imzd": {
+    "Id": "Permission_1n1imzd",
+    "Kind": "Permission",
+    "Column": "Unit",
+    "Permission": "Editable"
+  },
+  "Permission_m2pmyf": {
+    "Id": "Permission_m2pmyf",
+    "Kind": "Permission",
+    "Column": "Category",
+    "Permission": "Editable"
+  },
+  "Permission_1wnl5tv": {
+    "Id": "Permission_1wnl5tv",
+    "Kind": "Permission",
+    "Column": "Request_Title",
+    "Permission": "Editable"
+  },
+  "Permission_f9m3od": {
+    "Id": "Permission_f9m3od",
+    "Kind": "Permission",
+    "Column": "Description",
+    "Permission": "Editable"
+  },
+  "Permission_13gglhc": {
+    "Id": "Permission_13gglhc",
+    "Kind": "Permission",
+    "Column": "Description_Language",
+    "Permission": "Editable"
+  },
+  "Permission_izlde": {
+    "Id": "Permission_izlde",
+    "Kind": "Permission",
+    "Column": "Channel",
+    "Permission": "Editable"
+  },
+  "Permission_1opcc18": {
+    "Id": "Permission_1opcc18",
+    "Kind": "Permission",
+    "Column": "Reporter_Name",
+    "Permission": "Editable"
+  },
+  "Permission_1futh28": {
+    "Id": "Permission_1futh28",
+    "Kind": "Permission",
+    "Column": "First_Contact_At",
+    "Permission": "Editable"
+  },
+  "Permission_78bnel": {
+    "Id": "Permission_78bnel",
+    "Kind": "Permission",
+    "Column": "Conversation_Transcript",
+    "Permission": "Editable"
+  },
+  "Permission_ig7hhh": {
+    "Id": "Permission_ig7hhh",
+    "Kind": "Permission",
+    "Column": "Vulnerable_Occupant",
+    "Permission": "Editable"
+  },
+  "Permission_1hpvl5u": {
+    "Id": "Permission_1hpvl5u",
+    "Kind": "Permission",
+    "Column": "Access_Window",
+    "Permission": "Editable"
+  },
+  "Permission_u61al5": {
+    "Id": "Permission_u61al5",
+    "Kind": "Permission",
+    "Column": "Asset",
+    "Permission": "Editable"
+  },
+  "Permission_1xsm34": {
+    "Id": "Permission_1xsm34",
+    "Kind": "Permission",
+    "Column": "Own_Operations",
+    "Permission": "Editable"
+  },
+  "Permission_z9z4dx": {
+    "Id": "Permission_z9z4dx",
+    "Kind": "Permission",
+    "Column": "Base_Priority",
+    "Permission": "Editable"
+  },
+  "Permission_1l6tkat": {
+    "Id": "Permission_1l6tkat",
+    "Kind": "Permission",
+    "Column": "Summer_Uplift",
+    "Permission": "Editable"
+  },
+  "Permission_jeh0qa": {
+    "Id": "Permission_jeh0qa",
+    "Kind": "Permission",
+    "Column": "Structural",
+    "Permission": "Editable"
+  },
+  "Permission_1awtod0": {
+    "Id": "Permission_1awtod0",
+    "Kind": "Permission",
+    "Column": "Asset_Tag",
+    "Permission": "Editable"
+  },
+  "Permission_13faw0c": {
+    "Id": "Permission_13faw0c",
+    "Kind": "Permission",
+    "Column": "DLP_End_Date",
+    "Permission": "Editable"
+  },
+  "Permission_16v9k84": {
+    "Id": "Permission_16v9k84",
+    "Kind": "Permission",
+    "Column": "Warranty_End_Date",
+    "Permission": "Editable"
+  },
+  "Permission_dr729b": {
+    "Id": "Permission_dr729b",
+    "Kind": "Permission",
+    "Column": "Decennial_End_Date",
+    "Permission": "Editable"
+  },
+  "Permission_u6cvaz": {
+    "Id": "Permission_u6cvaz",
+    "Kind": "Permission",
+    "Column": "Batch",
+    "Permission": "Editable"
+  },
+  "Permission_19u7wgj": {
+    "Id": "Permission_19u7wgj",
+    "Kind": "Permission",
+    "Column": "Installed_By",
+    "Permission": "Editable"
+  },
+  "Permission_n2ip5m": {
+    "Id": "Permission_n2ip5m",
+    "Kind": "Permission",
+    "Column": "Report_Month",
+    "Permission": "Editable"
+  },
+  "Permission_1vcu3kb": {
+    "Id": "Permission_1vcu3kb",
+    "Kind": "Permission",
+    "Column": "Summer_Flag",
+    "Permission": "Editable"
+  },
+  "Permission_z8kyfp": {
+    "Id": "Permission_z8kyfp",
+    "Kind": "Permission",
+    "Column": "Priority_Code",
+    "Permission": "Editable"
+  },
+  "Permission_18avcto": {
+    "Id": "Permission_18avcto",
+    "Kind": "Permission",
+    "Column": "Response_Minutes",
+    "Permission": "Editable"
+  },
+  "Permission_1lpkqm5": {
+    "Id": "Permission_1lpkqm5",
+    "Kind": "Permission",
+    "Column": "Resolve_Minutes",
+    "Permission": "Editable"
+  },
+  "Permission_1pa706l": {
+    "Id": "Permission_1pa706l",
+    "Kind": "Permission",
+    "Column": "Root_Cause",
+    "Permission": "Editable"
+  },
+  "Permission_1k9a1a1": {
+    "Id": "Permission_1k9a1a1",
+    "Kind": "Permission",
+    "Column": "Excluded_From_DLP",
+    "Permission": "Editable"
+  },
+  "Permission_8zld5s": {
+    "Id": "Permission_8zld5s",
+    "Kind": "Permission",
+    "Column": "DLP_Covered",
+    "Permission": "Editable"
+  },
+  "Permission_debr3s": {
+    "Id": "Permission_debr3s",
+    "Kind": "Permission",
+    "Column": "Warranty_Covered",
+    "Permission": "Editable"
+  },
+  "Permission_bqh97a": {
+    "Id": "Permission_bqh97a",
+    "Kind": "Permission",
+    "Column": "Liability_Code",
+    "Permission": "Editable"
+  },
+  "Permission_ui7ycj": {
+    "Id": "Permission_ui7ycj",
+    "Kind": "Permission",
+    "Column": "Dispatch_Code",
+    "Permission": "Editable"
+  },
+  "Permission_qz6o96": {
+    "Id": "Permission_qz6o96",
+    "Kind": "Permission",
+    "Column": "AI_Suggested_Category",
+    "Permission": "Editable"
+  },
+  "Permission_1ytruts": {
+    "Id": "Permission_1ytruts",
+    "Kind": "Permission",
+    "Column": "AI_Confidence",
+    "Permission": "Editable"
+  },
+  "Permission_rmrkn0": {
+    "Id": "Permission_rmrkn0",
+    "Kind": "Permission",
+    "Column": "Assigned_Technician",
+    "Permission": "Editable"
+  },
+  "Permission_1ceuyw6": {
+    "Id": "Permission_1ceuyw6",
+    "Kind": "Permission",
+    "Column": "Accepted_At",
+    "Permission": "Editable"
+  },
+  "Permission_19f6rve": {
+    "Id": "Permission_19f6rve",
+    "Kind": "Permission",
+    "Column": "Arrived_At",
+    "Permission": "Editable"
+  },
+  "Permission_kyishv": {
+    "Id": "Permission_kyishv",
+    "Kind": "Permission",
+    "Column": "On_Hold_Reason",
+    "Permission": "Editable"
+  },
+  "Permission_zzpare": {
+    "Id": "Permission_zzpare",
+    "Kind": "Permission",
+    "Column": "Supply_Air_Reading",
+    "Permission": "Editable"
+  },
+  "Permission_1czn5ey": {
+    "Id": "Permission_1czn5ey",
+    "Kind": "Permission",
+    "Column": "Diagnosis_Challenge_Shown",
+    "Permission": "Editable"
+  },
+  "Permission_1cs58hv": {
+    "Id": "Permission_1cs58hv",
+    "Kind": "Permission",
+    "Column": "Challenge_Acknowledged",
+    "Permission": "Editable"
+  },
+  "Permission_rall0c": {
+    "Id": "Permission_rall0c",
+    "Kind": "Permission",
+    "Column": "Closeout_Note",
+    "Permission": "Editable"
+  },
+  "Permission_7tuzhj": {
+    "Id": "Permission_7tuzhj",
+    "Kind": "Permission",
+    "Column": "Labour_AED",
+    "Permission": "Editable"
+  },
+  "Permission_m990xz": {
+    "Id": "Permission_m990xz",
+    "Kind": "Permission",
+    "Column": "Occupant_Signature",
+    "Permission": "Editable"
+  },
+  "Permission_1rhojbl": {
+    "Id": "Permission_1rhojbl",
+    "Kind": "Permission",
+    "Column": "Resolved_At",
+    "Permission": "Editable"
+  },
+  "Permission_4gdryz": {
+    "Id": "Permission_4gdryz",
+    "Kind": "Permission",
+    "Column": "Verified_At",
+    "Permission": "Editable"
+  },
+  "Permission_e67mpb": {
+    "Id": "Permission_e67mpb",
+    "Kind": "Permission",
+    "Column": "Back_charge_Ref",
+    "Permission": "Editable"
+  },
+  "Permission_1eepn58": {
+    "Id": "Permission_1eepn58",
+    "Kind": "Permission",
+    "Column": "Parts_AED",
+    "Permission": "Editable"
+  }
+}

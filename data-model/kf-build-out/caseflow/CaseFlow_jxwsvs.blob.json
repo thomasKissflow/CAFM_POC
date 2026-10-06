@@ -1,0 +1,175 @@
+{
+  "Root": "CaseFlow_jxwsvs",
+  "Status_1qc60pj": {
+    "Id": "Status_1qc60pj",
+    "Kind": "Status",
+    "Name": "Reported",
+    "Category": "NotStarted",
+    "IsSystem": false,
+    "Resources": [],
+    "OutwardStatus": [
+      "Status_2pvdo5",
+      "Status_t0vwy8",
+      "Status_16m1hw3",
+      "Status_17ei2mj",
+      "Status_1ppah6s"
+    ],
+    "EntryRule": [],
+    "ExitRule": [],
+    "Rule": [],
+    "SLADisabled": false
+  },
+  "Status_2pvdo5": {
+    "Id": "Status_2pvdo5",
+    "Kind": "Status",
+    "Name": "Diagnosing",
+    "Category": "InProgress",
+    "IsSystem": false,
+    "Resources": [],
+    "OutwardStatus": [
+      "Status_1qc60pj",
+      "Status_t0vwy8",
+      "Status_16m1hw3",
+      "Status_17ei2mj",
+      "Status_1ppah6s"
+    ],
+    "EntryRule": [],
+    "ExitRule": [],
+    "Rule": [],
+    "SLADisabled": false
+  },
+  "Status_t0vwy8": {
+    "Id": "Status_t0vwy8",
+    "Kind": "Status",
+    "Name": "Awaiting parts",
+    "Category": "InProgress",
+    "IsSystem": false,
+    "Resources": [],
+    "OutwardStatus": [
+      "Status_1qc60pj",
+      "Status_2pvdo5",
+      "Status_16m1hw3",
+      "Status_17ei2mj",
+      "Status_1ppah6s"
+    ],
+    "EntryRule": [],
+    "ExitRule": [],
+    "Rule": [],
+    "SLADisabled": false
+  },
+  "Status_16m1hw3": {
+    "Id": "Status_16m1hw3",
+    "Kind": "Status",
+    "Name": "Under repair",
+    "Category": "InProgress",
+    "IsSystem": false,
+    "Resources": [],
+    "OutwardStatus": [
+      "Status_1qc60pj",
+      "Status_2pvdo5",
+      "Status_t0vwy8",
+      "Status_17ei2mj",
+      "Status_1ppah6s"
+    ],
+    "EntryRule": [],
+    "ExitRule": [],
+    "Rule": [],
+    "SLADisabled": false
+  },
+  "Status_17ei2mj": {
+    "Id": "Status_17ei2mj",
+    "Kind": "Status",
+    "Name": "Back in service",
+    "Category": "Closed",
+    "IsSystem": false,
+    "Resources": [],
+    "OutwardStatus": [
+      "Status_1qc60pj",
+      "Status_2pvdo5",
+      "Status_t0vwy8",
+      "Status_16m1hw3",
+      "Status_1ppah6s"
+    ],
+    "EntryRule": [],
+    "ExitRule": [],
+    "Rule": [],
+    "SLADisabled": false
+  },
+  "Status_1ppah6s": {
+    "Id": "Status_1ppah6s",
+    "Kind": "Status",
+    "Name": "Reopened",
+    "Category": "ReOpened",
+    "IsSystem": true,
+    "Resources": [],
+    "OutwardStatus": [
+      "Status_1qc60pj",
+      "Status_2pvdo5",
+      "Status_t0vwy8",
+      "Status_16m1hw3",
+      "Status_17ei2mj"
+    ],
+    "EntryRule": [],
+    "ExitRule": [],
+    "Rule": [],
+    "SLADisabled": false
+  },
+  "State_Not_Started": {
+    "Id": "State_Not_Started",
+    "Name": "Not started",
+    "Category": "NotStarted",
+    "IsSystem": true,
+    "IsDefaultState": true,
+    "IsLastState": false,
+    "Kind": "State"
+  },
+  "State_In_Progress": {
+    "Id": "State_In_Progress",
+    "Name": "In progress",
+    "Category": "InProgress",
+    "IsSystem": true,
+    "IsDefaultState": false,
+    "IsLastState": false,
+    "Kind": "State"
+  },
+  "State_On_Hold": {
+    "Id": "State_On_Hold",
+    "Name": "On hold",
+    "Category": "NotStarted",
+    "IsSystem": true,
+    "IsDefaultState": false,
+    "IsLastState": false,
+    "Kind": "State"
+  },
+  "State_Done": {
+    "Id": "State_Done",
+    "Name": "Done",
+    "Category": "Closed",
+    "IsSystem": true,
+    "IsDefaultState": false,
+    "IsLastState": true,
+    "Kind": "State"
+  },
+  "CaseFlow_jxwsvs": {
+    "Id": "CaseFlow_jxwsvs",
+    "Name": "CAFM Breakdown flow",
+    "Kind": "CaseFlow",
+    "Model": "CAFM_Breakdown_A00",
+    "Type": "Case",
+    "FlowType": "CaseFlow",
+    "CaseFlow::Status": [
+      "Status_1qc60pj",
+      "Status_2pvdo5",
+      "Status_t0vwy8",
+      "Status_16m1hw3",
+      "Status_17ei2mj",
+      "Status_1ppah6s"
+    ],
+    "CaseFlow::State": [
+      "State_Not_Started",
+      "State_In_Progress",
+      "State_On_Hold",
+      "State_Done"
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "Root": "Perm_141kdr0",
+  "Perm_141kdr0": {
+    "Id": "Perm_141kdr0",
+    "Kind": "FlowPermission",
+    "Role": "Ro_qzo537",
+    "RoleName": "HSE Officer",
+    "Model": "CAFM_WO_Event_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_1dbnoxf",
+      "Permission_e6v2y3",
+      "Permission_1b976xo",
+      "Permission_1aqtln3",
+      "Permission_1dfu6pe",
+      "Permission_1esckk1",
+      "Permission_o66uct"
+    ]
+  },
+  "Permission_1dbnoxf": {
+    "Id": "Permission_1dbnoxf",
+    "Kind": "Permission",
+    "Column": "Work_Order_No",
+    "Permission": "ReadOnly"
+  },
+  "Permission_e6v2y3": {
+    "Id": "Permission_e6v2y3",
+    "Kind": "Permission",
+    "Column": "Work_Order_Instance",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1b976xo": {
+    "Id": "Permission_1b976xo",
+    "Kind": "Permission",
+    "Column": "Event_Type",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1aqtln3": {
+    "Id": "Permission_1aqtln3",
+    "Kind": "Permission",
+    "Column": "Event_At",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1dfu6pe": {
+    "Id": "Permission_1dfu6pe",
+    "Kind": "Permission",
+    "Column": "Actor",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1esckk1": {
+    "Id": "Permission_1esckk1",
+    "Kind": "Permission",
+    "Column": "Actor_Label",
+    "Permission": "ReadOnly"
+  },
+  "Permission_o66uct": {
+    "Id": "Permission_o66uct",
+    "Kind": "Permission",
+    "Column": "Event_Detail",
+    "Permission": "ReadOnly"
+  }
+}

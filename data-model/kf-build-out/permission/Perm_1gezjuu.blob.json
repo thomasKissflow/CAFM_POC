@@ -1,0 +1,56 @@
+{
+  "Root": "Perm_1gezjuu",
+  "Perm_1gezjuu": {
+    "Id": "Perm_1gezjuu",
+    "Kind": "FlowPermission",
+    "Role": "Ro_11s1y8v",
+    "RoleName": "Plant Manager",
+    "Model": "CAFM_Asset_Class_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_1dsk4lp",
+      "Permission_1dssa37",
+      "Permission_ohywhx",
+      "Permission_1u6zd9",
+      "Permission_1irydkd",
+      "Permission_t309ej"
+    ]
+  },
+  "Permission_1dsk4lp": {
+    "Id": "Permission_1dsk4lp",
+    "Kind": "Permission",
+    "Column": "Class_Code",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1dssa37": {
+    "Id": "Permission_1dssa37",
+    "Kind": "Permission",
+    "Column": "Class_Name",
+    "Permission": "ReadOnly"
+  },
+  "Permission_ohywhx": {
+    "Id": "Permission_ohywhx",
+    "Kind": "Permission",
+    "Column": "Class_Name_AR",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1u6zd9": {
+    "Id": "Permission_1u6zd9",
+    "Kind": "Permission",
+    "Column": "Trade",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1irydkd": {
+    "Id": "Permission_1irydkd",
+    "Kind": "Permission",
+    "Column": "Warranty_Months",
+    "Permission": "ReadOnly"
+  },
+  "Permission_t309ej": {
+    "Id": "Permission_t309ej",
+    "Kind": "Permission",
+    "Column": "PPM_Frequency",
+    "Permission": "ReadOnly"
+  }
+}

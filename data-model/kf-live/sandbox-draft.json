@@ -1,0 +1,1717 @@
+{
+ "Root": "CAFM_zz_Formula_Sandbox_A00",
+ "CAFM_zz_Formula_Sandbox_A00": {
+  "Id": "CAFM_zz_Formula_Sandbox_A00",
+  "Name": "CAFM zz Formula Sandbox",
+  "Kind": "Model",
+  "FlowType": "Form",
+  "Description": "",
+  "_application_id": "CAFM_POC_A00",
+  "Model::Row": [
+   "Row_oa9bef",
+   "Row_oa9beg"
+  ],
+  "Model::Field": [
+   "Test_Case",
+   "Asset",
+   "First_Contact_At",
+   "Own_Operations",
+   "Base_Priority",
+   "Summer_Uplift",
+   "Structural",
+   "DLP_End_Date",
+   "Warranty_End_Date",
+   "Report_Month",
+   "Summer_Flag",
+   "Priority",
+   "Response_Minutes",
+   "Resolve_Minutes",
+   "DLP_Days_Left",
+   "Excluded_From_DLP",
+   "DLP_Covered",
+   "Warranty_Days_Left",
+   "Warranty_Covered",
+   "Liability"
+  ]
+ },
+ "Row_oa9bef": {
+  "Id": "Row_oa9bef",
+  "Kind": "Row",
+  "Model": "CAFM_zz_Formula_Sandbox_A00",
+  "Row::Column": [
+   "Column_oa9bef"
+  ]
+ },
+ "Column_oa9bef": {
+  "Id": "Column_oa9bef",
+  "Kind": "Column",
+  "Type": "Section",
+  "Name": "Inputs",
+  "Start": 0,
+  "End": 6,
+  "Row": "Row_oa9bef",
+  "Column::Row": [
+   "Row_oa838x",
+   "Row_oa838y",
+   "Row_oa838z",
+   "Row_oa8390",
+   "Row_oa8391"
+  ]
+ },
+ "Row_oa838x": {
+  "Id": "Row_oa838x",
+  "Kind": "Row",
+  "Column": "Column_oa9bef",
+  "Row::Column": [
+   "Column_11ufqqv",
+   "Column_j3b4gc"
+  ]
+ },
+ "Column_11ufqqv": {
+  "Id": "Column_11ufqqv",
+  "Kind": "Column",
+  "Type": "Field",
+  "Start": 0,
+  "End": 3,
+  "Row": "Row_oa838x",
+  "Column::Field": [
+   "Test_Case"
+  ]
+ },
+ "Column_j3b4gc": {
+  "Id": "Column_j3b4gc",
+  "Kind": "Column",
+  "Type": "Field",
+  "Start": 3,
+  "End": 6,
+  "Row": "Row_oa838x",
+  "Column::Field": [
+   "Asset"
+  ]
+ },
+ "Row_oa838y": {
+  "Id": "Row_oa838y",
+  "Kind": "Row",
+  "Column": "Column_oa9bef",
+  "Row::Column": [
+   "Column_usuhir",
+   "Column_hwe203"
+  ]
+ },
+ "Column_usuhir": {
+  "Id": "Column_usuhir",
+  "Kind": "Column",
+  "Type": "Field",
+  "Start": 0,
+  "End": 3,
+  "Row": "Row_oa838y",
+  "Column::Field": [
+   "First_Contact_At"
+  ]
+ },
+ "Column_hwe203": {
+  "Id": "Column_hwe203",
+  "Kind": "Column",
+  "Type": "Field",
+  "Start": 3,
+  "End": 6,
+  "Row": "Row_oa838y",
+  "Column::Field": [
+   "Own_Operations"
+  ]
+ },
+ "Row_oa838z": {
+  "Id": "Row_oa838z",
+  "Kind": "Row",
+  "Column": "Column_oa9bef",
+  "Row::Column": [
+   "Column_1etszu0",
+   "Column_1pjdrs"
+  ]
+ },
+ "Column_1etszu0": {
+  "Id": "Column_1etszu0",
+  "Kind": "Column",
+  "Type": "Field",
+  "Start": 0,
+  "End": 3,
+  "Row": "Row_oa838z",
+  "Column::Field": [
+   "Base_Priority"
+  ]
+ },
+ "Column_1pjdrs": {
+  "Id": "Column_1pjdrs",
+  "Kind": "Column",
+  "Type": "Field",
+  "Start": 3,
+  "End": 6,
+  "Row": "Row_oa838z",
+  "Column::Field": [
+   "Summer_Uplift"
+  ]
+ },
+ "Row_oa8390": {
+  "Id": "Row_oa8390",
+  "Kind": "Row",
+  "Column": "Column_oa9bef",
+  "Row::Column": [
+   "Column_1m8wm6d",
+   "Column_7lxy8v"
+  ]
+ },
+ "Column_1m8wm6d": {
+  "Id": "Column_1m8wm6d",
+  "Kind": "Column",
+  "Type": "Field",
+  "Start": 0,
+  "End": 3,
+  "Row": "Row_oa8390",
+  "Column::Field": [
+   "Structural"
+  ]
+ },
+ "Column_7lxy8v": {
+  "Id": "Column_7lxy8v",
+  "Kind": "Column",
+  "Type": "Field",
+  "Start": 3,
+  "End": 6,
+  "Row": "Row_oa8390",
+  "Column::Field": [
+   "DLP_End_Date"
+  ]
+ },
+ "Row_oa8391": {
+  "Id": "Row_oa8391",
+  "Kind": "Row",
+  "Column": "Column_oa9bef",
+  "Row::Column": [
+   "Column_1mdbj4n",
+   "Column_q7y7g"
+  ]
+ },
+ "Column_1mdbj4n": {
+  "Id": "Column_1mdbj4n",
+  "Kind": "Column",
+  "Type": "Field",
+  "Start": 0,
+  "End": 3,
+  "Row": "Row_oa8391",
+  "Column::Field": [
+   "Warranty_End_Date"
+  ]
+ },
+ "Column_q7y7g": {
+  "Id": "Column_q7y7g",
+  "Kind": "Column",
+  "Type": "Field",
+  "Start": 3,
+  "End": 6,
+  "Row": "Row_oa8391",
+  "Column::Field": [
+   "Excluded_From_DLP"
+  ]
+ },
+ "Row_oa9beg": {
+  "Id": "Row_oa9beg",
+  "Kind": "Row",
+  "Model": "CAFM_zz_Formula_Sandbox_A00",
+  "Row::Column": [
+   "Column_oa9beg"
+  ]
+ },
+ "Column_oa9beg": {
+  "Id": "Column_oa9beg",
+  "Kind": "Column",
+  "Type": "Section",
+  "Name": "Computed",
+  "Start": 0,
+  "End": 6,
+  "Row": "Row_oa9beg",
+  "Column::Row": [
+   "Row_oa8436",
+   "Row_oa8437",
+   "Row_oa8438",
+   "Row_oa8439",
+   "Row_oa843a"
+  ]
+ },
+ "Row_oa8436": {
+  "Id": "Row_oa8436",
+  "Kind": "Row",
+  "Column": "Column_oa9beg",
+  "Row::Column": [
+   "Column_1qa9td9",
+   "Column_1yp3rr2"
+  ]
+ },
+ "Column_1qa9td9": {
+  "Id": "Column_1qa9td9",
+  "Kind": "Column",
+  "Type": "Field",
+  "Start": 0,
+  "End": 3,
+  "Row": "Row_oa8436",
+  "Column::Field": [
+   "Report_Month"
+  ]
+ },
+ "Column_1yp3rr2": {
+  "Id": "Column_1yp3rr2",
+  "Kind": "Column",
+  "Type": "Field",
+  "Start": 3,
+  "End": 6,
+  "Row": "Row_oa8436",
+  "Column::Field": [
+   "Summer_Flag"
+  ]
+ },
+ "Row_oa8437": {
+  "Id": "Row_oa8437",
+  "Kind": "Row",
+  "Column": "Column_oa9beg",
+  "Row::Column": [
+   "Column_1exmdla",
+   "Column_n8wda7"
+  ]
+ },
+ "Column_1exmdla": {
+  "Id": "Column_1exmdla",
+  "Kind": "Column",
+  "Type": "Field",
+  "Start": 0,
+  "End": 3,
+  "Row": "Row_oa8437",
+  "Column::Field": [
+   "Priority"
+  ]
+ },
+ "Column_n8wda7": {
+  "Id": "Column_n8wda7",
+  "Kind": "Column",
+  "Type": "Field",
+  "Start": 3,
+  "End": 6,
+  "Row": "Row_oa8437",
+  "Column::Field": [
+   "Response_Minutes"
+  ]
+ },
+ "Row_oa8438": {
+  "Id": "Row_oa8438",
+  "Kind": "Row",
+  "Column": "Column_oa9beg",
+  "Row::Column": [
+   "Column_g6bw1c",
+   "Column_15ortnq"
+  ]
+ },
+ "Column_g6bw1c": {
+  "Id": "Column_g6bw1c",
+  "Kind": "Column",
+  "Type": "Field",
+  "Start": 0,
+  "End": 3,
+  "Row": "Row_oa8438",
+  "Column::Field": [
+   "Resolve_Minutes"
+  ]
+ },
+ "Column_15ortnq": {
+  "Id": "Column_15ortnq",
+  "Kind": "Column",
+  "Type": "Field",
+  "Start": 3,
+  "End": 6,
+  "Row": "Row_oa8438",
+  "Column::Field": [
+   "DLP_Days_Left"
+  ]
+ },
+ "Row_oa8439": {
+  "Id": "Row_oa8439",
+  "Kind": "Row",
+  "Column": "Column_oa9beg",
+  "Row::Column": [
+   "Column_cbv1cj",
+   "Column_c1indq"
+  ]
+ },
+ "Column_cbv1cj": {
+  "Id": "Column_cbv1cj",
+  "Kind": "Column",
+  "Type": "Field",
+  "Start": 0,
+  "End": 3,
+  "Row": "Row_oa8439",
+  "Column::Field": [
+   "DLP_Covered"
+  ]
+ },
+ "Column_c1indq": {
+  "Id": "Column_c1indq",
+  "Kind": "Column",
+  "Type": "Field",
+  "Start": 3,
+  "End": 6,
+  "Row": "Row_oa8439",
+  "Column::Field": [
+   "Warranty_Days_Left"
+  ]
+ },
+ "Row_oa843a": {
+  "Id": "Row_oa843a",
+  "Kind": "Row",
+  "Column": "Column_oa9beg",
+  "Row::Column": [
+   "Column_1rdgtjf",
+   "Column_rgwpb"
+  ]
+ },
+ "Column_1rdgtjf": {
+  "Id": "Column_1rdgtjf",
+  "Kind": "Column",
+  "Type": "Field",
+  "Start": 0,
+  "End": 3,
+  "Row": "Row_oa843a",
+  "Column::Field": [
+   "Warranty_Covered"
+  ]
+ },
+ "Column_rgwpb": {
+  "Id": "Column_rgwpb",
+  "Kind": "Column",
+  "Type": "Field",
+  "Start": 3,
+  "End": 6,
+  "Row": "Row_oa843a",
+  "Column::Field": [
+   "Liability"
+  ]
+ },
+ "Test_Case": {
+  "Id": "Test_Case",
+  "Kind": "Field",
+  "Type": "Text",
+  "Name": "Test Case",
+  "Model": "CAFM_zz_Formula_Sandbox_A00",
+  "Column": "Column_11ufqqv",
+  "Required": true
+ },
+ "QueryDefinition_j3b4gc": {
+  "Id": "QueryDefinition_j3b4gc",
+  "Kind": "QueryDefinition",
+  "Field": "Asset",
+  "LHSModel": "CAFM_Asset_A00",
+  "FlowType": "Form",
+  "LookupField": [
+   {
+    "Id": "Asset_Tag",
+    "Name": "Asset Tag",
+    "Type": "Text"
+   },
+   {
+    "Id": "DLP_End_Date",
+    "Name": "DLP End Date",
+    "Type": "Date"
+   },
+   {
+    "Id": "Warranty_End_Date",
+    "Name": "Warranty End Date",
+    "Type": "Date"
+   },
+   {
+    "Id": "Decennial_End_Date",
+    "Name": "Decennial End Date",
+    "Type": "Date"
+   },
+   {
+    "Id": "Batch",
+    "Name": "Batch",
+    "Type": "Text"
+   }
+  ],
+  "HiddenField": [],
+  "AutoFill": true
+ },
+ "Asset": {
+  "Id": "Asset",
+  "Kind": "Field",
+  "Type": "Reference",
+  "Name": "Asset",
+  "Model": "CAFM_zz_Formula_Sandbox_A00",
+  "Column": "Column_j3b4gc",
+  "Field::QueryDefinition": [
+   "QueryDefinition_j3b4gc"
+  ]
+ },
+ "First_Contact_At": {
+  "Id": "First_Contact_At",
+  "Kind": "Field",
+  "Type": "DateTime",
+  "Name": "First Contact At",
+  "Model": "CAFM_zz_Formula_Sandbox_A00",
+  "Column": "Column_usuhir"
+ },
+ "Own_Operations": {
+  "Id": "Own_Operations",
+  "Kind": "Field",
+  "Type": "Boolean",
+  "Name": "Own Operations",
+  "Model": "CAFM_zz_Formula_Sandbox_A00",
+  "Column": "Column_hwe203"
+ },
+ "Base_Priority": {
+  "Id": "Base_Priority",
+  "Kind": "Field",
+  "Type": "Text",
+  "Name": "Base Priority",
+  "Model": "CAFM_zz_Formula_Sandbox_A00",
+  "Column": "Column_1etszu0"
+ },
+ "Summer_Uplift": {
+  "Id": "Summer_Uplift",
+  "Kind": "Field",
+  "Type": "Boolean",
+  "Name": "Summer Uplift",
+  "Model": "CAFM_zz_Formula_Sandbox_A00",
+  "Column": "Column_1pjdrs"
+ },
+ "Structural": {
+  "Id": "Structural",
+  "Kind": "Field",
+  "Type": "Boolean",
+  "Name": "Structural",
+  "Model": "CAFM_zz_Formula_Sandbox_A00",
+  "Column": "Column_1m8wm6d"
+ },
+ "DLP_End_Date": {
+  "Id": "DLP_End_Date",
+  "Kind": "Field",
+  "Type": "Date",
+  "Name": "DLP End Date",
+  "Model": "CAFM_zz_Formula_Sandbox_A00",
+  "Column": "Column_7lxy8v"
+ },
+ "Warranty_End_Date": {
+  "Id": "Warranty_End_Date",
+  "Kind": "Field",
+  "Type": "Date",
+  "Name": "Warranty End Date",
+  "Model": "CAFM_zz_Formula_Sandbox_A00",
+  "Column": "Column_1mdbj4n"
+ },
+ "Expression_1qa9td9": {
+  "Id": "Expression_1qa9td9",
+  "Kind": "Expression",
+  "Field": "Report_Month",
+  "ExpressionStr": "MONTH(First_Contact_At)",
+  "Expression::Node": [
+   "Node_i79coq"
+  ]
+ },
+ "Node_i79cop": {
+  "Id": "Node_i79cop",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Field",
+  "Field": "First_Contact_At",
+  "Node": "Node_i79coq"
+ },
+ "Node_i79coq": {
+  "Id": "Node_i79coq",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Function",
+  "Value": "MONTH",
+  "Category": "Date",
+  "Node::Node": [
+   "Node_i79cop"
+  ],
+  "FieldRefCount": 1,
+  "Expression": "Expression_1qa9td9"
+ },
+ "Report_Month": {
+  "Id": "Report_Month",
+  "Kind": "Field",
+  "Type": "Number",
+  "Name": "Report Month",
+  "Model": "CAFM_zz_Formula_Sandbox_A00",
+  "Column": "Column_1qa9td9",
+  "Field::Expression": [
+   "Expression_1qa9td9"
+  ]
+ },
+ "Expression_1yp3rr2": {
+  "Id": "Expression_1yp3rr2",
+  "Kind": "Expression",
+  "Field": "Summer_Flag",
+  "ExpressionStr": "IF(AND(Summer_Uplift, Report_Month >= 6, Report_Month <= 9), 1, 0)",
+  "Expression::Node": [
+   "Node_s1pklc"
+  ]
+ },
+ "Node_1tf8tov": {
+  "Id": "Node_1tf8tov",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Field",
+  "Field": "Summer_Uplift",
+  "Node": "Node_1tf8tp2"
+ },
+ "Node_1tf8tow": {
+  "Id": "Node_1tf8tow",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Field",
+  "Field": "Report_Month",
+  "Node": "Node_1tf8toy"
+ },
+ "Node_1tf8tox": {
+  "Id": "Node_1tf8tox",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Static",
+  "Value": "6",
+  "Node": "Node_1tf8toy"
+ },
+ "Node_1tf8toy": {
+  "Id": "Node_1tf8toy",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Function",
+  "Value": ">=",
+  "Category": "Boolean",
+  "Syntax": "Infix",
+  "Node::Node": [
+   "Node_1tf8tow",
+   "Node_1tf8tox"
+  ],
+  "FieldRefCount": 2,
+  "Node": "Node_1tf8tp2"
+ },
+ "Node_1tf8toz": {
+  "Id": "Node_1tf8toz",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Field",
+  "Field": "Report_Month",
+  "Node": "Node_1tf8tp1"
+ },
+ "Node_1tf8tp0": {
+  "Id": "Node_1tf8tp0",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Static",
+  "Value": "9",
+  "Node": "Node_1tf8tp1"
+ },
+ "Node_1tf8tp1": {
+  "Id": "Node_1tf8tp1",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Function",
+  "Value": "<=",
+  "Category": "Boolean",
+  "Syntax": "Infix",
+  "Node::Node": [
+   "Node_1tf8toz",
+   "Node_1tf8tp0"
+  ],
+  "FieldRefCount": 2,
+  "Node": "Node_1tf8tp2"
+ },
+ "Node_1tf8tp2": {
+  "Id": "Node_1tf8tp2",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Function",
+  "Value": "AND",
+  "Category": "Logical",
+  "Node::Node": [
+   "Node_1tf8tov",
+   "Node_1tf8toy",
+   "Node_1tf8tp1"
+  ],
+  "FieldRefCount": 3,
+  "Node": "Node_s1pklc"
+ },
+ "Node_1tf8tp3": {
+  "Id": "Node_1tf8tp3",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Static",
+  "Value": "1",
+  "Node": "Node_s1pklc"
+ },
+ "Node_1tf8tp4": {
+  "Id": "Node_1tf8tp4",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Static",
+  "Value": "0",
+  "Node": "Node_s1pklc"
+ },
+ "Node_s1pklc": {
+  "Id": "Node_s1pklc",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Function",
+  "Value": "IF",
+  "Category": "Logical",
+  "Node::Node": [
+   "Node_1tf8tp2",
+   "Node_1tf8tp3",
+   "Node_1tf8tp4"
+  ],
+  "FieldRefCount": 3,
+  "Expression": "Expression_1yp3rr2"
+ },
+ "Summer_Flag": {
+  "Id": "Summer_Flag",
+  "Kind": "Field",
+  "Type": "Number",
+  "Name": "Summer Flag",
+  "Model": "CAFM_zz_Formula_Sandbox_A00",
+  "Column": "Column_1yp3rr2",
+  "Field::Expression": [
+   "Expression_1yp3rr2"
+  ]
+ },
+ "Expression_1exmdla": {
+  "Id": "Expression_1exmdla",
+  "Kind": "Expression",
+  "Field": "Priority",
+  "ExpressionStr": "IF(AND(Summer_Flag = 1, Base_Priority = \"P3\"), \"P2\", Base_Priority)",
+  "Expression::Node": [
+   "Node_10kwpa9"
+  ]
+ },
+ "Node_10kwpa0": {
+  "Id": "Node_10kwpa0",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Field",
+  "Field": "Summer_Flag",
+  "Node": "Node_10kwpa2"
+ },
+ "Node_10kwpa1": {
+  "Id": "Node_10kwpa1",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Static",
+  "Value": "1",
+  "Node": "Node_10kwpa2"
+ },
+ "Node_10kwpa2": {
+  "Id": "Node_10kwpa2",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Function",
+  "Value": "=",
+  "Category": "Boolean",
+  "Syntax": "Infix",
+  "Node::Node": [
+   "Node_10kwpa0",
+   "Node_10kwpa1"
+  ],
+  "FieldRefCount": 2,
+  "Node": "Node_10kwpa6"
+ },
+ "Node_10kwpa3": {
+  "Id": "Node_10kwpa3",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Field",
+  "Field": "Base_Priority",
+  "Node": "Node_10kwpa5"
+ },
+ "Node_10kwpa4": {
+  "Id": "Node_10kwpa4",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Static",
+  "Value": "P3",
+  "Node": "Node_10kwpa5"
+ },
+ "Node_10kwpa5": {
+  "Id": "Node_10kwpa5",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Function",
+  "Value": "=",
+  "Category": "Boolean",
+  "Syntax": "Infix",
+  "Node::Node": [
+   "Node_10kwpa3",
+   "Node_10kwpa4"
+  ],
+  "FieldRefCount": 2,
+  "Node": "Node_10kwpa6"
+ },
+ "Node_10kwpa6": {
+  "Id": "Node_10kwpa6",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Function",
+  "Value": "AND",
+  "Category": "Logical",
+  "Node::Node": [
+   "Node_10kwpa2",
+   "Node_10kwpa5"
+  ],
+  "FieldRefCount": 2,
+  "Node": "Node_10kwpa9"
+ },
+ "Node_10kwpa7": {
+  "Id": "Node_10kwpa7",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Static",
+  "Value": "P2",
+  "Node": "Node_10kwpa9"
+ },
+ "Node_10kwpa8": {
+  "Id": "Node_10kwpa8",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Field",
+  "Field": "Base_Priority",
+  "Node": "Node_10kwpa9"
+ },
+ "Node_10kwpa9": {
+  "Id": "Node_10kwpa9",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Function",
+  "Value": "IF",
+  "Category": "Logical",
+  "Node::Node": [
+   "Node_10kwpa6",
+   "Node_10kwpa7",
+   "Node_10kwpa8"
+  ],
+  "FieldRefCount": 3,
+  "Expression": "Expression_1exmdla"
+ },
+ "Priority": {
+  "Id": "Priority",
+  "Kind": "Field",
+  "Type": "Text",
+  "Name": "Priority",
+  "Model": "CAFM_zz_Formula_Sandbox_A00",
+  "Column": "Column_1exmdla",
+  "Field::Expression": [
+   "Expression_1exmdla"
+  ]
+ },
+ "Expression_n8wda7": {
+  "Id": "Expression_n8wda7",
+  "Kind": "Expression",
+  "Field": "Response_Minutes",
+  "ExpressionStr": "IF(Priority = \"P1\", 30, IF(Priority = \"P2\", 60, IF(Priority = \"P3\", 240, 1440)))",
+  "Expression::Node": [
+   "Node_nh30fv"
+  ]
+ },
+ "Node_1vfqt51": {
+  "Id": "Node_1vfqt51",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Field",
+  "Field": "Priority",
+  "Node": "Node_1vfqt53"
+ },
+ "Node_1vfqt52": {
+  "Id": "Node_1vfqt52",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Static",
+  "Value": "P1",
+  "Node": "Node_1vfqt53"
+ },
+ "Node_1vfqt53": {
+  "Id": "Node_1vfqt53",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Function",
+  "Value": "=",
+  "Category": "Boolean",
+  "Syntax": "Infix",
+  "Node::Node": [
+   "Node_1vfqt51",
+   "Node_1vfqt52"
+  ],
+  "FieldRefCount": 2,
+  "Node": "Node_nh30fv"
+ },
+ "Node_1vfqt54": {
+  "Id": "Node_1vfqt54",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Static",
+  "Value": "30",
+  "Node": "Node_nh30fv"
+ },
+ "Node_1vfqt55": {
+  "Id": "Node_1vfqt55",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Field",
+  "Field": "Priority",
+  "Node": "Node_1vfqt57"
+ },
+ "Node_1vfqt56": {
+  "Id": "Node_1vfqt56",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Static",
+  "Value": "P2",
+  "Node": "Node_1vfqt57"
+ },
+ "Node_1vfqt57": {
+  "Id": "Node_1vfqt57",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Function",
+  "Value": "=",
+  "Category": "Boolean",
+  "Syntax": "Infix",
+  "Node::Node": [
+   "Node_1vfqt55",
+   "Node_1vfqt56"
+  ],
+  "FieldRefCount": 2,
+  "Node": "Node_nh30fu"
+ },
+ "Node_1vfqt58": {
+  "Id": "Node_1vfqt58",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Static",
+  "Value": "60",
+  "Node": "Node_nh30fu"
+ },
+ "Node_1vfqt59": {
+  "Id": "Node_1vfqt59",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Field",
+  "Field": "Priority",
+  "Node": "Node_nh30fq"
+ },
+ "Node_1vfqt5a": {
+  "Id": "Node_1vfqt5a",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Static",
+  "Value": "P3",
+  "Node": "Node_nh30fq"
+ },
+ "Node_nh30fq": {
+  "Id": "Node_nh30fq",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Function",
+  "Value": "=",
+  "Category": "Boolean",
+  "Syntax": "Infix",
+  "Node::Node": [
+   "Node_1vfqt59",
+   "Node_1vfqt5a"
+  ],
+  "FieldRefCount": 2,
+  "Node": "Node_nh30ft"
+ },
+ "Node_nh30fr": {
+  "Id": "Node_nh30fr",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Static",
+  "Value": "240",
+  "Node": "Node_nh30ft"
+ },
+ "Node_nh30fs": {
+  "Id": "Node_nh30fs",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Static",
+  "Value": "1440",
+  "Node": "Node_nh30ft"
+ },
+ "Node_nh30ft": {
+  "Id": "Node_nh30ft",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Function",
+  "Value": "IF",
+  "Category": "Logical",
+  "Node::Node": [
+   "Node_nh30fq",
+   "Node_nh30fr",
+   "Node_nh30fs"
+  ],
+  "FieldRefCount": 3,
+  "Node": "Node_nh30fu"
+ },
+ "Node_nh30fu": {
+  "Id": "Node_nh30fu",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Function",
+  "Value": "IF",
+  "Category": "Logical",
+  "Node::Node": [
+   "Node_1vfqt57",
+   "Node_1vfqt58",
+   "Node_nh30ft"
+  ],
+  "FieldRefCount": 3,
+  "Node": "Node_nh30fv"
+ },
+ "Node_nh30fv": {
+  "Id": "Node_nh30fv",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Function",
+  "Value": "IF",
+  "Category": "Logical",
+  "Node::Node": [
+   "Node_1vfqt53",
+   "Node_1vfqt54",
+   "Node_nh30fu"
+  ],
+  "FieldRefCount": 3,
+  "Expression": "Expression_n8wda7"
+ },
+ "Response_Minutes": {
+  "Id": "Response_Minutes",
+  "Kind": "Field",
+  "Type": "Number",
+  "Name": "Response Minutes",
+  "Model": "CAFM_zz_Formula_Sandbox_A00",
+  "Column": "Column_n8wda7",
+  "Field::Expression": [
+   "Expression_n8wda7"
+  ]
+ },
+ "Expression_g6bw1c": {
+  "Id": "Expression_g6bw1c",
+  "Kind": "Expression",
+  "Field": "Resolve_Minutes",
+  "ExpressionStr": "IF(Priority = \"P1\", 240, IF(Priority = \"P2\", 480, IF(Priority = \"P3\", 4320, 14400)))",
+  "Expression::Node": [
+   "Node_ffy5m4"
+  ]
+ },
+ "Node_1ia1xau": {
+  "Id": "Node_1ia1xau",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Field",
+  "Field": "Priority",
+  "Node": "Node_1ia1xaw"
+ },
+ "Node_1ia1xav": {
+  "Id": "Node_1ia1xav",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Static",
+  "Value": "P1",
+  "Node": "Node_1ia1xaw"
+ },
+ "Node_1ia1xaw": {
+  "Id": "Node_1ia1xaw",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Function",
+  "Value": "=",
+  "Category": "Boolean",
+  "Syntax": "Infix",
+  "Node::Node": [
+   "Node_1ia1xau",
+   "Node_1ia1xav"
+  ],
+  "FieldRefCount": 2,
+  "Node": "Node_ffy5m4"
+ },
+ "Node_1ia1xax": {
+  "Id": "Node_1ia1xax",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Static",
+  "Value": "240",
+  "Node": "Node_ffy5m4"
+ },
+ "Node_1ia1xay": {
+  "Id": "Node_1ia1xay",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Field",
+  "Field": "Priority",
+  "Node": "Node_1ia1xb0"
+ },
+ "Node_1ia1xaz": {
+  "Id": "Node_1ia1xaz",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Static",
+  "Value": "P2",
+  "Node": "Node_1ia1xb0"
+ },
+ "Node_1ia1xb0": {
+  "Id": "Node_1ia1xb0",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Function",
+  "Value": "=",
+  "Category": "Boolean",
+  "Syntax": "Infix",
+  "Node::Node": [
+   "Node_1ia1xay",
+   "Node_1ia1xaz"
+  ],
+  "FieldRefCount": 2,
+  "Node": "Node_ffy5m3"
+ },
+ "Node_1ia1xb1": {
+  "Id": "Node_1ia1xb1",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Static",
+  "Value": "480",
+  "Node": "Node_ffy5m3"
+ },
+ "Node_1ia1xb2": {
+  "Id": "Node_1ia1xb2",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Field",
+  "Field": "Priority",
+  "Node": "Node_ffy5lz"
+ },
+ "Node_1ia1xb3": {
+  "Id": "Node_1ia1xb3",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Static",
+  "Value": "P3",
+  "Node": "Node_ffy5lz"
+ },
+ "Node_ffy5lz": {
+  "Id": "Node_ffy5lz",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Function",
+  "Value": "=",
+  "Category": "Boolean",
+  "Syntax": "Infix",
+  "Node::Node": [
+   "Node_1ia1xb2",
+   "Node_1ia1xb3"
+  ],
+  "FieldRefCount": 2,
+  "Node": "Node_ffy5m2"
+ },
+ "Node_ffy5m0": {
+  "Id": "Node_ffy5m0",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Static",
+  "Value": "4320",
+  "Node": "Node_ffy5m2"
+ },
+ "Node_ffy5m1": {
+  "Id": "Node_ffy5m1",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Static",
+  "Value": "14400",
+  "Node": "Node_ffy5m2"
+ },
+ "Node_ffy5m2": {
+  "Id": "Node_ffy5m2",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Function",
+  "Value": "IF",
+  "Category": "Logical",
+  "Node::Node": [
+   "Node_ffy5lz",
+   "Node_ffy5m0",
+   "Node_ffy5m1"
+  ],
+  "FieldRefCount": 3,
+  "Node": "Node_ffy5m3"
+ },
+ "Node_ffy5m3": {
+  "Id": "Node_ffy5m3",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Function",
+  "Value": "IF",
+  "Category": "Logical",
+  "Node::Node": [
+   "Node_1ia1xb0",
+   "Node_1ia1xb1",
+   "Node_ffy5m2"
+  ],
+  "FieldRefCount": 3,
+  "Node": "Node_ffy5m4"
+ },
+ "Node_ffy5m4": {
+  "Id": "Node_ffy5m4",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Function",
+  "Value": "IF",
+  "Category": "Logical",
+  "Node::Node": [
+   "Node_1ia1xaw",
+   "Node_1ia1xax",
+   "Node_ffy5m3"
+  ],
+  "FieldRefCount": 3,
+  "Expression": "Expression_g6bw1c"
+ },
+ "Resolve_Minutes": {
+  "Id": "Resolve_Minutes",
+  "Kind": "Field",
+  "Type": "Number",
+  "Name": "Resolve Minutes",
+  "Model": "CAFM_zz_Formula_Sandbox_A00",
+  "Column": "Column_g6bw1c",
+  "Field::Expression": [
+   "Expression_g6bw1c"
+  ]
+ },
+ "Expression_15ortnq": {
+  "Id": "Expression_15ortnq",
+  "Kind": "Expression",
+  "Field": "DLP_Days_Left",
+  "ExpressionStr": "DATEDIFF(First_Contact_At, DLP_End_Date, \"Day\")",
+  "Expression::Node": [
+   "Node_19q6kp"
+  ]
+ },
+ "Node_19q6km": {
+  "Id": "Node_19q6km",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Field",
+  "Field": "First_Contact_At",
+  "Node": "Node_19q6kp"
+ },
+ "Node_19q6kn": {
+  "Id": "Node_19q6kn",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Field",
+  "Field": "DLP_End_Date",
+  "Node": "Node_19q6kp"
+ },
+ "Node_19q6ko": {
+  "Id": "Node_19q6ko",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Static",
+  "Value": "Day",
+  "Node": "Node_19q6kp"
+ },
+ "Node_19q6kp": {
+  "Id": "Node_19q6kp",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Function",
+  "Value": "DATEDIFF",
+  "Category": "Date",
+  "Node::Node": [
+   "Node_19q6km",
+   "Node_19q6kn",
+   "Node_19q6ko"
+  ],
+  "FieldRefCount": 3,
+  "Expression": "Expression_15ortnq"
+ },
+ "DLP_Days_Left": {
+  "Id": "DLP_Days_Left",
+  "Kind": "Field",
+  "Type": "Number",
+  "Name": "DLP Days Left",
+  "Model": "CAFM_zz_Formula_Sandbox_A00",
+  "Column": "Column_15ortnq",
+  "Field::Expression": [
+   "Expression_15ortnq"
+  ]
+ },
+ "Excluded_From_DLP": {
+  "Id": "Excluded_From_DLP",
+  "Kind": "Field",
+  "Type": "Boolean",
+  "Name": "Excluded From DLP",
+  "Model": "CAFM_zz_Formula_Sandbox_A00",
+  "Column": "Column_q7y7g"
+ },
+ "Expression_cbv1cj": {
+  "Id": "Expression_cbv1cj",
+  "Kind": "Expression",
+  "Field": "DLP_Covered",
+  "ExpressionStr": "IF(DLP_Days_Left >= 0, 1, 0)",
+  "Expression::Node": [
+   "Node_1utdsh6"
+  ]
+ },
+ "Node_1utdsh1": {
+  "Id": "Node_1utdsh1",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Field",
+  "Field": "DLP_Days_Left",
+  "Node": "Node_1utdsh3"
+ },
+ "Node_1utdsh2": {
+  "Id": "Node_1utdsh2",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Static",
+  "Value": "0",
+  "Node": "Node_1utdsh3"
+ },
+ "Node_1utdsh3": {
+  "Id": "Node_1utdsh3",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Function",
+  "Value": ">=",
+  "Category": "Boolean",
+  "Syntax": "Infix",
+  "Node::Node": [
+   "Node_1utdsh1",
+   "Node_1utdsh2"
+  ],
+  "FieldRefCount": 2,
+  "Node": "Node_1utdsh6"
+ },
+ "Node_1utdsh4": {
+  "Id": "Node_1utdsh4",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Static",
+  "Value": "1",
+  "Node": "Node_1utdsh6"
+ },
+ "Node_1utdsh5": {
+  "Id": "Node_1utdsh5",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Static",
+  "Value": "0",
+  "Node": "Node_1utdsh6"
+ },
+ "Node_1utdsh6": {
+  "Id": "Node_1utdsh6",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Function",
+  "Value": "IF",
+  "Category": "Logical",
+  "Node::Node": [
+   "Node_1utdsh3",
+   "Node_1utdsh4",
+   "Node_1utdsh5"
+  ],
+  "FieldRefCount": 3,
+  "Expression": "Expression_cbv1cj"
+ },
+ "DLP_Covered": {
+  "Id": "DLP_Covered",
+  "Kind": "Field",
+  "Type": "Number",
+  "Name": "DLP Covered",
+  "Model": "CAFM_zz_Formula_Sandbox_A00",
+  "Column": "Column_cbv1cj",
+  "Field::Expression": [
+   "Expression_cbv1cj"
+  ]
+ },
+ "Expression_c1indq": {
+  "Id": "Expression_c1indq",
+  "Kind": "Expression",
+  "Field": "Warranty_Days_Left",
+  "ExpressionStr": "DATEDIFF(First_Contact_At, Warranty_End_Date, \"Day\")",
+  "Expression::Node": [
+   "Node_q1qgi7"
+  ]
+ },
+ "Node_q1qgi4": {
+  "Id": "Node_q1qgi4",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Field",
+  "Field": "First_Contact_At",
+  "Node": "Node_q1qgi7"
+ },
+ "Node_q1qgi5": {
+  "Id": "Node_q1qgi5",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Field",
+  "Field": "Warranty_End_Date",
+  "Node": "Node_q1qgi7"
+ },
+ "Node_q1qgi6": {
+  "Id": "Node_q1qgi6",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Static",
+  "Value": "Day",
+  "Node": "Node_q1qgi7"
+ },
+ "Node_q1qgi7": {
+  "Id": "Node_q1qgi7",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Function",
+  "Value": "DATEDIFF",
+  "Category": "Date",
+  "Node::Node": [
+   "Node_q1qgi4",
+   "Node_q1qgi5",
+   "Node_q1qgi6"
+  ],
+  "FieldRefCount": 3,
+  "Expression": "Expression_c1indq"
+ },
+ "Warranty_Days_Left": {
+  "Id": "Warranty_Days_Left",
+  "Kind": "Field",
+  "Type": "Number",
+  "Name": "Warranty Days Left",
+  "Model": "CAFM_zz_Formula_Sandbox_A00",
+  "Column": "Column_c1indq",
+  "Field::Expression": [
+   "Expression_c1indq"
+  ]
+ },
+ "Expression_1rdgtjf": {
+  "Id": "Expression_1rdgtjf",
+  "Kind": "Expression",
+  "Field": "Warranty_Covered",
+  "ExpressionStr": "IF(Warranty_Days_Left >= 0, 1, 0)",
+  "Expression::Node": [
+   "Node_maip5v"
+  ]
+ },
+ "Node_maip5q": {
+  "Id": "Node_maip5q",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Field",
+  "Field": "Warranty_Days_Left",
+  "Node": "Node_maip5s"
+ },
+ "Node_maip5r": {
+  "Id": "Node_maip5r",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Static",
+  "Value": "0",
+  "Node": "Node_maip5s"
+ },
+ "Node_maip5s": {
+  "Id": "Node_maip5s",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Function",
+  "Value": ">=",
+  "Category": "Boolean",
+  "Syntax": "Infix",
+  "Node::Node": [
+   "Node_maip5q",
+   "Node_maip5r"
+  ],
+  "FieldRefCount": 2,
+  "Node": "Node_maip5v"
+ },
+ "Node_maip5t": {
+  "Id": "Node_maip5t",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Static",
+  "Value": "1",
+  "Node": "Node_maip5v"
+ },
+ "Node_maip5u": {
+  "Id": "Node_maip5u",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Static",
+  "Value": "0",
+  "Node": "Node_maip5v"
+ },
+ "Node_maip5v": {
+  "Id": "Node_maip5v",
+  "Kind": "Node",
+  "DataType": "Number",
+  "Type": "Function",
+  "Value": "IF",
+  "Category": "Logical",
+  "Node::Node": [
+   "Node_maip5s",
+   "Node_maip5t",
+   "Node_maip5u"
+  ],
+  "FieldRefCount": 3,
+  "Expression": "Expression_1rdgtjf"
+ },
+ "Warranty_Covered": {
+  "Id": "Warranty_Covered",
+  "Kind": "Field",
+  "Type": "Number",
+  "Name": "Warranty Covered",
+  "Model": "CAFM_zz_Formula_Sandbox_A00",
+  "Column": "Column_1rdgtjf",
+  "Field::Expression": [
+   "Expression_1rdgtjf"
+  ]
+ },
+ "Expression_rgwpb": {
+  "Id": "Expression_rgwpb",
+  "Kind": "Expression",
+  "Field": "Liability",
+  "ExpressionStr": "IF(Own_Operations, \"OWN_OPS\", IF(Structural, \"DECENNIAL_REVIEW\", IF(Excluded_From_DLP, \"CHARGEABLE\", IF(DLP_Covered = 1, \"DLP\", IF(Warranty_Covered = 1, \"WARRANTY\", \"CHARGEABLE\")))))",
+  "Expression::Node": [
+   "Node_i2s2co"
+  ]
+ },
+ "Node_jpxvy": {
+  "Id": "Node_jpxvy",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Field",
+  "Field": "Own_Operations",
+  "Node": "Node_i2s2co"
+ },
+ "Node_jpxvz": {
+  "Id": "Node_jpxvz",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Static",
+  "Value": "OWN_OPS",
+  "Node": "Node_i2s2co"
+ },
+ "Node_jpxw0": {
+  "Id": "Node_jpxw0",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Field",
+  "Field": "Structural",
+  "Node": "Node_i2s2cn"
+ },
+ "Node_jpxw1": {
+  "Id": "Node_jpxw1",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Static",
+  "Value": "DECENNIAL_REVIEW",
+  "Node": "Node_i2s2cn"
+ },
+ "Node_jpxw2": {
+  "Id": "Node_jpxw2",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Field",
+  "Field": "Excluded_From_DLP",
+  "Node": "Node_i2s2cm"
+ },
+ "Node_jpxw3": {
+  "Id": "Node_jpxw3",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Static",
+  "Value": "CHARGEABLE",
+  "Node": "Node_i2s2cm"
+ },
+ "Node_jpxw4": {
+  "Id": "Node_jpxw4",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Field",
+  "Field": "DLP_Covered",
+  "Node": "Node_jpxw6"
+ },
+ "Node_jpxw5": {
+  "Id": "Node_jpxw5",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Static",
+  "Value": "1",
+  "Node": "Node_jpxw6"
+ },
+ "Node_jpxw6": {
+  "Id": "Node_jpxw6",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Function",
+  "Value": "=",
+  "Category": "Boolean",
+  "Syntax": "Infix",
+  "Node::Node": [
+   "Node_jpxw4",
+   "Node_jpxw5"
+  ],
+  "FieldRefCount": 2,
+  "Node": "Node_i2s2cl"
+ },
+ "Node_jpxw7": {
+  "Id": "Node_jpxw7",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Static",
+  "Value": "DLP",
+  "Node": "Node_i2s2cl"
+ },
+ "Node_i2s2cf": {
+  "Id": "Node_i2s2cf",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Field",
+  "Field": "Warranty_Covered",
+  "Node": "Node_i2s2ch"
+ },
+ "Node_i2s2cg": {
+  "Id": "Node_i2s2cg",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Static",
+  "Value": "1",
+  "Node": "Node_i2s2ch"
+ },
+ "Node_i2s2ch": {
+  "Id": "Node_i2s2ch",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Function",
+  "Value": "=",
+  "Category": "Boolean",
+  "Syntax": "Infix",
+  "Node::Node": [
+   "Node_i2s2cf",
+   "Node_i2s2cg"
+  ],
+  "FieldRefCount": 2,
+  "Node": "Node_i2s2ck"
+ },
+ "Node_i2s2ci": {
+  "Id": "Node_i2s2ci",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Static",
+  "Value": "WARRANTY",
+  "Node": "Node_i2s2ck"
+ },
+ "Node_i2s2cj": {
+  "Id": "Node_i2s2cj",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Static",
+  "Value": "CHARGEABLE",
+  "Node": "Node_i2s2ck"
+ },
+ "Node_i2s2ck": {
+  "Id": "Node_i2s2ck",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Function",
+  "Value": "IF",
+  "Category": "Logical",
+  "Node::Node": [
+   "Node_i2s2ch",
+   "Node_i2s2ci",
+   "Node_i2s2cj"
+  ],
+  "FieldRefCount": 3,
+  "Node": "Node_i2s2cl"
+ },
+ "Node_i2s2cl": {
+  "Id": "Node_i2s2cl",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Function",
+  "Value": "IF",
+  "Category": "Logical",
+  "Node::Node": [
+   "Node_jpxw6",
+   "Node_jpxw7",
+   "Node_i2s2ck"
+  ],
+  "FieldRefCount": 3,
+  "Node": "Node_i2s2cm"
+ },
+ "Node_i2s2cm": {
+  "Id": "Node_i2s2cm",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Function",
+  "Value": "IF",
+  "Category": "Logical",
+  "Node::Node": [
+   "Node_jpxw2",
+   "Node_jpxw3",
+   "Node_i2s2cl"
+  ],
+  "FieldRefCount": 3,
+  "Node": "Node_i2s2cn"
+ },
+ "Node_i2s2cn": {
+  "Id": "Node_i2s2cn",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Function",
+  "Value": "IF",
+  "Category": "Logical",
+  "Node::Node": [
+   "Node_jpxw0",
+   "Node_jpxw1",
+   "Node_i2s2cm"
+  ],
+  "FieldRefCount": 3,
+  "Node": "Node_i2s2co"
+ },
+ "Node_i2s2co": {
+  "Id": "Node_i2s2co",
+  "Kind": "Node",
+  "DataType": "String",
+  "Type": "Function",
+  "Value": "IF",
+  "Category": "Logical",
+  "Node::Node": [
+   "Node_jpxvy",
+   "Node_jpxvz",
+   "Node_i2s2cn"
+  ],
+  "FieldRefCount": 3,
+  "Expression": "Expression_rgwpb"
+ },
+ "Liability": {
+  "Id": "Liability",
+  "Kind": "Field",
+  "Type": "Text",
+  "Name": "Liability",
+  "Model": "CAFM_zz_Formula_Sandbox_A00",
+  "Column": "Column_rgwpb",
+  "Field::Expression": [
+   "Expression_rgwpb"
+  ]
+ },
+ "PublishedAt": "2026-09-22T06:57:05Z",
+ "PublishedBy": {
+  "_id": "UsATUIj4RC2p",
+  "Name": "Thomas",
+  "Kind": "User"
+ },
+ "_meta_version": "1790060226518703"
+}

@@ -1,0 +1,218 @@
+{
+  "Root": "CAFM_Request_Category_A00",
+  "CAFM_Request_Category_A00": {
+    "Id": "CAFM_Request_Category_A00",
+    "Name": "CAFM Request Category",
+    "Kind": "Model",
+    "FlowType": "Form",
+    "Description": "",
+    "Model::Row": [
+      "Row_x3sdom"
+    ],
+    "Model::Field": [
+      "Category_Code",
+      "Category_Name",
+      "Category_Name_AR",
+      "Trade",
+      "Base_Priority",
+      "Summer_Uplift",
+      "Structural"
+    ]
+  },
+  "Row_x3sdom": {
+    "Id": "Row_x3sdom",
+    "Kind": "Row",
+    "Model": "CAFM_Request_Category_A00",
+    "Row::Column": [
+      "Column_x3sdom"
+    ]
+  },
+  "Column_x3sdom": {
+    "Id": "Column_x3sdom",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "Details",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_x3sdom",
+    "Column::Row": [
+      "Row_x3r5j4",
+      "Row_x3r5j5",
+      "Row_x3r5j6",
+      "Row_x3r5j7"
+    ]
+  },
+  "Row_x3r5j4": {
+    "Id": "Row_x3r5j4",
+    "Kind": "Row",
+    "Column": "Column_x3sdom",
+    "Row::Column": [
+      "Column_1ymh5bn",
+      "Column_1ympat5"
+    ]
+  },
+  "Column_1ymh5bn": {
+    "Id": "Column_1ymh5bn",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_x3r5j4",
+    "Column::Field": [
+      "Category_Code"
+    ]
+  },
+  "Column_1ympat5": {
+    "Id": "Column_1ympat5",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_x3r5j4",
+    "Column::Field": [
+      "Category_Name"
+    ]
+  },
+  "Row_x3r5j5": {
+    "Id": "Row_x3r5j5",
+    "Kind": "Row",
+    "Column": "Column_x3sdom",
+    "Row::Column": [
+      "Column_yn51rf",
+      "Column_qepr6z"
+    ]
+  },
+  "Column_yn51rf": {
+    "Id": "Column_yn51rf",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_x3r5j5",
+    "Column::Field": [
+      "Category_Name_AR"
+    ]
+  },
+  "Column_qepr6z": {
+    "Id": "Column_qepr6z",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_x3r5j5",
+    "Column::Field": [
+      "Trade"
+    ]
+  },
+  "Row_x3r5j6": {
+    "Id": "Row_x3r5j6",
+    "Kind": "Row",
+    "Column": "Column_x3sdom",
+    "Row::Column": [
+      "Column_1iw9j87",
+      "Column_5rzx5z"
+    ]
+  },
+  "Column_1iw9j87": {
+    "Id": "Column_1iw9j87",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_x3r5j6",
+    "Column::Field": [
+      "Base_Priority"
+    ]
+  },
+  "Column_5rzx5z": {
+    "Id": "Column_5rzx5z",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_x3r5j6",
+    "Column::Field": [
+      "Summer_Uplift"
+    ]
+  },
+  "Row_x3r5j7": {
+    "Id": "Row_x3r5j7",
+    "Kind": "Row",
+    "Column": "Column_x3sdom",
+    "Row::Column": [
+      "Column_iz9jo4"
+    ]
+  },
+  "Column_iz9jo4": {
+    "Id": "Column_iz9jo4",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_x3r5j7",
+    "Column::Field": [
+      "Structural"
+    ]
+  },
+  "Category_Code": {
+    "Id": "Category_Code",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Category Code",
+    "Model": "CAFM_Request_Category_A00",
+    "Column": "Column_1ymh5bn",
+    "Required": true
+  },
+  "Category_Name": {
+    "Id": "Category_Name",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Category Name",
+    "Model": "CAFM_Request_Category_A00",
+    "Column": "Column_1ympat5",
+    "Required": true
+  },
+  "Category_Name_AR": {
+    "Id": "Category_Name_AR",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Category Name AR",
+    "Model": "CAFM_Request_Category_A00",
+    "Column": "Column_yn51rf"
+  },
+  "Trade": {
+    "Id": "Trade",
+    "Kind": "Field",
+    "Type": "Select",
+    "Name": "Trade",
+    "Model": "CAFM_Request_Category_A00",
+    "Column": "Column_qepr6z",
+    "ReferredList": "CAFM_Trade_A00"
+  },
+  "Base_Priority": {
+    "Id": "Base_Priority",
+    "Kind": "Field",
+    "Type": "Select",
+    "Name": "Base Priority",
+    "Model": "CAFM_Request_Category_A00",
+    "Column": "Column_1iw9j87",
+    "Required": true,
+    "ReferredList": "CAFM_Priority_A00"
+  },
+  "Summer_Uplift": {
+    "Id": "Summer_Uplift",
+    "Kind": "Field",
+    "Type": "Boolean",
+    "Name": "Summer Uplift",
+    "Model": "CAFM_Request_Category_A00",
+    "Column": "Column_5rzx5z"
+  },
+  "Structural": {
+    "Id": "Structural",
+    "Kind": "Field",
+    "Type": "Boolean",
+    "Name": "Structural",
+    "Model": "CAFM_Request_Category_A00",
+    "Column": "Column_iz9jo4"
+  }
+}

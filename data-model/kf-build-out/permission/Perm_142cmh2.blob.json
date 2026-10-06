@@ -1,0 +1,49 @@
+{
+  "Root": "Perm_142cmh2",
+  "Perm_142cmh2": {
+    "Id": "Perm_142cmh2",
+    "Kind": "FlowPermission",
+    "Role": "Ro_12sl9a8",
+    "RoleName": "DLP Manager",
+    "Model": "CAFM_Root_Cause_A00",
+    "Level": "Editable",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_1aulv6p",
+      "Permission_1auu0o7",
+      "Permission_n82ezd",
+      "Permission_141v0wz",
+      "Permission_6o2c5v"
+    ]
+  },
+  "Permission_1aulv6p": {
+    "Id": "Permission_1aulv6p",
+    "Kind": "Permission",
+    "Column": "Root_Cause_Code",
+    "Permission": "Editable"
+  },
+  "Permission_1auu0o7": {
+    "Id": "Permission_1auu0o7",
+    "Kind": "Permission",
+    "Column": "Root_Cause_Name",
+    "Permission": "Editable"
+  },
+  "Permission_n82ezd": {
+    "Id": "Permission_n82ezd",
+    "Kind": "Permission",
+    "Column": "Root_Cause_Name_AR",
+    "Permission": "Editable"
+  },
+  "Permission_141v0wz": {
+    "Id": "Permission_141v0wz",
+    "Kind": "Permission",
+    "Column": "Trade",
+    "Permission": "Editable"
+  },
+  "Permission_6o2c5v": {
+    "Id": "Permission_6o2c5v",
+    "Kind": "Permission",
+    "Column": "Excluded_From_DLP",
+    "Permission": "Editable"
+  }
+}

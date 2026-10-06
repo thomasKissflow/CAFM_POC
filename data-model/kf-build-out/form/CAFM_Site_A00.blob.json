@@ -1,0 +1,586 @@
+{
+  "Root": "CAFM_Site_A00",
+  "CAFM_Site_A00": {
+    "Id": "CAFM_Site_A00",
+    "Name": "CAFM Site",
+    "Kind": "Model",
+    "FlowType": "Form",
+    "Description": "",
+    "Model::Row": [
+      "Row_oam95h",
+      "Row_oam95i",
+      "Row_oam95j",
+      "Row_jxbscw"
+    ],
+    "Model::Field": [
+      "Site_Code",
+      "Site_Name",
+      "Site_Name_AR",
+      "District",
+      "Site_Kind",
+      "Client_Name",
+      "Own_Operations",
+      "TOC_Date",
+      "DLP_Months",
+      "DLP_End_Date",
+      "Decennial_End_Date",
+      "Floors",
+      "Unit_Count",
+      "Beds"
+    ],
+    "Model::Model": [
+      "Handover_Pack_A00"
+    ]
+  },
+  "Row_oam95h": {
+    "Id": "Row_oam95h",
+    "Kind": "Row",
+    "Model": "CAFM_Site_A00",
+    "Row::Column": [
+      "Column_oam95h"
+    ]
+  },
+  "Column_oam95h": {
+    "Id": "Column_oam95h",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "Identity",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_oam95h",
+    "Column::Row": [
+      "Row_oal0zz",
+      "Row_oal100",
+      "Row_oal101",
+      "Row_oal102"
+    ]
+  },
+  "Row_oal0zz": {
+    "Id": "Row_oal0zz",
+    "Kind": "Row",
+    "Column": "Column_oam95h",
+    "Row::Column": [
+      "Column_12g115",
+      "Column_12o6in"
+    ]
+  },
+  "Column_12g115": {
+    "Id": "Column_12g115",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_oal0zz",
+    "Column::Field": [
+      "Site_Code"
+    ]
+  },
+  "Column_12o6in": {
+    "Id": "Column_12o6in",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_oal0zz",
+    "Column::Field": [
+      "Site_Name"
+    ]
+  },
+  "Row_oal100": {
+    "Id": "Row_oal100",
+    "Kind": "Row",
+    "Column": "Column_oam95h",
+    "Row::Column": [
+      "Column_y8mt81",
+      "Column_1dkndrk"
+    ]
+  },
+  "Column_y8mt81": {
+    "Id": "Column_y8mt81",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_oal100",
+    "Column::Field": [
+      "Site_Name_AR"
+    ]
+  },
+  "Column_1dkndrk": {
+    "Id": "Column_1dkndrk",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_oal100",
+    "Column::Field": [
+      "District"
+    ]
+  },
+  "Row_oal101": {
+    "Id": "Row_oal101",
+    "Kind": "Row",
+    "Column": "Column_oam95h",
+    "Row::Column": [
+      "Column_12m22s",
+      "Column_29pq09"
+    ]
+  },
+  "Column_12m22s": {
+    "Id": "Column_12m22s",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_oal101",
+    "Column::Field": [
+      "Site_Kind"
+    ]
+  },
+  "Column_29pq09": {
+    "Id": "Column_29pq09",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_oal101",
+    "Column::Field": [
+      "Client_Name"
+    ]
+  },
+  "Row_oal102": {
+    "Id": "Row_oal102",
+    "Kind": "Row",
+    "Column": "Column_oam95h",
+    "Row::Column": [
+      "Column_x7tnup"
+    ]
+  },
+  "Column_x7tnup": {
+    "Id": "Column_x7tnup",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_oal102",
+    "Column::Field": [
+      "Own_Operations"
+    ]
+  },
+  "Row_oam95i": {
+    "Id": "Row_oam95i",
+    "Kind": "Row",
+    "Model": "CAFM_Site_A00",
+    "Row::Column": [
+      "Column_oam95i"
+    ]
+  },
+  "Column_oam95i": {
+    "Id": "Column_oam95i",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "Liability",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_oam95i",
+    "Column::Row": [
+      "Row_oal1u8",
+      "Row_oal1u9"
+    ]
+  },
+  "Row_oal1u8": {
+    "Id": "Row_oal1u8",
+    "Kind": "Row",
+    "Column": "Column_oam95i",
+    "Row::Column": [
+      "Column_edkjpp",
+      "Column_1qsegle"
+    ]
+  },
+  "Column_edkjpp": {
+    "Id": "Column_edkjpp",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_oal1u8",
+    "Column::Field": [
+      "TOC_Date"
+    ]
+  },
+  "Column_1qsegle": {
+    "Id": "Column_1qsegle",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_oal1u8",
+    "Column::Field": [
+      "DLP_Months"
+    ]
+  },
+  "Row_oal1u9": {
+    "Id": "Row_oal1u9",
+    "Kind": "Row",
+    "Column": "Column_oam95i",
+    "Row::Column": [
+      "Column_1oz7vy5",
+      "Column_1950mow"
+    ]
+  },
+  "Column_1oz7vy5": {
+    "Id": "Column_1oz7vy5",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_oal1u9",
+    "Column::Field": [
+      "DLP_End_Date"
+    ]
+  },
+  "Column_1950mow": {
+    "Id": "Column_1950mow",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_oal1u9",
+    "Column::Field": [
+      "Decennial_End_Date"
+    ]
+  },
+  "Row_oam95j": {
+    "Id": "Row_oam95j",
+    "Kind": "Row",
+    "Model": "CAFM_Site_A00",
+    "Row::Column": [
+      "Column_oam95j"
+    ]
+  },
+  "Column_oam95j": {
+    "Id": "Column_oam95j",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "Size",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_oam95j",
+    "Column::Row": [
+      "Row_oal2oh",
+      "Row_oal2oi"
+    ]
+  },
+  "Row_oal2oh": {
+    "Id": "Row_oal2oh",
+    "Kind": "Row",
+    "Column": "Column_oam95j",
+    "Row::Column": [
+      "Column_4q0u0v",
+      "Column_bh4xte"
+    ]
+  },
+  "Column_4q0u0v": {
+    "Id": "Column_4q0u0v",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_oal2oh",
+    "Column::Field": [
+      "Floors"
+    ]
+  },
+  "Column_bh4xte": {
+    "Id": "Column_bh4xte",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_oal2oh",
+    "Column::Field": [
+      "Unit_Count"
+    ]
+  },
+  "Row_oal2oi": {
+    "Id": "Row_oal2oi",
+    "Kind": "Row",
+    "Column": "Column_oam95j",
+    "Row::Column": [
+      "Column_o9kii0"
+    ]
+  },
+  "Column_o9kii0": {
+    "Id": "Column_o9kii0",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_oal2oi",
+    "Column::Field": [
+      "Beds"
+    ]
+  },
+  "Site_Code": {
+    "Id": "Site_Code",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Site Code",
+    "Model": "CAFM_Site_A00",
+    "Column": "Column_12g115",
+    "Required": true
+  },
+  "Site_Name": {
+    "Id": "Site_Name",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Site Name",
+    "Model": "CAFM_Site_A00",
+    "Column": "Column_12o6in",
+    "Required": true
+  },
+  "Site_Name_AR": {
+    "Id": "Site_Name_AR",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Site Name AR",
+    "Model": "CAFM_Site_A00",
+    "Column": "Column_y8mt81"
+  },
+  "District": {
+    "Id": "District",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "District",
+    "Model": "CAFM_Site_A00",
+    "Column": "Column_1dkndrk"
+  },
+  "Site_Kind": {
+    "Id": "Site_Kind",
+    "Kind": "Field",
+    "Type": "Select",
+    "Name": "Site Kind",
+    "Model": "CAFM_Site_A00",
+    "Column": "Column_12m22s",
+    "Required": true,
+    "ReferredList": "CAFM_Site_Kind_A00"
+  },
+  "Client_Name": {
+    "Id": "Client_Name",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Client Name",
+    "Model": "CAFM_Site_A00",
+    "Column": "Column_29pq09"
+  },
+  "Own_Operations": {
+    "Id": "Own_Operations",
+    "Kind": "Field",
+    "Type": "Boolean",
+    "Name": "Own Operations",
+    "Model": "CAFM_Site_A00",
+    "Column": "Column_x7tnup"
+  },
+  "TOC_Date": {
+    "Id": "TOC_Date",
+    "Kind": "Field",
+    "Type": "Date",
+    "Name": "TOC Date",
+    "Model": "CAFM_Site_A00",
+    "Column": "Column_edkjpp"
+  },
+  "DLP_Months": {
+    "Id": "DLP_Months",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "DLP Months",
+    "Model": "CAFM_Site_A00",
+    "Column": "Column_1qsegle"
+  },
+  "DLP_End_Date": {
+    "Id": "DLP_End_Date",
+    "Kind": "Field",
+    "Type": "Date",
+    "Name": "DLP End Date",
+    "Model": "CAFM_Site_A00",
+    "Column": "Column_1oz7vy5"
+  },
+  "Decennial_End_Date": {
+    "Id": "Decennial_End_Date",
+    "Kind": "Field",
+    "Type": "Date",
+    "Name": "Decennial End Date",
+    "Model": "CAFM_Site_A00",
+    "Column": "Column_1950mow"
+  },
+  "Floors": {
+    "Id": "Floors",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "Floors",
+    "Model": "CAFM_Site_A00",
+    "Column": "Column_4q0u0v"
+  },
+  "Unit_Count": {
+    "Id": "Unit_Count",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "Unit Count",
+    "Model": "CAFM_Site_A00",
+    "Column": "Column_bh4xte"
+  },
+  "Beds": {
+    "Id": "Beds",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "Beds",
+    "Model": "CAFM_Site_A00",
+    "Column": "Column_o9kii0"
+  },
+  "Row_jxbscw": {
+    "Id": "Row_jxbscw",
+    "Kind": "Row",
+    "Model": "CAFM_Site_A00",
+    "Row::Column": [
+      "Column_jxbscw"
+    ]
+  },
+  "Column_jxbscw": {
+    "Id": "Column_jxbscw",
+    "Kind": "Column",
+    "Type": "Model",
+    "Name": "Handover Pack",
+    "Start": 0,
+    "End": 6,
+    "AllowImport": false,
+    "Row": "Row_jxbscw",
+    "Column::Model": [
+      "Handover_Pack_A00"
+    ]
+  },
+  "Handover_Pack_A00": {
+    "Id": "Handover_Pack_A00",
+    "Kind": "Model",
+    "Name": "Handover Pack",
+    "Model": "CAFM_Site_A00",
+    "Column": "Column_jxbscw",
+    "Model::Row": [
+      "Row_1mlwioc"
+    ],
+    "Model::Field": [
+      "Pack_Item",
+      "Received",
+      "Received_On",
+      "Item_Count",
+      "Pack_Document"
+    ]
+  },
+  "Row_1mlwioc": {
+    "Id": "Row_1mlwioc",
+    "Kind": "Row",
+    "Model": "Handover_Pack_A00",
+    "Row::Column": [
+      "Column_15gwsld",
+      "Column_4lcjx7",
+      "Column_1iju0mv",
+      "Column_hisw0b",
+      "Column_pj9je9"
+    ]
+  },
+  "Column_15gwsld": {
+    "Id": "Column_15gwsld",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 0,
+    "Row": "Row_1mlwioc",
+    "Column::Field": [
+      "Pack_Item"
+    ]
+  },
+  "Pack_Item": {
+    "Id": "Pack_Item",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Pack Item",
+    "Model": "Handover_Pack_A00",
+    "Column": "Column_15gwsld",
+    "Required": true
+  },
+  "Column_4lcjx7": {
+    "Id": "Column_4lcjx7",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 0,
+    "Row": "Row_1mlwioc",
+    "Column::Field": [
+      "Received"
+    ]
+  },
+  "Received": {
+    "Id": "Received",
+    "Kind": "Field",
+    "Type": "Boolean",
+    "Name": "Received",
+    "Model": "Handover_Pack_A00",
+    "Column": "Column_4lcjx7"
+  },
+  "Column_1iju0mv": {
+    "Id": "Column_1iju0mv",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 0,
+    "Row": "Row_1mlwioc",
+    "Column::Field": [
+      "Received_On"
+    ]
+  },
+  "Received_On": {
+    "Id": "Received_On",
+    "Kind": "Field",
+    "Type": "Date",
+    "Name": "Received On",
+    "Model": "Handover_Pack_A00",
+    "Column": "Column_1iju0mv"
+  },
+  "Column_hisw0b": {
+    "Id": "Column_hisw0b",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 0,
+    "Row": "Row_1mlwioc",
+    "Column::Field": [
+      "Item_Count"
+    ]
+  },
+  "Item_Count": {
+    "Id": "Item_Count",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "Item Count",
+    "Model": "Handover_Pack_A00",
+    "Column": "Column_hisw0b"
+  },
+  "Column_pj9je9": {
+    "Id": "Column_pj9je9",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 0,
+    "Row": "Row_1mlwioc",
+    "Column::Field": [
+      "Pack_Document"
+    ]
+  },
+  "Pack_Document": {
+    "Id": "Pack_Document",
+    "Kind": "Field",
+    "Type": "Attachment",
+    "Name": "Pack Document",
+    "Model": "Handover_Pack_A00",
+    "Column": "Column_pj9je9"
+  }
+}

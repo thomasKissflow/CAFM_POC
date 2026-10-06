@@ -1,0 +1,42 @@
+{
+  "Root": "Perm_1g19rtd",
+  "Perm_1g19rtd": {
+    "Id": "Perm_1g19rtd",
+    "Kind": "FlowPermission",
+    "Role": "Ro_1mqmbww",
+    "RoleName": "Subcontractor Supervisor",
+    "Model": "CAFM_SLA_Policy_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_evrc80",
+      "Permission_1qux6z5",
+      "Permission_1bidmv6",
+      "Permission_128j8or"
+    ]
+  },
+  "Permission_evrc80": {
+    "Id": "Permission_evrc80",
+    "Kind": "Permission",
+    "Column": "Priority",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1qux6z5": {
+    "Id": "Permission_1qux6z5",
+    "Kind": "Permission",
+    "Column": "Response_Minutes",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1bidmv6": {
+    "Id": "Permission_1bidmv6",
+    "Kind": "Permission",
+    "Column": "Resolve_Minutes",
+    "Permission": "ReadOnly"
+  },
+  "Permission_128j8or": {
+    "Id": "Permission_128j8or",
+    "Kind": "Permission",
+    "Column": "At_Risk_Percent",
+    "Permission": "ReadOnly"
+  }
+}

@@ -1,0 +1,1153 @@
+{
+  "Root": "CAFM_Back_charge_A00",
+  "CAFM_Back_charge_A00": {
+    "Id": "CAFM_Back_charge_A00",
+    "Name": "CAFM Back-charge",
+    "Kind": "Model",
+    "FlowType": "Process",
+    "Description": "",
+    "Model::Row": [
+      "Row_1fe4tmi",
+      "Row_1fe4tmj",
+      "Row_1fe4tmk"
+    ],
+    "Model::Field": [
+      "Work_Order_No",
+      "Work_Order_Instance",
+      "Subcontractor",
+      "Site",
+      "Root_Cause",
+      "Parts_AED",
+      "Labour_AED",
+      "Total_AED",
+      "Subcontractor_Response",
+      "Dispute_Reason",
+      "Agreed_AED",
+      "Recovered_On"
+    ],
+    "Model::ProcessDef": [
+      "ProcessDef_18exq45"
+    ],
+    "RootProcessDef": "ProcessDef_18exq45",
+    "Model::Appearance": [
+      "Appearance_18exq45"
+    ],
+    "Button::Row": [
+      "Row_ofby8u"
+    ]
+  },
+  "Row_1fe4tmi": {
+    "Id": "Row_1fe4tmi",
+    "Kind": "Row",
+    "Model": "CAFM_Back_charge_A00",
+    "Row::Column": [
+      "Column_1fe4tmi"
+    ]
+  },
+  "Column_1fe4tmi": {
+    "Id": "Column_1fe4tmi",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "Details",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_1fe4tmi",
+    "Column::Row": [
+      "Row_1fe3lh0",
+      "Row_1fe3lh1",
+      "Row_1fe3lh2",
+      "Row_1fe3lh3"
+    ]
+  },
+  "Row_1fe3lh0": {
+    "Id": "Row_1fe3lh0",
+    "Kind": "Row",
+    "Column": "Column_1fe4tmi",
+    "Row::Column": [
+      "Column_vsxzft",
+      "Column_1oxbqht"
+    ]
+  },
+  "Column_vsxzft": {
+    "Id": "Column_vsxzft",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_1fe3lh0",
+    "Column::Field": [
+      "Work_Order_No"
+    ]
+  },
+  "Column_1oxbqht": {
+    "Id": "Column_1oxbqht",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_1fe3lh0",
+    "Column::Field": [
+      "Work_Order_Instance"
+    ]
+  },
+  "Row_1fe3lh1": {
+    "Id": "Row_1fe3lh1",
+    "Kind": "Row",
+    "Column": "Column_1fe4tmi",
+    "Row::Column": [
+      "Column_10a6pug",
+      "Column_1fdga4k"
+    ]
+  },
+  "Column_10a6pug": {
+    "Id": "Column_10a6pug",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_1fe3lh1",
+    "Column::Field": [
+      "Subcontractor"
+    ]
+  },
+  "Column_1fdga4k": {
+    "Id": "Column_1fdga4k",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_1fe3lh1",
+    "Column::Field": [
+      "Site"
+    ]
+  },
+  "Row_1fe3lh2": {
+    "Id": "Row_1fe3lh2",
+    "Kind": "Row",
+    "Column": "Column_1fe4tmi",
+    "Row::Column": [
+      "Column_am4x1f",
+      "Column_gl43lu"
+    ]
+  },
+  "Column_am4x1f": {
+    "Id": "Column_am4x1f",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_1fe3lh2",
+    "Column::Field": [
+      "Root_Cause"
+    ]
+  },
+  "Column_gl43lu": {
+    "Id": "Column_gl43lu",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_1fe3lh2",
+    "Column::Field": [
+      "Parts_AED"
+    ]
+  },
+  "Row_1fe3lh3": {
+    "Id": "Row_1fe3lh3",
+    "Kind": "Row",
+    "Column": "Column_1fe4tmi",
+    "Row::Column": [
+      "Column_s6wybh",
+      "Column_sfh50c"
+    ]
+  },
+  "Column_s6wybh": {
+    "Id": "Column_s6wybh",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_1fe3lh3",
+    "Column::Field": [
+      "Labour_AED"
+    ]
+  },
+  "Column_sfh50c": {
+    "Id": "Column_sfh50c",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_1fe3lh3",
+    "Column::Field": [
+      "Total_AED"
+    ]
+  },
+  "Row_1fe4tmj": {
+    "Id": "Row_1fe4tmj",
+    "Kind": "Row",
+    "Model": "CAFM_Back_charge_A00",
+    "Row::Column": [
+      "Column_1fe4tmj"
+    ]
+  },
+  "Column_1fe4tmj": {
+    "Id": "Column_1fe4tmj",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "Response",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_1fe4tmj",
+    "Column::Row": [
+      "Row_1fe3mb9",
+      "Row_1fe3mba"
+    ]
+  },
+  "Row_1fe3mb9": {
+    "Id": "Row_1fe3mb9",
+    "Kind": "Row",
+    "Column": "Column_1fe4tmj",
+    "Row::Column": [
+      "Column_19rso6"
+    ]
+  },
+  "Column_19rso6": {
+    "Id": "Column_19rso6",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_1fe3mb9",
+    "Column::Field": [
+      "Subcontractor_Response"
+    ]
+  },
+  "Row_1fe3mba": {
+    "Id": "Row_1fe3mba",
+    "Kind": "Row",
+    "Column": "Column_1fe4tmj",
+    "Row::Column": [
+      "Column_1m7ff4k"
+    ]
+  },
+  "Column_1m7ff4k": {
+    "Id": "Column_1m7ff4k",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_1fe3mba",
+    "Column::Field": [
+      "Dispute_Reason"
+    ]
+  },
+  "Row_1fe4tmk": {
+    "Id": "Row_1fe4tmk",
+    "Kind": "Row",
+    "Model": "CAFM_Back_charge_A00",
+    "Row::Column": [
+      "Column_1fe4tmk"
+    ]
+  },
+  "Column_1fe4tmk": {
+    "Id": "Column_1fe4tmk",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "Settlement",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_1fe4tmk",
+    "Column::Row": [
+      "Row_1fe3n5i"
+    ]
+  },
+  "Row_1fe3n5i": {
+    "Id": "Row_1fe3n5i",
+    "Kind": "Row",
+    "Column": "Column_1fe4tmk",
+    "Row::Column": [
+      "Column_13zc4w0",
+      "Column_1bdnykq"
+    ]
+  },
+  "Column_13zc4w0": {
+    "Id": "Column_13zc4w0",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_1fe3n5i",
+    "Column::Field": [
+      "Agreed_AED"
+    ]
+  },
+  "Column_1bdnykq": {
+    "Id": "Column_1bdnykq",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_1fe3n5i",
+    "Column::Field": [
+      "Recovered_On"
+    ]
+  },
+  "Work_Order_No": {
+    "Id": "Work_Order_No",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Work Order No",
+    "Model": "CAFM_Back_charge_A00",
+    "Column": "Column_vsxzft",
+    "Required": true
+  },
+  "Work_Order_Instance": {
+    "Id": "Work_Order_Instance",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Work Order Instance",
+    "Model": "CAFM_Back_charge_A00",
+    "Column": "Column_1oxbqht"
+  },
+  "QueryDefinition_10a6pug": {
+    "Id": "QueryDefinition_10a6pug",
+    "Kind": "QueryDefinition",
+    "Field": "Subcontractor",
+    "LHSModel": "CAFM_Subcontractor_A00",
+    "FlowType": "Form",
+    "LookupField": [
+      {
+        "Id": "Company_Name",
+        "Name": "Company Name",
+        "Type": "Text"
+      },
+      {
+        "Id": "Supervisor",
+        "Name": "Supervisor",
+        "Type": "User"
+      }
+    ],
+    "HiddenField": []
+  },
+  "Subcontractor": {
+    "Id": "Subcontractor",
+    "Kind": "Field",
+    "Type": "Reference",
+    "Name": "Subcontractor",
+    "Model": "CAFM_Back_charge_A00",
+    "Column": "Column_10a6pug",
+    "Required": true,
+    "Field::QueryDefinition": [
+      "QueryDefinition_10a6pug"
+    ]
+  },
+  "QueryDefinition_1fdga4k": {
+    "Id": "QueryDefinition_1fdga4k",
+    "Kind": "QueryDefinition",
+    "Field": "Site",
+    "LHSModel": "CAFM_Site_A00",
+    "FlowType": "Form",
+    "LookupField": [
+      {
+        "Id": "Site_Name",
+        "Name": "Site Name",
+        "Type": "Text"
+      }
+    ],
+    "HiddenField": []
+  },
+  "Site": {
+    "Id": "Site",
+    "Kind": "Field",
+    "Type": "Reference",
+    "Name": "Site",
+    "Model": "CAFM_Back_charge_A00",
+    "Column": "Column_1fdga4k",
+    "Field::QueryDefinition": [
+      "QueryDefinition_1fdga4k"
+    ]
+  },
+  "QueryDefinition_am4x1f": {
+    "Id": "QueryDefinition_am4x1f",
+    "Kind": "QueryDefinition",
+    "Field": "Root_Cause",
+    "LHSModel": "CAFM_Root_Cause_A00",
+    "FlowType": "Form",
+    "LookupField": [
+      {
+        "Id": "Root_Cause_Name",
+        "Name": "Root Cause Name",
+        "Type": "Text"
+      }
+    ],
+    "HiddenField": []
+  },
+  "Root_Cause": {
+    "Id": "Root_Cause",
+    "Kind": "Field",
+    "Type": "Reference",
+    "Name": "Root Cause",
+    "Model": "CAFM_Back_charge_A00",
+    "Column": "Column_am4x1f",
+    "Field::QueryDefinition": [
+      "QueryDefinition_am4x1f"
+    ]
+  },
+  "Parts_AED": {
+    "Id": "Parts_AED",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "Parts AED",
+    "Model": "CAFM_Back_charge_A00",
+    "Column": "Column_gl43lu"
+  },
+  "Labour_AED": {
+    "Id": "Labour_AED",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "Labour AED",
+    "Model": "CAFM_Back_charge_A00",
+    "Column": "Column_s6wybh"
+  },
+  "Expression_sfh50c": {
+    "Id": "Expression_sfh50c",
+    "Kind": "Expression",
+    "Field": "Total_AED",
+    "ExpressionStr": "Parts_AED + Labour_AED",
+    "Expression::Node": [
+      "Node_1fibp1z"
+    ]
+  },
+  "Node_1fibp1x": {
+    "Id": "Node_1fibp1x",
+    "Kind": "Node",
+    "DataType": "Number",
+    "Type": "Field",
+    "Field": "Parts_AED",
+    "Node": "Node_1fibp1z"
+  },
+  "Node_1fibp1y": {
+    "Id": "Node_1fibp1y",
+    "Kind": "Node",
+    "DataType": "Number",
+    "Type": "Field",
+    "Field": "Labour_AED",
+    "Node": "Node_1fibp1z"
+  },
+  "Node_1fibp1z": {
+    "Id": "Node_1fibp1z",
+    "Kind": "Node",
+    "DataType": "Number",
+    "Type": "Function",
+    "Value": "+",
+    "Category": "Number",
+    "Syntax": "Infix",
+    "Node::Node": [
+      "Node_1fibp1x",
+      "Node_1fibp1y"
+    ],
+    "FieldRefCount": 2,
+    "Expression": "Expression_sfh50c"
+  },
+  "Total_AED": {
+    "Id": "Total_AED",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "Total AED",
+    "Model": "CAFM_Back_charge_A00",
+    "Column": "Column_sfh50c",
+    "Field::Expression": [
+      "Expression_sfh50c"
+    ]
+  },
+  "Subcontractor_Response": {
+    "Id": "Subcontractor_Response",
+    "Kind": "Field",
+    "Type": "Select",
+    "Name": "Subcontractor Response",
+    "Model": "CAFM_Back_charge_A00",
+    "Column": "Column_19rso6",
+    "ReferredList": "CAFM_Subcontractor_Response_A00"
+  },
+  "Dispute_Reason": {
+    "Id": "Dispute_Reason",
+    "Kind": "Field",
+    "Type": "Textarea",
+    "Name": "Dispute Reason",
+    "Model": "CAFM_Back_charge_A00",
+    "Column": "Column_1m7ff4k"
+  },
+  "Agreed_AED": {
+    "Id": "Agreed_AED",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "Agreed AED",
+    "Model": "CAFM_Back_charge_A00",
+    "Column": "Column_13zc4w0"
+  },
+  "Recovered_On": {
+    "Id": "Recovered_On",
+    "Kind": "Field",
+    "Type": "Date",
+    "Name": "Recovered On",
+    "Model": "CAFM_Back_charge_A00",
+    "Column": "Column_1bdnykq"
+  },
+  "ProcessDef_18exq45": {
+    "Id": "ProcessDef_18exq45",
+    "Kind": "ProcessDef",
+    "WorkflowType": "Sequence",
+    "Model": "CAFM_Back_charge_A00",
+    "ProcessDef::Activity": [
+      "Activity_119tgb3",
+      "Activity_1qrbi6f",
+      "Activity_bwdten",
+      "Activity_j7exyf",
+      "Activity_jw0hce"
+    ]
+  },
+  "Permission_1mf8h7c": {
+    "Id": "Permission_1mf8h7c",
+    "Kind": "Permission",
+    "Column": "Column_vsxzft",
+    "Permission": "Editable",
+    "Activity": "Activity_119tgb3"
+  },
+  "Permission_pftru2": {
+    "Id": "Permission_pftru2",
+    "Kind": "Permission",
+    "Column": "Column_1oxbqht",
+    "Permission": "Editable",
+    "Activity": "Activity_119tgb3"
+  },
+  "Permission_1j7uftz": {
+    "Id": "Permission_1j7uftz",
+    "Kind": "Permission",
+    "Column": "Column_10a6pug",
+    "Permission": "Editable",
+    "Activity": "Activity_119tgb3"
+  },
+  "Permission_j83kw5": {
+    "Id": "Permission_j83kw5",
+    "Kind": "Permission",
+    "Column": "Column_1fdga4k",
+    "Permission": "Editable",
+    "Activity": "Activity_119tgb3"
+  },
+  "Permission_18o8jw4": {
+    "Id": "Permission_18o8jw4",
+    "Kind": "Permission",
+    "Column": "Column_am4x1f",
+    "Permission": "Editable",
+    "Activity": "Activity_119tgb3"
+  },
+  "Permission_1cjaeqm": {
+    "Id": "Permission_1cjaeqm",
+    "Kind": "Permission",
+    "Column": "Column_gl43lu",
+    "Permission": "Editable",
+    "Activity": "Activity_119tgb3"
+  },
+  "Permission_1ja8qiu": {
+    "Id": "Permission_1ja8qiu",
+    "Kind": "Permission",
+    "Column": "Column_s6wybh",
+    "Permission": "Editable",
+    "Activity": "Activity_119tgb3"
+  },
+  "Permission_1k7rn64": {
+    "Id": "Permission_1k7rn64",
+    "Kind": "Permission",
+    "Column": "Column_sfh50c",
+    "Permission": "Editable",
+    "Activity": "Activity_119tgb3"
+  },
+  "Permission_cmfq6v": {
+    "Id": "Permission_cmfq6v",
+    "Kind": "Permission",
+    "Column": "Column_19rso6",
+    "Permission": "Editable",
+    "Activity": "Activity_119tgb3"
+  },
+  "Permission_mveqzn": {
+    "Id": "Permission_mveqzn",
+    "Kind": "Permission",
+    "Column": "Column_1m7ff4k",
+    "Permission": "Editable",
+    "Activity": "Activity_119tgb3"
+  },
+  "Permission_1lobkzj": {
+    "Id": "Permission_1lobkzj",
+    "Kind": "Permission",
+    "Column": "Column_13zc4w0",
+    "Permission": "Editable",
+    "Activity": "Activity_119tgb3"
+  },
+  "Permission_gn2cbh": {
+    "Id": "Permission_gn2cbh",
+    "Kind": "Permission",
+    "Column": "Column_1bdnykq",
+    "Permission": "Editable",
+    "Activity": "Activity_119tgb3"
+  },
+  "Activity_119tgb3": {
+    "Id": "Activity_119tgb3",
+    "Kind": "Activity",
+    "NodeType": "StartEvent",
+    "Name": "Back-charge raised",
+    "ProcessDef": "ProcessDef_18exq45",
+    "Activity::Permission": [
+      "Permission_1mf8h7c",
+      "Permission_pftru2",
+      "Permission_1j7uftz",
+      "Permission_j83kw5",
+      "Permission_18o8jw4",
+      "Permission_1cjaeqm",
+      "Permission_1ja8qiu",
+      "Permission_1k7rn64",
+      "Permission_cmfq6v",
+      "Permission_mveqzn",
+      "Permission_1lobkzj",
+      "Permission_gn2cbh"
+    ]
+  },
+  "Permission_17207pq": {
+    "Id": "Permission_17207pq",
+    "Kind": "Permission",
+    "Column": "Column_1fe4tmj",
+    "Permission": "Editable",
+    "Activity": "Activity_1qrbi6f"
+  },
+  "Permission_5c1cg8": {
+    "Id": "Permission_5c1cg8",
+    "Kind": "Permission",
+    "Column": "Column_vsxzft",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1qrbi6f"
+  },
+  "Permission_1da3sd6": {
+    "Id": "Permission_1da3sd6",
+    "Kind": "Permission",
+    "Column": "Column_1oxbqht",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1qrbi6f"
+  },
+  "Permission_810edz": {
+    "Id": "Permission_810edz",
+    "Kind": "Permission",
+    "Column": "Column_10a6pug",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1qrbi6f"
+  },
+  "Permission_172dlf9": {
+    "Id": "Permission_172dlf9",
+    "Kind": "Permission",
+    "Column": "Column_1fdga4k",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1qrbi6f"
+  },
+  "Permission_1qm5h44": {
+    "Id": "Permission_1qm5h44",
+    "Kind": "Permission",
+    "Column": "Column_am4x1f",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1qrbi6f"
+  },
+  "Permission_1uh7bym": {
+    "Id": "Permission_1uh7bym",
+    "Kind": "Permission",
+    "Column": "Column_gl43lu",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1qrbi6f"
+  },
+  "Permission_271lrq": {
+    "Id": "Permission_271lrq",
+    "Kind": "Permission",
+    "Column": "Column_s6wybh",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1qrbi6f"
+  },
+  "Permission_34kif0": {
+    "Id": "Permission_34kif0",
+    "Kind": "Permission",
+    "Column": "Column_sfh50c",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1qrbi6f"
+  },
+  "Permission_ukcnev": {
+    "Id": "Permission_ukcnev",
+    "Kind": "Permission",
+    "Column": "Column_19rso6",
+    "Permission": "Editable",
+    "Activity": "Activity_1qrbi6f"
+  },
+  "Permission_1aporir": {
+    "Id": "Permission_1aporir",
+    "Kind": "Permission",
+    "Column": "Column_1m7ff4k",
+    "Permission": "Editable",
+    "Activity": "Activity_1qrbi6f"
+  },
+  "Permission_ahhjjj": {
+    "Id": "Permission_ahhjjj",
+    "Kind": "Permission",
+    "Column": "Column_13zc4w0",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1qrbi6f"
+  },
+  "Permission_14hccul": {
+    "Id": "Permission_14hccul",
+    "Kind": "Permission",
+    "Column": "Column_1bdnykq",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_1qrbi6f"
+  },
+  "Resource_jwj9o": {
+    "Id": "Resource_jwj9o",
+    "Kind": "Resource",
+    "ValueType": "AppRole",
+    "DisplayValue": "Subcontractor Supervisor",
+    "Value": "Ro_1mqmbww",
+    "Activity": "Activity_1qrbi6f"
+  },
+  "Activity_1qrbi6f": {
+    "Id": "Activity_1qrbi6f",
+    "Kind": "Activity",
+    "NodeType": "UserTask",
+    "Name": "Subcontractor response",
+    "ProcessDef": "ProcessDef_18exq45",
+    "Activity::Permission": [
+      "Permission_17207pq",
+      "Permission_5c1cg8",
+      "Permission_1da3sd6",
+      "Permission_810edz",
+      "Permission_172dlf9",
+      "Permission_1qm5h44",
+      "Permission_1uh7bym",
+      "Permission_271lrq",
+      "Permission_34kif0",
+      "Permission_ukcnev",
+      "Permission_1aporir",
+      "Permission_ahhjjj",
+      "Permission_14hccul"
+    ],
+    "Activity::Resource": [
+      "Resource_jwj9o"
+    ]
+  },
+  "Permission_6ybt08": {
+    "Id": "Permission_6ybt08",
+    "Kind": "Permission",
+    "Column": "Column_1fe4tmk",
+    "Permission": "Editable",
+    "Activity": "Activity_bwdten"
+  },
+  "Permission_1yysey9": {
+    "Id": "Permission_1yysey9",
+    "Kind": "Permission",
+    "Column": "Column_vsxzft",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_bwdten"
+  },
+  "Permission_d6fdnn": {
+    "Id": "Permission_d6fdnn",
+    "Kind": "Permission",
+    "Column": "Column_1oxbqht",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_bwdten"
+  },
+  "Permission_16yg1nk": {
+    "Id": "Permission_16yg1nk",
+    "Kind": "Permission",
+    "Column": "Column_10a6pug",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_bwdten"
+  },
+  "Permission_6yp6pq": {
+    "Id": "Permission_6yp6pq",
+    "Kind": "Permission",
+    "Column": "Column_1fdga4k",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_bwdten"
+  },
+  "Permission_1l7shn1": {
+    "Id": "Permission_1l7shn1",
+    "Kind": "Permission",
+    "Column": "Column_am4x1f",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_bwdten"
+  },
+  "Permission_1p2uchj": {
+    "Id": "Permission_1p2uchj",
+    "Kind": "Permission",
+    "Column": "Column_gl43lu",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_bwdten"
+  },
+  "Permission_1vtso9r": {
+    "Id": "Permission_1vtso9r",
+    "Kind": "Permission",
+    "Column": "Column_s6wybh",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_bwdten"
+  },
+  "Permission_1wrbkx1": {
+    "Id": "Permission_1wrbkx1",
+    "Kind": "Permission",
+    "Column": "Column_sfh50c",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_bwdten"
+  },
+  "Permission_p5znxs": {
+    "Id": "Permission_p5znxs",
+    "Kind": "Permission",
+    "Column": "Column_19rso6",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_bwdten"
+  },
+  "Permission_am0ct8": {
+    "Id": "Permission_am0ct8",
+    "Kind": "Permission",
+    "Column": "Column_1m7ff4k",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_bwdten"
+  },
+  "Permission_19ex6t4": {
+    "Id": "Permission_19ex6t4",
+    "Kind": "Permission",
+    "Column": "Column_13zc4w0",
+    "Permission": "Editable",
+    "Activity": "Activity_bwdten"
+  },
+  "Permission_4dny52": {
+    "Id": "Permission_4dny52",
+    "Kind": "Permission",
+    "Column": "Column_1bdnykq",
+    "Permission": "Editable",
+    "Activity": "Activity_bwdten"
+  },
+  "Resource_60ehit": {
+    "Id": "Resource_60ehit",
+    "Kind": "Resource",
+    "ValueType": "AppRole",
+    "DisplayValue": "DLP Manager",
+    "Value": "Ro_12sl9a8",
+    "Activity": "Activity_bwdten"
+  },
+  "Expression_1ifxfsv": {
+    "Id": "Expression_1ifxfsv",
+    "Kind": "Expression",
+    "Activity": "Activity_bwdten",
+    "ExpressionStr": "Subcontractor_Response = \"Dispute\"",
+    "Expression::Node": [
+      "Node_3mz7zp"
+    ]
+  },
+  "Node_3mz7zn": {
+    "Id": "Node_3mz7zn",
+    "Kind": "Node",
+    "DataType": "String",
+    "Type": "Field",
+    "Field": "Subcontractor_Response",
+    "Node": "Node_3mz7zp"
+  },
+  "Node_3mz7zo": {
+    "Id": "Node_3mz7zo",
+    "Kind": "Node",
+    "DataType": "String",
+    "Type": "Static",
+    "Value": "Dispute",
+    "Node": "Node_3mz7zp"
+  },
+  "Node_3mz7zp": {
+    "Id": "Node_3mz7zp",
+    "Kind": "Node",
+    "DataType": "String",
+    "Type": "Function",
+    "Value": "=",
+    "Category": "Boolean",
+    "Syntax": "Infix",
+    "Node::Node": [
+      "Node_3mz7zn",
+      "Node_3mz7zo"
+    ],
+    "FieldRefCount": 2,
+    "Expression": "Expression_1ifxfsv"
+  },
+  "Activity_bwdten": {
+    "Id": "Activity_bwdten",
+    "Kind": "Activity",
+    "NodeType": "UserTask",
+    "Name": "Dispute review",
+    "ProcessDef": "ProcessDef_18exq45",
+    "Activity::Permission": [
+      "Permission_6ybt08",
+      "Permission_1yysey9",
+      "Permission_d6fdnn",
+      "Permission_16yg1nk",
+      "Permission_6yp6pq",
+      "Permission_1l7shn1",
+      "Permission_1p2uchj",
+      "Permission_1vtso9r",
+      "Permission_1wrbkx1",
+      "Permission_p5znxs",
+      "Permission_am0ct8",
+      "Permission_19ex6t4",
+      "Permission_4dny52"
+    ],
+    "Activity::Resource": [
+      "Resource_60ehit"
+    ],
+    "Activity::Expression": [
+      "Expression_1ifxfsv"
+    ]
+  },
+  "Permission_6q1icx": {
+    "Id": "Permission_6q1icx",
+    "Kind": "Permission",
+    "Column": "Column_1fe4tmk",
+    "Permission": "Editable",
+    "Activity": "Activity_j7exyf"
+  },
+  "Permission_h5bxuy": {
+    "Id": "Permission_h5bxuy",
+    "Kind": "Permission",
+    "Column": "Column_vsxzft",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_j7exyf"
+  },
+  "Permission_cy530c": {
+    "Id": "Permission_cy530c",
+    "Kind": "Permission",
+    "Column": "Column_1oxbqht",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_j7exyf"
+  },
+  "Permission_16q5r09": {
+    "Id": "Permission_16q5r09",
+    "Kind": "Permission",
+    "Column": "Column_10a6pug",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_j7exyf"
+  },
+  "Permission_6qew2f": {
+    "Id": "Permission_6qew2f",
+    "Kind": "Permission",
+    "Column": "Column_1fdga4k",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_j7exyf"
+  },
+  "Permission_3ec0jq": {
+    "Id": "Permission_3ec0jq",
+    "Kind": "Permission",
+    "Column": "Column_am4x1f",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_j7exyf"
+  },
+  "Permission_79dve8": {
+    "Id": "Permission_79dve8",
+    "Kind": "Permission",
+    "Column": "Column_gl43lu",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_j7exyf"
+  },
+  "Permission_e0c76g": {
+    "Id": "Permission_e0c76g",
+    "Kind": "Permission",
+    "Column": "Column_s6wybh",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_j7exyf"
+  },
+  "Permission_exv3tq": {
+    "Id": "Permission_exv3tq",
+    "Kind": "Permission",
+    "Column": "Column_sfh50c",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_j7exyf"
+  },
+  "Permission_16dn8tl": {
+    "Id": "Permission_16dn8tl",
+    "Kind": "Permission",
+    "Column": "Column_19rso6",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_j7exyf"
+  },
+  "Permission_adq25x": {
+    "Id": "Permission_adq25x",
+    "Kind": "Permission",
+    "Column": "Column_1m7ff4k",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_j7exyf"
+  },
+  "Permission_196mw5t": {
+    "Id": "Permission_196mw5t",
+    "Kind": "Permission",
+    "Column": "Column_13zc4w0",
+    "Permission": "Editable",
+    "Activity": "Activity_j7exyf"
+  },
+  "Permission_45dnhr": {
+    "Id": "Permission_45dnhr",
+    "Kind": "Permission",
+    "Column": "Column_1bdnykq",
+    "Permission": "Editable",
+    "Activity": "Activity_j7exyf"
+  },
+  "Resource_9xn1m6": {
+    "Id": "Resource_9xn1m6",
+    "Kind": "Resource",
+    "ValueType": "AppRole",
+    "DisplayValue": "DLP Manager",
+    "Value": "Ro_12sl9a8",
+    "Activity": "Activity_j7exyf"
+  },
+  "Activity_j7exyf": {
+    "Id": "Activity_j7exyf",
+    "Kind": "Activity",
+    "NodeType": "UserTask",
+    "Name": "Recovery confirmation",
+    "ProcessDef": "ProcessDef_18exq45",
+    "Activity::Permission": [
+      "Permission_6q1icx",
+      "Permission_h5bxuy",
+      "Permission_cy530c",
+      "Permission_16q5r09",
+      "Permission_6qew2f",
+      "Permission_3ec0jq",
+      "Permission_79dve8",
+      "Permission_e0c76g",
+      "Permission_exv3tq",
+      "Permission_16dn8tl",
+      "Permission_adq25x",
+      "Permission_196mw5t",
+      "Permission_45dnhr"
+    ],
+    "Activity::Resource": [
+      "Resource_9xn1m6"
+    ]
+  },
+  "Permission_l6pa3y": {
+    "Id": "Permission_l6pa3y",
+    "Kind": "Permission",
+    "Column": "Column_vsxzft",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_jw0hce"
+  },
+  "Permission_4557b4": {
+    "Id": "Permission_4557b4",
+    "Kind": "Permission",
+    "Column": "Column_1oxbqht",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_jw0hce"
+  },
+  "Permission_xx5vb1": {
+    "Id": "Permission_xx5vb1",
+    "Kind": "Permission",
+    "Column": "Column_10a6pug",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_jw0hce"
+  },
+  "Permission_1wyj2cb": {
+    "Id": "Permission_1wyj2cb",
+    "Kind": "Permission",
+    "Column": "Column_1fdga4k",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_jw0hce"
+  },
+  "Permission_7fpcsq": {
+    "Id": "Permission_7fpcsq",
+    "Kind": "Permission",
+    "Column": "Column_am4x1f",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_jw0hce"
+  },
+  "Permission_bar7n8": {
+    "Id": "Permission_bar7n8",
+    "Kind": "Permission",
+    "Column": "Column_gl43lu",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_jw0hce"
+  },
+  "Permission_i1pjfg": {
+    "Id": "Permission_i1pjfg",
+    "Kind": "Permission",
+    "Column": "Column_s6wybh",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_jw0hce"
+  },
+  "Permission_iz8g2q": {
+    "Id": "Permission_iz8g2q",
+    "Kind": "Permission",
+    "Column": "Column_sfh50c",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_jw0hce"
+  },
+  "Permission_1af0l2l": {
+    "Id": "Permission_1af0l2l",
+    "Kind": "Permission",
+    "Column": "Column_19rso6",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_jw0hce"
+  },
+  "Permission_1kq6gp": {
+    "Id": "Permission_1kq6gp",
+    "Kind": "Permission",
+    "Column": "Column_1m7ff4k",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_jw0hce"
+  },
+  "Permission_10dn0gl": {
+    "Id": "Permission_10dn0gl",
+    "Kind": "Permission",
+    "Column": "Column_13zc4w0",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_jw0hce"
+  },
+  "Permission_1udhtrn": {
+    "Id": "Permission_1udhtrn",
+    "Kind": "Permission",
+    "Column": "Column_1bdnykq",
+    "Permission": "ReadOnly",
+    "Activity": "Activity_jw0hce"
+  },
+  "Activity_jw0hce": {
+    "Id": "Activity_jw0hce",
+    "Kind": "Activity",
+    "NodeType": "EndEvent",
+    "Name": "Recovered",
+    "ProcessDef": "ProcessDef_18exq45",
+    "Activity::Permission": [
+      "Permission_l6pa3y",
+      "Permission_4557b4",
+      "Permission_xx5vb1",
+      "Permission_1wyj2cb",
+      "Permission_7fpcsq",
+      "Permission_bar7n8",
+      "Permission_i1pjfg",
+      "Permission_iz8g2q",
+      "Permission_1af0l2l",
+      "Permission_1kq6gp",
+      "Permission_10dn0gl",
+      "Permission_1udhtrn"
+    ]
+  },
+  "Appearance_18exq45": {
+    "Id": "Appearance_18exq45",
+    "Kind": "Appearance",
+    "Model": "CAFM_Back_charge_A00",
+    "Appearance::Style": [
+      "Style_18exq45"
+    ]
+  },
+  "Style_18exq45": {
+    "Id": "Style_18exq45",
+    "Kind": "Style",
+    "Appearance": "Appearance_18exq45"
+  },
+  "Row_ofby8u": {
+    "Id": "Row_ofby8u",
+    "Kind": "Row",
+    "Button": "CAFM_Back_charge_A00"
+  }
+}

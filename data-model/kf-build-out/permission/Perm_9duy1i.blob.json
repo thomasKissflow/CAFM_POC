@@ -1,0 +1,42 @@
+{
+  "Root": "Perm_9duy1i",
+  "Perm_9duy1i": {
+    "Id": "Perm_9duy1i",
+    "Kind": "FlowPermission",
+    "Role": "Ro_mh5b4l",
+    "RoleName": "Helpdesk",
+    "Model": "CAFM_SLA_Policy_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_1qsnqm1",
+      "Permission_yr7s6i",
+      "Permission_c7wptn",
+      "Permission_2y2bn8"
+    ]
+  },
+  "Permission_1qsnqm1": {
+    "Id": "Permission_1qsnqm1",
+    "Kind": "Permission",
+    "Column": "Priority",
+    "Permission": "ReadOnly"
+  },
+  "Permission_yr7s6i": {
+    "Id": "Permission_yr7s6i",
+    "Kind": "Permission",
+    "Column": "Response_Minutes",
+    "Permission": "ReadOnly"
+  },
+  "Permission_c7wptn": {
+    "Id": "Permission_c7wptn",
+    "Kind": "Permission",
+    "Column": "Resolve_Minutes",
+    "Permission": "ReadOnly"
+  },
+  "Permission_2y2bn8": {
+    "Id": "Permission_2y2bn8",
+    "Kind": "Permission",
+    "Column": "At_Risk_Percent",
+    "Permission": "ReadOnly"
+  }
+}

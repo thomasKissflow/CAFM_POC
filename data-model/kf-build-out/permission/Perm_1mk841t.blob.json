@@ -1,0 +1,112 @@
+{
+  "Root": "Perm_1mk841t",
+  "Perm_1mk841t": {
+    "Id": "Perm_1mk841t",
+    "Kind": "FlowPermission",
+    "Role": "Ro_bjgefv",
+    "RoleName": "Technician",
+    "Model": "CAFM_Site_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_11uk2rf",
+      "Permission_11us88x",
+      "Permission_fcknhv",
+      "Permission_1vwohki",
+      "Permission_11uq3t2",
+      "Permission_1u9r5t7",
+      "Permission_1od6c5f",
+      "Permission_wplnin",
+      "Permission_1x1743o",
+      "Permission_1635q7z",
+      "Permission_16qvco2",
+      "Permission_18zfapt",
+      "Permission_hpxlbo",
+      "Permission_1cp3mzu"
+    ]
+  },
+  "Permission_11uk2rf": {
+    "Id": "Permission_11uk2rf",
+    "Kind": "Permission",
+    "Column": "Site_Code",
+    "Permission": "ReadOnly"
+  },
+  "Permission_11us88x": {
+    "Id": "Permission_11us88x",
+    "Kind": "Permission",
+    "Column": "Site_Name",
+    "Permission": "ReadOnly"
+  },
+  "Permission_fcknhv": {
+    "Id": "Permission_fcknhv",
+    "Kind": "Permission",
+    "Column": "Site_Name_AR",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1vwohki": {
+    "Id": "Permission_1vwohki",
+    "Kind": "Permission",
+    "Column": "District",
+    "Permission": "ReadOnly"
+  },
+  "Permission_11uq3t2": {
+    "Id": "Permission_11uq3t2",
+    "Kind": "Permission",
+    "Column": "Site_Kind",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1u9r5t7": {
+    "Id": "Permission_1u9r5t7",
+    "Kind": "Permission",
+    "Column": "Client_Name",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1od6c5f": {
+    "Id": "Permission_1od6c5f",
+    "Kind": "Permission",
+    "Column": "Own_Operations",
+    "Permission": "ReadOnly"
+  },
+  "Permission_wplnin": {
+    "Id": "Permission_wplnin",
+    "Kind": "Permission",
+    "Column": "TOC_Date",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1x1743o": {
+    "Id": "Permission_1x1743o",
+    "Kind": "Permission",
+    "Column": "DLP_Months",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1635q7z": {
+    "Id": "Permission_1635q7z",
+    "Kind": "Permission",
+    "Column": "DLP_End_Date",
+    "Permission": "ReadOnly"
+  },
+  "Permission_16qvco2": {
+    "Id": "Permission_16qvco2",
+    "Kind": "Permission",
+    "Column": "Decennial_End_Date",
+    "Permission": "ReadOnly"
+  },
+  "Permission_18zfapt": {
+    "Id": "Permission_18zfapt",
+    "Kind": "Permission",
+    "Column": "Floors",
+    "Permission": "ReadOnly"
+  },
+  "Permission_hpxlbo": {
+    "Id": "Permission_hpxlbo",
+    "Kind": "Permission",
+    "Column": "Unit_Count",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1cp3mzu": {
+    "Id": "Permission_1cp3mzu",
+    "Kind": "Permission",
+    "Column": "Beds",
+    "Permission": "ReadOnly"
+  }
+}

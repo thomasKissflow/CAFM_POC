@@ -1,0 +1,147 @@
+{
+  "Root": "Perm_1wv1n69",
+  "Perm_1wv1n69": {
+    "Id": "Perm_1wv1n69",
+    "Kind": "FlowPermission",
+    "Role": "Ro_12sl9a8",
+    "RoleName": "DLP Manager",
+    "Model": "CAFM_Asset_A00",
+    "Level": "Editable",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_p010ah",
+      "Permission_1kqix5n",
+      "Permission_qquiwj",
+      "Permission_qqw6am",
+      "Permission_tzifmo",
+      "Permission_1077ulz",
+      "Permission_6dp3jd",
+      "Permission_kol36b",
+      "Permission_qqppks",
+      "Permission_u4ier3",
+      "Permission_3c3deu",
+      "Permission_7hc1eg",
+      "Permission_twge8w",
+      "Permission_utb46q",
+      "Permission_12f0y9",
+      "Permission_8k2ll5",
+      "Permission_hzm6t0",
+      "Permission_1hrrphd",
+      "Permission_kxoruv"
+    ]
+  },
+  "Permission_p010ah": {
+    "Id": "Permission_p010ah",
+    "Kind": "Permission",
+    "Column": "Asset_Tag",
+    "Permission": "Editable"
+  },
+  "Permission_1kqix5n": {
+    "Id": "Permission_1kqix5n",
+    "Kind": "Permission",
+    "Column": "QR_Code",
+    "Permission": "Editable"
+  },
+  "Permission_qquiwj": {
+    "Id": "Permission_qquiwj",
+    "Kind": "Permission",
+    "Column": "Site",
+    "Permission": "Editable"
+  },
+  "Permission_qqw6am": {
+    "Id": "Permission_qqw6am",
+    "Kind": "Permission",
+    "Column": "Unit",
+    "Permission": "Editable"
+  },
+  "Permission_tzifmo": {
+    "Id": "Permission_tzifmo",
+    "Kind": "Permission",
+    "Column": "Floor",
+    "Permission": "Editable"
+  },
+  "Permission_1077ulz": {
+    "Id": "Permission_1077ulz",
+    "Kind": "Permission",
+    "Column": "Location",
+    "Permission": "Editable"
+  },
+  "Permission_6dp3jd": {
+    "Id": "Permission_6dp3jd",
+    "Kind": "Permission",
+    "Column": "Location_AR",
+    "Permission": "Editable"
+  },
+  "Permission_kol36b": {
+    "Id": "Permission_kol36b",
+    "Kind": "Permission",
+    "Column": "Asset_Class",
+    "Permission": "Editable"
+  },
+  "Permission_qqppks": {
+    "Id": "Permission_qqppks",
+    "Kind": "Permission",
+    "Column": "Make",
+    "Permission": "Editable"
+  },
+  "Permission_u4ier3": {
+    "Id": "Permission_u4ier3",
+    "Kind": "Permission",
+    "Column": "Model",
+    "Permission": "Editable"
+  },
+  "Permission_3c3deu": {
+    "Id": "Permission_3c3deu",
+    "Kind": "Permission",
+    "Column": "Serial_Number",
+    "Permission": "Editable"
+  },
+  "Permission_7hc1eg": {
+    "Id": "Permission_7hc1eg",
+    "Kind": "Permission",
+    "Column": "Installed_By",
+    "Permission": "Editable"
+  },
+  "Permission_twge8w": {
+    "Id": "Permission_twge8w",
+    "Kind": "Permission",
+    "Column": "Batch",
+    "Permission": "Editable"
+  },
+  "Permission_utb46q": {
+    "Id": "Permission_utb46q",
+    "Kind": "Permission",
+    "Column": "Handover_Date",
+    "Permission": "Editable"
+  },
+  "Permission_12f0y9": {
+    "Id": "Permission_12f0y9",
+    "Kind": "Permission",
+    "Column": "DLP_End_Date",
+    "Permission": "Editable"
+  },
+  "Permission_8k2ll5": {
+    "Id": "Permission_8k2ll5",
+    "Kind": "Permission",
+    "Column": "Warranty_End_Date",
+    "Permission": "Editable"
+  },
+  "Permission_hzm6t0": {
+    "Id": "Permission_hzm6t0",
+    "Kind": "Permission",
+    "Column": "Decennial_End_Date",
+    "Permission": "Editable"
+  },
+  "Permission_1hrrphd": {
+    "Id": "Permission_1hrrphd",
+    "Kind": "Permission",
+    "Column": "Asset_Status",
+    "Permission": "Editable"
+  },
+  "Permission_kxoruv": {
+    "Id": "Permission_kxoruv",
+    "Kind": "Permission",
+    "Column": "Asset_Photo",
+    "Permission": "Editable"
+  }
+}

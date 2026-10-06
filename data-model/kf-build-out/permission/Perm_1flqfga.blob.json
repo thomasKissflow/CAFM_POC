@@ -1,0 +1,56 @@
+{
+  "Root": "Perm_1flqfga",
+  "Perm_1flqfga": {
+    "Id": "Perm_1flqfga",
+    "Kind": "FlowPermission",
+    "Role": "Ro_12sl9a8",
+    "RoleName": "DLP Manager",
+    "Model": "CAFM_Snag_A00",
+    "Level": "Editable",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_e688o9",
+      "Permission_e69w2c",
+      "Permission_15jrj38",
+      "Permission_1o2lswt",
+      "Permission_1hcqmr9",
+      "Permission_1yx5rie"
+    ]
+  },
+  "Permission_e688o9": {
+    "Id": "Permission_e688o9",
+    "Kind": "Permission",
+    "Column": "Site",
+    "Permission": "Editable"
+  },
+  "Permission_e69w2c": {
+    "Id": "Permission_e69w2c",
+    "Kind": "Permission",
+    "Column": "Unit",
+    "Permission": "Editable"
+  },
+  "Permission_15jrj38": {
+    "Id": "Permission_15jrj38",
+    "Kind": "Permission",
+    "Column": "Trade",
+    "Permission": "Editable"
+  },
+  "Permission_1o2lswt": {
+    "Id": "Permission_1o2lswt",
+    "Kind": "Permission",
+    "Column": "Subcontractor",
+    "Permission": "Editable"
+  },
+  "Permission_1hcqmr9": {
+    "Id": "Permission_1hcqmr9",
+    "Kind": "Permission",
+    "Column": "Snag_Location",
+    "Permission": "Editable"
+  },
+  "Permission_1yx5rie": {
+    "Id": "Permission_1yx5rie",
+    "Kind": "Permission",
+    "Column": "Snag_Photo",
+    "Permission": "Editable"
+  }
+}

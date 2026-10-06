@@ -1,0 +1,13 @@
+create 200 10 rows
+read 200 42 items
+✓ F1 summer AC inside DLP
+✓ F2 outside DLP inside warranty
+✓ F3 outside both
+✓ F4 blank dates
+✓ F5 own operations
+✓ F6 structural
+✓ F7 winter no uplift
+✓ F8 DLP end day
+✓ F9 day after DLP
+✓ F10 excluded root cause
+sandbox: 10 pass, 0 fail

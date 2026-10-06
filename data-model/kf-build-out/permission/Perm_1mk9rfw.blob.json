@@ -1,0 +1,42 @@
+{
+  "Root": "Perm_1mk9rfw",
+  "Perm_1mk9rfw": {
+    "Id": "Perm_1mk9rfw",
+    "Kind": "FlowPermission",
+    "Role": "Ro_bjgefv",
+    "RoleName": "Technician",
+    "Model": "CAFM_Unit_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_8r15l7",
+      "Permission_myuy9k",
+      "Permission_1be4mit",
+      "Permission_z14iap"
+    ]
+  },
+  "Permission_8r15l7": {
+    "Id": "Permission_8r15l7",
+    "Kind": "Permission",
+    "Column": "Unit_Number",
+    "Permission": "ReadOnly"
+  },
+  "Permission_myuy9k": {
+    "Id": "Permission_myuy9k",
+    "Kind": "Permission",
+    "Column": "Site",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1be4mit": {
+    "Id": "Permission_1be4mit",
+    "Kind": "Permission",
+    "Column": "Floor",
+    "Permission": "ReadOnly"
+  },
+  "Permission_z14iap": {
+    "Id": "Permission_z14iap",
+    "Kind": "Permission",
+    "Column": "Resident",
+    "Permission": "ReadOnly"
+  }
+}

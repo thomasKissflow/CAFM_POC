@@ -1,0 +1,16 @@
+{
+  "_id": "CAFM_Subcontractor_Response_A00",
+  "Name": "CAFM Subcontractor Response",
+  "Description": "",
+  "Type": "List",
+  "Status": "Live",
+  "ListItems": [
+    "Accept",
+    "Dispute"
+  ],
+  "_application_id": "CAFM_POC_A00",
+  "Security": {
+    "AllowAllFlows": true,
+    "AllowedFlows": []
+  }
+}

@@ -1,0 +1,268 @@
+{
+ "Root": "Co6uG4vKQvqp",
+ "Co6uG4vKQvqp": {
+  "Id": "Co6uG4vKQvqp",
+  "Version": "1.0.0",
+  "Kind": "Connector",
+  "Name": "Kissflow Notification",
+  "Logo": null,
+  "Description": "in-app notification",
+  "Organization": {
+   "_id": "ORG5kFkh0BUGV",
+   "Name": "Kissflow"
+  },
+  "Connector::Authentication": [
+   "Authentication001"
+  ],
+  "Connector::Action": [
+   "Action_vhoT03cd8"
+  ]
+ },
+ "Authentication001": {
+  "Id": "Authentication001",
+  "Kind": "Authentication",
+  "ConnectionLabel": "{{APIKeyName}}",
+  "Connector": "Co6uG4vKQvqp",
+  "Name": "ApiKeyAuth Authentication",
+  "Type": "ApiKeyAuth",
+  "Authentication::Field": [
+   "AuthField001",
+   "AuthField002",
+   "AuthField003",
+   "AuthField004"
+  ],
+  "TestRequest::Request": [
+   "AuthRequest001"
+  ]
+ },
+ "AuthField001": {
+  "Id": "AuthField001",
+  "Authentication": "Authentication001",
+  "HelpText": "Enter your unique Kissflow account ID here. Get it from My settings > API authentication > Account ID",
+  "IsRequired": true,
+  "Kind": "Field",
+  "Label": "Account ID",
+  "Name": "account_id",
+  "Type": "String"
+ },
+ "AuthField002": {
+  "Id": "AuthField002",
+  "Authentication": "Authentication001",
+  "HelpText": "Enter your Kissflow account domain name here. For example, stark-industries.kissflow.com",
+  "IsRequired": true,
+  "Kind": "Field",
+  "Label": "Account Domain",
+  "Name": "account_domain",
+  "Type": "String"
+ },
+ "AuthField003": {
+  "Id": "AuthField003",
+  "Authentication": "Authentication001",
+  "HelpText": "Enter your private Access key ID here. Get it from My settings > API authentication > Create access key > Access keys",
+  "IsRequired": true,
+  "Kind": "Field",
+  "Label": "Access key ID",
+  "Name": "access_key_id",
+  "Type": "Password"
+ },
+ "AuthField004": {
+  "Id": "AuthField004",
+  "Authentication": "Authentication001",
+  "HelpText": "Enter your private API key here. Get it from My settings > API authentication > Create access key > Access key secret",
+  "IsRequired": true,
+  "Kind": "Field",
+  "Label": "Access key secret",
+  "Name": "access_key_secret",
+  "Type": "Password"
+ },
+ "AuthRequest001": {
+  "Id": "AuthRequest001",
+  "TestRequest": "Authentication001",
+  "Kind": "Request",
+  "Method": "GET",
+  "Mode": "Form",
+  "URL": "https://{{authData.account_domain}}/user/2/{{authData.account_id}}/api/verify",
+  "Headers::Property": [
+   "Authproperty001",
+   "Authproperty002"
+  ]
+ },
+ "Authproperty001": {
+  "Id": "Authproperty001",
+  "Headers": "AuthRequest001",
+  "Kind": "Property",
+  "Field": "authData.access_key_id",
+  "Name": "X-Access-Key-Id",
+  "Type": "Field"
+ },
+ "Authproperty002": {
+  "Id": "Authproperty002",
+  "Headers": "AuthRequest001",
+  "Kind": "Property",
+  "Field": "authData.access_key_secret",
+  "Name": "X-Access-Key-Secret",
+  "Type": "Field"
+ },
+ "Action_vhoT03cd8": {
+  "Id": "Action_vhoT03cd8",
+  "Connector": "Co6uG4vKQvqp",
+  "Kind": "Action",
+  "Type": "Create",
+  "Name": "Send in-app notification",
+  "Description": "Send in-app notification",
+  "InputFields::Field": [
+   "Field_WB5-Q22oz",
+   "Field_FWV120nK3",
+   "Field_Y4VrKcmZK",
+   "Field_bvm0_eJ4E"
+  ],
+  "Action::Request": [
+   "Request_qI5cCzyEI"
+  ]
+ },
+ "Field_WB5-Q22oz": {
+  "Id": "Field_WB5-Q22oz",
+  "HelpText": "Title of the notification",
+  "IsRequired": true,
+  "IsMultiValue": false,
+  "IsDropdown": false,
+  "IsPaginated": false,
+  "InputFields": "Action_vhoT03cd8",
+  "AutoRefresh": false,
+  "Kind": "Field",
+  "Type": "String",
+  "Name": "title",
+  "Label": "Title"
+ },
+ "Field_FWV120nK3": {
+  "Id": "Field_FWV120nK3",
+  "HelpText": "Message to be displayed",
+  "IsRequired": true,
+  "IsMultiValue": false,
+  "IsDropdown": false,
+  "IsPaginated": false,
+  "InputFields": "Action_vhoT03cd8",
+  "AutoRefresh": false,
+  "Kind": "Field",
+  "Type": "String",
+  "Name": "message",
+  "Label": "Message"
+ },
+ "Field_Y4VrKcmZK": {
+  "Id": "Field_Y4VrKcmZK",
+  "InputFields": "Action_vhoT03cd8",
+  "IsRequired": true,
+  "HelpText": "User list",
+  "IsDropdown": true,
+  "IsMultiValue": true,
+  "IsPaginated": false,
+  "AutoRefresh": false,
+  "AttachmentType": "Both",
+  "Kind": "Field",
+  "Name": "userids",
+  "Label": "User",
+  "Type": "String",
+  "Field::Dropdown": [
+   "Dropdown_aEAImg6AQa"
+  ]
+ },
+ "Dropdown_aEAImg6AQa": {
+  "Id": "Dropdown_aEAImg6AQa",
+  "Field": "Field_Y4VrKcmZK",
+  "FieldId": "_id",
+  "FieldName": "Name",
+  "Kind": "Dropdown",
+  "Type": "Request",
+  "Dropdown::Request": [
+   "Request_2kIF0xKIP"
+  ]
+ },
+ "Request_2kIF0xKIP": {
+  "Id": "Request_2kIF0xKIP",
+  "Dropdown": "Dropdown_aEAImg6AQa",
+  "Kind": "Request",
+  "Mode": "Code",
+  "Code": "let options = {'url': `https://${authData.account_domain}/user/2/${authData.account_id}/`,'method': 'GET','headers': {'X-Access-Key-Id': authData.access_key_id,'X-Access-Key-Secret': authData.access_key_secret,'Content-Type': 'application/json','Accept': 'application/json'},'params': {'page_size': 1000}};let a = await request(options).then((response) => response.json()).then((json) => {const results = json;return results;});let options2 = {'url': `https://${authData.account_domain}/group/2/${authData.account_id}/list/`,'method': 'GET','headers': {'X-Access-Key-Id': authData.access_key_id,'X-Access-Key-Secret': authData.access_key_secret,},'params': {'page_size': 100}};let b = await request(options2).then((response) => response.json()).then((json) => {const results = json;return results;});let c = [...b, ...a];return c;"
+ },
+ "Field_bvm0_eJ4E": {
+  "Id": "Field_bvm0_eJ4E",
+  "HelpText": "Redirecting link",
+  "IsRequired": true,
+  "IsMultiValue": false,
+  "IsDropdown": false,
+  "IsPaginated": false,
+  "InputFields": "Action_vhoT03cd8",
+  "AutoRefresh": false,
+  "Kind": "Field",
+  "Type": "String",
+  "Name": "urn",
+  "Label": "URN"
+ },
+ "Request_qI5cCzyEI": {
+  "Id": "Request_qI5cCzyEI",
+  "Action": "Action_vhoT03cd8",
+  "Kind": "Request",
+  "Mode": "Form",
+  "Method": "POST",
+  "URL": "https://{{authData.account_domain}}/notification/2/{{authData.account_id}}/inapp/send",
+  "Headers::Property": [
+   "Property_JNBr-tNs7",
+   "Property_i7BVfbdxWj"
+  ],
+  "Body::Property": [
+   "Property_KJ2SxOaD5g",
+   "Property_2fluxwgA52",
+   "Property_S9Z9U5NFPP",
+   "Property_w33BoPieCp"
+  ]
+ },
+ "Property_JNBr-tNs7": {
+  "Id": "Property_JNBr-tNs7",
+  "Headers": "Request_qI5cCzyEI",
+  "Kind": "Property",
+  "Name": "X-Access-Key-Id",
+  "Type": "Field",
+  "Field": "authData.access_key_id"
+ },
+ "Property_i7BVfbdxWj": {
+  "Id": "Property_i7BVfbdxWj",
+  "Headers": "Request_qI5cCzyEI",
+  "Kind": "Property",
+  "Name": "X-Access-Key-Secret",
+  "Type": "Field",
+  "Field": "authData.access_key_secret"
+ },
+ "Property_KJ2SxOaD5g": {
+  "Id": "Property_KJ2SxOaD5g",
+  "Body": "Request_qI5cCzyEI",
+  "Kind": "Property",
+  "Name": "Message",
+  "Type": "Field",
+  "Field": "inputData.message"
+ },
+ "Property_2fluxwgA52": {
+  "Id": "Property_2fluxwgA52",
+  "Body": "Request_qI5cCzyEI",
+  "Kind": "Property",
+  "Name": "Title",
+  "Type": "Field",
+  "Field": "inputData.title"
+ },
+ "Property_S9Z9U5NFPP": {
+  "Id": "Property_S9Z9U5NFPP",
+  "Body": "Request_qI5cCzyEI",
+  "Kind": "Property",
+  "Name": "UserIds",
+  "Type": "Field",
+  "Field": "inputData.userids"
+ },
+ "Property_w33BoPieCp": {
+  "Id": "Property_w33BoPieCp",
+  "Body": "Request_qI5cCzyEI",
+  "Kind": "Property",
+  "Name": "URN",
+  "Type": "Field",
+  "Field": "inputData.urn"
+ },
+ "_last_saved_at": "2023-04-07T06:20:57Z"
+}

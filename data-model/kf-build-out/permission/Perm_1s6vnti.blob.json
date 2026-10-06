@@ -1,0 +1,49 @@
+{
+  "Root": "Perm_1s6vnti",
+  "Perm_1s6vnti": {
+    "Id": "Perm_1s6vnti",
+    "Kind": "FlowPermission",
+    "Role": "Ro_1mqmbww",
+    "RoleName": "Subcontractor Supervisor",
+    "Model": "CAFM_Root_Cause_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_1dom1ob",
+      "Permission_1dou75t",
+      "Permission_1qflmnn",
+      "Permission_4dvttp",
+      "Permission_11zo9yl"
+    ]
+  },
+  "Permission_1dom1ob": {
+    "Id": "Permission_1dom1ob",
+    "Kind": "Permission",
+    "Column": "Root_Cause_Code",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1dou75t": {
+    "Id": "Permission_1dou75t",
+    "Kind": "Permission",
+    "Column": "Root_Cause_Name",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1qflmnn": {
+    "Id": "Permission_1qflmnn",
+    "Kind": "Permission",
+    "Column": "Root_Cause_Name_AR",
+    "Permission": "ReadOnly"
+  },
+  "Permission_4dvttp": {
+    "Id": "Permission_4dvttp",
+    "Kind": "Permission",
+    "Column": "Trade",
+    "Permission": "ReadOnly"
+  },
+  "Permission_11zo9yl": {
+    "Id": "Permission_11zo9yl",
+    "Kind": "Permission",
+    "Column": "Excluded_From_DLP",
+    "Permission": "ReadOnly"
+  }
+}

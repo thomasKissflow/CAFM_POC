@@ -1,0 +1,77 @@
+{
+  "Root": "Perm_1f69wcp",
+  "Perm_1f69wcp": {
+    "Id": "Perm_1f69wcp",
+    "Kind": "FlowPermission",
+    "Role": "Ro_b2tazi",
+    "RoleName": "Compliance Officer",
+    "Model": "CAFM_PPM_Schedule_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_1ddrqz4",
+      "Permission_njqi3m",
+      "Permission_ypeivr",
+      "Permission_pdsc6v",
+      "Permission_1pyries",
+      "Permission_pdv422",
+      "Permission_13gcpsx",
+      "Permission_1o6f0pn",
+      "Permission_1t9x6hq"
+    ]
+  },
+  "Permission_1ddrqz4": {
+    "Id": "Permission_1ddrqz4",
+    "Kind": "Permission",
+    "Column": "Schedule_Title",
+    "Permission": "ReadOnly"
+  },
+  "Permission_njqi3m": {
+    "Id": "Permission_njqi3m",
+    "Kind": "Permission",
+    "Column": "Schedule_Title_AR",
+    "Permission": "ReadOnly"
+  },
+  "Permission_ypeivr": {
+    "Id": "Permission_ypeivr",
+    "Kind": "Permission",
+    "Column": "Site",
+    "Permission": "ReadOnly"
+  },
+  "Permission_pdsc6v": {
+    "Id": "Permission_pdsc6v",
+    "Kind": "Permission",
+    "Column": "Asset_Class",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1pyries": {
+    "Id": "Permission_1pyries",
+    "Kind": "Permission",
+    "Column": "Frequency",
+    "Permission": "ReadOnly"
+  },
+  "Permission_pdv422": {
+    "Id": "Permission_pdv422",
+    "Kind": "Permission",
+    "Column": "Asset_Count",
+    "Permission": "ReadOnly"
+  },
+  "Permission_13gcpsx": {
+    "Id": "Permission_13gcpsx",
+    "Kind": "Permission",
+    "Column": "Contractor",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1o6f0pn": {
+    "Id": "Permission_1o6f0pn",
+    "Kind": "Permission",
+    "Column": "Next_Due_Date",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1t9x6hq": {
+    "Id": "Permission_1t9x6hq",
+    "Kind": "Permission",
+    "Column": "Active",
+    "Permission": "ReadOnly"
+  }
+}

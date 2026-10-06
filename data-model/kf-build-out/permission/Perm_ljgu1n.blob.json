@@ -1,0 +1,49 @@
+{
+  "Root": "Perm_ljgu1n",
+  "Perm_ljgu1n": {
+    "Id": "Perm_ljgu1n",
+    "Kind": "FlowPermission",
+    "Role": "Ro_mh5b4l",
+    "RoleName": "Helpdesk",
+    "Model": "CAFM_Root_Cause_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_coem35",
+      "Permission_comrkn",
+      "Permission_ryd7rd",
+      "Permission_aojuz7",
+      "Permission_d9ouo3"
+    ]
+  },
+  "Permission_coem35": {
+    "Id": "Permission_coem35",
+    "Kind": "Permission",
+    "Column": "Root_Cause_Code",
+    "Permission": "ReadOnly"
+  },
+  "Permission_comrkn": {
+    "Id": "Permission_comrkn",
+    "Kind": "Permission",
+    "Column": "Root_Cause_Name",
+    "Permission": "ReadOnly"
+  },
+  "Permission_ryd7rd": {
+    "Id": "Permission_ryd7rd",
+    "Kind": "Permission",
+    "Column": "Root_Cause_Name_AR",
+    "Permission": "ReadOnly"
+  },
+  "Permission_aojuz7": {
+    "Id": "Permission_aojuz7",
+    "Kind": "Permission",
+    "Column": "Trade",
+    "Permission": "ReadOnly"
+  },
+  "Permission_d9ouo3": {
+    "Id": "Permission_d9ouo3",
+    "Kind": "Permission",
+    "Column": "Excluded_From_DLP",
+    "Permission": "ReadOnly"
+  }
+}

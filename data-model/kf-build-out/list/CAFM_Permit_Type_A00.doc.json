@@ -1,0 +1,18 @@
+{
+  "_id": "CAFM_Permit_Type_A00",
+  "Name": "CAFM Permit Type",
+  "Description": "",
+  "Type": "List",
+  "Status": "Live",
+  "ListItems": [
+    "Hot work",
+    "Work at height",
+    "Electrical isolation",
+    "Confined space"
+  ],
+  "_application_id": "CAFM_POC_A00",
+  "Security": {
+    "AllowAllFlows": true,
+    "AllowedFlows": []
+  }
+}

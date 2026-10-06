@@ -1,0 +1,56 @@
+{
+  "Root": "Perm_8aayiy",
+  "Perm_8aayiy": {
+    "Id": "Perm_8aayiy",
+    "Kind": "FlowPermission",
+    "Role": "Ro_1mqmbww",
+    "RoleName": "Subcontractor Supervisor",
+    "Model": "CAFM_Snag_A00",
+    "Level": "Editable",
+    "Scope": "my",
+    "FlowPermission::Permission": [
+      "Permission_113bwjg",
+      "Permission_113djxj",
+      "Permission_gjvsyf",
+      "Permission_1mvgnf4",
+      "Permission_1g5lh9k",
+      "Permission_1vyhw0p"
+    ]
+  },
+  "Permission_113bwjg": {
+    "Id": "Permission_113bwjg",
+    "Kind": "Permission",
+    "Column": "Site",
+    "Permission": "Editable"
+  },
+  "Permission_113djxj": {
+    "Id": "Permission_113djxj",
+    "Kind": "Permission",
+    "Column": "Unit",
+    "Permission": "Editable"
+  },
+  "Permission_gjvsyf": {
+    "Id": "Permission_gjvsyf",
+    "Kind": "Permission",
+    "Column": "Trade",
+    "Permission": "Editable"
+  },
+  "Permission_1mvgnf4": {
+    "Id": "Permission_1mvgnf4",
+    "Kind": "Permission",
+    "Column": "Subcontractor",
+    "Permission": "Editable"
+  },
+  "Permission_1g5lh9k": {
+    "Id": "Permission_1g5lh9k",
+    "Kind": "Permission",
+    "Column": "Snag_Location",
+    "Permission": "Editable"
+  },
+  "Permission_1vyhw0p": {
+    "Id": "Permission_1vyhw0p",
+    "Kind": "Permission",
+    "Column": "Snag_Photo",
+    "Permission": "Editable"
+  }
+}

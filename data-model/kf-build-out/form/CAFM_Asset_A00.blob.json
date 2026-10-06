@@ -1,0 +1,652 @@
+{
+  "Root": "CAFM_Asset_A00",
+  "CAFM_Asset_A00": {
+    "Id": "CAFM_Asset_A00",
+    "Name": "CAFM Asset",
+    "Kind": "Model",
+    "FlowType": "Form",
+    "Description": "",
+    "Model::Row": [
+      "Row_168owm8",
+      "Row_168owm9",
+      "Row_168owma"
+    ],
+    "Model::Field": [
+      "Asset_Tag",
+      "QR_Code",
+      "Site",
+      "Unit",
+      "Floor",
+      "Location",
+      "Location_AR",
+      "Asset_Class",
+      "Make",
+      "Model",
+      "Serial_Number",
+      "Installed_By",
+      "Batch",
+      "Handover_Date",
+      "DLP_End_Date",
+      "Warranty_End_Date",
+      "Decennial_End_Date",
+      "Asset_Status",
+      "Asset_Photo"
+    ]
+  },
+  "Row_168owm8": {
+    "Id": "Row_168owm8",
+    "Kind": "Row",
+    "Model": "CAFM_Asset_A00",
+    "Row::Column": [
+      "Column_168owm8"
+    ]
+  },
+  "Column_168owm8": {
+    "Id": "Column_168owm8",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "Identity",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_168owm8",
+    "Column::Row": [
+      "Row_168nogq",
+      "Row_168nogr",
+      "Row_168nogs",
+      "Row_168nogt",
+      "Row_168nogu"
+    ]
+  },
+  "Row_168nogq": {
+    "Id": "Row_168nogq",
+    "Kind": "Row",
+    "Column": "Column_168owm8",
+    "Row::Column": [
+      "Column_1v6hcgg",
+      "Column_vkmya"
+    ]
+  },
+  "Column_1v6hcgg": {
+    "Id": "Column_1v6hcgg",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_168nogq",
+    "Column::Field": [
+      "Asset_Tag"
+    ]
+  },
+  "Column_vkmya": {
+    "Id": "Column_vkmya",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_168nogq",
+    "Column::Field": [
+      "QR_Code"
+    ]
+  },
+  "Row_168nogr": {
+    "Id": "Row_168nogr",
+    "Kind": "Row",
+    "Column": "Column_168owm8",
+    "Row::Column": [
+      "Column_1vy1nsa",
+      "Column_167vjsj"
+    ]
+  },
+  "Column_1vy1nsa": {
+    "Id": "Column_1vy1nsa",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_168nogr",
+    "Column::Field": [
+      "Asset_Class"
+    ]
+  },
+  "Column_167vjsj": {
+    "Id": "Column_167vjsj",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_168nogr",
+    "Column::Field": [
+      "Make"
+    ]
+  },
+  "Row_168nogs": {
+    "Id": "Row_168nogs",
+    "Kind": "Row",
+    "Column": "Column_168owm8",
+    "Row::Column": [
+      "Column_17n2q12",
+      "Column_1a4v3y5"
+    ]
+  },
+  "Column_17n2q12": {
+    "Id": "Column_17n2q12",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_168nogs",
+    "Column::Field": [
+      "Model"
+    ]
+  },
+  "Column_1a4v3y5": {
+    "Id": "Column_1a4v3y5",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_168nogs",
+    "Column::Field": [
+      "Serial_Number"
+    ]
+  },
+  "Row_168nogt": {
+    "Id": "Row_168nogt",
+    "Kind": "Row",
+    "Column": "Column_168owm8",
+    "Row::Column": [
+      "Column_1erhe60"
+    ]
+  },
+  "Column_1erhe60": {
+    "Id": "Column_1erhe60",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_168nogt",
+    "Column::Field": [
+      "Asset_Status"
+    ]
+  },
+  "Row_168nogu": {
+    "Id": "Row_168nogu",
+    "Kind": "Row",
+    "Column": "Column_168owm8",
+    "Row::Column": [
+      "Column_1w75cgu"
+    ]
+  },
+  "Column_1w75cgu": {
+    "Id": "Column_1w75cgu",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_168nogu",
+    "Column::Field": [
+      "Asset_Photo"
+    ]
+  },
+  "Row_168owm9": {
+    "Id": "Row_168owm9",
+    "Kind": "Row",
+    "Model": "CAFM_Asset_A00",
+    "Row::Column": [
+      "Column_168owm9"
+    ]
+  },
+  "Column_168owm9": {
+    "Id": "Column_168owm9",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "Location",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_168owm9",
+    "Column::Row": [
+      "Row_168npaz",
+      "Row_168npb0",
+      "Row_168npb1"
+    ]
+  },
+  "Row_168npaz": {
+    "Id": "Row_168npaz",
+    "Kind": "Row",
+    "Column": "Column_168owm9",
+    "Row::Column": [
+      "Column_1680d4a",
+      "Column_16820id"
+    ]
+  },
+  "Column_1680d4a": {
+    "Id": "Column_1680d4a",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_168npaz",
+    "Column::Field": [
+      "Site"
+    ]
+  },
+  "Column_16820id": {
+    "Id": "Column_16820id",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_168npaz",
+    "Column::Field": [
+      "Unit"
+    ]
+  },
+  "Row_168npb0": {
+    "Id": "Row_168npb0",
+    "Kind": "Row",
+    "Column": "Column_168owm9",
+    "Row::Column": [
+      "Column_17i2qwn",
+      "Column_13mpx7y"
+    ]
+  },
+  "Column_17i2qwn": {
+    "Id": "Column_17i2qwn",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_168npb0",
+    "Column::Field": [
+      "Floor"
+    ]
+  },
+  "Column_13mpx7y": {
+    "Id": "Column_13mpx7y",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_168npb0",
+    "Column::Field": [
+      "Location"
+    ]
+  },
+  "Row_168npb1": {
+    "Id": "Row_168npb1",
+    "Kind": "Row",
+    "Column": "Column_168owm9",
+    "Row::Column": [
+      "Column_1hn5o5c"
+    ]
+  },
+  "Column_1hn5o5c": {
+    "Id": "Column_1hn5o5c",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_168npb1",
+    "Column::Field": [
+      "Location_AR"
+    ]
+  },
+  "Row_168owma": {
+    "Id": "Row_168owma",
+    "Kind": "Row",
+    "Model": "CAFM_Asset_A00",
+    "Row::Column": [
+      "Column_168owma"
+    ]
+  },
+  "Column_168owma": {
+    "Id": "Column_168owma",
+    "Kind": "Column",
+    "Type": "Section",
+    "Name": "Liability",
+    "Start": 0,
+    "End": 6,
+    "Row": "Row_168owma",
+    "Column::Row": [
+      "Row_168nq58",
+      "Row_168nq59",
+      "Row_168nq5a"
+    ]
+  },
+  "Row_168nq58": {
+    "Id": "Row_168nq58",
+    "Kind": "Row",
+    "Column": "Column_168owma",
+    "Row::Column": [
+      "Column_4h1q33",
+      "Column_17f0piv"
+    ]
+  },
+  "Column_4h1q33": {
+    "Id": "Column_4h1q33",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_168nq58",
+    "Column::Field": [
+      "Installed_By"
+    ]
+  },
+  "Column_17f0piv": {
+    "Id": "Column_17f0piv",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_168nq58",
+    "Column::Field": [
+      "Batch"
+    ]
+  },
+  "Row_168nq59": {
+    "Id": "Row_168nq59",
+    "Kind": "Row",
+    "Column": "Column_168owma",
+    "Row::Column": [
+      "Column_2kysqx",
+      "Column_1x38rm0"
+    ]
+  },
+  "Column_2kysqx": {
+    "Id": "Column_2kysqx",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_168nq59",
+    "Column::Field": [
+      "Handover_Date"
+    ]
+  },
+  "Column_1x38rm0": {
+    "Id": "Column_1x38rm0",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_168nq59",
+    "Column::Field": [
+      "DLP_End_Date"
+    ]
+  },
+  "Row_168nq5a": {
+    "Id": "Row_168nq5a",
+    "Kind": "Row",
+    "Column": "Column_168owma",
+    "Row::Column": [
+      "Column_15xlrog",
+      "Column_1hxhy7f"
+    ]
+  },
+  "Column_15xlrog": {
+    "Id": "Column_15xlrog",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 0,
+    "End": 3,
+    "Row": "Row_168nq5a",
+    "Column::Field": [
+      "Warranty_End_Date"
+    ]
+  },
+  "Column_1hxhy7f": {
+    "Id": "Column_1hxhy7f",
+    "Kind": "Column",
+    "Type": "Field",
+    "Start": 3,
+    "End": 6,
+    "Row": "Row_168nq5a",
+    "Column::Field": [
+      "Decennial_End_Date"
+    ]
+  },
+  "Asset_Tag": {
+    "Id": "Asset_Tag",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Asset Tag",
+    "Model": "CAFM_Asset_A00",
+    "Column": "Column_1v6hcgg",
+    "Required": true
+  },
+  "QR_Code": {
+    "Id": "QR_Code",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "QR Code",
+    "Model": "CAFM_Asset_A00",
+    "Column": "Column_vkmya"
+  },
+  "QueryDefinition_1680d4a": {
+    "Id": "QueryDefinition_1680d4a",
+    "Kind": "QueryDefinition",
+    "Field": "Site",
+    "LHSModel": "CAFM_Site_A00",
+    "FlowType": "Form",
+    "LookupField": [
+      {
+        "Id": "Site_Name",
+        "Name": "Site Name",
+        "Type": "Text"
+      },
+      {
+        "Id": "Own_Operations",
+        "Name": "Own Operations",
+        "Type": "Boolean"
+      }
+    ],
+    "HiddenField": []
+  },
+  "Site": {
+    "Id": "Site",
+    "Kind": "Field",
+    "Type": "Reference",
+    "Name": "Site",
+    "Model": "CAFM_Asset_A00",
+    "Column": "Column_1680d4a",
+    "Required": true,
+    "Field::QueryDefinition": [
+      "QueryDefinition_1680d4a"
+    ]
+  },
+  "QueryDefinition_16820id": {
+    "Id": "QueryDefinition_16820id",
+    "Kind": "QueryDefinition",
+    "Field": "Unit",
+    "LHSModel": "CAFM_Unit_A00",
+    "FlowType": "Form",
+    "LookupField": [
+      {
+        "Id": "Unit_Number",
+        "Name": "Unit Number",
+        "Type": "Text"
+      }
+    ],
+    "HiddenField": []
+  },
+  "Unit": {
+    "Id": "Unit",
+    "Kind": "Field",
+    "Type": "Reference",
+    "Name": "Unit",
+    "Model": "CAFM_Asset_A00",
+    "Column": "Column_16820id",
+    "Field::QueryDefinition": [
+      "QueryDefinition_16820id"
+    ]
+  },
+  "Floor": {
+    "Id": "Floor",
+    "Kind": "Field",
+    "Type": "Number",
+    "Name": "Floor",
+    "Model": "CAFM_Asset_A00",
+    "Column": "Column_17i2qwn"
+  },
+  "Location": {
+    "Id": "Location",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Location",
+    "Model": "CAFM_Asset_A00",
+    "Column": "Column_13mpx7y"
+  },
+  "Location_AR": {
+    "Id": "Location_AR",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Location AR",
+    "Model": "CAFM_Asset_A00",
+    "Column": "Column_1hn5o5c"
+  },
+  "QueryDefinition_1vy1nsa": {
+    "Id": "QueryDefinition_1vy1nsa",
+    "Kind": "QueryDefinition",
+    "Field": "Asset_Class",
+    "LHSModel": "CAFM_Asset_Class_A00",
+    "FlowType": "Form",
+    "LookupField": [
+      {
+        "Id": "Class_Name",
+        "Name": "Class Name",
+        "Type": "Text"
+      },
+      {
+        "Id": "Trade",
+        "Name": "Trade",
+        "Type": "Select"
+      }
+    ],
+    "HiddenField": []
+  },
+  "Asset_Class": {
+    "Id": "Asset_Class",
+    "Kind": "Field",
+    "Type": "Reference",
+    "Name": "Asset Class",
+    "Model": "CAFM_Asset_A00",
+    "Column": "Column_1vy1nsa",
+    "Required": true,
+    "Field::QueryDefinition": [
+      "QueryDefinition_1vy1nsa"
+    ]
+  },
+  "Make": {
+    "Id": "Make",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Make",
+    "Model": "CAFM_Asset_A00",
+    "Column": "Column_167vjsj"
+  },
+  "Model": {
+    "Id": "Model",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Model",
+    "Model": "CAFM_Asset_A00",
+    "Column": "Column_17n2q12"
+  },
+  "Serial_Number": {
+    "Id": "Serial_Number",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Serial Number",
+    "Model": "CAFM_Asset_A00",
+    "Column": "Column_1a4v3y5"
+  },
+  "QueryDefinition_4h1q33": {
+    "Id": "QueryDefinition_4h1q33",
+    "Kind": "QueryDefinition",
+    "Field": "Installed_By",
+    "LHSModel": "CAFM_Subcontractor_A00",
+    "FlowType": "Form",
+    "LookupField": [
+      {
+        "Id": "Company_Name",
+        "Name": "Company Name",
+        "Type": "Text"
+      },
+      {
+        "Id": "Supervisor",
+        "Name": "Supervisor",
+        "Type": "User"
+      }
+    ],
+    "HiddenField": []
+  },
+  "Installed_By": {
+    "Id": "Installed_By",
+    "Kind": "Field",
+    "Type": "Reference",
+    "Name": "Installed By",
+    "Model": "CAFM_Asset_A00",
+    "Column": "Column_4h1q33",
+    "Field::QueryDefinition": [
+      "QueryDefinition_4h1q33"
+    ]
+  },
+  "Batch": {
+    "Id": "Batch",
+    "Kind": "Field",
+    "Type": "Text",
+    "Name": "Batch",
+    "Model": "CAFM_Asset_A00",
+    "Column": "Column_17f0piv"
+  },
+  "Handover_Date": {
+    "Id": "Handover_Date",
+    "Kind": "Field",
+    "Type": "Date",
+    "Name": "Handover Date",
+    "Model": "CAFM_Asset_A00",
+    "Column": "Column_2kysqx"
+  },
+  "DLP_End_Date": {
+    "Id": "DLP_End_Date",
+    "Kind": "Field",
+    "Type": "Date",
+    "Name": "DLP End Date",
+    "Model": "CAFM_Asset_A00",
+    "Column": "Column_1x38rm0"
+  },
+  "Warranty_End_Date": {
+    "Id": "Warranty_End_Date",
+    "Kind": "Field",
+    "Type": "Date",
+    "Name": "Warranty End Date",
+    "Model": "CAFM_Asset_A00",
+    "Column": "Column_15xlrog"
+  },
+  "Decennial_End_Date": {
+    "Id": "Decennial_End_Date",
+    "Kind": "Field",
+    "Type": "Date",
+    "Name": "Decennial End Date",
+    "Model": "CAFM_Asset_A00",
+    "Column": "Column_1hxhy7f"
+  },
+  "Asset_Status": {
+    "Id": "Asset_Status",
+    "Kind": "Field",
+    "Type": "Select",
+    "Name": "Asset Status",
+    "Model": "CAFM_Asset_A00",
+    "Column": "Column_1erhe60",
+    "ReferredList": "CAFM_Asset_Status_A00"
+  },
+  "Asset_Photo": {
+    "Id": "Asset_Photo",
+    "Kind": "Field",
+    "Type": "Image",
+    "Name": "Asset Photo",
+    "Model": "CAFM_Asset_A00",
+    "Column": "Column_1w75cgu"
+  }
+}

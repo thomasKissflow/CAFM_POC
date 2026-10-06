@@ -1,0 +1,42 @@
+{
+  "Root": "Perm_qjxtkd",
+  "Perm_qjxtkd": {
+    "Id": "Perm_qjxtkd",
+    "Kind": "FlowPermission",
+    "Role": "Ro_11s1y8v",
+    "RoleName": "Plant Manager",
+    "Model": "CAFM_Breakdown_A00",
+    "Level": "Editable",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_1tsijy8",
+      "Permission_dn00m9",
+      "Permission_1jndi8v",
+      "Permission_1cbbzl8"
+    ]
+  },
+  "Permission_1tsijy8": {
+    "Id": "Permission_1tsijy8",
+    "Kind": "Permission",
+    "Column": "Equipment",
+    "Permission": "Editable"
+  },
+  "Permission_dn00m9": {
+    "Id": "Permission_dn00m9",
+    "Kind": "Permission",
+    "Column": "Reported_At",
+    "Permission": "Editable"
+  },
+  "Permission_1jndi8v": {
+    "Id": "Permission_1jndi8v",
+    "Kind": "Permission",
+    "Column": "Downtime_Hours",
+    "Permission": "Editable"
+  },
+  "Permission_1cbbzl8": {
+    "Id": "Permission_1cbbzl8",
+    "Kind": "Permission",
+    "Column": "Repair_Cost_AED",
+    "Permission": "Editable"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "Root": "Perm_hk8aqk",
+  "Perm_hk8aqk": {
+    "Id": "Perm_hk8aqk",
+    "Kind": "FlowPermission",
+    "Role": "Ro_bjgefv",
+    "RoleName": "Technician",
+    "Model": "CAFM_SLA_Policy_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_oyvs3g",
+      "Permission_88s19",
+      "Permission_1qtylsu",
+      "Permission_1hk47mf"
+    ]
+  },
+  "Permission_oyvs3g": {
+    "Id": "Permission_oyvs3g",
+    "Kind": "Permission",
+    "Column": "Priority",
+    "Permission": "ReadOnly"
+  },
+  "Permission_88s19": {
+    "Id": "Permission_88s19",
+    "Kind": "Permission",
+    "Column": "Response_Minutes",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1qtylsu": {
+    "Id": "Permission_1qtylsu",
+    "Kind": "Permission",
+    "Column": "Resolve_Minutes",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1hk47mf": {
+    "Id": "Permission_1hk47mf",
+    "Kind": "Permission",
+    "Column": "At_Risk_Percent",
+    "Permission": "ReadOnly"
+  }
+}

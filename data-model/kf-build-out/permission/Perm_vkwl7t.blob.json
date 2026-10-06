@@ -1,0 +1,63 @@
+{
+  "Root": "Perm_vkwl7t",
+  "Perm_vkwl7t": {
+    "Id": "Perm_vkwl7t",
+    "Kind": "FlowPermission",
+    "Role": "Ro_1mqmbww",
+    "RoleName": "Subcontractor Supervisor",
+    "Model": "CAFM_WO_Event_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_12vocmz",
+      "Permission_1k4y8qb",
+      "Permission_1x8d71g",
+      "Permission_1ozfvfb",
+      "Permission_5gn796",
+      "Permission_1tpq49l",
+      "Permission_jjtiyd"
+    ]
+  },
+  "Permission_12vocmz": {
+    "Id": "Permission_12vocmz",
+    "Kind": "Permission",
+    "Column": "Work_Order_No",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1k4y8qb": {
+    "Id": "Permission_1k4y8qb",
+    "Kind": "Permission",
+    "Column": "Work_Order_Instance",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1x8d71g": {
+    "Id": "Permission_1x8d71g",
+    "Kind": "Permission",
+    "Column": "Event_Type",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1ozfvfb": {
+    "Id": "Permission_1ozfvfb",
+    "Kind": "Permission",
+    "Column": "Event_At",
+    "Permission": "ReadOnly"
+  },
+  "Permission_5gn796": {
+    "Id": "Permission_5gn796",
+    "Kind": "Permission",
+    "Column": "Actor",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1tpq49l": {
+    "Id": "Permission_1tpq49l",
+    "Kind": "Permission",
+    "Column": "Actor_Label",
+    "Permission": "ReadOnly"
+  },
+  "Permission_jjtiyd": {
+    "Id": "Permission_jjtiyd",
+    "Kind": "Permission",
+    "Column": "Event_Detail",
+    "Permission": "ReadOnly"
+  }
+}

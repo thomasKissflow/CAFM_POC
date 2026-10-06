@@ -1,0 +1,42 @@
+{
+  "Root": "Perm_4ltqz8",
+  "Perm_4ltqz8": {
+    "Id": "Perm_4ltqz8",
+    "Kind": "FlowPermission",
+    "Role": "Ro_1vmrgk3",
+    "RoleName": "FM Manager",
+    "Model": "CAFM_SLA_Policy_A00",
+    "Level": "Editable",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_1wcxbvv",
+      "Permission_n4pyl8",
+      "Permission_1tofm25",
+      "Permission_1kel7vq"
+    ]
+  },
+  "Permission_1wcxbvv": {
+    "Id": "Permission_1wcxbvv",
+    "Kind": "Permission",
+    "Column": "Priority",
+    "Permission": "Editable"
+  },
+  "Permission_n4pyl8": {
+    "Id": "Permission_n4pyl8",
+    "Kind": "Permission",
+    "Column": "Response_Minutes",
+    "Permission": "Editable"
+  },
+  "Permission_1tofm25": {
+    "Id": "Permission_1tofm25",
+    "Kind": "Permission",
+    "Column": "Resolve_Minutes",
+    "Permission": "Editable"
+  },
+  "Permission_1kel7vq": {
+    "Id": "Permission_1kel7vq",
+    "Kind": "Permission",
+    "Column": "At_Risk_Percent",
+    "Permission": "Editable"
+  }
+}

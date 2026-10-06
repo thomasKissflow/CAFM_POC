@@ -1,0 +1,18 @@
+{
+  "_id": "CAFM_PPM_Frequency_A00",
+  "Name": "CAFM PPM Frequency",
+  "Description": "",
+  "Type": "List",
+  "Status": "Live",
+  "ListItems": [
+    "Monthly",
+    "Quarterly",
+    "Every 6 months",
+    "Annual"
+  ],
+  "_application_id": "CAFM_POC_A00",
+  "Security": {
+    "AllowAllFlows": true,
+    "AllowedFlows": []
+  }
+}

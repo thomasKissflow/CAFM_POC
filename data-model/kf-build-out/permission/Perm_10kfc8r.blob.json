@@ -1,0 +1,63 @@
+{
+  "Root": "Perm_10kfc8r",
+  "Perm_10kfc8r": {
+    "Id": "Perm_10kfc8r",
+    "Kind": "FlowPermission",
+    "Role": "Ro_qzo537",
+    "RoleName": "HSE Officer",
+    "Model": "CAFM_Request_Category_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_7s5zbd",
+      "Permission_7se4sv",
+      "Permission_144xdfl",
+      "Permission_1uhyvgh",
+      "Permission_1r32f71",
+      "Permission_dyst4t",
+      "Permission_17w9bai"
+    ]
+  },
+  "Permission_7s5zbd": {
+    "Id": "Permission_7s5zbd",
+    "Kind": "Permission",
+    "Column": "Category_Code",
+    "Permission": "ReadOnly"
+  },
+  "Permission_7se4sv": {
+    "Id": "Permission_7se4sv",
+    "Kind": "Permission",
+    "Column": "Category_Name",
+    "Permission": "ReadOnly"
+  },
+  "Permission_144xdfl": {
+    "Id": "Permission_144xdfl",
+    "Kind": "Permission",
+    "Column": "Category_Name_AR",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1uhyvgh": {
+    "Id": "Permission_1uhyvgh",
+    "Kind": "Permission",
+    "Column": "Trade",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1r32f71": {
+    "Id": "Permission_1r32f71",
+    "Kind": "Permission",
+    "Column": "Base_Priority",
+    "Permission": "ReadOnly"
+  },
+  "Permission_dyst4t": {
+    "Id": "Permission_dyst4t",
+    "Kind": "Permission",
+    "Column": "Summer_Uplift",
+    "Permission": "ReadOnly"
+  },
+  "Permission_17w9bai": {
+    "Id": "Permission_17w9bai",
+    "Kind": "Permission",
+    "Column": "Structural",
+    "Permission": "ReadOnly"
+  }
+}

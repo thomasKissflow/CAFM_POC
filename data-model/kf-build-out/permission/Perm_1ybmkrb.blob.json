@@ -1,0 +1,63 @@
+{
+  "Root": "Perm_1ybmkrb",
+  "Perm_1ybmkrb": {
+    "Id": "Perm_1ybmkrb",
+    "Kind": "FlowPermission",
+    "Role": "Ro_11s1y8v",
+    "RoleName": "Plant Manager",
+    "Model": "CAFM_Request_Category_A00",
+    "Level": "ReadOnly",
+    "Scope": "all",
+    "FlowPermission::Permission": [
+      "Permission_1ij4fnm",
+      "Permission_1ijcl54",
+      "Permission_t0h9zu",
+      "Permission_1bsmupm",
+      "Permission_12swtk6",
+      "Permission_1opr9h2",
+      "Permission_lkls1v"
+    ]
+  },
+  "Permission_1ij4fnm": {
+    "Id": "Permission_1ij4fnm",
+    "Kind": "Permission",
+    "Column": "Category_Code",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1ijcl54": {
+    "Id": "Permission_1ijcl54",
+    "Kind": "Permission",
+    "Column": "Category_Name",
+    "Permission": "ReadOnly"
+  },
+  "Permission_t0h9zu": {
+    "Id": "Permission_t0h9zu",
+    "Kind": "Permission",
+    "Column": "Category_Name_AR",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1bsmupm": {
+    "Id": "Permission_1bsmupm",
+    "Kind": "Permission",
+    "Column": "Trade",
+    "Permission": "ReadOnly"
+  },
+  "Permission_12swtk6": {
+    "Id": "Permission_12swtk6",
+    "Kind": "Permission",
+    "Column": "Base_Priority",
+    "Permission": "ReadOnly"
+  },
+  "Permission_1opr9h2": {
+    "Id": "Permission_1opr9h2",
+    "Kind": "Permission",
+    "Column": "Summer_Uplift",
+    "Permission": "ReadOnly"
+  },
+  "Permission_lkls1v": {
+    "Id": "Permission_lkls1v",
+    "Kind": "Permission",
+    "Column": "Structural",
+    "Permission": "ReadOnly"
+  }
+}
